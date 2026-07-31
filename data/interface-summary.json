@@ -1,0 +1,865 @@
+{
+  "schema": "deepbom.interface_quantization_contract_corpus_summary.v1",
+  "public_artifact_count": 50,
+  "parameter_count": 114,
+  "complete_quantized_parameter_count": 62,
+  "unquantized_parameter_count": 52,
+  "invalid_or_incomplete_parameter_count": 0,
+  "per_tensor_parameter_count": 62,
+  "per_axis_parameter_count": 0,
+  "artifacts_with_complete_quantized_interface": 32,
+  "artifacts_with_multiple_complete_interface_contracts": 30,
+  "dtype_shape_signatures_with_multiple_affine_contracts": 6,
+  "dtype_shape_ambiguity_groups": [
+    {
+      "direction": "output",
+      "dtype": "INT8",
+      "shape": [
+        1,
+        1000
+      ],
+      "artifact_count": 22,
+      "distinct_affine_contract_count": 22,
+      "examples": [
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-in0",
+          "artifact_sha256": "4791f13ac1b90b0a1a0b96177d905197a1ebd34f7bc960d92c9d3250aa5b6ef8",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "b90ff780b916bf7647e2d29e456aa86a92dae924a22af46a4ed79dd67e94c320",
+          "granularity": "per_tensor",
+          "scales": [
+            0.1465642899274826
+          ],
+          "zero_points": [
+            -32
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -14.07017183303833,
+            "real_max": 23.303722098469734,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-in1",
+          "artifact_sha256": "bf14b8de64caba8630086250b4c6ee660c222d8e48ce3e8c791d0a402e15ef73",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "585f878c4e532cb56fe1c862c9c77cb00b9a43ae30dfbc65a068d1faece399b2",
+          "granularity": "per_tensor",
+          "scales": [
+            0.16098004579544067
+          ],
+          "zero_points": [
+            -35
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -14.971144258975983,
+            "real_max": 26.07876741886139,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-in2",
+          "artifact_sha256": "38c5d0794fa40196cb5c8da4fc64b116a33f448f3db721458916b54b1e4a11fb",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "f74c757a454f1f67ed1633742bbaf3270c86238f66794534874eb9c31ad15db0",
+          "granularity": "per_tensor",
+          "scales": [
+            0.19033899903297424
+          ],
+          "zero_points": [
+            -35
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -17.701526910066605,
+            "real_max": 30.834917843341827,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-in3",
+          "artifact_sha256": "780563f544bccba413b1ee4e051159996ac8b5be39eba8bb38761a51b58a07d1",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "c29b54c13700958fde8f514622890f6277f096f2463004f8ef7c1303841d441f",
+          "granularity": "per_tensor",
+          "scales": [
+            0.20178799331188202
+          ],
+          "zero_points": [
+            -44
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -16.95019143819809,
+            "real_max": 34.505746856331825,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-in4",
+          "artifact_sha256": "1ad36261efdc5185d5236e7f8306a9481d9044c56cbb72f9230fbc67ba13545e",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "721139389a909a05bd9eb96d4343b97f2aa5f70b5abc613770c914146f76d3f2",
+          "granularity": "per_tensor",
+          "scales": [
+            0.17593495547771454
+          ],
+          "zero_points": [
+            -46
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -14.426666349172592,
+            "real_max": 30.436747297644615,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/mbv2-w0-35",
+          "artifact_sha256": "00c87d2a5f2d96deb7a7e8afe000b786e5198384ab66f21c714dd3ed43d00f8c",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "e2743dd84d5e1c12146938b1d42971ec2ffef278ada25f30a0de26705031afd6",
+          "granularity": "per_tensor",
+          "scales": [
+            0.16410475969314575
+          ],
+          "zero_points": [
+            -44
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -13.784799814224243,
+            "real_max": 28.061913907527924,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/proxyless-w0-3",
+          "artifact_sha256": "8cfa09445a43c8eb51b94685b72a4aa1c0318865af03636f3f81bcf7042dacc7",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "46eb981b569420fda989f05245e35685dad1c8e43f7f18bba31c1c63390a8060",
+          "granularity": "per_tensor",
+          "scales": [
+            0.16694992780685425
+          ],
+          "zero_points": [
+            -36
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -15.35939335823059,
+            "real_max": 27.212838232517242,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-densenet161-tv-in1k",
+          "artifact_sha256": "757c4898202f74162d63dad8cc38f65a913eba9f3c14a95be934ab528acd58a6",
+          "parameter_id": "output:0:T327",
+          "tensor_name": "g0::linear",
+          "contract_sha256": "ddcd9782a54b2dc53c279b85e1feb3f3a4d8ea42e84982b2feb1c7c167ffd05d",
+          "granularity": "per_tensor",
+          "scales": [
+            0.0949302688241005
+          ],
+          "zero_points": [
+            -69
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -5.600885860621929,
+            "real_max": 18.606332689523697,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-densenet169-tv-in1k",
+          "artifact_sha256": "c17dbe0e71d98e01951f029a6777822ad90af570afdcb92a831255340fa6fd04",
+          "parameter_id": "output:0:T343",
+          "tensor_name": "g0::linear",
+          "contract_sha256": "c5ae6998886d3758839d773177003d2d3db4baef03a85468e460f0ac5bf043ca",
+          "granularity": "per_tensor",
+          "scales": [
+            0.09312402456998825
+          ],
+          "zero_points": [
+            -66
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -5.7736895233392715,
+            "real_max": 17.972936742007732,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-densenet201-tv-in1k",
+          "artifact_sha256": "b1bdbf97fa7f5b53c180c7538d650cf47678ca7e8bfc9f9809b63d9b9ed22799",
+          "parameter_id": "output:0:T407",
+          "tensor_name": "g0::linear",
+          "contract_sha256": "8ae482cb71484a17190d0301e7b705d27b1a352828db7afd3a92ada4ead275de",
+          "granularity": "per_tensor",
+          "scales": [
+            0.08615352213382721
+          ],
+          "zero_points": [
+            -66
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -5.341518372297287,
+            "real_max": 16.62762977182865,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v2",
+          "artifact_sha256": "6b92681ad122c19f14d7556a028e6ece72891759e27b19ac3df97768ef4dd716",
+          "parameter_id": "output:0:T127",
+          "tensor_name": "g0::linear",
+          "contract_sha256": "13e2ed5b0b40bd03ce0c9fc3b1c05c61d756da3672ef8c90c252efc7d6ebeafc",
+          "granularity": "per_tensor",
+          "scales": [
+            0.034059230238199234
+          ],
+          "zero_points": [
+            -75
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -1.8051392026245594,
+            "real_max": 6.879964508116245,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-large",
+          "artifact_sha256": "620a6b6431790233dee4d726f49a9a83b3303e65a50787475c3ebc5e74f55b7c",
+          "parameter_id": "output:0:T158",
+          "tensor_name": "g0::linear_1",
+          "contract_sha256": "19b97dde193a846ed3e95d9bdbd9abdf07a07a383529a5351f7cefad81a6c969",
+          "granularity": "per_tensor",
+          "scales": [
+            0.04168519750237465
+          ],
+          "zero_points": [
+            -69
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.4594266526401043,
+            "real_max": 8.170298710465431,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        }
+      ]
+    },
+    {
+      "direction": "input",
+      "dtype": "INT8",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "artifact_count": 15,
+      "distinct_affine_contract_count": 4,
+      "examples": [
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-densenet161-tv-in1k",
+          "artifact_sha256": "757c4898202f74162d63dad8cc38f65a913eba9f3c14a95be934ab528acd58a6",
+          "parameter_id": "input:0:T903",
+          "tensor_name": "g0::x",
+          "contract_sha256": "11c57599b4e9bf98d31ed65ad1a2039b28866528b1516fcc07c28a0fd565d2aa",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017942840233445168
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.045483786612749,
+            "real_max": 2.5299404729157686,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-densenet169-tv-in1k",
+          "artifact_sha256": "c17dbe0e71d98e01951f029a6777822ad90af570afdcb92a831255340fa6fd04",
+          "parameter_id": "input:0:T947",
+          "tensor_name": "g0::x",
+          "contract_sha256": "11c57599b4e9bf98d31ed65ad1a2039b28866528b1516fcc07c28a0fd565d2aa",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017942840233445168
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.045483786612749,
+            "real_max": 2.5299404729157686,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-densenet201-tv-in1k",
+          "artifact_sha256": "b1bdbf97fa7f5b53c180c7538d650cf47678ca7e8bfc9f9809b63d9b9ed22799",
+          "parameter_id": "input:0:T1123",
+          "tensor_name": "g0::x",
+          "contract_sha256": "11c57599b4e9bf98d31ed65ad1a2039b28866528b1516fcc07c28a0fd565d2aa",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017942840233445168
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.045483786612749,
+            "real_max": 2.5299404729157686,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v2",
+          "artifact_sha256": "6b92681ad122c19f14d7556a028e6ece72891759e27b19ac3df97768ef4dd716",
+          "parameter_id": "input:0:T184",
+          "tensor_name": "g0::x",
+          "contract_sha256": "dd2065aa81c6462a0d6ee3c30c886c2a0602932991c8d8049562cbfaf7621041",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017623191699385643
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.0090438537299633,
+            "real_max": 2.4848700296133757,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-large",
+          "artifact_sha256": "620a6b6431790233dee4d726f49a9a83b3303e65a50787475c3ebc5e74f55b7c",
+          "parameter_id": "input:0:T286",
+          "tensor_name": "g0::x",
+          "contract_sha256": "dd2065aa81c6462a0d6ee3c30c886c2a0602932991c8d8049562cbfaf7621041",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017623191699385643
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.0090438537299633,
+            "real_max": 2.4848700296133757,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-small",
+          "artifact_sha256": "b07b0db7ecce321db4c6b729f035c76d3ea5df9ccb1e5f0535af5a4ad2325efd",
+          "parameter_id": "input:0:T256",
+          "tensor_name": "g0::x",
+          "contract_sha256": "dd2065aa81c6462a0d6ee3c30c886c2a0602932991c8d8049562cbfaf7621041",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017623191699385643
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.0090438537299633,
+            "real_max": 2.4848700296133757,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-regnetx-004-tv-tv2-in1k",
+          "artifact_sha256": "87d4fb3fc27d02e19c25365d32676a6b62b113f2c347c190205d023f89b4c51d",
+          "parameter_id": "input:0:T2511",
+          "tensor_name": "g0::x",
+          "contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017972450703382492
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.048859380185604,
+            "real_max": 2.5341155491769314,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-regnetx-008-tv2-in1k",
+          "artifact_sha256": "86c3436c7988e90a15f95e21a76553dadf4f93b5c83d367a5719f89ff9d2de66",
+          "parameter_id": "input:0:T2361",
+          "tensor_name": "g0::x",
+          "contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017972450703382492
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.048859380185604,
+            "real_max": 2.5341155491769314,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-regnetx-016-tv2-in1k",
+          "artifact_sha256": "9b417b9cb8a8ff382ac9cc0428840a4f397e61142ee11020994cf818a64d2f5c",
+          "parameter_id": "input:0:T1875",
+          "tensor_name": "g0::x",
+          "contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017972450703382492
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.048859380185604,
+            "real_max": 2.5341155491769314,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-regnetx-032-tv2-in1k",
+          "artifact_sha256": "e40544aff44244ff6577021690d5fe5596c4375c1f386988f345d31deb9d2642",
+          "parameter_id": "input:0:T1488",
+          "tensor_name": "g0::x",
+          "contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017972450703382492
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.048859380185604,
+            "real_max": 2.5341155491769314,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-regnetx-080-tv2-in1k",
+          "artifact_sha256": "d76d68e2ebdf867a34924eb1a27685b1bbd7eb5c0d959559cc3b239c740e2026",
+          "parameter_id": "input:0:T938",
+          "tensor_name": "g0::x",
+          "contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017972450703382492
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.048859380185604,
+            "real_max": 2.5341155491769314,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "litert-modern-static-int8/expanded-regnetx-160-tv2-in1k",
+          "artifact_sha256": "58537895ce4fd18504af40d3b3456de9d52227e4f42b6e53d8ac4ebe8ab036ae",
+          "parameter_id": "input:0:T1041",
+          "tensor_name": "g0::x",
+          "contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+          "granularity": "per_tensor",
+          "scales": [
+            0.017972450703382492
+          ],
+          "zero_points": [
+            -14
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -2.048859380185604,
+            "real_max": 2.5341155491769314,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        }
+      ]
+    },
+    {
+      "direction": "output",
+      "dtype": "INT8",
+      "shape": [
+        1,
+        2
+      ],
+      "artifact_count": 3,
+      "distinct_affine_contract_count": 3,
+      "examples": [
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-vww0",
+          "artifact_sha256": "4676b97e2fe775929b1538446a120173ab0e1a0f94a1d81e7322f09fee9b3d1d",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "f6bb7a76d1b94a220c0217bf39f3a27d327e63d901e3e4de7f07eac7d9860553",
+          "granularity": "per_tensor",
+          "scales": [
+            0.09819237142801285
+          ],
+          "zero_points": [
+            0
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -12.568623542785645,
+            "real_max": 12.470431171357632,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-vww1",
+          "artifact_sha256": "d878916e93f59e63949ce9b8e1a585382d466d3b94d751b9f1628a7753e03c24",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "2454ff6900cbef58999c78be40712065a0eb9c6ff1ce1ad1fc9911f73ca76320",
+          "granularity": "per_tensor",
+          "scales": [
+            0.11386775225400925
+          ],
+          "zero_points": [
+            -1
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -14.461204536259174,
+            "real_max": 14.575072288513184,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-vww2",
+          "artifact_sha256": "5180674a058b7c7b627a4142b4c6b194382e6df05ad8c8eb40a86aab8c1c7986",
+          "parameter_id": "output:0:T1",
+          "tensor_name": "Reshape",
+          "contract_sha256": "f38c1940990f9116682d6587f881fe9506230a18131cf352ac9218e25a6707e1",
+          "granularity": "per_tensor",
+          "scales": [
+            0.28061529994010925
+          ],
+          "zero_points": [
+            0
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -35.918758392333984,
+            "real_max": 35.638143092393875,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        }
+      ]
+    },
+    {
+      "direction": "output",
+      "dtype": "UINT8",
+      "shape": [
+        1,
+        1001
+      ],
+      "artifact_count": 3,
+      "distinct_affine_contract_count": 3,
+      "examples": [
+        {
+          "qualified_id": "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+          "artifact_sha256": "ecc3a67c47c5a609ec35f6a58a7d97532834e43df4cb7d3f1204a8164b7d20dd",
+          "parameter_id": "output:0:T87",
+          "tensor_name": "MobilenetV1/Predictions/Reshape_1",
+          "contract_sha256": "77bac4e9a78f7e45b931ccff9ccb849e4ccef51eda44fdfe13221ad41b51aa64",
+          "granularity": "per_tensor",
+          "scales": [
+            0.00390625
+          ],
+          "zero_points": [
+            0
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": 0,
+            "qmax": 255,
+            "real_min": 0,
+            "real_max": 0.99609375,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+          "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
+          "parameter_id": "output:0:T172",
+          "tensor_name": "output",
+          "contract_sha256": "fd9168008a929b3062e4402c0c65c64dd2f70dd7050463f9312f1cb91c732fe9",
+          "granularity": "per_tensor",
+          "scales": [
+            0.09889253973960876
+          ],
+          "zero_points": [
+            58
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": 0,
+            "qmax": 255,
+            "real_min": -5.735767304897308,
+            "real_max": 19.481830328702927,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "google-legacy-quantized/inception-v3-quant",
+          "artifact_sha256": "6aecf177dc84a11dc5ea8f03df188039dded543fc7cd03f3b89a6541dbb37ee6",
+          "parameter_id": "output:0:T316",
+          "tensor_name": "output",
+          "contract_sha256": "022fc66019b1c31107f815b95af47bbed043aa40314a6d933d4d370f80c891ac",
+          "granularity": "per_tensor",
+          "scales": [
+            0.07597498595714569
+          ],
+          "zero_points": [
+            53
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": 0,
+            "qmax": 255,
+            "real_min": -4.026674255728722,
+            "real_max": 15.34694716334343,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        }
+      ]
+    },
+    {
+      "direction": "input",
+      "dtype": "UINT8",
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "artifact_count": 3,
+      "distinct_affine_contract_count": 2,
+      "examples": [
+        {
+          "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+          "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+          "parameter_id": "input:0:T164",
+          "tensor_name": "images",
+          "contract_sha256": "f9a317503b70e6992ed311927667ca9b7bc0191efc1379fd8e3602f648e23743",
+          "granularity": "per_tensor",
+          "scales": [
+            0.012566016986966133
+          ],
+          "zero_points": [
+            131
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": 0,
+            "qmax": 255,
+            "real_min": -1.6461482252925634,
+            "real_max": 1.5581861063838005,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+          "artifact_sha256": "ecc3a67c47c5a609ec35f6a58a7d97532834e43df4cb7d3f1204a8164b7d20dd",
+          "parameter_id": "input:0:T88",
+          "tensor_name": "input",
+          "contract_sha256": "caf9dc3df8ee859e9f5f63065cf92ad520fd9225548b181f0aa0988261dacf52",
+          "granularity": "per_tensor",
+          "scales": [
+            0.0078125
+          ],
+          "zero_points": [
+            128
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": 0,
+            "qmax": 255,
+            "real_min": -1,
+            "real_max": 0.9921875,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+          "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
+          "parameter_id": "input:0:T171",
+          "tensor_name": "input",
+          "contract_sha256": "caf9dc3df8ee859e9f5f63065cf92ad520fd9225548b181f0aa0988261dacf52",
+          "granularity": "per_tensor",
+          "scales": [
+            0.0078125
+          ],
+          "zero_points": [
+            128
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": 0,
+            "qmax": 255,
+            "real_min": -1,
+            "real_max": 0.9921875,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        }
+      ]
+    },
+    {
+      "direction": "input",
+      "dtype": "INT8",
+      "shape": [
+        1,
+        176,
+        176,
+        3
+      ],
+      "artifact_count": 2,
+      "distinct_affine_contract_count": 2,
+      "examples": [
+        {
+          "qualified_id": "mcunet-curated-ptq/mcunet-in3",
+          "artifact_sha256": "780563f544bccba413b1ee4e051159996ac8b5be39eba8bb38761a51b58a07d1",
+          "parameter_id": "input:0:T287",
+          "tensor_name": "input",
+          "contract_sha256": "5a6fc64bb769bd7f21cbefe9486e54fa4f433f1162fb443e053f024fd4570b68",
+          "granularity": "per_tensor",
+          "scales": [
+            0.007874015718698502
+          ],
+          "zero_points": [
+            0
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -1.0078740119934082,
+            "real_max": 0.9999999962747097,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        },
+        {
+          "qualified_id": "mcunet-curated-ptq/proxyless-w0-3",
+          "artifact_sha256": "8cfa09445a43c8eb51b94685b72a4aa1c0318865af03636f3f81bcf7042dacc7",
+          "parameter_id": "input:0:T324",
+          "tensor_name": "input",
+          "contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+          "granularity": "per_tensor",
+          "scales": [
+            0.007843137718737125
+          ],
+          "zero_points": [
+            -1
+          ],
+          "quantized_dimension": 0,
+          "scalar_real_code_domain": {
+            "qmin": -128,
+            "qmax": 127,
+            "real_min": -0.9960784902796149,
+            "real_max": 1.003921627998352,
+            "formula": "real=(q-zero_point)*scale"
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation_boundary": "A group proves that direction, dtype, and shape do not uniquely determine the serialized affine contract across hash-identified public artifacts. It does not prove that any deployed harness is mismatched or that task accuracy changes.",
+  "ledger_sha256": "c1bc50876b9e8929c3a0d40af39f50b9217c387fb89cbf7e83cd71617a93d6b0"
+}

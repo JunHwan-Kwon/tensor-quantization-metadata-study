@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this supporting dataset, please cite it as below."
+title: "Tensor-Level Affine Quantization Metadata: Public Corpus and Paired Input-Contract Comparison"
+type: dataset
+authors:
+  - family-names: "Kwon"
+    given-names: "Jun-Hwan"
+    orcid: "https://orcid.org/0000-0002-6464-3895"
+    affiliation: "Anesthesia and Pain Research Institute, Yonsei University College of Medicine"
+version: "1.0.0"
+date-released: "2026-07-31"
+license: "ISC"
+url: "https://github.com/JunHwan-Kwon/tensor-quantization-metadata-study"
+keywords:
+  - affine quantization
+  - TFLite
+  - LiteRT
+  - model interface
+  - CycloneDX
+  - ML-BOM

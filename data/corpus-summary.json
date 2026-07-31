@@ -1,0 +1,47 @@
+{
+  "schema": "deepbom.affine_contract_public_corpus_summary.v1",
+  "corpus_id": "quant-policy-boundary-public-50-2026-07-30",
+  "manifest_sha256": "9ec7fdf97c8fcc8e14d3b9b5a61ffafe05d0e90e5a58005cdca51a1d886f0540",
+  "analyzer_artifact_identity": {
+    "wasm": {
+      "size": 1717855,
+      "sha256": "9198f6080b1a6070a49b017e1d9101d1bf3a29014d66409a004f4f0db73c96ed"
+    },
+    "javascript": {
+      "size": 44796,
+      "sha256": "47cbc2f98e1bc5db9dce46569379b67d03bc5910b14f9f3f366b2b9a76ab2040"
+    }
+  },
+  "repeat_count": 2,
+  "requested_public_artifact_count": 50,
+  "passed_public_artifact_count": 50,
+  "failed_public_artifact_count": 0,
+  "artifact_class_counts": {
+    "dynamic_range": 1,
+    "float": 7,
+    "full_integer": 34,
+    "weight_only": 8
+  },
+  "kernel_quantization_granularity_counts": {
+    "not_assessed": 9,
+    "not_quantized": 7,
+    "per_axis_kernel_observed": 30,
+    "per_tensor_kernel_observed": 4
+  },
+  "interface_quantization_contract_summary": {
+    "schema": "deepbom.interface_quantization_contract_corpus_summary.v1",
+    "public_artifact_count": 50,
+    "parameter_count": 114,
+    "complete_quantized_parameter_count": 62,
+    "unquantized_parameter_count": 52,
+    "invalid_or_incomplete_parameter_count": 0,
+    "per_tensor_parameter_count": 62,
+    "per_axis_parameter_count": 0,
+    "artifacts_with_complete_quantized_interface": 32,
+    "artifacts_with_multiple_complete_interface_contracts": 30,
+    "dtype_shape_signatures_with_multiple_affine_contracts": 6,
+    "interpretation_boundary": "A group proves that direction, dtype, and shape do not uniquely determine the serialized affine contract across hash-identified public artifacts. It does not prove that any deployed harness is mismatched or that task accuracy changes.",
+    "ledger_sha256": "c1bc50876b9e8929c3a0d40af39f50b9217c387fb89cbf7e83cd71617a93d6b0"
+  },
+  "interpretation_boundary": "The kernel-granularity aggregate is separate from the external input/output parameter ledger. Per-axis kernel observation does not imply a per-axis external model parameter."
+}
