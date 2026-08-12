@@ -54,17 +54,34 @@ def interpreter_parameters(filename):
 
 
 def expected_parameters(parameters):
-    return [{
-        "direction": parameter["direction"],
-        "ordinal": parameter["ordinal"],
-        "tensor_index": parameter["tensor_index"],
-        "dtype": parameter["dtype"],
-        "shape": parameter["shape"],
-        "scales": parameter["quantization"].get("scales", []),
-        "zero_points": parameter["quantization"].get("zero_points", []),
-        "quantized_dimension":
-            parameter["quantization"].get("quantized_dimension") or 0,
-    } for parameter in parameters]
+    rows = []
+    for parameter in parameters:
+        quantization = parameter.get("quantization")
+        if quantization is None:
+            quantization = {
+                "scales": parameter.get("scales", []),
+                "zero_points": parameter.get("zero_points", []),
+                "quantized_dimension": parameter.get(
+                    "quantized_dimension", 0
+                ),
+            }
+        rows.append({
+            "direction": parameter["direction"],
+            "ordinal": parameter["ordinal"],
+            "tensor_index": parameter["tensor_index"],
+            "dtype": parameter["dtype"],
+            "shape": parameter["shape"],
+            "scales": quantization.get("scales", []),
+            "zero_points": quantization.get("zero_points", []),
+            "quantized_dimension": (
+                quantization.get("quantized_dimension") or 0
+            ),
+        })
+    return rows
+
+
+def parameter_subject(parameter):
+    return parameter.get("qualified_id") or parameter.get("published_file_id")
 
 
 def main():
@@ -89,7 +106,7 @@ def main():
     expected = {}
     for parameter in ledger["parameters"]:
         expected.setdefault(parameter["artifact_sha256"], {
-            "qualified_id": parameter["qualified_id"],
+            "qualified_id": parameter_subject(parameter),
             "parameters": [],
         })["parameters"].append(parameter)
     for artifact in expected.values():
@@ -125,11 +142,17 @@ def main():
 
     missing = sorted(set(expected) - set(located))
     result = {
-        "schema": "deepbom.public_litert_interface_verification.v1",
+        "schema": (
+            "tensor_quantization_metadata_study."
+            "litert_interface_verification.v1"
+        ),
         "parser": f"ai-edge-litert {version('ai-edge-litert')}",
         "method": (
             "Interpreter.get_input_details/get_output_details only; "
             "no allocation or inference."
+        ),
+        "source_interface_contract_ledger_sha256": sha256_file(
+            args.contracts
         ),
         "expected_artifact_count": len(expected),
         "located_artifact_count": len(located),
@@ -145,7 +168,7 @@ def main():
     }
     text = json.dumps(result, indent=2) + "\n"
     if args.output:
-        args.output.write_text(text, encoding="utf-8")
+        args.output.write_bytes(text.encode("utf-8"))
     print(text, end="")
     if mismatches or (args.require_all and missing):
         raise SystemExit(1)

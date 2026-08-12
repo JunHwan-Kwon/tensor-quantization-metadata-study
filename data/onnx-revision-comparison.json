@@ -1,0 +1,364 @@
+{
+  "changed_file_count": 1,
+  "changed_interface_count": 1,
+  "pair_count": 1,
+  "pairs": [
+    {
+      "after": {
+        "commit_date": "2024-07-03T17:41:22.000Z",
+        "commit_title": "Upload quantized weights (#2)",
+        "id": "silero-vad-fp16-revision/after",
+        "path": "onnx/model_fp16.onnx",
+        "repo": "onnx-community/silero-vad",
+        "revision": "84f0d86ecb1e2a5cab7369a69880693af6ba4b1d",
+        "sha256": "7ed49c2c170aefe81e7e91b472a761d922ef3c064b6051068c2dc0ccc98bd53b",
+        "size_bytes": 1153003,
+        "variant": "fp16"
+      },
+      "before": {
+        "commit_date": "2024-07-02T11:32:06.000Z",
+        "commit_title": "Upload 2 files",
+        "id": "silero-vad-fp16-revision/before",
+        "path": "onnx/model_fp16.onnx",
+        "repo": "onnx-community/silero-vad",
+        "revision": "730bca06348210595fb8cc15f28538707e58abbb",
+        "sha256": "6d56c2b73a325fba2aa52102f15cabbc47535f7425eeba90e9e2d17e8eb6dacd",
+        "size_bytes": 1152448,
+        "variant": "fp16"
+      },
+      "causal_attribution": "not_assessed",
+      "evidence_interpretation": {
+        "claim_boundary": "This is an observed external dtype-contract revision, not an affine scale or zero-point revision. The graph changed, so converter causality and a contract-only file change are not claimed.",
+        "observed": "The same repository path changed external dtypes while shapes and affine-contract status remained unchanged. All serialized initializers remained byte-identical; the operator-count delta was confined to boundary Cast nodes and their required rewiring."
+      },
+      "file_changed": true,
+      "graph_comparison": {
+        "after_boundary_casts": [
+          {
+            "cast_to_dtype": "FLOAT16",
+            "direction": "input",
+            "external_dtype": "FLOAT",
+            "external_parameter": "input",
+            "node_inputs": [
+              "input"
+            ],
+            "node_name": "graph_input_cast0",
+            "node_outputs": [
+              "graph_input_cast_0"
+            ]
+          },
+          {
+            "cast_to_dtype": "FLOAT16",
+            "direction": "input",
+            "external_dtype": "FLOAT",
+            "external_parameter": "state",
+            "node_inputs": [
+              "state"
+            ],
+            "node_name": "graph_input_cast1",
+            "node_outputs": [
+              "graph_input_cast_1"
+            ]
+          },
+          {
+            "cast_to_dtype": "FLOAT",
+            "direction": "output",
+            "external_dtype": "FLOAT",
+            "external_parameter": "output",
+            "node_inputs": [
+              "graph_output_cast_0"
+            ],
+            "node_name": "graph_output_cast0",
+            "node_outputs": [
+              "output"
+            ]
+          },
+          {
+            "cast_to_dtype": "FLOAT",
+            "direction": "output",
+            "external_dtype": "FLOAT",
+            "external_parameter": "stateN",
+            "node_inputs": [
+              "graph_output_cast_1"
+            ],
+            "node_name": "graph_output_cast1",
+            "node_outputs": [
+              "stateN"
+            ]
+          }
+        ],
+        "after_graph_count": 31,
+        "after_node_count": 164,
+        "before_boundary_casts": [],
+        "before_graph_count": 31,
+        "before_node_count": 160,
+        "boundary_cast_count_delta": 4,
+        "operator_count_delta": {
+          "ai.onnx::Cast": 4
+        }
+      },
+      "graph_summary_changed_fields": [
+        "node_count"
+      ],
+      "id": "silero-vad-model-fp16-2024-07-02-to-2024-07-03",
+      "initializer_comparison": {
+        "after_count": 131,
+        "all_common_serialized_tensors_identical": true,
+        "before_count": 131,
+        "byte_identical_common_count": 131,
+        "common_count": 131,
+        "dtype_changed_count": 0,
+        "key_sets_equal": true,
+        "only_after_count": 0,
+        "only_before_count": 0,
+        "serialized_tensor_changed_count": 0,
+        "shape_changed_count": 0
+      },
+      "interface_after": [
+        {
+          "contract": {
+            "reason": "External input dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "input",
+          "dtype": "FLOAT",
+          "name": "input",
+          "ordinal": 0,
+          "shape": [
+            null,
+            null
+          ]
+        },
+        {
+          "contract": {
+            "reason": "External input dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "input",
+          "dtype": "FLOAT",
+          "name": "state",
+          "ordinal": 1,
+          "shape": [
+            2,
+            null,
+            128
+          ]
+        },
+        {
+          "contract": {
+            "reason": "External input dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "input",
+          "dtype": "INT64",
+          "name": "sr",
+          "ordinal": 2,
+          "shape": []
+        },
+        {
+          "contract": {
+            "reason": "External output dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "output",
+          "dtype": "FLOAT",
+          "name": "output",
+          "ordinal": 0,
+          "shape": [
+            "unk__54",
+            1
+          ]
+        },
+        {
+          "contract": {
+            "reason": "External output dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "output",
+          "dtype": "FLOAT",
+          "name": "stateN",
+          "ordinal": 1,
+          "shape": [
+            "unk__55",
+            "unk__56",
+            "unk__57"
+          ]
+        }
+      ],
+      "interface_before": [
+        {
+          "contract": {
+            "reason": "External input dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "input",
+          "dtype": "FLOAT16",
+          "name": "input",
+          "ordinal": 0,
+          "shape": [
+            null,
+            null
+          ]
+        },
+        {
+          "contract": {
+            "reason": "External input dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "input",
+          "dtype": "FLOAT16",
+          "name": "state",
+          "ordinal": 1,
+          "shape": [
+            2,
+            null,
+            128
+          ]
+        },
+        {
+          "contract": {
+            "reason": "External input dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "input",
+          "dtype": "INT64",
+          "name": "sr",
+          "ordinal": 2,
+          "shape": []
+        },
+        {
+          "contract": {
+            "reason": "External output dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "output",
+          "dtype": "FLOAT16",
+          "name": "output",
+          "ordinal": 0,
+          "shape": [
+            "unk__54",
+            1
+          ]
+        },
+        {
+          "contract": {
+            "reason": "External output dtype is not a quantized integer storage type.",
+            "status": "NOT_QUANTIZED"
+          },
+          "direction": "output",
+          "dtype": "FLOAT16",
+          "name": "stateN",
+          "ordinal": 1,
+          "shape": [
+            "unk__55",
+            "unk__56",
+            "unk__57"
+          ]
+        }
+      ],
+      "interface_change_summary": {
+        "affine_contract_change_count": 0,
+        "after_parameter_count": 5,
+        "before_parameter_count": 5,
+        "common_parameter_count": 5,
+        "dtype_change_count": 4,
+        "only_after_parameter_count": 0,
+        "only_before_parameter_count": 0,
+        "parameter_deltas": [
+          {
+            "affine_contract_after": null,
+            "affine_contract_before": null,
+            "changed_fields": [
+              "dtype"
+            ],
+            "direction": "input",
+            "dtype_after": "FLOAT",
+            "dtype_before": "FLOAT16",
+            "name": "input",
+            "ordinal": 0,
+            "shape_after": [
+              null,
+              null
+            ],
+            "shape_before": [
+              null,
+              null
+            ]
+          },
+          {
+            "affine_contract_after": null,
+            "affine_contract_before": null,
+            "changed_fields": [
+              "dtype"
+            ],
+            "direction": "input",
+            "dtype_after": "FLOAT",
+            "dtype_before": "FLOAT16",
+            "name": "state",
+            "ordinal": 1,
+            "shape_after": [
+              2,
+              null,
+              128
+            ],
+            "shape_before": [
+              2,
+              null,
+              128
+            ]
+          },
+          {
+            "affine_contract_after": null,
+            "affine_contract_before": null,
+            "changed_fields": [
+              "dtype"
+            ],
+            "direction": "output",
+            "dtype_after": "FLOAT",
+            "dtype_before": "FLOAT16",
+            "name": "output",
+            "ordinal": 0,
+            "shape_after": [
+              "unk__54",
+              1
+            ],
+            "shape_before": [
+              "unk__54",
+              1
+            ]
+          },
+          {
+            "affine_contract_after": null,
+            "affine_contract_before": null,
+            "changed_fields": [
+              "dtype"
+            ],
+            "direction": "output",
+            "dtype_after": "FLOAT",
+            "dtype_before": "FLOAT16",
+            "name": "stateN",
+            "ordinal": 1,
+            "shape_after": [
+              "unk__55",
+              "unk__56",
+              "unk__57"
+            ],
+            "shape_before": [
+              "unk__55",
+              "unk__56",
+              "unk__57"
+            ]
+          }
+        ],
+        "shape_change_count": 0,
+        "unchanged_common_parameter_count": 1
+      },
+      "interface_changed": true,
+      "model_metadata_changed_fields": [],
+      "path": "onnx/model_fp16.onnx",
+      "repo": "onnx-community/silero-vad"
+    }
+  ],
+  "schema_version": 2,
+  "tool": "scripts/compare-onnx-revisions.py"
+}

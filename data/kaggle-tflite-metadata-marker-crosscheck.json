@@ -1,0 +1,67 @@
+{
+  "schema": "tensor_quantization_metadata_study.kaggle_metadata_marker_crosscheck.v1",
+  "method": "Exact byte search for the FlatBuffer metadata name TFLITE_METADATA; no model execution.",
+  "source_materialization_sha256": "7e38bfa284bda0de92faeceffee4b1163a35fd4bbe5fe4085850b828a8013c1c",
+  "source_audit_sha256": "0186f2bdfaef66429e9b56e3bc55302ffc6358e662b4db6632e7cb27d960b7d5",
+  "assessed_artifact_count": 9,
+  "marker_present_count": 0,
+  "marker_absent_count": 9,
+  "mismatch_count": 0,
+  "artifacts": [
+    {
+      "artifact_sha256": "043c921673d93312ecc186ac980b77037e62fe9e295574fdb6445296135ad699",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    },
+    {
+      "artifact_sha256": "10df440eb575c85fb3d605aa690e0e9d0dda10ca2f00df8e0571ab5d6c34391b",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    },
+    {
+      "artifact_sha256": "38fac2fa991c6b21435ff566c1927d83cfb3c6ff05b4de308160a37e541a7c43",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    },
+    {
+      "artifact_sha256": "5c0e3d6c9044f61270cd6e84dd5b7ac26f1422418e23ad31a070a913614b1cd9",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    },
+    {
+      "artifact_sha256": "7de9c6971a7763fadebcd36afe75b2dfcca08ea4590172e3dc66cf62ce1a945f",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    },
+    {
+      "artifact_sha256": "b7470bf2b4845ad6fb689f1cbccf2b410dc6ce0b23e526e20143085c4e88b02e",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    },
+    {
+      "artifact_sha256": "ca0dc242095e3acee80ef27a6e859af429ccb6b4ba2bd82340d616db0cb24799",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    },
+    {
+      "artifact_sha256": "fa2be34552c903b6ca21cd5eb7cbf315630965570fd15c217d8cb9255a4bb3d5",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    },
+    {
+      "artifact_sha256": "fa332f4c4034439e916201c9db33283ceb8cb0e5e30dcb498d16298b376df5bd",
+      "marker_count": 0,
+      "marker_status": "ABSENT",
+      "audit_metadata_status": "ABSENT"
+    }
+  ],
+  "mismatches": []
+}

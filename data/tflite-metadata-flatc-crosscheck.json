@@ -1,0 +1,158 @@
+{
+  "artifact_count": 20,
+  "external_parameter_count": 49,
+  "flatc": {
+    "archive_name": "Windows.flatc.binary.zip",
+    "archive_sha256": "3d6383193ecd274f5de544a6e03464a87f581befb9fc1dda9cf508fa3cce3127",
+    "executable_sha256": "f550547bf7ce1ff30ce2c1ed49a059168b560766f1765effe3fc88309062e4c7",
+    "url": "https://github.com/google/flatbuffers/releases/download/v25.9.23/Windows.flatc.binary.zip",
+    "version": "25.9.23"
+  },
+  "metadata_schema_sha256": "2d3386ba124690ba1195bfc1d51ac814843bd675a7c845afab7c001c7891449e",
+  "mismatch_count": 0,
+  "results": [
+    {
+      "artifact_sha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/audio-classifier-yamnet-f32"
+    },
+    {
+      "artifact_sha256": "5e357e61672b6ef7ef27b1804ad01daaa759586f9d63f23125303ca415883bec",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/audio-embedder-yamnet-f32"
+    },
+    {
+      "artifact_sha256": "13bf6f7f35964f1e85d6cc762ee7b1952009b532b233baa5bdb4bf7441097f34",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/average-word-classifier-f32"
+    },
+    {
+      "artifact_sha256": "ff36e24d40547fe9e645e2f4e8745d1876d6e38b332d39a82f0bf0f5d1d561b3",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/deeplab-v3-f32"
+    },
+    {
+      "artifact_sha256": "4b59100025bea1235a84c1038879a6cccc9f6c49f5e41144e91e74d99e780993",
+      "external_parameter_count": 3,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/efficientdet-lite0-f16"
+    },
+    {
+      "artifact_sha256": "0720bf247bd76e6594ea28fa9c6f7c5242be774818997dbbeffc4da460c723bb",
+      "external_parameter_count": 3,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/efficientdet-lite0-int8"
+    },
+    {
+      "artifact_sha256": "6c7ab0a6e5dcbf38a8c33b960996a55a3b4300b36a018c4545801de3a3c8bde0",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/efficientnet-lite0-f32"
+    },
+    {
+      "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8"
+    },
+    {
+      "artifact_sha256": "7fc3a7dbc1cd2833b162a54577afb47ab531d9c4b799ef11d90a4c56fe4ed5ad",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/efficientnet-lite2-int8"
+    },
+    {
+      "artifact_sha256": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "external_parameter_count": 3,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/face-detector-full-f16"
+    },
+    {
+      "artifact_sha256": "2c3728e6da56f21e21a320433396fb06d40d9088f2247c05e5635a688d45dfe1",
+      "external_parameter_count": 3,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/face-detector-full-sparse-f16"
+    },
+    {
+      "artifact_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+      "external_parameter_count": 3,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/face-detector-short-f16"
+    },
+    {
+      "artifact_sha256": "2628cf3ce5f695f604cbea2841e00befcaa3624bf80caf3664bef2656d59bf84",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/hair-segmenter-f32"
+    },
+    {
+      "artifact_sha256": "7db4f23dfe1ad8966b050b419a865da451143fd43eb6b606a256aadeeb1e5417",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/language-detector-f32"
+    },
+    {
+      "artifact_sha256": "e24338a717c1b7ad8d159666677ef400babb7f33b8ad60c4d96db4ecf694cd25",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/magic-touch-segmenter-f32"
+    },
+    {
+      "artifact_sha256": "11af3c560dfeed7737cb4c03c23bf52a8403020784192d4dea0b74862a12828d",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/mobilenet-v3-large-embedder-f32"
+    },
+    {
+      "artifact_sha256": "bbbb4c51a55a53905af1daec995ca1aae355046f8839bb8c9f5ce9271394bc40",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/mobilenet-v3-small-embedder-f32"
+    },
+    {
+      "artifact_sha256": "191ac9529ae506ee0beefa6b2c945a172dab9d07d1e802a290a4e4038226658b",
+      "external_parameter_count": 2,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/selfie-segmenter-f16"
+    },
+    {
+      "artifact_sha256": "ee21e12bfdc464100c6008c865ab8294f6a04162e6ed2e11986f1175b02cfab2",
+      "external_parameter_count": 3,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/ssd-mobilenet-v2-f16"
+    },
+    {
+      "artifact_sha256": "89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749",
+      "external_parameter_count": 5,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "qualified_id": "mediapipe-public/universal-sentence-encoder-f32"
+    }
+  ],
+  "schema": "tensor_quantization_metadata_study.tflite_metadata_flatc_crosscheck.v1",
+  "source_audit_sha256": "ccdd9a2a88e485cde85ba65ecb5365605092be544d2eee367ee80dfedf9f2cd1",
+  "tool": "scripts/crosscheck-tflite-metadata-flatc.py"
+}

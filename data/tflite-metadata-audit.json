@@ -1,0 +1,5534 @@
+{
+  "artifact_count": 50,
+  "artifacts": [
+    {
+      "artifact_sha256": "6aecf177dc84a11dc5ea8f03df188039dded543fc7cd03f3b89a6541dbb37ee6",
+      "artifact_size_bytes": 23942928,
+      "cohort": "google-legacy-quantized",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "google-legacy-quantized/inception-v3-quant",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "ecc3a67c47c5a609ec35f6a58a7d97532834e43df4cb7d3f1204a8164b7d20dd",
+      "artifact_size_bytes": 4276352,
+      "cohort": "google-legacy-quantized",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
+      "artifact_size_bytes": 3577760,
+      "cohort": "google-legacy-quantized",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
+      "artifact_size_bytes": 4183312,
+      "cohort": "google-legacy-quantized",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "757c4898202f74162d63dad8cc38f65a913eba9f3c14a95be934ab528acd58a6",
+      "artifact_size_bytes": 29475520,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-densenet161-tv-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "c17dbe0e71d98e01951f029a6777822ad90af570afdcb92a831255340fa6fd04",
+      "artifact_size_bytes": 14779296,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-densenet169-tv-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "b1bdbf97fa7f5b53c180c7538d650cf47678ca7e8bfc9f9809b63d9b9ed22799",
+      "artifact_size_bytes": 20753056,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-densenet201-tv-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "6b92681ad122c19f14d7556a028e6ece72891759e27b19ac3df97768ef4dd716",
+      "artifact_size_bytes": 4006560,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v2",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "620a6b6431790233dee4d726f49a9a83b3303e65a50787475c3ebc5e74f55b7c",
+      "artifact_size_bytes": 6047760,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-large",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "b07b0db7ecce321db4c6b729f035c76d3ea5df9ccb1e5f0535af5a4ad2325efd",
+      "artifact_size_bytes": 2876640,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-small",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "87d4fb3fc27d02e19c25365d32676a6b62b113f2c347c190205d023f89b4c51d",
+      "artifact_size_bytes": 6427024,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-004-tv-tv2-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "86c3436c7988e90a15f95e21a76553dadf4f93b5c83d367a5719f89ff9d2de66",
+      "artifact_size_bytes": 8158944,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-008-tv2-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "9b417b9cb8a8ff382ac9cc0428840a4f397e61142ee11020994cf818a64d2f5c",
+      "artifact_size_bytes": 10090560,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-016-tv2-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "e40544aff44244ff6577021690d5fe5596c4375c1f386988f345d31deb9d2642",
+      "artifact_size_bytes": 16381728,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-032-tv2-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "d76d68e2ebdf867a34924eb1a27685b1bbd7eb5c0d959559cc3b239c740e2026",
+      "artifact_size_bytes": 40930688,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-080-tv2-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "58537895ce4fd18504af40d3b3456de9d52227e4f42b6e53d8ac4ebe8ab036ae",
+      "artifact_size_bytes": 55922464,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-160-tv2-in1k",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "4d0d6bd49d4f54e1e5aa1d58bf0bfaab09ec12fcc3f5d663c1ac1761774ba76f",
+      "artifact_size_bytes": 11856496,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-resnet18",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "996adbf1e1ab665ba27860b8f403e47a83052a4f120ad400e46975d49a8c9949",
+      "artifact_size_bytes": 22070368,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-resnet34",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "4b47a9100b1ccd66c1dd5ad59c2ef6bc1ae43dbda240cd9354e1ea874a6f0ebc",
+      "artifact_size_bytes": 26307408,
+      "cohort": "litert-modern-static-int8",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "litert-modern-static-int8/expanded-resnet50",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "00c87d2a5f2d96deb7a7e8afe000b786e5198384ab66f21c714dd3ed43d00f8c",
+      "artifact_size_bytes": 989616,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 278,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mbv2-w0-35",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "4791f13ac1b90b0a1a0b96177d905197a1ebd34f7bc960d92c9d3250aa5b6ef8",
+      "artifact_size_bytes": 998728,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 241,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-in0",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "bf14b8de64caba8630086250b4c6ee660c222d8e48ce3e8c791d0a402e15ef73",
+      "artifact_size_bytes": 860752,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 225,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-in1",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "38c5d0794fa40196cb5c8da4fc64b116a33f448f3db721458916b54b1e4a11fb",
+      "artifact_size_bytes": 1010840,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 289,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-in2",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "780563f544bccba413b1ee4e051159996ac8b5be39eba8bb38761a51b58a07d1",
+      "artifact_size_bytes": 1018208,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 289,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-in3",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "1ad36261efdc5185d5236e7f8306a9481d9044c56cbb72f9230fbc67ba13545e",
+      "artifact_size_bytes": 2088096,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 273,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-in4",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "ceb419a25d1f807e4a2480cb93f75e7d18fc6f147fc0addbf9288da8a957449a",
+      "artifact_size_bytes": 295768,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-person-det",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "4676b97e2fe775929b1538446a120173ab0e1a0f94a1d81e7322f09fee9b3d1d",
+      "artifact_size_bytes": 543248,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 225,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww0",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "d878916e93f59e63949ce9b8e1a585382d466d3b94d751b9f1628a7753e03c24",
+      "artifact_size_bytes": 635968,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 241,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww1",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "5180674a058b7c7b627a4142b4c6b194382e6df05ad8c8eb40a86aab8c1c7986",
+      "artifact_size_bytes": 941120,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 353,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww2",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "8cfa09445a43c8eb51b94685b72a4aa1c0318865af03636f3f81bcf7042dacc7",
+      "artifact_size_bytes": 991864,
+      "cohort": "mcunet-curated-ptq",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 326,
+          "identifier": null,
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "1f4dc096d58f7d21e3875671aee6f29b120ab84218fa47db2cb53bc9eb5b4dac",
+          "size_bytes": 5
+        }
+      ],
+      "declared_associated_file_count": null,
+      "declared_associated_file_names": null,
+      "metadata_parse_error": null,
+      "metadata_status": "ABSENT",
+      "metadata_subgraph_count": null,
+      "missing_packaged_associated_file_names": null,
+      "model_metadata": null,
+      "packaged_file_names": [],
+      "qualified_id": "mcunet-curated-ptq/proxyless-w0-3",
+      "tflite_metadata_entry_count": 0
+    },
+    {
+      "artifact_sha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
+      "artifact_size_bytes": 4126810,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 122,
+          "identifier": "0\u0000\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "fee9f7bcc2fd7f5997fa69a82c9d8a8d12b6a6239a06f85403fede00c7bbe5a5",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 123,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 1,
+          "sha256": "8c86f7566f69882187b2c13dbad93ebd37c613b652168feefb25d7f23dd3625f",
+          "size_bytes": 840
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "yamnet_label_list.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Recognizes 521 sound event classes including human sounds, animals, objects etc. 8 bit quantized internally.",
+        "license": "Apache License. Version 2.0 http://www.apache.org/licenses/LICENSE-2.0.",
+        "min_parser_version": "1.3.0",
+        "name": "yamnet/classification",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "yamnet_label_list.txt"
+      ],
+      "qualified_id": "mediapipe-public/audio-classifier-yamnet-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "5e357e61672b6ef7ef27b1804ad01daaa759586f9d63f23125303ca415883bec",
+      "artifact_size_bytes": 12900090,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 112,
+          "identifier": "0\u0000\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "fee9f7bcc2fd7f5997fa69a82c9d8a8d12b6a6239a06f85403fede00c7bbe5a5",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 113,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 1,
+          "sha256": "fb2fde4ae10567ba52b6c618dffd2c92fedc98561cc457eeebf854ee21da4c41",
+          "size_bytes": 436
+        }
+      ],
+      "declared_associated_file_count": 0,
+      "declared_associated_file_names": [],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Generate embedding for the input audio clip",
+        "license": null,
+        "min_parser_version": "1.3.0",
+        "name": "audio_embedder",
+        "version": "1"
+      },
+      "packaged_file_names": [],
+      "qualified_id": "mediapipe-public/audio-embedder-yamnet-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "13bf6f7f35964f1e85d6cc762ee7b1952009b532b233baa5bdb4bf7441097f34",
+      "artifact_size_bytes": 775706,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 13,
+          "identifier": "0\u0000\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "6189f47098c2025cfd406eebd2c0fa957095993fea7a1ed09592668da089595c",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 14,
+          "identifier": "\b\u0000\u000e\u0000",
+          "name": "CONVERSION_METADATA",
+          "ordinal": 1,
+          "sha256": "188aa48367d28a34f876c7b154d90f0d5f036d339e64fe3478ca570e1cb446ae",
+          "size_bytes": 84
+        },
+        {
+          "buffer_index": 15,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 2,
+          "sha256": "66b9de4349492e5591b83f72817e5737c5cfcd852e21f337e698521e7329bf2f",
+          "size_bytes": 796
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Classify the input text into a set of known categories.",
+        "license": null,
+        "min_parser_version": "1.2.1",
+        "name": "TextClassifier",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt",
+        "vocab.txt"
+      ],
+      "qualified_id": "mediapipe-public/average-word-classifier-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "ff36e24d40547fe9e645e2f4e8745d1876d6e38b332d39a82f0bf0f5d1d561b3",
+      "artifact_size_bytes": 2780176,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 185,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "33f289aca6edeeaf92269baaf2d6650e6267db2ad6f6edf6490a0c88a042f67f",
+          "size_bytes": 856
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Semantic image segmentation predicts whether each pixel of an image is associated with a certain class.",
+        "license": null,
+        "min_parser_version": "1.5.0",
+        "name": "ImageSegmenter",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labelmap.txt",
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/deeplab-v3-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "4b59100025bea1235a84c1038879a6cccc9f6c49f5e41144e91e74d99e780993",
+      "artifact_size_bytes": 7254339,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 777,
+          "identifier": ".0\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "589a2843718a93ae18bc26b6f5534afd96619b2b5765f91775d3f04b9d391d60",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 778,
+          "identifier": "accf",
+          "name": "reduced_precision_support",
+          "ordinal": 1,
+          "sha256": "bc3a7af302adf7f0b472498b2dd30dc4bc090375b89e15c33b29db01478ef380",
+          "size_bytes": 11
+        },
+        {
+          "buffer_index": 779,
+          "identifier": "\b\u0000\u000e\u0000",
+          "name": "CONVERSION_METADATA",
+          "ordinal": 2,
+          "sha256": "6daabf199b585b6b96a25bdfb76bce0a29bfa563d7099287ee8aa0865921733b",
+          "size_bytes": 88
+        },
+        {
+          "buffer_index": 780,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 3,
+          "sha256": "ccff9671764a0e3916116c1a6b62e8b5da8dcff332c7148ad9e98b4c2ec0fff0",
+          "size_bytes": 462052
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Identify which of a known set of objects might be present and provide information about their positions within the given image or a video stream.",
+        "license": null,
+        "min_parser_version": "1.5.0",
+        "name": "ObjectDetector",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/efficientdet-lite0-f16",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "0720bf247bd76e6594ea28fa9c6f7c5242be774818997dbbeffc4da460c723bb",
+      "artifact_size_bytes": 4602795,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 598,
+          "identifier": ".0\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "d84bf8e4d40a8021923f81a09ff4a190d9aeb9c144c4232580bb0da045531321",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 599,
+          "identifier": "\b\u0000\u000e\u0000",
+          "name": "CONVERSION_METADATA",
+          "ordinal": 1,
+          "sha256": "594997c2ca5fc285a0453d043c7b88d29983e3024be483d11b3c4471ad74493d",
+          "size_bytes": 88
+        },
+        {
+          "buffer_index": 600,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 2,
+          "sha256": "17a6d38057904a9b2a49f601b2b3ef82082d5d253e94f03a92c5b55448bde003",
+          "size_bytes": 462052
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Identify which of a known set of objects might be present and provide information about their positions within the given image or a video stream.",
+        "license": null,
+        "min_parser_version": "1.5.0",
+        "name": "ObjectDetector",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/efficientdet-lite0-int8",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "6c7ab0a6e5dcbf38a8c33b960996a55a3b4300b36a018c4545801de3a3c8bde0",
+      "artifact_size_bytes": 18582189,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 165,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "8608ff0e1650d5d7d2d841fb722e91b503730cde0fd7bfa1c2c67acaaa594ecb",
+          "size_bytes": 1088
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels_without_background.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Identify the most prominent object in the image from a set of 1,000 categories such as trees, animals, food, vehicles, person etc.",
+        "license": "Apache License. Version 2.0 http://www.apache.org/licenses/LICENSE-2.0.",
+        "min_parser_version": "1.0.0",
+        "name": "EfficientNet-lite image classifier",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels_without_background.txt"
+      ],
+      "qualified_id": "mediapipe-public/efficientnet-lite0-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "artifact_size_bytes": 5434517,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 165,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "8f22153ebfe5a9bcc98b70062ea0ef7cdc48284e27ee11532a9b182e78f58c98",
+          "size_bytes": 1092
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels_without_background.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Identify the most prominent object in the image from a set of 1,000 categories such as trees, animals, food, vehicles, person etc.",
+        "license": "Apache License. Version 2.0 http://www.apache.org/licenses/LICENSE-2.0.",
+        "min_parser_version": "1.0.0",
+        "name": "EfficientNet-lite image classifier (quantized)",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels_without_background.txt"
+      ],
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "7fc3a7dbc1cd2833b162a54577afb47ab531d9c4b799ef11d90a4c56fe4ed5ad",
+      "artifact_size_bytes": 7165461,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 215,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "cc17a1382b0e60d6c438042f43e990124903c313cc38760757f351e0a115a630",
+          "size_bytes": 1092
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels_without_background.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Identify the most prominent object in the image from a set of 1,000 categories such as trees, animals, food, vehicles, person etc.",
+        "license": "Apache License. Version 2.0 http://www.apache.org/licenses/LICENSE-2.0.",
+        "min_parser_version": "1.0.0",
+        "name": "EfficientNet-lite image classifier (quantized)",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels_without_background.txt"
+      ],
+      "qualified_id": "mediapipe-public/efficientnet-lite2-int8",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "artifact_size_bytes": 1083786,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 192,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "4037f5fc22a21314037395a61618c24e2658569666fe1f5dc3518e9f37fc0f9c",
+          "size_bytes": 620
+        }
+      ],
+      "declared_associated_file_count": 0,
+      "declared_associated_file_names": [],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": null,
+        "description": "Detects human face with frontal camera",
+        "license": null,
+        "min_parser_version": "1.0.0",
+        "name": "Full Range Face Detection",
+        "version": null
+      },
+      "packaged_file_names": [],
+      "qualified_id": "mediapipe-public/face-detector-full-f16",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "2c3728e6da56f21e21a320433396fb06d40d9088f2247c05e5635a688d45dfe1",
+      "artifact_size_bytes": 676746,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 578,
+          "identifier": "0\u0000\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "0df0d9530c485b0d403dd17001e38dbda30865c8cb5c100c51b35b164f2c645a",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 581,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 1,
+          "sha256": "4037f5fc22a21314037395a61618c24e2658569666fe1f5dc3518e9f37fc0f9c",
+          "size_bytes": 620
+        }
+      ],
+      "declared_associated_file_count": 0,
+      "declared_associated_file_names": [],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": null,
+        "description": "Detects human face with frontal camera",
+        "license": null,
+        "min_parser_version": "1.0.0",
+        "name": "Full Range Face Detection",
+        "version": null
+      },
+      "packaged_file_names": [],
+      "qualified_id": "mediapipe-public/face-detector-full-sparse-f16",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+      "artifact_size_bytes": 229746,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 88,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "4b14b17e2942ae7b2c8568264c3127c86cf2069510baa94faa531866cea0358a",
+          "size_bytes": 652
+        }
+      ],
+      "declared_associated_file_count": 0,
+      "declared_associated_file_names": [],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Detects human face with frontal camera",
+        "license": null,
+        "min_parser_version": "1.0.0",
+        "name": "Short Range Face Detection",
+        "version": "1"
+      },
+      "packaged_file_names": [],
+      "qualified_id": "mediapipe-public/face-detector-short-f16",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "2628cf3ce5f695f604cbea2841e00befcaa3624bf80caf3664bef2656d59bf84",
+      "artifact_size_bytes": 781618,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 349,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "2922186c95d8a47bae6f845095bd76f618c2685ac227b786f22e1d266eb3486e",
+          "size_bytes": 856
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Semantic image segmentation predicts whether each pixel of an image is associated with a certain class.",
+        "license": null,
+        "min_parser_version": "1.5.0",
+        "name": "ImageSegmenter",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/hair-segmenter-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "7db4f23dfe1ad8966b050b419a865da451143fd43eb6b606a256aadeeb1e5417",
+      "artifact_size_bytes": 315294,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 30,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "bfc4394a24ff4bd63869c24ac15d8aa2fa318f9a759104ed80acfb6caeec4686",
+          "size_bytes": 536
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Predicts the language of the input text.",
+        "license": null,
+        "min_parser_version": "1.0.0",
+        "name": "LangID",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/language-detector-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "e24338a717c1b7ad8d159666677ef400babb7f33b8ad60c4d96db4ecf694cd25",
+      "artifact_size_bytes": 6227884,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 345,
+          "identifier": "0\u0000\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "0df0d9530c485b0d403dd17001e38dbda30865c8cb5c100c51b35b164f2c645a",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 346,
+          "identifier": "accf",
+          "name": "reduced_precision_support",
+          "ordinal": 1,
+          "sha256": "bc3a7af302adf7f0b472498b2dd30dc4bc090375b89e15c33b29db01478ef380",
+          "size_bytes": 11
+        },
+        {
+          "buffer_index": 347,
+          "identifier": "\b\u0000\u000e\u0000",
+          "name": "CONVERSION_METADATA",
+          "ordinal": 2,
+          "sha256": "d77788894f07dfcd61867666b0cb6a8fd2eda24e9121d61b5a690f30a6a506a1",
+          "size_bytes": 88
+        },
+        {
+          "buffer_index": 350,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 3,
+          "sha256": "09ebf8a4338581138c03100df0ca32b75600fc4b75d535a8db4012e3873ea07e",
+          "size_bytes": 848
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Semantic image segmentation predicts whether each pixel of an image is associated with a certain class.",
+        "license": null,
+        "min_parser_version": "1.5.0",
+        "name": "ImageSegmenter",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/magic-touch-segmenter-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "11af3c560dfeed7737cb4c03c23bf52a8403020784192d4dea0b74862a12828d",
+      "artifact_size_bytes": 10889458,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 256,
+          "identifier": ".0\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "589a2843718a93ae18bc26b6f5534afd96619b2b5765f91775d3f04b9d391d60",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 257,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 1,
+          "sha256": "c4f89fe3d04078377b9d0e171befdc3604a6ff1bdb90f1104abd2f3cc6fb147e",
+          "size_bytes": 816
+        }
+      ],
+      "declared_associated_file_count": 0,
+      "declared_associated_file_names": [],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Creates the feature vector of the input image.",
+        "license": "Apache License. Version 2.0 http://www.apache.org/licenses/LICENSE-2.0.",
+        "min_parser_version": "1.0.0",
+        "name": "MobileNetV3 image classifier",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/mobilenet-v3-large-embedder-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "bbbb4c51a55a53905af1daec995ca1aae355046f8839bb8c9f5ce9271394bc40",
+      "artifact_size_bytes": 4117670,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 223,
+          "identifier": ".0\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "589a2843718a93ae18bc26b6f5534afd96619b2b5765f91775d3f04b9d391d60",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 224,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 1,
+          "sha256": "c4f89fe3d04078377b9d0e171befdc3604a6ff1bdb90f1104abd2f3cc6fb147e",
+          "size_bytes": 816
+        }
+      ],
+      "declared_associated_file_count": 0,
+      "declared_associated_file_names": [],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Creates the feature vector of the input image.",
+        "license": "Apache License. Version 2.0 http://www.apache.org/licenses/LICENSE-2.0.",
+        "min_parser_version": "1.0.0",
+        "name": "MobileNetV3 image classifier",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/mobilenet-v3-small-embedder-f32",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "191ac9529ae506ee0beefa6b2c945a172dab9d07d1e802a290a4e4038226658b",
+      "artifact_size_bytes": 249537,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 116,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 0,
+          "sha256": "09ebf8a4338581138c03100df0ca32b75600fc4b75d535a8db4012e3873ea07e",
+          "size_bytes": 848
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Semantic image segmentation predicts whether each pixel of an image is associated with a certain class.",
+        "license": null,
+        "min_parser_version": "1.5.0",
+        "name": "ImageSegmenter",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/selfie-segmenter-f16",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "ee21e12bfdc464100c6008c865ab8294f6a04162e6ed2e11986f1175b02cfab2",
+      "artifact_size_bytes": 5918749,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 661,
+          "identifier": "0\u0000\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "9c84ffb757dca3f0a502c3e94846064b52061decd50ae450d179dabcdf8ffda9",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 662,
+          "identifier": "accf",
+          "name": "reduced_precision_support",
+          "ordinal": 1,
+          "sha256": "bc3a7af302adf7f0b472498b2dd30dc4bc090375b89e15c33b29db01478ef380",
+          "size_bytes": 11
+        },
+        {
+          "buffer_index": 663,
+          "identifier": "\b\u0000\u000e\u0000",
+          "name": "CONVERSION_METADATA",
+          "ordinal": 2,
+          "sha256": "6daabf199b585b6b96a25bdfb76bce0a29bfa563d7099287ee8aa0865921733b",
+          "size_bytes": 88
+        },
+        {
+          "buffer_index": 664,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 3,
+          "sha256": "e12cd64510ccd5b3be9e1aacb8926808d92a2b51eed6783b27c7e1195806ccf5",
+          "size_bytes": 295736
+        }
+      ],
+      "declared_associated_file_count": 1,
+      "declared_associated_file_names": [
+        "labels.txt"
+      ],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Identify which of a known set of objects might be present and provide information about their positions within the given image or a video stream.",
+        "license": null,
+        "min_parser_version": "1.5.0",
+        "name": "ObjectDetector",
+        "version": "1"
+      },
+      "packaged_file_names": [
+        "labels.txt"
+      ],
+      "qualified_id": "mediapipe-public/ssd-mobilenet-v2-f16",
+      "tflite_metadata_entry_count": 1
+    },
+    {
+      "artifact_sha256": "89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749",
+      "artifact_size_bytes": 6120274,
+      "cohort": "mediapipe-public",
+      "core_metadata_entries": [
+        {
+          "buffer_index": 701,
+          "identifier": "0\u0000\u0000\u0000",
+          "name": "min_runtime_version",
+          "ordinal": 0,
+          "sha256": "9c84ffb757dca3f0a502c3e94846064b52061decd50ae450d179dabcdf8ffda9",
+          "size_bytes": 16
+        },
+        {
+          "buffer_index": 702,
+          "identifier": "M001",
+          "name": "TFLITE_METADATA",
+          "ordinal": 1,
+          "sha256": "2fb1e3e382e406519a1e231cd4d2a9a95c317b6bb29e015bea944b9c57830f75",
+          "size_bytes": 700
+        }
+      ],
+      "declared_associated_file_count": 0,
+      "declared_associated_file_names": [],
+      "metadata_parse_error": null,
+      "metadata_status": "PRESENT_PARSEABLE",
+      "metadata_subgraph_count": 1,
+      "missing_packaged_associated_file_names": [],
+      "model_metadata": {
+        "author": "MediaPipe",
+        "description": "Greater-than-word length text encoder for question answer retrieval..",
+        "license": null,
+        "min_parser_version": "1.0.0",
+        "name": "USE-QA TFLite model",
+        "version": "1"
+      },
+      "packaged_file_names": [],
+      "qualified_id": "mediapipe-public/universal-sentence-encoder-f32",
+      "tflite_metadata_entry_count": 1
+    }
+  ],
+  "metadata_schema": {
+    "commit": "78d10177b3bc51f81ea78d8209c557233d15df15",
+    "file_sha256": "2d3386ba124690ba1195bfc1d51ac814843bd675a7c845afab7c001c7891449e",
+    "flatbuffer_identifier": "M001",
+    "git_blob_sha1": "75e00dfcaa9615ebebe9888fe889802b619d21ce",
+    "path": "tensorflow_lite_support/metadata/metadata_schema.fbs",
+    "repository": "tensorflow/tflite-support",
+    "semantic_version": "1.5.0"
+  },
+  "parameter_count": 114,
+  "parameters": [
+    {
+      "affine_contract_sha256": "caf9dc3df8ee859e9f5f63065cf92ad520fd9225548b181f0aa0988261dacf52",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "6aecf177dc84a11dc5ea8f03df188039dded543fc7cd03f3b89a6541dbb37ee6",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T315",
+      "qualified_id": "google-legacy-quantized/inception-v3-quant",
+      "shape": [
+        1,
+        299,
+        299,
+        3
+      ],
+      "tensor_index": 315,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "022fc66019b1c31107f815b95af47bbed043aa40314a6d933d4d370f80c891ac",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "6aecf177dc84a11dc5ea8f03df188039dded543fc7cd03f3b89a6541dbb37ee6",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T316",
+      "qualified_id": "google-legacy-quantized/inception-v3-quant",
+      "shape": [
+        1,
+        1001
+      ],
+      "tensor_index": 316,
+      "tensor_metadata_name": null,
+      "tensor_name": "output"
+    },
+    {
+      "affine_contract_sha256": "caf9dc3df8ee859e9f5f63065cf92ad520fd9225548b181f0aa0988261dacf52",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "ecc3a67c47c5a609ec35f6a58a7d97532834e43df4cb7d3f1204a8164b7d20dd",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T88",
+      "qualified_id": "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "tensor_index": 88,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "77bac4e9a78f7e45b931ccff9ccb849e4ccef51eda44fdfe13221ad41b51aa64",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "ecc3a67c47c5a609ec35f6a58a7d97532834e43df4cb7d3f1204a8164b7d20dd",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T87",
+      "qualified_id": "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+      "shape": [
+        1,
+        1001
+      ],
+      "tensor_index": 87,
+      "tensor_metadata_name": null,
+      "tensor_name": "MobilenetV1/Predictions/Reshape_1"
+    },
+    {
+      "affine_contract_sha256": "caf9dc3df8ee859e9f5f63065cf92ad520fd9225548b181f0aa0988261dacf52",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T171",
+      "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "tensor_index": 171,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "fd9168008a929b3062e4402c0c65c64dd2f70dd7050463f9312f1cb91c732fe9",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T172",
+      "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+      "shape": [
+        1,
+        1001
+      ],
+      "tensor_index": 172,
+      "tensor_metadata_name": null,
+      "tensor_name": "output"
+    },
+    {
+      "affine_contract_sha256": "caf9dc3df8ee859e9f5f63065cf92ad520fd9225548b181f0aa0988261dacf52",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T175",
+      "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
+      "shape": [
+        1,
+        300,
+        300,
+        3
+      ],
+      "tensor_index": 175,
+      "tensor_metadata_name": null,
+      "tensor_name": "normalized_input_image_tensor"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T167",
+      "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
+      "shape": [],
+      "tensor_index": 167,
+      "tensor_metadata_name": null,
+      "tensor_name": "TFLite_Detection_PostProcess"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T168",
+      "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
+      "shape": [],
+      "tensor_index": 168,
+      "tensor_metadata_name": null,
+      "tensor_name": "TFLite_Detection_PostProcess:1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 2,
+      "parameter_id": "output:2:T169",
+      "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
+      "shape": [],
+      "tensor_index": 169,
+      "tensor_metadata_name": null,
+      "tensor_name": "TFLite_Detection_PostProcess:2"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
+      "cohort": "google-legacy-quantized",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 3,
+      "parameter_id": "output:3:T170",
+      "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
+      "shape": [],
+      "tensor_index": 170,
+      "tensor_metadata_name": null,
+      "tensor_name": "TFLite_Detection_PostProcess:3"
+    },
+    {
+      "affine_contract_sha256": "11c57599b4e9bf98d31ed65ad1a2039b28866528b1516fcc07c28a0fd565d2aa",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "757c4898202f74162d63dad8cc38f65a913eba9f3c14a95be934ab528acd58a6",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T903",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet161-tv-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 903,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "ddcd9782a54b2dc53c279b85e1feb3f3a4d8ea42e84982b2feb1c7c167ffd05d",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "757c4898202f74162d63dad8cc38f65a913eba9f3c14a95be934ab528acd58a6",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T327",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet161-tv-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 327,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "11c57599b4e9bf98d31ed65ad1a2039b28866528b1516fcc07c28a0fd565d2aa",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "c17dbe0e71d98e01951f029a6777822ad90af570afdcb92a831255340fa6fd04",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T947",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet169-tv-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 947,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "c5ae6998886d3758839d773177003d2d3db4baef03a85468e460f0ac5bf043ca",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "c17dbe0e71d98e01951f029a6777822ad90af570afdcb92a831255340fa6fd04",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T343",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet169-tv-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 343,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "11c57599b4e9bf98d31ed65ad1a2039b28866528b1516fcc07c28a0fd565d2aa",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "b1bdbf97fa7f5b53c180c7538d650cf47678ca7e8bfc9f9809b63d9b9ed22799",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T1123",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet201-tv-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 1123,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "8ae482cb71484a17190d0301e7b705d27b1a352828db7afd3a92ada4ead275de",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "b1bdbf97fa7f5b53c180c7538d650cf47678ca7e8bfc9f9809b63d9b9ed22799",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T407",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet201-tv-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 407,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "dd2065aa81c6462a0d6ee3c30c886c2a0602932991c8d8049562cbfaf7621041",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "6b92681ad122c19f14d7556a028e6ece72891759e27b19ac3df97768ef4dd716",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T184",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v2",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 184,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "13e2ed5b0b40bd03ce0c9fc3b1c05c61d756da3672ef8c90c252efc7d6ebeafc",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "6b92681ad122c19f14d7556a028e6ece72891759e27b19ac3df97768ef4dd716",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T127",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v2",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 127,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "dd2065aa81c6462a0d6ee3c30c886c2a0602932991c8d8049562cbfaf7621041",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "620a6b6431790233dee4d726f49a9a83b3303e65a50787475c3ebc5e74f55b7c",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T286",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-large",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 286,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "19b97dde193a846ed3e95d9bdbd9abdf07a07a383529a5351f7cefad81a6c969",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "620a6b6431790233dee4d726f49a9a83b3303e65a50787475c3ebc5e74f55b7c",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T158",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-large",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 158,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear_1"
+    },
+    {
+      "affine_contract_sha256": "dd2065aa81c6462a0d6ee3c30c886c2a0602932991c8d8049562cbfaf7621041",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "b07b0db7ecce321db4c6b729f035c76d3ea5df9ccb1e5f0535af5a4ad2325efd",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T256",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-small",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 256,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "00dab52e5b0baea8f8ddebdaa625c272edda96bbd7c3a956d5ed4f80ef267674",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "b07b0db7ecce321db4c6b729f035c76d3ea5df9ccb1e5f0535af5a4ad2325efd",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T138",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-small",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 138,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear_1"
+    },
+    {
+      "affine_contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "87d4fb3fc27d02e19c25365d32676a6b62b113f2c347c190205d023f89b4c51d",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T2511",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-004-tv-tv2-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 2511,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "d7bb2de82c8434f913a8c78dbf0347500439470e7b46c45308c52df4703ddc71",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "87d4fb3fc27d02e19c25365d32676a6b62b113f2c347c190205d023f89b4c51d",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T2390",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-004-tv-tv2-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 2390,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "86c3436c7988e90a15f95e21a76553dadf4f93b5c83d367a5719f89ff9d2de66",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T2361",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-008-tv2-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 2361,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "3f4d3b0f5db98a4b81cea31b36a052354dcfd0b24c4b3d77542147519204e496",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "86c3436c7988e90a15f95e21a76553dadf4f93b5c83d367a5719f89ff9d2de66",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T2270",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-008-tv2-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 2270,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "9b417b9cb8a8ff382ac9cc0428840a4f397e61142ee11020994cf818a64d2f5c",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T1875",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-016-tv2-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 1875,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "78adc9e0e78ddef54ae9ce4cb26672cd5b8741a07cf9e12507b501c6973e0a7c",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "9b417b9cb8a8ff382ac9cc0428840a4f397e61142ee11020994cf818a64d2f5c",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1774",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-016-tv2-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1774,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "e40544aff44244ff6577021690d5fe5596c4375c1f386988f345d31deb9d2642",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T1488",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-032-tv2-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 1488,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "8aea7e33fd4f0841686958875df7e38316efc121ef455e52bdcd13e11798f605",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "e40544aff44244ff6577021690d5fe5596c4375c1f386988f345d31deb9d2642",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1352",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-032-tv2-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1352,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "d76d68e2ebdf867a34924eb1a27685b1bbd7eb5c0d959559cc3b239c740e2026",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T938",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-080-tv2-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 938,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "2736bf8a4d442b8e898c247b51d9bea5a6a09030d4437b8b845287713aa7c4d2",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "d76d68e2ebdf867a34924eb1a27685b1bbd7eb5c0d959559cc3b239c740e2026",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T810",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-080-tv2-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 810,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "fd7d6cda44ec28d95f523a7b32e590aa95045cd08df611a70628a7426080a5f1",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "58537895ce4fd18504af40d3b3456de9d52227e4f42b6e53d8ac4ebe8ab036ae",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T1041",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-160-tv2-in1k",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 1041,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "bcebf97685946c17824bce3ecb5fb6e4df768075d6119c95dde48a90dee7b1b1",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "58537895ce4fd18504af40d3b3456de9d52227e4f42b6e53d8ac4ebe8ab036ae",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T920",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-160-tv2-in1k",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 920,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "dd2065aa81c6462a0d6ee3c30c886c2a0602932991c8d8049562cbfaf7621041",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "4d0d6bd49d4f54e1e5aa1d58bf0bfaab09ec12fcc3f5d663c1ac1761774ba76f",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T88",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet18",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 88,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "bdd450b9f405190ec8d6114ca9e1732584c680d8ec8a1691af2b66766fc477f8",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "4d0d6bd49d4f54e1e5aa1d58bf0bfaab09ec12fcc3f5d663c1ac1761774ba76f",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T44",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet18",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 44,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "dd2065aa81c6462a0d6ee3c30c886c2a0602932991c8d8049562cbfaf7621041",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "996adbf1e1ab665ba27860b8f403e47a83052a4f120ad400e46975d49a8c9949",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T144",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet34",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 144,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "b62a3214aa85b754da1e0bf187c9647d3292f80c21b2a49ac5dbb8a748f9ed14",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "996adbf1e1ab665ba27860b8f403e47a83052a4f120ad400e46975d49a8c9949",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T68",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet34",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 68,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "065244a76f82e523da7f9c4524c2282c857f8681b22fc21968578c14ecd975f5",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "4b47a9100b1ccd66c1dd5ad59c2ef6bc1ae43dbda240cd9354e1ea874a6f0ebc",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T195",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet50",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "tensor_index": 195,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::x"
+    },
+    {
+      "affine_contract_sha256": "dcdb6b3550ec19d96a3f76f28747e2ef0ac72c20e26dd8f2e0bea09d097e8bc8",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "4b47a9100b1ccd66c1dd5ad59c2ef6bc1ae43dbda240cd9354e1ea874a6f0ebc",
+      "cohort": "litert-modern-static-int8",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T86",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet50",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 86,
+      "tensor_metadata_name": null,
+      "tensor_name": "g0::linear"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "00c87d2a5f2d96deb7a7e8afe000b786e5198384ab66f21c714dd3ed43d00f8c",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T276",
+      "qualified_id": "mcunet-curated-ptq/mbv2-w0-35",
+      "shape": [
+        1,
+        144,
+        144,
+        3
+      ],
+      "tensor_index": 276,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "e2743dd84d5e1c12146938b1d42971ec2ffef278ada25f30a0de26705031afd6",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "00c87d2a5f2d96deb7a7e8afe000b786e5198384ab66f21c714dd3ed43d00f8c",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mbv2-w0-35",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "4791f13ac1b90b0a1a0b96177d905197a1ebd34f7bc960d92c9d3250aa5b6ef8",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T239",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in0",
+      "shape": [
+        1,
+        48,
+        48,
+        3
+      ],
+      "tensor_index": 239,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "b90ff780b916bf7647e2d29e456aa86a92dae924a22af46a4ed79dd67e94c320",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "4791f13ac1b90b0a1a0b96177d905197a1ebd34f7bc960d92c9d3250aa5b6ef8",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in0",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "bf14b8de64caba8630086250b4c6ee660c222d8e48ce3e8c791d0a402e15ef73",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T223",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in1",
+      "shape": [
+        1,
+        96,
+        96,
+        3
+      ],
+      "tensor_index": 223,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "585f878c4e532cb56fe1c862c9c77cb00b9a43ae30dfbc65a068d1faece399b2",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "bf14b8de64caba8630086250b4c6ee660c222d8e48ce3e8c791d0a402e15ef73",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in1",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "38c5d0794fa40196cb5c8da4fc64b116a33f448f3db721458916b54b1e4a11fb",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T287",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in2",
+      "shape": [
+        1,
+        160,
+        160,
+        3
+      ],
+      "tensor_index": 287,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "f74c757a454f1f67ed1633742bbaf3270c86238f66794534874eb9c31ad15db0",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "38c5d0794fa40196cb5c8da4fc64b116a33f448f3db721458916b54b1e4a11fb",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in2",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "5a6fc64bb769bd7f21cbefe9486e54fa4f433f1162fb443e053f024fd4570b68",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "780563f544bccba413b1ee4e051159996ac8b5be39eba8bb38761a51b58a07d1",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T287",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in3",
+      "shape": [
+        1,
+        176,
+        176,
+        3
+      ],
+      "tensor_index": 287,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "c29b54c13700958fde8f514622890f6277f096f2463004f8ef7c1303841d441f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "780563f544bccba413b1ee4e051159996ac8b5be39eba8bb38761a51b58a07d1",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in3",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "1ad36261efdc5185d5236e7f8306a9481d9044c56cbb72f9230fbc67ba13545e",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T271",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in4",
+      "shape": [
+        1,
+        160,
+        160,
+        3
+      ],
+      "tensor_index": 271,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "721139389a909a05bd9eb96d4343b97f2aa5f70b5abc613770c914146f76d3f2",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "1ad36261efdc5185d5236e7f8306a9481d9044c56cbb72f9230fbc67ba13545e",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in4",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ceb419a25d1f807e4a2480cb93f75e7d18fc6f147fc0addbf9288da8a957449a",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T68",
+      "qualified_id": "mcunet-curated-ptq/mcunet-person-det",
+      "shape": [
+        1,
+        128,
+        160,
+        3
+      ],
+      "tensor_index": 68,
+      "tensor_metadata_name": null,
+      "tensor_name": "input_0_f.1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ceb419a25d1f807e4a2480cb93f75e7d18fc6f147fc0addbf9288da8a957449a",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T11",
+      "qualified_id": "mcunet-curated-ptq/mcunet-person-det",
+      "shape": [
+        1,
+        4,
+        5,
+        18
+      ],
+      "tensor_index": 11,
+      "tensor_metadata_name": null,
+      "tensor_name": "1807"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ceb419a25d1f807e4a2480cb93f75e7d18fc6f147fc0addbf9288da8a957449a",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T108",
+      "qualified_id": "mcunet-curated-ptq/mcunet-person-det",
+      "shape": [
+        1,
+        8,
+        10,
+        18
+      ],
+      "tensor_index": 108,
+      "tensor_metadata_name": null,
+      "tensor_name": "1808"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ceb419a25d1f807e4a2480cb93f75e7d18fc6f147fc0addbf9288da8a957449a",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 2,
+      "parameter_id": "output:2:T153",
+      "qualified_id": "mcunet-curated-ptq/mcunet-person-det",
+      "shape": [
+        1,
+        16,
+        20,
+        18
+      ],
+      "tensor_index": 153,
+      "tensor_metadata_name": null,
+      "tensor_name": "1809"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "4676b97e2fe775929b1538446a120173ab0e1a0f94a1d81e7322f09fee9b3d1d",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T223",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww0",
+      "shape": [
+        1,
+        64,
+        64,
+        3
+      ],
+      "tensor_index": 223,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "f6bb7a76d1b94a220c0217bf39f3a27d327e63d901e3e4de7f07eac7d9860553",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "4676b97e2fe775929b1538446a120173ab0e1a0f94a1d81e7322f09fee9b3d1d",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww0",
+      "shape": [
+        1,
+        2
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "d878916e93f59e63949ce9b8e1a585382d466d3b94d751b9f1628a7753e03c24",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T239",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww1",
+      "shape": [
+        1,
+        80,
+        80,
+        3
+      ],
+      "tensor_index": 239,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "2454ff6900cbef58999c78be40712065a0eb9c6ff1ce1ad1fc9911f73ca76320",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "d878916e93f59e63949ce9b8e1a585382d466d3b94d751b9f1628a7753e03c24",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww1",
+      "shape": [
+        1,
+        2
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "5180674a058b7c7b627a4142b4c6b194382e6df05ad8c8eb40a86aab8c1c7986",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T351",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww2",
+      "shape": [
+        1,
+        144,
+        144,
+        3
+      ],
+      "tensor_index": 351,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "f38c1940990f9116682d6587f881fe9506230a18131cf352ac9218e25a6707e1",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "5180674a058b7c7b627a4142b4c6b194382e6df05ad8c8eb40a86aab8c1c7986",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww2",
+      "shape": [
+        1,
+        2
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "fd85aad37bb50d79a5295c5e154dd392f5f3c6f5cceea601a0177708c1c5ca0f",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "8cfa09445a43c8eb51b94685b72a4aa1c0318865af03636f3f81bcf7042dacc7",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "input",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T324",
+      "qualified_id": "mcunet-curated-ptq/proxyless-w0-3",
+      "shape": [
+        1,
+        176,
+        176,
+        3
+      ],
+      "tensor_index": 324,
+      "tensor_metadata_name": null,
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "46eb981b569420fda989f05245e35685dad1c8e43f7f18bba31c1c63390a8060",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "8cfa09445a43c8eb51b94685b72a4aa1c0318865af03636f3f81bcf7042dacc7",
+      "cohort": "mcunet-curated-ptq",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NOT_ASSESSABLE"
+      },
+      "declared_associated_files": null,
+      "direction": "output",
+      "dtype": "INT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "METADATA_ABSENT",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No reliably mapped TensorMetadata row is available.",
+        "status": "NOT_ASSESSABLE",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T1",
+      "qualified_id": "mcunet-curated-ptq/proxyless-w0-3",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": null,
+      "tensor_name": "Reshape"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "AUDIO"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/audio-classifier-yamnet-f32",
+      "shape": [
+        15600
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "audio_clip",
+      "tensor_name": "waveform_binary"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "yamnet_label_list.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T120",
+      "qualified_id": "mediapipe-public/audio-classifier-yamnet-f32",
+      "shape": [
+        1,
+        521
+      ],
+      "tensor_index": 120,
+      "tensor_metadata_name": "scores",
+      "tensor_name": "tower0/network/layer32/final_output"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "5e357e61672b6ef7ef27b1804ad01daaa759586f9d63f23125303ca415883bec",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "AUDIO"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/audio-embedder-yamnet-f32",
+      "shape": [
+        1,
+        15600
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "audio",
+      "tensor_name": "input_1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "5e357e61672b6ef7ef27b1804ad01daaa759586f9d63f23125303ca415883bec",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T110",
+      "qualified_id": "mediapipe-public/audio-embedder-yamnet-f32",
+      "shape": [
+        1,
+        1024
+      ],
+      "tensor_index": 110,
+      "tensor_metadata_name": "embedding",
+      "tensor_name": "Identity"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "13bf6f7f35964f1e85d6cc762ee7b1952009b532b233baa5bdb4bf7441097f34",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "INT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/average-word-classifier-f32",
+      "shape": [
+        1,
+        256
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "input_text",
+      "tensor_name": "serving_default_input_1:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "13bf6f7f35964f1e85d6cc762ee7b1952009b532b233baa5bdb4bf7441097f34",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T11",
+      "qualified_id": "mediapipe-public/average-word-classifier-f32",
+      "shape": [
+        1,
+        2
+      ],
+      "tensor_index": 11,
+      "tensor_metadata_name": "score",
+      "tensor_name": "StatefulPartitionedCall:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ff36e24d40547fe9e645e2f4e8745d1876d6e38b332d39a82f0bf0f5d1d561b3",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.5
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          127.5
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T183",
+      "qualified_id": "mediapipe-public/deeplab-v3-f32",
+      "shape": [
+        1,
+        257,
+        257,
+        3
+      ],
+      "tensor_index": 183,
+      "tensor_metadata_name": "image",
+      "tensor_name": "sub_7"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ff36e24d40547fe9e645e2f4e8745d1876d6e38b332d39a82f0bf0f5d1d561b3",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "GRAYSCALE",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T168",
+      "qualified_id": "mediapipe-public/deeplab-v3-f32",
+      "shape": [
+        1,
+        257,
+        257,
+        21
+      ],
+      "tensor_index": 168,
+      "tensor_metadata_name": "segmentation_masks",
+      "tensor_name": "ResizeBilinear_3"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "4b59100025bea1235a84c1038879a6cccc9f6c49f5e41144e91e74d99e780993",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.5
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          127.5
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/efficientdet-lite0-f16",
+      "shape": [
+        1,
+        320,
+        320,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "serving_default_images:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "4b59100025bea1235a84c1038879a6cccc9f6c49f5e41144e91e74d99e780993",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T773",
+      "qualified_id": "mediapipe-public/efficientdet-lite0-f16",
+      "shape": [
+        1,
+        19206,
+        90
+      ],
+      "tensor_index": 773,
+      "tensor_metadata_name": "score",
+      "tensor_name": "StatefulPartitionedCall:1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "4b59100025bea1235a84c1038879a6cccc9f6c49f5e41144e91e74d99e780993",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "BOUNDING_BOX"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T775",
+      "qualified_id": "mediapipe-public/efficientdet-lite0-f16",
+      "shape": [
+        1,
+        19206,
+        4
+      ],
+      "tensor_index": 775,
+      "tensor_metadata_name": "location",
+      "tensor_name": "StatefulPartitionedCall:0"
+    },
+    {
+      "affine_contract_sha256": "1dbc2f7cc10c18fceace5ece21e45cfbe5ee2b90dd6c2e05b52795c678728bd7",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "0720bf247bd76e6594ea28fa9c6f7c5242be774818997dbbeffc4da460c723bb",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "normalization_and_affine_steps_declared",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.5
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          127.5
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/efficientdet-lite0-int8",
+      "shape": [
+        1,
+        320,
+        320,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "serving_default_images:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "0720bf247bd76e6594ea28fa9c6f7c5242be774818997dbbeffc4da460c723bb",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T593",
+      "qualified_id": "mediapipe-public/efficientdet-lite0-int8",
+      "shape": [
+        1,
+        19206,
+        90
+      ],
+      "tensor_index": 593,
+      "tensor_metadata_name": "score",
+      "tensor_name": "StatefulPartitionedCall:1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "0720bf247bd76e6594ea28fa9c6f7c5242be774818997dbbeffc4da460c723bb",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "BOUNDING_BOX"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T596",
+      "qualified_id": "mediapipe-public/efficientdet-lite0-int8",
+      "shape": [
+        1,
+        19206,
+        4
+      ],
+      "tensor_index": 596,
+      "tensor_metadata_name": "location",
+      "tensor_name": "StatefulPartitionedCall:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "6c7ab0a6e5dcbf38a8c33b960996a55a3b4300b36a018c4545801de3a3c8bde0",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.0
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          128.0
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/efficientnet-lite0-f32",
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "images"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "6c7ab0a6e5dcbf38a8c33b960996a55a3b4300b36a018c4545801de3a3c8bde0",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for objects that the model can recognize.",
+          "locale": null,
+          "name": "labels_without_background.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T163",
+      "qualified_id": "mediapipe-public/efficientnet-lite0-f32",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 163,
+      "tensor_metadata_name": "probability",
+      "tensor_name": "Softmax"
+    },
+    {
+      "affine_contract_sha256": "f9a317503b70e6992ed311927667ca9b7bc0191efc1379fd8e3602f648e23743",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "normalization_and_affine_steps_declared",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.0
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          128.0
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T164",
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "tensor_index": 164,
+      "tensor_metadata_name": "image",
+      "tensor_name": "images"
+    },
+    {
+      "affine_contract_sha256": "77bac4e9a78f7e45b931ccff9ccb849e4ccef51eda44fdfe13221ad41b51aa64",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for objects that the model can recognize.",
+          "locale": null,
+          "name": "labels_without_background.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T165",
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 165,
+      "tensor_metadata_name": "probability",
+      "tensor_name": "Softmax"
+    },
+    {
+      "affine_contract_sha256": "15cb08a2b4b9187a4a921565dfadbf0dd759430d5cfb1a283027acd5696bab21",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "7fc3a7dbc1cd2833b162a54577afb47ab531d9c4b799ef11d90a4c56fe4ed5ad",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "normalization_and_affine_steps_declared",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.0
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          128.0
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T214",
+      "qualified_id": "mediapipe-public/efficientnet-lite2-int8",
+      "shape": [
+        1,
+        260,
+        260,
+        3
+      ],
+      "tensor_index": 214,
+      "tensor_metadata_name": "image",
+      "tensor_name": "images"
+    },
+    {
+      "affine_contract_sha256": "77bac4e9a78f7e45b931ccff9ccb849e4ccef51eda44fdfe13221ad41b51aa64",
+      "affine_contract_status": "complete",
+      "artifact_sha256": "7fc3a7dbc1cd2833b162a54577afb47ab531d9c4b799ef11d90a4c56fe4ed5ad",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for objects that the model can recognize.",
+          "locale": null,
+          "name": "labels_without_background.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "UINT8",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T215",
+      "qualified_id": "mediapipe-public/efficientnet-lite2-int8",
+      "shape": [
+        1,
+        1000
+      ],
+      "tensor_index": 215,
+      "tensor_metadata_name": "probability",
+      "tensor_name": "Softmax"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.5
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          127.5
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/face-detector-full-f16",
+      "shape": [
+        1,
+        192,
+        192,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T365",
+      "qualified_id": "mediapipe-public/face-detector-full-f16",
+      "shape": [
+        1,
+        2304,
+        16
+      ],
+      "tensor_index": 365,
+      "tensor_metadata_name": "raw boxes/keypoints",
+      "tensor_name": "reshaped_regressor_face_4"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T364",
+      "qualified_id": "mediapipe-public/face-detector-full-f16",
+      "shape": [
+        1,
+        2304,
+        1
+      ],
+      "tensor_index": 364,
+      "tensor_metadata_name": "scores",
+      "tensor_name": "reshaped_classifier_face_4"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "2c3728e6da56f21e21a320433396fb06d40d9088f2247c05e5635a688d45dfe1",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.5
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          127.5
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/face-detector-full-sparse-f16",
+      "shape": [
+        1,
+        192,
+        192,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "input_1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "2c3728e6da56f21e21a320433396fb06d40d9088f2247c05e5635a688d45dfe1",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T576",
+      "qualified_id": "mediapipe-public/face-detector-full-sparse-f16",
+      "shape": [
+        1,
+        2304,
+        16
+      ],
+      "tensor_index": 576,
+      "tensor_metadata_name": "raw boxes/keypoints",
+      "tensor_name": "Identity"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "2c3728e6da56f21e21a320433396fb06d40d9088f2247c05e5635a688d45dfe1",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T562",
+      "qualified_id": "mediapipe-public/face-detector-full-sparse-f16",
+      "shape": [
+        1,
+        2304,
+        1
+      ],
+      "tensor_index": 562,
+      "tensor_metadata_name": "scores",
+      "tensor_name": "Identity_1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.5
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          127.5
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/face-detector-short-f16",
+      "shape": [
+        1,
+        128,
+        128,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "input"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T175",
+      "qualified_id": "mediapipe-public/face-detector-short-f16",
+      "shape": [
+        1,
+        896,
+        16
+      ],
+      "tensor_index": 175,
+      "tensor_metadata_name": "raw boxes/keypoints",
+      "tensor_name": "regressors"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T174",
+      "qualified_id": "mediapipe-public/face-detector-short-f16",
+      "shape": [
+        1,
+        896,
+        1
+      ],
+      "tensor_index": 174,
+      "tensor_metadata_name": "scores",
+      "tensor_name": "classificators"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "2628cf3ce5f695f604cbea2841e00befcaa3624bf80caf3664bef2656d59bf84",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          0.0
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          255.0
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/hair-segmenter-f32",
+      "shape": [
+        1,
+        512,
+        512,
+        4
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "input_1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "2628cf3ce5f695f604cbea2841e00befcaa3624bf80caf3664bef2656d59bf84",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "GRAYSCALE",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T608",
+      "qualified_id": "mediapipe-public/hair-segmenter-f32",
+      "shape": [
+        1,
+        512,
+        512,
+        2
+      ],
+      "tensor_index": 608,
+      "tensor_metadata_name": "segmentation_masks",
+      "tensor_name": "conv2d_transpose_4"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "7db4f23dfe1ad8966b050b419a865da451143fd43eb6b606a256aadeeb1e5417",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "NONE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "STRING",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/language-detector-f32",
+      "shape": [
+        1
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "Placeholder",
+      "tensor_name": "Placeholder"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "7db4f23dfe1ad8966b050b419a865da451143fd43eb6b606a256aadeeb1e5417",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T28",
+      "qualified_id": "mediapipe-public/language-detector-f32",
+      "shape": [
+        1,
+        111
+      ],
+      "tensor_index": 28,
+      "tensor_metadata_name": "score",
+      "tensor_name": "pod/Softmax"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "e24338a717c1b7ad8d159666677ef400babb7f33b8ad60c4d96db4ecf694cd25",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          0.0
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          255.0
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/magic-touch-segmenter-f32",
+      "shape": [
+        1,
+        512,
+        512,
+        4
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "input_1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "e24338a717c1b7ad8d159666677ef400babb7f33b8ad60c4d96db4ecf694cd25",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "GRAYSCALE",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T343",
+      "qualified_id": "mediapipe-public/magic-touch-segmenter-f32",
+      "shape": [
+        1,
+        512,
+        512,
+        1
+      ],
+      "tensor_index": 343,
+      "tensor_metadata_name": "segmentation_masks",
+      "tensor_name": "Identity"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "11af3c560dfeed7737cb4c03c23bf52a8403020784192d4dea0b74862a12828d",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          0.0
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          255.0
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/mobilenet-v3-large-embedder-f32",
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "serving_default_inputs:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "11af3c560dfeed7737cb4c03c23bf52a8403020784192d4dea0b74862a12828d",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T254",
+      "qualified_id": "mediapipe-public/mobilenet-v3-large-embedder-f32",
+      "shape": [
+        1,
+        1280
+      ],
+      "tensor_index": 254,
+      "tensor_metadata_name": "feature",
+      "tensor_name": "StatefulPartitionedCall:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "bbbb4c51a55a53905af1daec995ca1aae355046f8839bb8c9f5ce9271394bc40",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          0.0
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          255.0
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/mobilenet-v3-small-embedder-f32",
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "serving_default_inputs:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "bbbb4c51a55a53905af1daec995ca1aae355046f8839bb8c9f5ce9271394bc40",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T221",
+      "qualified_id": "mediapipe-public/mobilenet-v3-small-embedder-f32",
+      "shape": [
+        1,
+        1024
+      ],
+      "tensor_index": 221,
+      "tensor_metadata_name": "feature",
+      "tensor_name": "StatefulPartitionedCall:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "191ac9529ae506ee0beefa6b2c945a172dab9d07d1e802a290a4e4038226658b",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          0.0
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          255.0
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/selfie-segmenter-f16",
+      "shape": [
+        1,
+        256,
+        256,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "input_1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "191ac9529ae506ee0beefa6b2c945a172dab9d07d1e802a290a4e4038226658b",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "GRAYSCALE",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T249",
+      "qualified_id": "mediapipe-public/selfie-segmenter-f16",
+      "shape": [
+        1,
+        256,
+        256,
+        1
+      ],
+      "tensor_index": 249,
+      "tensor_metadata_name": "segmentation_masks",
+      "tensor_name": "activation_10"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ee21e12bfdc464100c6008c865ab8294f6a04162e6ed2e11986f1175b02cfab2",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": "RGB",
+        "type": "IMAGE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": "scalar_broadcast",
+        "mean": [
+          127.5
+        ],
+        "reason": "Scalar mean and standard deviation broadcast to all channels.",
+        "status": "PRESENT_VALID",
+        "std": [
+          127.5
+        ]
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/ssd-mobilenet-v2-f16",
+      "shape": [
+        1,
+        256,
+        256,
+        3
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "image",
+      "tensor_name": "serving_default_inputs:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ee21e12bfdc464100c6008c865ab8294f6a04162e6ed2e11986f1175b02cfab2",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "BOUNDING_BOX"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T659",
+      "qualified_id": "mediapipe-public/ssd-mobilenet-v2-f16",
+      "shape": [
+        1,
+        12276,
+        4
+      ],
+      "tensor_index": 659,
+      "tensor_metadata_name": "location",
+      "tensor_name": "StatefulPartitionedCall:0"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "ee21e12bfdc464100c6008c865ab8294f6a04162e6ed2e11986f1175b02cfab2",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [
+        {
+          "description": "Labels for categories that the model can recognize.",
+          "locale": null,
+          "name": "labels.txt",
+          "type": "TENSOR_AXIS_LABELS",
+          "version": null
+        }
+      ],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T657",
+      "qualified_id": "mediapipe-public/ssd-mobilenet-v2-f16",
+      "shape": [
+        1,
+        12276,
+        91
+      ],
+      "tensor_index": 657,
+      "tensor_metadata_name": "score",
+      "tensor_name": "StatefulPartitionedCall:1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "STRING",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/universal-sentence-encoder-f32",
+      "shape": [
+        1
+      ],
+      "tensor_index": 0,
+      "tensor_metadata_name": "inp_text",
+      "tensor_name": "ParseExample/ParseExampleV2:1"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "STRING",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "input:1:T1",
+      "qualified_id": "mediapipe-public/universal-sentence-encoder-f32",
+      "shape": [
+        1
+      ],
+      "tensor_index": 1,
+      "tensor_metadata_name": "res_context",
+      "tensor_name": "ParseExample/ParseExampleV2:2"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "input",
+      "dtype": "STRING",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 2,
+      "parameter_id": "input:2:T2",
+      "qualified_id": "mediapipe-public/universal-sentence-encoder-f32",
+      "shape": [
+        1
+      ],
+      "tensor_index": 2,
+      "tensor_metadata_name": "res_text",
+      "tensor_name": "ParseExample/ParseExampleV2:3"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 0,
+      "parameter_id": "output:0:T407",
+      "qualified_id": "mediapipe-public/universal-sentence-encoder-f32",
+      "shape": [
+        1,
+        100
+      ],
+      "tensor_index": 407,
+      "tensor_metadata_name": "query_encoding",
+      "tensor_name": "Final/EncodeQuery/mul"
+    },
+    {
+      "affine_contract_sha256": "225a7edf66752cb76b869e0e507846dd75683cca0a1055994d2b515b55a55b54",
+      "affine_contract_status": "not_quantized",
+      "artifact_sha256": "89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749",
+      "cohort": "mediapipe-public",
+      "combined_numeric_input_mapping_status": "not_established",
+      "content": {
+        "color_space": null,
+        "type": "FEATURE"
+      },
+      "declared_associated_files": [],
+      "direction": "output",
+      "dtype": "FLOAT32",
+      "full_preprocessing_pipeline_status": "NOT_ASSESSABLE",
+      "metadata_mapping_status": "MAPPED_BY_DIRECTION_AND_ORDINAL",
+      "normalization": {
+        "cardinality": null,
+        "mean": null,
+        "reason": "No explicit NormalizationOptions process unit is declared.",
+        "status": "ABSENT",
+        "std": null
+      },
+      "ordinal": 1,
+      "parameter_id": "output:1:T699",
+      "qualified_id": "mediapipe-public/universal-sentence-encoder-f32",
+      "shape": [
+        1,
+        100
+      ],
+      "tensor_index": 699,
+      "tensor_metadata_name": "response_encoding",
+      "tensor_name": "Final/EncodeResult/mul"
+    }
+  ],
+  "schema": "tensor_quantization_metadata_study.tflite_metadata_audit.v1",
+  "source_artifact_manifest_sha256": "070088294218b4bd3dfc411ad87e95582e12870f03ffab264cc0b1ecd5af117b",
+  "source_interface_ledger_sha256": "acaf33bb9a512c5a197157ce6311c45bea041e112b38e8e464449b15b6a39010",
+  "summary": {
+    "artifact_count": 50,
+    "artifact_metadata_status_counts": {
+      "ABSENT": 30,
+      "PRESENT_PARSEABLE": 20
+    },
+    "artifact_with_missing_packaged_associated_file_count": 0,
+    "artifact_with_parseable_tflite_metadata_count": 20,
+    "artifact_with_valid_input_normalization_count": 15,
+    "cohort_results": {
+      "google-legacy-quantized": {
+        "artifact_count": 4,
+        "input_parameter_count": 4,
+        "mapped_input_metadata_count": 0,
+        "parseable_tflite_metadata_count": 0,
+        "quantized_input_count": 4,
+        "valid_input_normalization_count": 0
+      },
+      "litert-modern-static-int8": {
+        "artifact_count": 15,
+        "input_parameter_count": 15,
+        "mapped_input_metadata_count": 0,
+        "parseable_tflite_metadata_count": 0,
+        "quantized_input_count": 15,
+        "valid_input_normalization_count": 0
+      },
+      "mcunet-curated-ptq": {
+        "artifact_count": 11,
+        "input_parameter_count": 11,
+        "mapped_input_metadata_count": 0,
+        "parseable_tflite_metadata_count": 0,
+        "quantized_input_count": 10,
+        "valid_input_normalization_count": 0
+      },
+      "mediapipe-public": {
+        "artifact_count": 20,
+        "input_parameter_count": 22,
+        "mapped_input_metadata_count": 22,
+        "parseable_tflite_metadata_count": 20,
+        "quantized_input_count": 3,
+        "valid_input_normalization_count": 15
+      }
+    },
+    "external_parameter_count": 114,
+    "input_normalization_status_counts": {
+      "ABSENT": 7,
+      "NOT_ASSESSABLE": 30,
+      "PRESENT_VALID": 15
+    },
+    "input_parameter_count": 52,
+    "interpretation_boundary": "NormalizationOptions describes one out-of-graph processing step. It is separate from core tensor affine metadata and does not by itself establish a complete application preprocessing pipeline.",
+    "mapped_image_input_count": 15,
+    "mapped_image_input_with_valid_normalization_count": 15,
+    "model_metadata_field_presence_counts": {
+      "author": 18,
+      "description": 20,
+      "license": 6,
+      "min_parser_version": 20,
+      "name": 20,
+      "version": 18
+    },
+    "parameter_mapping_status_counts": {
+      "MAPPED_BY_DIRECTION_AND_ORDINAL": 49,
+      "METADATA_ABSENT": 65
+    },
+    "quantized_input_count": 32,
+    "quantized_input_with_valid_normalization_count": 3
+  },
+  "tool": "scripts/audit-tflite-metadata.py"
+}

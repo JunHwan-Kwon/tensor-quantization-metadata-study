@@ -1,0 +1,5 @@
+cohort,artifact_count,input_parameter_count,quantized_input_count,parseable_tflite_metadata_count,mapped_input_metadata_count,valid_input_normalization_count
+google-legacy-quantized,4,4,4,0,0,0
+litert-modern-static-int8,15,15,15,0,0,0
+mcunet-curated-ptq,11,11,10,0,0,0
+mediapipe-public,20,22,3,20,22,15

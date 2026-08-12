@@ -1,0 +1,12 @@
+metric,count,denominator,analysis_unit,proportion
+curated_artifacts,50,50,artifact,1.0
+external_parameters,114,114,external_parameter,1.0
+complete_affine_external_parameters,62,114,external_parameter,0.5438596491
+unquantized_external_parameters,52,114,external_parameter,0.4561403509
+per_tensor_affine_external_parameters,62,62,complete_affine_external_parameter,1.0
+per_axis_affine_external_parameters,0,62,complete_affine_external_parameter,0.0
+artifacts_with_complete_affine_interface,32,50,artifact,0.64
+multi_artifact_signature_groups_with_multiple_contracts,6,9,direction_dtype_shape_group,0.6666666667
+artifacts_with_parseable_tflite_metadata,20,50,artifact,0.4
+mapped_image_inputs_with_valid_normalization,15,15,mapped_image_input,1.0
+quantized_inputs_with_valid_normalization,3,32,quantized_input,0.09375

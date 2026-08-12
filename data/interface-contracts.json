@@ -1,5 +1,5 @@
 {
-  "schema": "deepbom.public_interface_contract_ledger.v1",
+  "schema": "tensor_quantization_metadata_study.interface_contract_ledger.v1",
   "corpus_id": "quant-policy-boundary-public-50-2026-07-30",
   "parameter_count": 114,
   "parameters": [
@@ -20,7 +20,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -61,7 +60,6 @@
         1001
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -104,7 +102,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -145,7 +142,6 @@
         1001
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -188,7 +184,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -229,7 +224,6 @@
         1001
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -272,7 +266,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -310,7 +303,6 @@
       "dtype": "FLOAT32",
       "shape": [],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -338,7 +330,6 @@
       "dtype": "FLOAT32",
       "shape": [],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -366,7 +357,6 @@
       "dtype": "FLOAT32",
       "shape": [],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -394,7 +384,6 @@
       "dtype": "FLOAT32",
       "shape": [],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -432,7 +421,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -476,7 +464,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -524,7 +511,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -568,7 +554,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -616,7 +601,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -660,7 +644,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -708,7 +691,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -752,7 +734,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -800,7 +781,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -844,7 +824,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -892,7 +871,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -936,7 +914,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -984,7 +961,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1028,7 +1004,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1076,7 +1051,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1120,7 +1094,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1168,7 +1141,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1212,7 +1184,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1260,7 +1231,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1304,7 +1274,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1352,7 +1321,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1396,7 +1364,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1444,7 +1411,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1488,7 +1454,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1536,7 +1501,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1580,7 +1544,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1628,7 +1591,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1672,7 +1634,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1720,7 +1681,6 @@
         224,
         224
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1764,7 +1724,6 @@
         1,
         1000
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1807,7 +1766,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1848,7 +1806,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1891,7 +1848,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1932,7 +1888,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -1975,7 +1930,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2016,7 +1970,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2059,7 +2012,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2100,7 +2052,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2143,7 +2094,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2184,7 +2134,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2227,7 +2176,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2268,7 +2216,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2311,7 +2258,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2344,7 +2290,6 @@
         18
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2377,7 +2322,6 @@
         18
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2410,7 +2354,6 @@
         18
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2443,7 +2386,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2484,7 +2426,6 @@
         2
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2527,7 +2468,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2568,7 +2508,6 @@
         2
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2611,7 +2550,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2652,7 +2590,6 @@
         2
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2695,7 +2632,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2736,7 +2672,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -2776,7 +2711,6 @@
         15600
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2807,7 +2741,6 @@
         521
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2841,7 +2774,6 @@
         -1,
         15600
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2872,7 +2804,6 @@
         1024
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2906,7 +2837,6 @@
         -1,
         256
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2940,7 +2870,6 @@
         -1,
         2
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -2973,7 +2902,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3006,7 +2934,6 @@
         21
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3039,7 +2966,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3071,7 +2997,6 @@
         90
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3103,7 +3028,6 @@
         4
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3136,7 +3060,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -3178,7 +3101,6 @@
         90
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3210,7 +3132,6 @@
         4
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3243,7 +3164,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3274,7 +3194,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3307,7 +3226,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -3348,7 +3266,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -3391,7 +3308,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -3432,7 +3348,6 @@
         1000
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "complete",
         "scheme": "affine",
@@ -3475,7 +3390,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3507,7 +3421,6 @@
         16
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3539,7 +3452,6 @@
         1
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3572,7 +3484,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3604,7 +3515,6 @@
         16
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3636,7 +3546,6 @@
         1
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3669,7 +3578,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3701,7 +3609,6 @@
         16
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3733,7 +3640,6 @@
         1
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3766,7 +3672,6 @@
         4
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3799,7 +3704,6 @@
         2
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3829,7 +3733,6 @@
         1
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3860,7 +3763,6 @@
         111
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3893,7 +3795,6 @@
         4
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3926,7 +3827,6 @@
         1
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3964,7 +3864,6 @@
         224,
         3
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -3998,7 +3897,6 @@
         -1,
         1280
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4036,7 +3934,6 @@
         224,
         3
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4070,7 +3967,6 @@
         -1,
         1024
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4103,7 +3999,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4136,7 +4031,6 @@
         1
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4169,7 +4063,6 @@
         3
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4201,7 +4094,6 @@
         4
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4233,7 +4125,6 @@
         91
       ],
       "shape_signature": [],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4265,7 +4156,6 @@
       "shape_signature": [
         -1
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4297,7 +4187,6 @@
       "shape_signature": [
         -1
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4329,7 +4218,6 @@
       "shape_signature": [
         -1
       ],
-      "source_data_to_tensor_preprocessing_status": "not_embedded_in_artifact",
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4363,7 +4251,6 @@
         -1,
         100
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",
@@ -4397,7 +4284,6 @@
         -1,
         100
       ],
-      "source_data_to_tensor_preprocessing_status": null,
       "quantization": {
         "status": "not_quantized",
         "scheme": "none",

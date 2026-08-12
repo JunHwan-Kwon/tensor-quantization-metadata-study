@@ -1,0 +1,116 @@
+{
+  "schema": "tensor_quantization_metadata_study.kaggle_revision_comparison.v1",
+  "source_pair_ledger_sha256": "ce69bbe9b23de4dfefefdcc3b4b116661dff587f31d087c10df2e6ee2b363394",
+  "source_audit_sha256": "0fd99756c003647a178302854b2cdc1b9ef895f229c6beb597428192db375bb0",
+  "comparison_count": 9,
+  "classification_counts": {
+    "INTERFACE_UNCHANGED": 1,
+    "PATH_ADDED_OR_REMOVED": 8
+  },
+  "comparisons": [
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_dynamic_int8.tflite",
+      "old_version_number": 1,
+      "new_version_number": 2,
+      "old_listed_size_bytes": 2515016,
+      "new_listed_size_bytes": null,
+      "evidence_class": "PATH_ADDED_OR_REMOVED",
+      "classification": "PATH_ADDED_OR_REMOVED"
+    },
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_fp16.tflite",
+      "old_version_number": 1,
+      "new_version_number": 2,
+      "old_listed_size_bytes": 4483012,
+      "new_listed_size_bytes": null,
+      "evidence_class": "PATH_ADDED_OR_REMOVED",
+      "classification": "PATH_ADDED_OR_REMOVED"
+    },
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_full_int8.tflite",
+      "old_version_number": 1,
+      "new_version_number": 2,
+      "old_listed_size_bytes": 2718560,
+      "new_listed_size_bytes": null,
+      "evidence_class": "PATH_ADDED_OR_REMOVED",
+      "classification": "PATH_ADDED_OR_REMOVED"
+    },
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_qad_int8.tflite",
+      "old_version_number": 1,
+      "new_version_number": 2,
+      "old_listed_size_bytes": null,
+      "new_listed_size_bytes": 2716144,
+      "evidence_class": "PATH_ADDED_OR_REMOVED",
+      "classification": "PATH_ADDED_OR_REMOVED"
+    },
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_seqkd_ptq_int8.tflite",
+      "old_version_number": 1,
+      "new_version_number": 2,
+      "old_listed_size_bytes": null,
+      "new_listed_size_bytes": 2709864,
+      "evidence_class": "PATH_ADDED_OR_REMOVED",
+      "classification": "PATH_ADDED_OR_REMOVED"
+    },
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_qad_int8.tflite",
+      "old_version_number": 2,
+      "new_version_number": 3,
+      "old_listed_size_bytes": 2716144,
+      "new_listed_size_bytes": 2716144,
+      "evidence_class": "PENDING_ARTIFACT_ASSESSMENT",
+      "classification": "INTERFACE_UNCHANGED",
+      "old_artifact_sha256": "770b65d5174bf156f1e47b821b98a833de81c56de0f0be1f822d9df1eb7a2045",
+      "new_artifact_sha256": "abe876b8a5b26959ae1589941312de0732e496070cac8016c80ec056a8d69569",
+      "dtype_shape_deltas": [],
+      "affine_deltas": [],
+      "initializer_comparison": {
+        "old_initializer_count": 107,
+        "new_initializer_count": 107,
+        "shared_initializer_count": 107,
+        "changed_shared_initializer_count": 106,
+        "old_only_initializer_count": 0,
+        "new_only_initializer_count": 0,
+        "sets_and_bytes_identical": false
+      },
+      "causal_attribution": "NOT_INFERRED"
+    },
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_seqkd_ptq_int8.tflite",
+      "old_version_number": 2,
+      "new_version_number": 3,
+      "old_listed_size_bytes": 2709864,
+      "new_listed_size_bytes": null,
+      "evidence_class": "PATH_ADDED_OR_REMOVED",
+      "classification": "PATH_ADDED_OR_REMOVED"
+    },
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_qad_int8.tflite",
+      "old_version_number": 3,
+      "new_version_number": 4,
+      "old_listed_size_bytes": 2716144,
+      "new_listed_size_bytes": null,
+      "evidence_class": "PATH_ADDED_OR_REMOVED",
+      "classification": "PATH_ADDED_OR_REMOVED"
+    },
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "logical_path": "model_realworld_int8.tflite",
+      "old_version_number": 3,
+      "new_version_number": 4,
+      "old_listed_size_bytes": null,
+      "new_listed_size_bytes": 2722336,
+      "evidence_class": "PATH_ADDED_OR_REMOVED",
+      "classification": "PATH_ADDED_OR_REMOVED"
+    }
+  ]
+}

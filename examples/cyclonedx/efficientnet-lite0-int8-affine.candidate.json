@@ -1,0 +1,72 @@
+{
+  "status": "candidate-not-schema-validated",
+  "evidenceGrade": "OBSERVED_CROSS_CHECKED",
+  "artifact": {
+    "name": "Google MediaPipe EfficientNet-Lite0 int8",
+    "sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+    "source": "https://storage.googleapis.com/mediapipe-models/image_classifier/efficientnet_lite0/int8/1/efficientnet_lite0.tflite?generation=1682480006900522"
+  },
+  "candidateModelParameters": {
+    "inputs": [
+      {
+        "name": "images",
+        "modality": "image",
+        "format": {
+          "dataType": "uint8",
+          "encoding": "raw"
+        },
+        "properties": [
+          {
+            "name": "cdx:ai-ml:model:parameter:quantization:scheme",
+            "value": "affine_asymmetric"
+          },
+          {
+            "name": "cdx:ai-ml:model:parameter:quantization:granularity",
+            "value": "per-tensor"
+          },
+          {
+            "name": "cdx:ai-ml:model:parameter:quantization:scale",
+            "value": "0.012566016986966133"
+          },
+          {
+            "name": "cdx:ai-ml:model:parameter:quantization:zeroPoint",
+            "value": "131"
+          }
+        ],
+        "shape": [1, 224, 224, 3],
+        "processingStage": "processed",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Softmax",
+        "modality": "other",
+        "format": {
+          "dataType": "uint8",
+          "encoding": "raw"
+        },
+        "properties": [
+          {
+            "name": "cdx:ai-ml:model:parameter:quantization:scheme",
+            "value": "affine_asymmetric"
+          },
+          {
+            "name": "cdx:ai-ml:model:parameter:quantization:granularity",
+            "value": "per-tensor"
+          },
+          {
+            "name": "cdx:ai-ml:model:parameter:quantization:scale",
+            "value": "0.00390625"
+          },
+          {
+            "name": "cdx:ai-ml:model:parameter:quantization:zeroPoint",
+            "value": "0"
+          }
+        ],
+        "shape": [1, 1000],
+        "processingStage": "raw"
+      }
+    ]
+  }
+}

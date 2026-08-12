@@ -1,0 +1,33 @@
+{
+  "schema": "tensor_quantization_metadata_study.kaggle_frame_stability.v1",
+  "before_snapshot_sha256": "5d9c1e340e5014e926b3cee9641825a4fb7a44027b8a4062fd478c2b8b8653d5",
+  "after_snapshot_sha256": "0957994dd1ca0a3190a1b795be8e5b96b209a8c69afdd28fdb13d256c35e9c74",
+  "status": "STABLE",
+  "population_frame_changed": false,
+  "before_population_frame": {
+    "frame_type": "MODEL_ID_BOUNDED_PUBLIC_REGISTRY_COHORT",
+    "history_scope": "all",
+    "model_id_min_inclusive": 700000,
+    "model_id_max_exclusive": 725000,
+    "lower_boundary_covered": true,
+    "upper_boundary_covered": true,
+    "selected_model_count": 1966
+  },
+  "after_population_frame": {
+    "frame_type": "MODEL_ID_BOUNDED_PUBLIC_REGISTRY_COHORT",
+    "history_scope": "all",
+    "model_id_min_inclusive": 700000,
+    "model_id_max_exclusive": 725000,
+    "lower_boundary_covered": true,
+    "upper_boundary_covered": true,
+    "selected_model_count": 1966
+  },
+  "before_variation_count": 1985,
+  "after_variation_count": 1985,
+  "added_models": [],
+  "removed_models": [],
+  "changed_model_enumeration_statuses": [],
+  "added_variations": [],
+  "removed_variations": [],
+  "changed_variations": []
+}

@@ -1,0 +1,2854 @@
+{
+  "inputs": [
+    {
+      "artifact_sha256": "6aecf177dc84a11dc5ea8f03df188039dded543fc7cd03f3b89a6541dbb37ee6",
+      "candidate_ranking": [
+        "center_128_div_128",
+        "minus_one_to_one_255",
+        "center_127_5_div_127_5",
+        "unit_interval",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.5,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.00451496891930833
+        },
+        "center_128_div_128": {
+          "alignment_class": "exact_lattice_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 256,
+          "max_abs_continuous_code_displacement": 0.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0,
+          "mean_abs_continuous_code_displacement": 0.0,
+          "nearest_storage_code_match_count": 256,
+          "reachable_storage_code_count": 256,
+          "rms_real_error_if_bytes_passed_directly": 0.0
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.4999999999999998,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.004514968919308329
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.99609375,
+          "clipping_source_value_count": 255,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32513.0,
+          "max_abs_real_error_if_bytes_passed_directly": 254.0078125,
+          "mean_abs_continuous_code_displacement": 16320.5,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 2,
+          "rms_real_error_if_bytes_passed_directly": 147.0833009080428
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0078125,
+          "clipping_source_value_count": 2,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.0,
+          "max_abs_real_error_if_bytes_passed_directly": 1.0,
+          "mean_abs_continuous_code_displacement": 64.50000000000001,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.5801734803464249
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "center_128_div_128",
+      "dtype": "UINT8",
+      "exact_candidate_count": 1,
+      "exact_candidates": [
+        "center_128_div_128"
+      ],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T315",
+      "qualified_id": "google-legacy-quantized/inception-v3-quant",
+      "scale": 0.0078125,
+      "shape": [
+        1,
+        299,
+        299,
+        3
+      ],
+      "task": "image-classification",
+      "zero_point": 128
+    },
+    {
+      "artifact_sha256": "ecc3a67c47c5a609ec35f6a58a7d97532834e43df4cb7d3f1204a8164b7d20dd",
+      "candidate_ranking": [
+        "center_128_div_128",
+        "minus_one_to_one_255",
+        "center_127_5_div_127_5",
+        "unit_interval",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.5,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.00451496891930833
+        },
+        "center_128_div_128": {
+          "alignment_class": "exact_lattice_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 256,
+          "max_abs_continuous_code_displacement": 0.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0,
+          "mean_abs_continuous_code_displacement": 0.0,
+          "nearest_storage_code_match_count": 256,
+          "reachable_storage_code_count": 256,
+          "rms_real_error_if_bytes_passed_directly": 0.0
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.4999999999999998,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.004514968919308329
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.99609375,
+          "clipping_source_value_count": 255,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32513.0,
+          "max_abs_real_error_if_bytes_passed_directly": 254.0078125,
+          "mean_abs_continuous_code_displacement": 16320.5,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 2,
+          "rms_real_error_if_bytes_passed_directly": 147.0833009080428
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0078125,
+          "clipping_source_value_count": 2,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.0,
+          "max_abs_real_error_if_bytes_passed_directly": 1.0,
+          "mean_abs_continuous_code_displacement": 64.50000000000001,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.5801734803464249
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "center_128_div_128",
+      "dtype": "UINT8",
+      "exact_candidate_count": 1,
+      "exact_candidates": [
+        "center_128_div_128"
+      ],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T88",
+      "qualified_id": "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+      "scale": 0.0078125,
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "task": "image-classification",
+      "zero_point": 128
+    },
+    {
+      "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
+      "candidate_ranking": [
+        "center_128_div_128",
+        "minus_one_to_one_255",
+        "center_127_5_div_127_5",
+        "unit_interval",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.5,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.00451496891930833
+        },
+        "center_128_div_128": {
+          "alignment_class": "exact_lattice_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 256,
+          "max_abs_continuous_code_displacement": 0.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0,
+          "mean_abs_continuous_code_displacement": 0.0,
+          "nearest_storage_code_match_count": 256,
+          "reachable_storage_code_count": 256,
+          "rms_real_error_if_bytes_passed_directly": 0.0
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.4999999999999998,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.004514968919308329
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.99609375,
+          "clipping_source_value_count": 255,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32513.0,
+          "max_abs_real_error_if_bytes_passed_directly": 254.0078125,
+          "mean_abs_continuous_code_displacement": 16320.5,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 2,
+          "rms_real_error_if_bytes_passed_directly": 147.0833009080428
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0078125,
+          "clipping_source_value_count": 2,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.0,
+          "max_abs_real_error_if_bytes_passed_directly": 1.0,
+          "mean_abs_continuous_code_displacement": 64.50000000000001,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.5801734803464249
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "center_128_div_128",
+      "dtype": "UINT8",
+      "exact_candidate_count": 1,
+      "exact_candidates": [
+        "center_128_div_128"
+      ],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T171",
+      "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+      "scale": 0.0078125,
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "task": "image-classification",
+      "zero_point": 128
+    },
+    {
+      "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
+      "candidate_ranking": [
+        "center_128_div_128",
+        "minus_one_to_one_255",
+        "center_127_5_div_127_5",
+        "unit_interval",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.5,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.00451496891930833
+        },
+        "center_128_div_128": {
+          "alignment_class": "exact_lattice_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 256,
+          "max_abs_continuous_code_displacement": 0.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0,
+          "mean_abs_continuous_code_displacement": 0.0,
+          "nearest_storage_code_match_count": 256,
+          "reachable_storage_code_count": 256,
+          "rms_real_error_if_bytes_passed_directly": 0.0
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.4999999999999998,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.004514968919308329
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.99609375,
+          "clipping_source_value_count": 255,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32513.0,
+          "max_abs_real_error_if_bytes_passed_directly": 254.0078125,
+          "mean_abs_continuous_code_displacement": 16320.5,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 2,
+          "rms_real_error_if_bytes_passed_directly": 147.0833009080428
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0078125,
+          "clipping_source_value_count": 2,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.0,
+          "max_abs_real_error_if_bytes_passed_directly": 1.0,
+          "mean_abs_continuous_code_displacement": 64.50000000000001,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.5801734803464249
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "center_128_div_128",
+      "dtype": "UINT8",
+      "exact_candidate_count": 1,
+      "exact_candidates": [
+        "center_128_div_128"
+      ],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T175",
+      "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
+      "scale": 0.0078125,
+      "shape": [
+        1,
+        300,
+        300,
+        3
+      ],
+      "task": "object-detection",
+      "zero_point": 128
+    },
+    {
+      "artifact_sha256": "757c4898202f74162d63dad8cc38f65a913eba9f3c14a95be934ab528acd58a6",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2185589670548,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5338620415432196,
+          "mean_abs_continuous_code_displacement": 91.97554778301367,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7092203101574706
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43541044217946,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5377529729157686,
+          "mean_abs_continuous_code_displacement": 91.86626829948628,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7081334780069302
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2185589670548,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5338620415432196,
+          "mean_abs_continuous_code_displacement": 91.97554778301367,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7092203101574706
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14198.796832738,
+          "max_abs_real_error_if_bytes_passed_directly": 254.7667430769652,
+          "mean_abs_continuous_code_displacement": 7092.507791369,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49760504479
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.97554778301367,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5474445709264746,
+          "mean_abs_continuous_code_displacement": 77.98777389150683,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5142494912783615
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T903",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet161-tv-in1k",
+      "scale": 0.017942840233445168,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "c17dbe0e71d98e01951f029a6777822ad90af570afdcb92a831255340fa6fd04",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2185589670548,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5338620415432196,
+          "mean_abs_continuous_code_displacement": 91.97554778301367,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7092203101574706
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43541044217946,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5377529729157686,
+          "mean_abs_continuous_code_displacement": 91.86626829948628,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7081334780069302
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2185589670548,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5338620415432196,
+          "mean_abs_continuous_code_displacement": 91.97554778301367,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7092203101574706
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14198.796832738,
+          "max_abs_real_error_if_bytes_passed_directly": 254.7667430769652,
+          "mean_abs_continuous_code_displacement": 7092.507791369,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49760504479
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.97554778301367,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5474445709264746,
+          "mean_abs_continuous_code_displacement": 77.98777389150683,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5142494912783615
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T947",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet169-tv-in1k",
+      "scale": 0.017942840233445168,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "b1bdbf97fa7f5b53c180c7538d650cf47678ca7e8bfc9f9809b63d9b9ed22799",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2185589670548,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5338620415432196,
+          "mean_abs_continuous_code_displacement": 91.97554778301367,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7092203101574706
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43541044217946,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5377529729157686,
+          "mean_abs_continuous_code_displacement": 91.86626829948628,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7081334780069302
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2185589670548,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5338620415432196,
+          "mean_abs_continuous_code_displacement": 91.97554778301367,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7092203101574706
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14198.796832738,
+          "max_abs_real_error_if_bytes_passed_directly": 254.7667430769652,
+          "mean_abs_continuous_code_displacement": 7092.507791369,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49760504479
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.97554778301367,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5474445709264746,
+          "mean_abs_continuous_code_displacement": 77.98777389150683,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5142494912783615
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T1123",
+      "qualified_id": "litert-modern-static-int8/expanded-densenet201-tv-in1k",
+      "scale": 0.017942840233445168,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "6b92681ad122c19f14d7556a028e6ece72891759e27b19ac3df97768ef4dd716",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.4433078941241,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4926825296133757,
+          "mean_abs_continuous_code_displacement": 92.37170522394251,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 114,
+          "rms_real_error_if_bytes_passed_directly": 1.6851969169390282
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14456.569664210681,
+          "max_abs_real_error_if_bytes_passed_directly": 254.770898507908,
+          "mean_abs_continuous_code_displacement": 7221.394207105342,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49519980221513
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 142.482966813056,
+          "max_abs_real_error_if_bytes_passed_directly": 2.511004638043689,
+          "mean_abs_continuous_code_displacement": 78.241483406528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 58,
+          "rms_real_error_if_bytes_passed_directly": 1.4920662834899592
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T184",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v2",
+      "scale": 0.017623191699385643,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "620a6b6431790233dee4d726f49a9a83b3303e65a50787475c3ebc5e74f55b7c",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.4433078941241,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4926825296133757,
+          "mean_abs_continuous_code_displacement": 92.37170522394251,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 114,
+          "rms_real_error_if_bytes_passed_directly": 1.6851969169390282
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14456.569664210681,
+          "max_abs_real_error_if_bytes_passed_directly": 254.770898507908,
+          "mean_abs_continuous_code_displacement": 7221.394207105342,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49519980221513
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 142.482966813056,
+          "max_abs_real_error_if_bytes_passed_directly": 2.511004638043689,
+          "mean_abs_continuous_code_displacement": 78.241483406528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 58,
+          "rms_real_error_if_bytes_passed_directly": 1.4920662834899592
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T286",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-large",
+      "scale": 0.017623191699385643,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "b07b0db7ecce321db4c6b729f035c76d3ea5df9ccb1e5f0535af5a4ad2325efd",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.4433078941241,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4926825296133757,
+          "mean_abs_continuous_code_displacement": 92.37170522394251,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 114,
+          "rms_real_error_if_bytes_passed_directly": 1.6851969169390282
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14456.569664210681,
+          "max_abs_real_error_if_bytes_passed_directly": 254.770898507908,
+          "mean_abs_continuous_code_displacement": 7221.394207105342,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49519980221513
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 142.482966813056,
+          "max_abs_real_error_if_bytes_passed_directly": 2.511004638043689,
+          "mean_abs_continuous_code_displacement": 78.241483406528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 58,
+          "rms_real_error_if_bytes_passed_directly": 1.4920662834899592
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T256",
+      "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-small",
+      "scale": 0.017623191699385643,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "87d4fb3fc27d02e19c25365d32676a6b62b113f2c347c190205d023f89b4c51d",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43469308270406,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5419280491769314,
+          "mean_abs_continuous_code_displacement": 91.82035729305953,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7102596895084776
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14175.38221946036,
+          "max_abs_real_error_if_bytes_passed_directly": 254.76635814085603,
+          "mean_abs_continuous_code_displacement": 7080.80048473018,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49782804900192
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.92945673342447,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5508201644993296,
+          "mean_abs_continuous_code_displacement": 77.96472836671224,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5163072420757475
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T2511",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-004-tv-tv2-in1k",
+      "scale": 0.017972450703382492,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "86c3436c7988e90a15f95e21a76553dadf4f93b5c83d367a5719f89ff9d2de66",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43469308270406,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5419280491769314,
+          "mean_abs_continuous_code_displacement": 91.82035729305953,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7102596895084776
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14175.38221946036,
+          "max_abs_real_error_if_bytes_passed_directly": 254.76635814085603,
+          "mean_abs_continuous_code_displacement": 7080.80048473018,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49782804900192
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.92945673342447,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5508201644993296,
+          "mean_abs_continuous_code_displacement": 77.96472836671224,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5163072420757475
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T2361",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-008-tv2-in1k",
+      "scale": 0.017972450703382492,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "9b417b9cb8a8ff382ac9cc0428840a4f397e61142ee11020994cf818a64d2f5c",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43469308270406,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5419280491769314,
+          "mean_abs_continuous_code_displacement": 91.82035729305953,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7102596895084776
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14175.38221946036,
+          "max_abs_real_error_if_bytes_passed_directly": 254.76635814085603,
+          "mean_abs_continuous_code_displacement": 7080.80048473018,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49782804900192
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.92945673342447,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5508201644993296,
+          "mean_abs_continuous_code_displacement": 77.96472836671224,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5163072420757475
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T1875",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-016-tv2-in1k",
+      "scale": 0.017972450703382492,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "e40544aff44244ff6577021690d5fe5596c4375c1f386988f345d31deb9d2642",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43469308270406,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5419280491769314,
+          "mean_abs_continuous_code_displacement": 91.82035729305953,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7102596895084776
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14175.38221946036,
+          "max_abs_real_error_if_bytes_passed_directly": 254.76635814085603,
+          "mean_abs_continuous_code_displacement": 7080.80048473018,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49782804900192
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.92945673342447,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5508201644993296,
+          "mean_abs_continuous_code_displacement": 77.96472836671224,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5163072420757475
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T1488",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-032-tv2-in1k",
+      "scale": 0.017972450703382492,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "d76d68e2ebdf867a34924eb1a27685b1bbd7eb5c0d959559cc3b239c740e2026",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43469308270406,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5419280491769314,
+          "mean_abs_continuous_code_displacement": 91.82035729305953,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7102596895084776
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14175.38221946036,
+          "max_abs_real_error_if_bytes_passed_directly": 254.76635814085603,
+          "mean_abs_continuous_code_displacement": 7080.80048473018,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49782804900192
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.92945673342447,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5508201644993296,
+          "mean_abs_continuous_code_displacement": 77.96472836671224,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5163072420757475
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T938",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-080-tv2-in1k",
+      "scale": 0.017972450703382492,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "58537895ce4fd18504af40d3b3456de9d52227e4f42b6e53d8ac4ebe8ab036ae",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.43469308270406,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5419280491769314,
+          "mean_abs_continuous_code_displacement": 91.82035729305953,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 112,
+          "rms_real_error_if_bytes_passed_directly": 1.7102596895084776
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.2181988807299,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5380371178043823,
+          "mean_abs_continuous_code_displacement": 91.92945673342447,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 113,
+          "rms_real_error_if_bytes_passed_directly": 1.7113457064917947
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14175.38221946036,
+          "max_abs_real_error_if_bytes_passed_directly": 254.76635814085603,
+          "mean_abs_continuous_code_displacement": 7080.80048473018,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49782804900192
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.92945673342447,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5508201644993296,
+          "mean_abs_continuous_code_displacement": 77.96472836671224,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 57,
+          "rms_real_error_if_bytes_passed_directly": 1.5163072420757475
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T1041",
+      "qualified_id": "litert-modern-static-int8/expanded-regnetx-160-tv2-in1k",
+      "scale": 0.017972450703382492,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "4d0d6bd49d4f54e1e5aa1d58bf0bfaab09ec12fcc3f5d663c1ac1761774ba76f",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.4433078941241,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4926825296133757,
+          "mean_abs_continuous_code_displacement": 92.37170522394251,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 114,
+          "rms_real_error_if_bytes_passed_directly": 1.6851969169390282
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14456.569664210681,
+          "max_abs_real_error_if_bytes_passed_directly": 254.770898507908,
+          "mean_abs_continuous_code_displacement": 7221.394207105342,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49519980221513
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 142.482966813056,
+          "max_abs_real_error_if_bytes_passed_directly": 2.511004638043689,
+          "mean_abs_continuous_code_displacement": 78.241483406528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 58,
+          "rms_real_error_if_bytes_passed_directly": 1.4920662834899592
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T88",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet18",
+      "scale": 0.017623191699385643,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "996adbf1e1ab665ba27860b8f403e47a83052a4f120ad400e46975d49a8c9949",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.4433078941241,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4926825296133757,
+          "mean_abs_continuous_code_displacement": 92.37170522394251,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 114,
+          "rms_real_error_if_bytes_passed_directly": 1.6851969169390282
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.222523178227,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4887915982408266,
+          "mean_abs_continuous_code_displacement": 92.48296681305601,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6862926692749398
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14456.569664210681,
+          "max_abs_real_error_if_bytes_passed_directly": 254.770898507908,
+          "mean_abs_continuous_code_displacement": 7221.394207105342,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.49519980221513
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 142.482966813056,
+          "max_abs_real_error_if_bytes_passed_directly": 2.511004638043689,
+          "mean_abs_continuous_code_displacement": 78.241483406528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 58,
+          "rms_real_error_if_bytes_passed_directly": 1.4920662834899592
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T144",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet34",
+      "scale": 0.017623191699385643,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "4b47a9100b1ccd66c1dd5ad59c2ef6bc1ae43dbda240cd9354e1ea874a6f0ebc",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.22341982067317,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4788191618872624,
+          "mean_abs_continuous_code_displacement": 92.59773704616686,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.681223717594311
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.44509417399735,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4827100932598114,
+          "mean_abs_continuous_code_displacement": 92.48602713583026,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.6801259613237465
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 141.22341982067317,
+          "max_abs_real_error_if_bytes_passed_directly": 2.4788191618872624,
+          "mean_abs_continuous_code_displacement": 92.59773704616686,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 115,
+          "rms_real_error_if_bytes_passed_directly": 1.681223717594311
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.98828125,
+          "clipping_source_value_count": 253,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 14514.873839273434,
+          "max_abs_real_error_if_bytes_passed_directly": 254.77181795239449,
+          "mean_abs_continuous_code_displacement": 7250.546294636717,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 4,
+          "rms_real_error_if_bytes_passed_directly": 147.4946681331447
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 142.59773704616686,
+          "max_abs_real_error_if_bytes_passed_directly": 2.5029418171620836,
+          "mean_abs_continuous_code_displacement": 78.29886852308343,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 58,
+          "rms_real_error_if_bytes_passed_directly": 1.4871656328086713
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T195",
+      "qualified_id": "litert-modern-static-int8/expanded-resnet50",
+      "scale": 0.017552465200424194,
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "task": "image-classification",
+      "zero_point": -14
+    },
+    {
+      "artifact_sha256": "00c87d2a5f2d96deb7a7e8afe000b786e5198384ab66f21c714dd3ed43d00f8c",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T276",
+      "qualified_id": "mcunet-curated-ptq/mbv2-w0-35",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        144,
+        144,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "4791f13ac1b90b0a1a0b96177d905197a1ebd34f7bc960d92c9d3250aa5b6ef8",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T239",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in0",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        48,
+        48,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "bf14b8de64caba8630086250b4c6ee660c222d8e48ce3e8c791d0a402e15ef73",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T223",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in1",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        96,
+        96,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "38c5d0794fa40196cb5c8da4fc64b116a33f448f3db721458916b54b1e4a11fb",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T287",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in2",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        160,
+        160,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "780563f544bccba413b1ee4e051159996ac8b5be39eba8bb38761a51b58a07d1",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.49803921754162,
+          "max_abs_real_error_if_bytes_passed_directly": 1.0117955806208592,
+          "mean_abs_continuous_code_displacement": 127.74901984532676,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0059061419040114
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.0,
+          "max_abs_real_error_if_bytes_passed_directly": 1.0078740119934082,
+          "mean_abs_continuous_code_displacement": 127.50000023655593,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 254,
+          "rms_real_error_if_bytes_passed_directly": 1.0039395795128292
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.49803921754162,
+          "max_abs_real_error_if_bytes_passed_directly": 1.0117955806208592,
+          "mean_abs_continuous_code_displacement": 127.74901984532674,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0059061419040114
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.99609375,
+          "clipping_source_value_count": 255,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 32386.000120643526,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0078740157187,
+          "mean_abs_continuous_code_displacement": 16193.000060321763,
+          "nearest_storage_code_match_count": 2,
+          "reachable_storage_code_count": 2,
+          "rms_real_error_if_bytes_passed_directly": 147.51896992429994
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 191.74901984532676,
+          "max_abs_real_error_if_bytes_passed_directly": 1.5098347963071337,
+          "mean_abs_continuous_code_displacement": 95.87450992266338,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9193369895022846
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T287",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in3",
+      "scale": 0.007874015718698502,
+      "shape": [
+        1,
+        176,
+        176,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": 0
+    },
+    {
+      "artifact_sha256": "1ad36261efdc5185d5236e7f8306a9481d9044c56cbb72f9230fbc67ba13545e",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T271",
+      "qualified_id": "mcunet-curated-ptq/mcunet-in4",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        160,
+        160,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "4676b97e2fe775929b1538446a120173ab0e1a0f94a1d81e7322f09fee9b3d1d",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T223",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww0",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        64,
+        64,
+        3
+      ],
+      "task": "visual_wake_words",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "d878916e93f59e63949ce9b8e1a585382d466d3b94d751b9f1628a7753e03c24",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T239",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww1",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        80,
+        80,
+        3
+      ],
+      "task": "visual_wake_words",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "5180674a058b7c7b627a4142b4c6b194382e6df05ad8c8eb40a86aab8c1c7986",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T351",
+      "qualified_id": "mcunet-curated-ptq/mcunet-vww2",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        144,
+        144,
+        3
+      ],
+      "task": "visual_wake_words",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "8cfa09445a43c8eb51b94685b72a4aa1c0318865af03636f3f81bcf7042dacc7",
+      "candidate_ranking": [
+        "unit_interval",
+        "center_128_div_128",
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.99609369109203,
+          "max_abs_real_error_if_bytes_passed_directly": 1.011734127998352,
+          "mean_abs_continuous_code_displacement": 127.74999622989003,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.0019920304358432
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 128.4999999704305,
+          "max_abs_real_error_if_bytes_passed_directly": 1.007843196625803,
+          "mean_abs_continuous_code_displacement": 127.99999621510528,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 1.003929257598089
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.498077243912,
+          "max_abs_real_error_if_bytes_passed_directly": 255.0,
+          "mean_abs_continuous_code_displacement": 16255.756851121958,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 147.51159703468267
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 190.99999621510528,
+          "max_abs_real_error_if_bytes_passed_directly": 1.4980392745933404,
+          "mean_abs_continuous_code_displacement": 95.99999810755264,
+          "nearest_storage_code_match_count": 0,
+          "reachable_storage_code_count": 128,
+          "rms_real_error_if_bytes_passed_directly": 0.9132415045291675
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "unit_interval",
+      "dtype": "INT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T324",
+      "qualified_id": "mcunet-curated-ptq/proxyless-w0-3",
+      "scale": 0.007843137718737125,
+      "shape": [
+        1,
+        176,
+        176,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": -1
+    },
+    {
+      "artifact_sha256": "0720bf247bd76e6594ea28fa9c6f7c5242be774818997dbbeffc4da460c723bb",
+      "candidate_ranking": [
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "center_128_div_128",
+        "unit_interval",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.5,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.00451496891930833
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 1.0,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.0078125
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.00390625,
+          "clipping_source_value_count": 1,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 1.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.0078125,
+          "mean_abs_continuous_code_displacement": 0.5000000000000002,
+          "nearest_storage_code_match_count": 129,
+          "reachable_storage_code_count": 255,
+          "rms_real_error_if_bytes_passed_directly": 0.004514968919308333
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 32512.0,
+          "max_abs_real_error_if_bytes_passed_directly": 254.0,
+          "mean_abs_continuous_code_displacement": 16319.5,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 2,
+          "rms_real_error_if_bytes_passed_directly": 147.07652844184847
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 1,
+          "max_abs_continuous_code_displacement": 127.0,
+          "max_abs_real_error_if_bytes_passed_directly": 0.9921875,
+          "mean_abs_continuous_code_displacement": 63.500000000000014,
+          "nearest_storage_code_match_count": 2,
+          "reachable_storage_code_count": 129,
+          "rms_real_error_if_bytes_passed_directly": 0.5734010527521584
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "center_127_5_div_127_5",
+      "dtype": "UINT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T0",
+      "qualified_id": "mediapipe-public/efficientdet-lite0-int8",
+      "scale": 0.0078125,
+      "shape": [
+        1,
+        320,
+        320,
+        3
+      ],
+      "task": "object_detection",
+      "zero_point": 127
+    },
+    {
+      "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "candidate_ranking": [
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "center_128_div_128",
+        "unit_interval",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 51.420289019405956,
+          "max_abs_real_error_if_bytes_passed_directly": 0.6461482252925634,
+          "mean_abs_continuous_code_displacement": 24.18127977583871,
+          "nearest_storage_code_match_count": 3,
+          "reachable_storage_code_count": 161,
+          "rms_real_error_if_bytes_passed_directly": 0.35178225248422723
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 51.420289019405956,
+          "max_abs_real_error_if_bytes_passed_directly": 0.6461482252925634,
+          "mean_abs_continuous_code_displacement": 24.31489499233583,
+          "nearest_storage_code_match_count": 3,
+          "reachable_storage_code_count": 160,
+          "rms_real_error_if_bytes_passed_directly": 0.35356467429204147
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 51.420289019405956,
+          "max_abs_real_error_if_bytes_passed_directly": 0.6461482252925634,
+          "mean_abs_continuous_code_displacement": 24.181279775838703,
+          "nearest_storage_code_match_count": 3,
+          "reachable_storage_code_count": 161,
+          "rms_real_error_if_bytes_passed_directly": 0.35178225248422723
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 20168.82630005148,
+          "max_abs_real_error_if_bytes_passed_directly": 253.4418138936162,
+          "mean_abs_continuous_code_displacement": 10149.913150025739,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 146.9432786535336
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 131.0,
+          "max_abs_real_error_if_bytes_passed_directly": 1.6461482252925634,
+          "mean_abs_continuous_code_displacement": 54.668289599864714,
+          "nearest_storage_code_match_count": 2,
+          "reachable_storage_code_count": 81,
+          "rms_real_error_if_bytes_passed_directly": 0.8390562690181046
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "center_127_5_div_127_5",
+      "dtype": "UINT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T164",
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+      "scale": 0.012566016986966133,
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": 131
+    },
+    {
+      "artifact_sha256": "7fc3a7dbc1cd2833b162a54577afb47ab531d9c4b799ef11d90a4c56fe4ed5ad",
+      "candidate_ranking": [
+        "center_127_5_div_127_5",
+        "minus_one_to_one_255",
+        "center_128_div_128",
+        "unit_interval",
+        "raw_storage"
+      ],
+      "candidates": {
+        "center_127_5_div_127_5": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 48.98191587138808,
+          "max_abs_real_error_if_bytes_passed_directly": 0.6045800317078829,
+          "mean_abs_continuous_code_displacement": 23.3990378602673,
+          "nearest_storage_code_match_count": 3,
+          "reachable_storage_code_count": 163,
+          "rms_real_error_if_bytes_passed_directly": 0.33396402665337727
+        },
+        "center_128_div_128": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 49.61486965364287,
+          "max_abs_real_error_if_bytes_passed_directly": 0.6123925317078829,
+          "mean_abs_continuous_code_displacement": 23.57522618695321,
+          "nearest_storage_code_match_count": 3,
+          "reachable_storage_code_count": 162,
+          "rms_real_error_if_bytes_passed_directly": 0.3365994898229535
+        },
+        "minus_one_to_one_255": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 48.98191587138808,
+          "max_abs_real_error_if_bytes_passed_directly": 0.6045800317078829,
+          "mean_abs_continuous_code_displacement": 23.3990378602673,
+          "nearest_storage_code_match_count": 3,
+          "reachable_storage_code_count": 163,
+          "rms_real_error_if_bytes_passed_directly": 0.33396402665337727
+        },
+        "raw_storage": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.9921875,
+          "clipping_source_value_count": 254,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 20529.611452796034,
+          "max_abs_real_error_if_bytes_passed_directly": 253.39541996829212,
+          "mean_abs_continuous_code_displacement": 10327.305726398017,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 3,
+          "rms_real_error_if_bytes_passed_directly": 146.88651663024658
+        },
+        "unit_interval": {
+          "alignment_class": "partial_alignment",
+          "clipping_fraction": 0.0,
+          "clipping_source_value_count": 0,
+          "exact_storage_code_count": 0,
+          "max_abs_continuous_code_displacement": 125.0,
+          "max_abs_real_error_if_bytes_passed_directly": 1.5428654151037335,
+          "mean_abs_continuous_code_displacement": 51.93705059468026,
+          "nearest_storage_code_match_count": 1,
+          "reachable_storage_code_count": 82,
+          "rms_real_error_if_bytes_passed_directly": 0.7793602680350191
+        }
+      },
+      "closest_candidate_by_rms_direct_byte_error": "center_127_5_div_127_5",
+      "dtype": "UINT8",
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "interpretation": "candidate_alignment_only_not_preprocessing_evidence",
+      "parameter_id": "input:0:T214",
+      "qualified_id": "mediapipe-public/efficientnet-lite2-int8",
+      "scale": 0.012342923320829868,
+      "shape": [
+        1,
+        260,
+        260,
+        3
+      ],
+      "task": "image_classification",
+      "zero_point": 125
+    }
+  ],
+  "method": {
+    "candidate_transforms": [
+      "raw_storage",
+      "unit_interval",
+      "minus_one_to_one_255",
+      "center_128_div_128",
+      "center_127_5_div_127_5"
+    ],
+    "claim_boundary": "Alignment does not establish the application's preprocessing pipeline or compliance with a convention.",
+    "encoding_rounding": "nearest_ties_away_from_zero",
+    "signed_int8_storage": "values 128..255 are interpreted as two's-complement bytes",
+    "source_domain": "integer pixel values 0..255"
+  },
+  "schema_version": 1,
+  "summary": {
+    "assessed_input_count": 32,
+    "closest_candidate_counts": {
+      "center_127_5_div_127_5": 3,
+      "center_128_div_128": 4,
+      "unit_interval": 25
+    },
+    "exact_alignment_counts": {
+      "center_128_div_128": 4
+    },
+    "input_count_without_exact_candidate": 28
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "selection": {
+    "artifact_count": 15,
+    "model_family_count": 5,
+    "variants_per_family": ["float", "int8", "uint8"],
+    "selection_rule": "Five small public onnx-community model families with pinned float, int8, and uint8 ONNX files; no claim of population representativeness."
+  },
+  "artifacts": [
+    {
+      "id": "mobilenet-v2-0.35-96/float",
+      "repo": "onnx-community/mobilenet_v2_0.35_96",
+      "revision": "ab466ca7c60465fd6ad144166941441c13aa25cf",
+      "path": "onnx/model.onnx",
+      "variant": "float",
+      "size_bytes": 6731656,
+      "sha256": "21e68c215414392406550be5d209aac8a4aa6c0b5611b60125b888ca8bda957b"
+    },
+    {
+      "id": "mobilenet-v2-0.35-96/int8",
+      "repo": "onnx-community/mobilenet_v2_0.35_96",
+      "revision": "ab466ca7c60465fd6ad144166941441c13aa25cf",
+      "path": "onnx/model_int8.onnx",
+      "variant": "int8",
+      "size_bytes": 1848256,
+      "sha256": "65916d260b89b3f66d15eaff693ad35be543b6883ae48aad21a4c0e4e2f07d58"
+    },
+    {
+      "id": "mobilenet-v2-0.35-96/uint8",
+      "repo": "onnx-community/mobilenet_v2_0.35_96",
+      "revision": "ab466ca7c60465fd6ad144166941441c13aa25cf",
+      "path": "onnx/model_uint8.onnx",
+      "variant": "uint8",
+      "size_bytes": 1848256,
+      "sha256": "1583455b3c8605bff2eafe9772043d2966b8ab51402204441d36eb5b60d58f94"
+    },
+    {
+      "id": "mobilenet-v1-1.0-224/float",
+      "repo": "onnx-community/mobilenet_v1_1.0_224",
+      "revision": "3abbb704553a28d93dc9fa9dbefe7c867b76e27b",
+      "path": "onnx/model.onnx",
+      "variant": "float",
+      "size_bytes": 16913045,
+      "sha256": "720d9e52492f255ee6e11600e488f624ef1d03bf99bcb510b8a600c20b3ebbda"
+    },
+    {
+      "id": "mobilenet-v1-1.0-224/int8",
+      "repo": "onnx-community/mobilenet_v1_1.0_224",
+      "revision": "3abbb704553a28d93dc9fa9dbefe7c867b76e27b",
+      "path": "onnx/model_int8.onnx",
+      "variant": "int8",
+      "size_bytes": 4335370,
+      "sha256": "9a89e23f755c7b21f0b7e63c78f0676f11939ad5d27624ebacea075a4654c4ea"
+    },
+    {
+      "id": "mobilenet-v1-1.0-224/uint8",
+      "repo": "onnx-community/mobilenet_v1_1.0_224",
+      "revision": "3abbb704553a28d93dc9fa9dbefe7c867b76e27b",
+      "path": "onnx/model_uint8.onnx",
+      "variant": "uint8",
+      "size_bytes": 4335370,
+      "sha256": "618acbb430a59920494725aebea0125098e73393cdcfbbaf268d06706abc2d20"
+    },
+    {
+      "id": "mobilenetv3-small-050/float",
+      "repo": "onnx-community/mobilenetv3_small_050.lamb_in1k",
+      "revision": "441e4dfb770b9bf00871176fc4dac7de96fe1ddc",
+      "path": "onnx/model.onnx",
+      "variant": "float",
+      "size_bytes": 6417493,
+      "sha256": "2017c361b34d864477a13e5af87dfe2eee35c81710c641245c2645222fc278a7"
+    },
+    {
+      "id": "mobilenetv3-small-050/int8",
+      "repo": "onnx-community/mobilenetv3_small_050.lamb_in1k",
+      "revision": "441e4dfb770b9bf00871176fc4dac7de96fe1ddc",
+      "path": "onnx/model_int8.onnx",
+      "variant": "int8",
+      "size_bytes": 1769397,
+      "sha256": "e303843ff8aca070ac5b4fda07998423d6c99ae1ff5709f544eace46b2dc6ed3"
+    },
+    {
+      "id": "mobilenetv3-small-050/uint8",
+      "repo": "onnx-community/mobilenetv3_small_050.lamb_in1k",
+      "revision": "441e4dfb770b9bf00871176fc4dac7de96fe1ddc",
+      "path": "onnx/model_uint8.onnx",
+      "variant": "uint8",
+      "size_bytes": 1769397,
+      "sha256": "301019e5f8efec5f0a9a78233804e426d8729cdb3990017f4ce62fc229ceb3bc"
+    },
+    {
+      "id": "yolov10n/float",
+      "repo": "onnx-community/yolov10n",
+      "revision": "57657320425ee34056408a57ad9d29c4d4815bd8",
+      "path": "onnx/model.onnx",
+      "variant": "float",
+      "size_bytes": 9386116,
+      "sha256": "a77dd863933f184a19e84361c64b788228a7c7dacc2c78939239a96ad3efca3b"
+    },
+    {
+      "id": "yolov10n/int8",
+      "repo": "onnx-community/yolov10n",
+      "revision": "57657320425ee34056408a57ad9d29c4d4815bd8",
+      "path": "onnx/model_int8.onnx",
+      "variant": "int8",
+      "size_bytes": 2650684,
+      "sha256": "81c48fd65516dd8b58c9b4f3e8922e8b4b08b63b30dae9a57173552b1f7751fa"
+    },
+    {
+      "id": "yolov10n/uint8",
+      "repo": "onnx-community/yolov10n",
+      "revision": "57657320425ee34056408a57ad9d29c4d4815bd8",
+      "path": "onnx/model_uint8.onnx",
+      "variant": "uint8",
+      "size_bytes": 2650737,
+      "sha256": "85630e74204ebed54bf990274f45625bdaae4d46f179bf072b5fda3ccf36a42e"
+    },
+    {
+      "id": "silero-vad/float",
+      "repo": "onnx-community/silero-vad",
+      "revision": "e71cae966052b992a7eca6b17738916ce0eca4ec",
+      "path": "onnx/model.onnx",
+      "variant": "float",
+      "size_bytes": 2243022,
+      "sha256": "a4a068cd6cf1ea8355b84327595838ca748ec29a25bc91fc82e6c299ccdc5808"
+    },
+    {
+      "id": "silero-vad/int8",
+      "repo": "onnx-community/silero-vad",
+      "revision": "e71cae966052b992a7eca6b17738916ce0eca4ec",
+      "path": "onnx/model_int8.onnx",
+      "variant": "int8",
+      "size_bytes": 639383,
+      "sha256": "90b026c95f054d59d7bf79387b0ed93c8950f35a4d8b741cd78d4bb23a7d2776"
+    },
+    {
+      "id": "silero-vad/uint8",
+      "repo": "onnx-community/silero-vad",
+      "revision": "e71cae966052b992a7eca6b17738916ce0eca4ec",
+      "path": "onnx/model_uint8.onnx",
+      "variant": "uint8",
+      "size_bytes": 639335,
+      "sha256": "982c96dc518784fb9d19bc7f56cc8252473b020e4f2099f32049e4ad0b3b43e7"
+    }
+  ]
+}

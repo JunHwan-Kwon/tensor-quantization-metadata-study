@@ -1,0 +1,64 @@
+{
+  "schema": "tensor_quantization_metadata_study.affine_all_pairs_models.v1",
+  "selection": {
+    "task": "ImageNet-1k image classification",
+    "external_input": "one static NHWC UINT8 image tensor with a complete per-tensor affine contract",
+    "external_output": "one 1000-class output, with an explicitly recorded background-class offset where applicable",
+    "application_input": "decoded RGB bytes",
+    "exclusions": "Models whose application preprocessing could not be bound from the public package were not used for accuracy claims."
+  },
+  "models": [
+    {
+      "qualified_id": "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+      "expected_input_shape": [1, 224, 224, 3],
+      "expected_output_shape": [1, 1001],
+      "resize_short": 256,
+      "crop_size": 224,
+      "output_label_offset": 1,
+      "output_interpretation": "serialized_probabilities",
+      "execute_as_target": false,
+      "target_exclusion_reason": "The input contract is identical to the MobileNetV2 representative contract."
+    },
+    {
+      "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+      "expected_input_shape": [1, 224, 224, 3],
+      "expected_output_shape": [1, 1001],
+      "resize_short": 256,
+      "crop_size": 224,
+      "output_label_offset": 1,
+      "output_interpretation": "softmax_logits",
+      "execute_as_target": true
+    },
+    {
+      "qualified_id": "google-legacy-quantized/inception-v3-quant",
+      "expected_input_shape": [1, 299, 299, 3],
+      "expected_output_shape": [1, 1001],
+      "resize_short": 342,
+      "crop_size": 299,
+      "output_label_offset": 1,
+      "output_interpretation": "softmax_logits",
+      "execute_as_target": false,
+      "target_exclusion_reason": "The input contract is identical to the MobileNetV2 representative contract."
+    },
+    {
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+      "expected_input_shape": [1, 224, 224, 3],
+      "expected_output_shape": [1, 1000],
+      "resize_short": 256,
+      "crop_size": 224,
+      "output_label_offset": 0,
+      "output_interpretation": "serialized_probabilities",
+      "execute_as_target": true
+    },
+    {
+      "qualified_id": "mediapipe-public/efficientnet-lite2-int8",
+      "expected_input_shape": [1, 260, 260, 3],
+      "expected_output_shape": [1, 1000],
+      "resize_short": 297,
+      "crop_size": 260,
+      "output_label_offset": 0,
+      "output_interpretation": "serialized_probabilities",
+      "execute_as_target": true
+    }
+  ]
+}

@@ -36,6 +36,8 @@ def public_files(root):
         if (
             relative.name == "SHA256SUMS"
             or ".git" in relative.parts
+            or ".venv" in relative.parts
+            or "cache" in relative.parts
             or "__pycache__" in relative.parts
             or path.suffix == ".pyc"
         ):
@@ -48,8 +50,8 @@ def write_sha256s(root):
         f"{sha256_file(root / relative)}  {relative.as_posix()}"
         for relative in public_files(root)
     ]
-    (root / "SHA256SUMS").write_text(
-        "\n".join(lines) + "\n", encoding="ascii"
+    (root / "SHA256SUMS").write_bytes(
+        ("\n".join(lines) + "\n").encode("ascii")
     )
 
 
@@ -92,6 +94,48 @@ def verify_public_ledger(root):
             encoding="utf-8"
         )
     )
+
+    expected_schemas = {
+        "artifacts": "tensor_quantization_metadata_study.public_artifacts.v1",
+        "contracts": (
+            "tensor_quantization_metadata_study.interface_contract_ledger.v1"
+        ),
+        "summary": "tensor_quantization_metadata_study.interface_summary.v1",
+        "corpus_summary": "tensor_quantization_metadata_study.corpus_summary.v1",
+        "crosscheck": (
+            "tensor_quantization_metadata_study."
+            "litert_interface_verification.v1"
+        ),
+    }
+    documents = {
+        "artifacts": artifacts,
+        "contracts": contracts,
+        "summary": summary,
+        "corpus_summary": corpus_summary,
+        "crosscheck": crosscheck,
+    }
+    for name, schema in expected_schemas.items():
+        if documents[name].get("schema") != schema:
+            fail(f"Unexpected schema for {name}")
+    artifacts_sha256 = sha256_file(root / "data/artifacts.json")
+    contracts_sha256 = sha256_file(root / "data/interface-contracts.json")
+    if summary.get("source_interface_contract_ledger_sha256") != contracts_sha256:
+        fail("Interface summary is not bound to the interface ledger")
+    if corpus_summary.get("source_artifact_manifest_sha256") != artifacts_sha256:
+        fail("Corpus summary is not bound to the artifact manifest")
+    nested_summary = corpus_summary.get(
+        "interface_quantization_contract_summary", {}
+    )
+    if (
+        nested_summary.get("source_interface_contract_ledger_sha256")
+        != contracts_sha256
+    ):
+        fail("Corpus summary is not bound to the interface ledger")
+    if (
+        crosscheck.get("source_interface_contract_ledger_sha256")
+        != contracts_sha256
+    ):
+        fail("LiteRT cross-check is not bound to the interface ledger")
 
     artifact_rows = artifacts["artifacts"]
     if len(artifact_rows) != 50:
@@ -286,6 +330,67 @@ def verify_experiments(root):
     subprocess.run(command, check=True)
 
 
+def verify_supplementary_results(root):
+    commands = [
+        [
+            sys.executable,
+            str(root / "scripts/test-kaggle-snapshot.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/test-kaggle-frame-stability.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/test-kaggle-acquisition-pipeline.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/test-kaggle-tflite-audit.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/test-kaggle-revision-comparison.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/check-kaggle-cohort-results.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/check-tflite-metadata-audit.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/check-tflite-metadata-flatc-crosscheck.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/check-onnx-pilot-results.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/check-supplementary-results.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/check-cyclonedx-candidate-examples.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/check-affine-all-pairs.py"),
+            str(root / "experiments/imagenetv2-all-pairs"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/build-paper-tables.py"),
+            "--check",
+        ],
+    ]
+    for command in commands:
+        subprocess.run(command, check=True)
+
+
 def main():
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser()
@@ -295,12 +400,14 @@ def main():
         write_sha256s(root)
     verify_public_ledger(root)
     verify_experiments(root)
+    verify_supplementary_results(root)
     verify_sha256s(root)
     print(json.dumps({
         "status": "pass",
         "artifact_count": 50,
         "interface_parameter_count": 114,
-        "experiment_count": 1,
+        "all_pairs_comparison_count": 6,
+        "all_pairs_image_count": 1000,
     }, indent=2))
 
 

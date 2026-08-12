@@ -1,7 +1,7 @@
 {
-  "schema": "deepbom.affine_contract_public_corpus_summary.v1",
+  "schema": "tensor_quantization_metadata_study.corpus_summary.v1",
   "corpus_id": "quant-policy-boundary-public-50-2026-07-30",
-  "manifest_sha256": "9ec7fdf97c8fcc8e14d3b9b5a61ffafe05d0e90e5a58005cdca51a1d886f0540",
+  "source_artifact_manifest_sha256": "070088294218b4bd3dfc411ad87e95582e12870f03ffab264cc0b1ecd5af117b",
   "analyzer_artifact_identity": {
     "wasm": {
       "size": 1717855,
@@ -29,7 +29,7 @@
     "per_tensor_kernel_observed": 4
   },
   "interface_quantization_contract_summary": {
-    "schema": "deepbom.interface_quantization_contract_corpus_summary.v1",
+    "schema": "tensor_quantization_metadata_study.interface_summary.v1",
     "public_artifact_count": 50,
     "parameter_count": 114,
     "complete_quantized_parameter_count": 62,
@@ -41,7 +41,7 @@
     "artifacts_with_multiple_complete_interface_contracts": 30,
     "dtype_shape_signatures_with_multiple_affine_contracts": 6,
     "interpretation_boundary": "A group proves that direction, dtype, and shape do not uniquely determine the serialized affine contract across hash-identified public artifacts. It does not prove that any deployed harness is mismatched or that task accuracy changes.",
-    "ledger_sha256": "c1bc50876b9e8929c3a0d40af39f50b9217c387fb89cbf7e83cd71617a93d6b0"
+    "source_interface_contract_ledger_sha256": "acaf33bb9a512c5a197157ce6311c45bea041e112b38e8e464449b15b6a39010"
   },
   "interpretation_boundary": "The kernel-granularity aggregate is separate from the external input/output parameter ledger. Per-axis kernel observation does not imply a per-axis external model parameter."
 }

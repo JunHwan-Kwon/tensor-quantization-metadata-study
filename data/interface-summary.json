@@ -1,5 +1,5 @@
 {
-  "schema": "deepbom.interface_quantization_contract_corpus_summary.v1",
+  "schema": "tensor_quantization_metadata_study.interface_summary.v1",
   "public_artifact_count": 50,
   "parameter_count": 114,
   "complete_quantized_parameter_count": 62,
@@ -861,5 +861,5 @@
     }
   ],
   "interpretation_boundary": "A group proves that direction, dtype, and shape do not uniquely determine the serialized affine contract across hash-identified public artifacts. It does not prove that any deployed harness is mismatched or that task accuracy changes.",
-  "ledger_sha256": "c1bc50876b9e8929c3a0d40af39f50b9217c387fb89cbf7e83cd71617a93d6b0"
+  "source_interface_contract_ledger_sha256": "acaf33bb9a512c5a197157ce6311c45bea041e112b38e8e464449b15b6a39010"
 }

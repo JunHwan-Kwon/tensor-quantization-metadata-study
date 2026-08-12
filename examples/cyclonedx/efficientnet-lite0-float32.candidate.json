@@ -1,0 +1,36 @@
+{
+  "status": "candidate-not-schema-validated",
+  "evidenceGrade": "OBSERVED_CROSS_CHECKED",
+  "artifact": {
+    "name": "Google MediaPipe EfficientNet-Lite0 float32",
+    "sha256": "6c7ab0a6e5dcbf38a8c33b960996a55a3b4300b36a018c4545801de3a3c8bde0",
+    "source": "https://storage.googleapis.com/mediapipe-models/image_classifier/efficientnet_lite0/float32/1/efficientnet_lite0.tflite?generation=1682480007106905"
+  },
+  "candidateModelParameters": {
+    "inputs": [
+      {
+        "name": "images",
+        "modality": "image",
+        "format": {
+          "dataType": "float32",
+          "encoding": "raw"
+        },
+        "shape": [1, 224, 224, 3],
+        "processingStage": "processed",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Softmax",
+        "modality": "other",
+        "format": {
+          "dataType": "float32",
+          "encoding": "raw"
+        },
+        "shape": [1, 1000],
+        "processingStage": "raw"
+      }
+    ]
+  }
+}

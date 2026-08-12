@@ -1,7 +1,7 @@
 {
-  "schema": "deepbom.affine_contract_public_artifacts.v1",
+  "schema": "tensor_quantization_metadata_study.public_artifacts.v1",
   "corpus_id": "quant-policy-boundary-public-50-2026-07-30",
-  "selection_policy": "Complete predeclared public subcohorts; model bytes are not redistributed. Every artifact is bound by SHA-256.",
+  "selection_policy": "Frozen criterion-based public subcohorts; model bytes are not redistributed. Every artifact is bound by SHA-256.",
   "artifact_count": 50,
   "cohort_counts": {
     "google-legacy-quantized": 4,

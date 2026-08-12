@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "pairs": [
+    {
+      "id": "silero-vad-model-fp16-2024-07-02-to-2024-07-03",
+      "repo": "onnx-community/silero-vad",
+      "path": "onnx/model_fp16.onnx",
+      "before": {
+        "id": "silero-vad-fp16-revision/before",
+        "repo": "onnx-community/silero-vad",
+        "revision": "730bca06348210595fb8cc15f28538707e58abbb",
+        "path": "onnx/model_fp16.onnx",
+        "variant": "fp16",
+        "commit_date": "2024-07-02T11:32:06.000Z",
+        "commit_title": "Upload 2 files",
+        "size_bytes": 1152448,
+        "sha256": "6d56c2b73a325fba2aa52102f15cabbc47535f7425eeba90e9e2d17e8eb6dacd"
+      },
+      "after": {
+        "id": "silero-vad-fp16-revision/after",
+        "repo": "onnx-community/silero-vad",
+        "revision": "84f0d86ecb1e2a5cab7369a69880693af6ba4b1d",
+        "path": "onnx/model_fp16.onnx",
+        "variant": "fp16",
+        "commit_date": "2024-07-03T17:41:22.000Z",
+        "commit_title": "Upload quantized weights (#2)",
+        "size_bytes": 1153003,
+        "sha256": "7ed49c2c170aefe81e7e91b472a761d922ef3c064b6051068c2dc0ccc98bd53b"
+      }
+    }
+  ]
+}

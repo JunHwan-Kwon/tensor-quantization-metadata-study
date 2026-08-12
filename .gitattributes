@@ -1,0 +1,3 @@
+# SHA-256 verification covers exact committed bytes, including preserved source
+# captures that use CRLF. Treat CR as an end-of-line marker during diff checks.
+* -text whitespace=cr-at-eol

@@ -1,0 +1,487 @@
+{
+  "schema": "tensor_quantization_metadata_study.affine_all_pairs.v1",
+  "completed_at": "2026-08-01T17:32:12.259966+00:00",
+  "provenance": {
+    "script": "measure-affine-all-pairs.py",
+    "script_sha256": "1ae8a1cb93e4d8566eaa392640f822dc3b840d4e8add15bef229ee692c697f85",
+    "base_script": "measure-affine-interface-mismatch.py",
+    "base_script_sha256": "847aa72c3c94aba878d170c4b1f6f3877b082e36def9730c45ae3bb0676790b1",
+    "model_manifest": "data/affine-all-pairs-models.json",
+    "model_manifest_sha256": "8fa0bfb191bb29bdf747ec384fc29c3140f4339dfc04f0f1c176b87b3b0e197e",
+    "artifact_ledger": "data/artifacts.json",
+    "artifact_ledger_sha256": "be9b2b7aca95745478ad9b568f9e8a0ed04fd73919e89e3275b22f4242df9c34",
+    "interface_ledger": "data/interface-contracts.json",
+    "interface_ledger_sha256": "ea5f85f39e0b3797406998d2ffeb58dc243180cfe454e90235c97bf124c6393a",
+    "python": "3.12.2 | packaged by Anaconda, Inc. | (main, Feb 27 2024, 17:28:07) [MSC v.1916 64 bit (AMD64)]",
+    "ai_edge_litert": "2.1.4",
+    "numpy": "2.4.4",
+    "pillow": "12.0.0",
+    "scipy": "1.17.0",
+    "prediction_workers": 14,
+    "interpreter_threads_per_worker": 1
+  },
+  "dataset": {
+    "id": "imagenetv2",
+    "name": "ImageNetV2 MatchedFrequency",
+    "upstream_url": "https://huggingface.co/datasets/vaishaal/ImageNetV2/resolve/d626240be2538720e83103a0e1178d24aca8b12c/imagenetv2-matched-frequency.tar.gz",
+    "source_revision": "d626240be2538720e83103a0e1178d24aca8b12c",
+    "archive_sha256": "f0c37fdf925916b19ea1323cd9a2208cdb6959ba2c32eef2a7fc393835c9ca7c",
+    "split": "matched-frequency",
+    "image_count": 1000,
+    "class_count": 1000,
+    "selection_seed": 20260731,
+    "image_ledger_sha256": "41ddc7dc38ecb47b974618562c84faa05f20946c4938b520b1c8b3343ed2b4f1"
+  },
+  "protocol": {
+    "paired": true,
+    "unit_of_substitution": "distinct affine input contract",
+    "duplicate_model_contracts_collapsed": true,
+    "identity_pairs_excluded": true,
+    "changed_variable": "input affine encoder scale and zero-point",
+    "rounding": "IEEE nearest-even via numpy.rint",
+    "integer_saturation": true,
+    "multiple_testing": "Holm adjustment across all non-identity exact McNemar tests",
+    "target_specific_spatial_preprocessing": true,
+    "target_selection": "one hash-pinned target representative per distinct input contract; additional files with an identical contract are retained as source aliases"
+  },
+  "contract_catalog": [
+    {
+      "contract_id": "affine-101a7f3c0172",
+      "contract": {
+        "dtype": "UINT8",
+        "scale": 0.0078125,
+        "zero_point": 128,
+        "qmin": 0,
+        "qmax": 255,
+        "quantized_dimension": 0
+      },
+      "model_aliases": [
+        "google-legacy-quantized/inception-v3-quant",
+        "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+        "google-legacy-quantized/mobilenet-v2-1.0-224-quant"
+      ]
+    },
+    {
+      "contract_id": "affine-7d3ac1a6b38a",
+      "contract": {
+        "dtype": "UINT8",
+        "scale": 0.012342923320829868,
+        "zero_point": 125,
+        "qmin": 0,
+        "qmax": 255,
+        "quantized_dimension": 0
+      },
+      "model_aliases": [
+        "mediapipe-public/efficientnet-lite2-int8"
+      ]
+    },
+    {
+      "contract_id": "affine-f24e926440b1",
+      "contract": {
+        "dtype": "UINT8",
+        "scale": 0.012566016986966133,
+        "zero_point": 131,
+        "qmin": 0,
+        "qmax": 255,
+        "quantized_dimension": 0
+      },
+      "model_aliases": [
+        "mediapipe-public/efficientnet-lite0-int8"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+      "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
+      "artifact_size_bytes": 3577760,
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "output_shape": [
+        1,
+        1001
+      ],
+      "resize_short": 256,
+      "crop_size": 224,
+      "input_contract_id": "affine-101a7f3c0172",
+      "output_label_offset": 1,
+      "output_interpretation": "softmax_logits",
+      "elapsed_seconds": 567.0093519999646
+    },
+    {
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+      "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "artifact_size_bytes": 5434517,
+      "input_shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "output_shape": [
+        1,
+        1000
+      ],
+      "resize_short": 256,
+      "crop_size": 224,
+      "input_contract_id": "affine-f24e926440b1",
+      "output_label_offset": 0,
+      "output_interpretation": "serialized_probabilities",
+      "elapsed_seconds": 648.1613487000577
+    },
+    {
+      "qualified_id": "mediapipe-public/efficientnet-lite2-int8",
+      "artifact_sha256": "7fc3a7dbc1cd2833b162a54577afb47ab531d9c4b799ef11d90a4c56fe4ed5ad",
+      "artifact_size_bytes": 7165461,
+      "input_shape": [
+        1,
+        260,
+        260,
+        3
+      ],
+      "output_shape": [
+        1,
+        1000
+      ],
+      "resize_short": 297,
+      "crop_size": 260,
+      "input_contract_id": "affine-7d3ac1a6b38a",
+      "output_label_offset": 0,
+      "output_interpretation": "serialized_probabilities",
+      "elapsed_seconds": 1440.820695700124
+    }
+  ],
+  "comparisons": [
+    {
+      "target_model_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+      "target_contract_id": "affine-101a7f3c0172",
+      "source_contract_id": "affine-7d3ac1a6b38a",
+      "source_model_aliases": [
+        "mediapipe-public/efficientnet-lite2-int8"
+      ],
+      "metrics": {
+        "image_count": 1000,
+        "correct_top1_accuracy": 0.581,
+        "wrong_top1_accuracy": 0.58,
+        "paired_top1_accuracy_delta": {
+          "point": -0.001,
+          "lower_95": -0.019,
+          "upper_95": 0.016,
+          "iterations": 5000,
+          "seed": 20260731
+        },
+        "correct_top5_accuracy": 0.795,
+        "wrong_top5_accuracy": 0.783,
+        "paired_top5_accuracy_delta": {
+          "point": -0.012,
+          "lower_95": -0.024,
+          "upper_95": -0.001,
+          "iterations": 5000,
+          "seed": 20260732
+        },
+        "mcnemar_exact": {
+          "correct_to_incorrect": 39,
+          "incorrect_to_correct": 38,
+          "discordant_pair_count": 77,
+          "two_sided_p_value": 1.0
+        },
+        "top1_prediction_agreement": 0.821,
+        "mean_js_divergence": 0.0323182687849137,
+        "median_js_divergence": 0.01506952880201789,
+        "p95_js_divergence": 0.11367955256645289,
+        "correct_mean_confidence": 0.6681262881339401,
+        "wrong_mean_confidence": 0.6560265603009873,
+        "correct_ece_15_bin": 0.08712628813394017,
+        "wrong_ece_15_bin": 0.08400100339604634,
+        "wrong_input_low_clip_count": 0,
+        "wrong_input_high_clip_count": 0,
+        "wrong_input_clip_fraction": 0.0
+      },
+      "mcnemar_holm": {
+        "family_size": 6,
+        "rank": 6,
+        "adjusted_p_value": 1.0,
+        "reject_at_0_05": false
+      }
+    },
+    {
+      "target_model_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+      "target_contract_id": "affine-101a7f3c0172",
+      "source_contract_id": "affine-f24e926440b1",
+      "source_model_aliases": [
+        "mediapipe-public/efficientnet-lite0-int8"
+      ],
+      "metrics": {
+        "image_count": 1000,
+        "correct_top1_accuracy": 0.581,
+        "wrong_top1_accuracy": 0.568,
+        "paired_top1_accuracy_delta": {
+          "point": -0.013,
+          "lower_95": -0.031,
+          "upper_95": 0.005,
+          "iterations": 5000,
+          "seed": 20260733
+        },
+        "correct_top5_accuracy": 0.795,
+        "wrong_top5_accuracy": 0.781,
+        "paired_top5_accuracy_delta": {
+          "point": -0.014,
+          "lower_95": -0.027,
+          "upper_95": -0.001,
+          "iterations": 5000,
+          "seed": 20260734
+        },
+        "mcnemar_exact": {
+          "correct_to_incorrect": 47,
+          "incorrect_to_correct": 34,
+          "discordant_pair_count": 81,
+          "two_sided_p_value": 0.18207674694084314
+        },
+        "top1_prediction_agreement": 0.808,
+        "mean_js_divergence": 0.03589466893131811,
+        "median_js_divergence": 0.01929343731024661,
+        "p95_js_divergence": 0.12784928620922098,
+        "correct_mean_confidence": 0.6681262881339401,
+        "wrong_mean_confidence": 0.6553360996378816,
+        "correct_ece_15_bin": 0.08712628813394017,
+        "wrong_ece_15_bin": 0.09401374375739545,
+        "wrong_input_low_clip_count": 0,
+        "wrong_input_high_clip_count": 0,
+        "wrong_input_clip_fraction": 0.0
+      },
+      "mcnemar_holm": {
+        "family_size": 6,
+        "rank": 4,
+        "adjusted_p_value": 0.5462302408225295,
+        "reject_at_0_05": false
+      }
+    },
+    {
+      "target_model_id": "mediapipe-public/efficientnet-lite0-int8",
+      "target_contract_id": "affine-f24e926440b1",
+      "source_contract_id": "affine-101a7f3c0172",
+      "source_model_aliases": [
+        "google-legacy-quantized/inception-v3-quant",
+        "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+        "google-legacy-quantized/mobilenet-v2-1.0-224-quant"
+      ],
+      "metrics": {
+        "image_count": 1000,
+        "correct_top1_accuracy": 0.593,
+        "wrong_top1_accuracy": 0.501,
+        "paired_top1_accuracy_delta": {
+          "point": -0.092,
+          "lower_95": -0.116,
+          "upper_95": -0.068,
+          "iterations": 5000,
+          "seed": 20260831
+        },
+        "correct_top5_accuracy": 0.796,
+        "wrong_top5_accuracy": 0.726,
+        "paired_top5_accuracy_delta": {
+          "point": -0.07,
+          "lower_95": -0.089,
+          "upper_95": -0.05,
+          "iterations": 5000,
+          "seed": 20260832
+        },
+        "mcnemar_exact": {
+          "correct_to_incorrect": 124,
+          "incorrect_to_correct": 32,
+          "discordant_pair_count": 156,
+          "two_sided_p_value": 5.523336630751778e-14
+        },
+        "top1_prediction_agreement": 0.657,
+        "mean_js_divergence": 0.11997268639073407,
+        "median_js_divergence": 0.07181666496505829,
+        "p95_js_divergence": 0.3815353065653094,
+        "correct_mean_confidence": 0.6042797482214843,
+        "wrong_mean_confidence": 0.5383610040736028,
+        "correct_ece_15_bin": 0.036278956382930314,
+        "wrong_ece_15_bin": 0.04624844738192223,
+        "wrong_input_low_clip_count": 35496748,
+        "wrong_input_high_clip_count": 15848821,
+        "wrong_input_clip_fraction": 0.3411031103847789
+      },
+      "mcnemar_holm": {
+        "family_size": 6,
+        "rank": 1,
+        "adjusted_p_value": 3.3140019784510665e-13,
+        "reject_at_0_05": true
+      }
+    },
+    {
+      "target_model_id": "mediapipe-public/efficientnet-lite0-int8",
+      "target_contract_id": "affine-f24e926440b1",
+      "source_contract_id": "affine-7d3ac1a6b38a",
+      "source_model_aliases": [
+        "mediapipe-public/efficientnet-lite2-int8"
+      ],
+      "metrics": {
+        "image_count": 1000,
+        "correct_top1_accuracy": 0.593,
+        "wrong_top1_accuracy": 0.584,
+        "paired_top1_accuracy_delta": {
+          "point": -0.009,
+          "lower_95": -0.019,
+          "upper_95": 0.001,
+          "iterations": 5000,
+          "seed": 20260833
+        },
+        "correct_top5_accuracy": 0.796,
+        "wrong_top5_accuracy": 0.797,
+        "paired_top5_accuracy_delta": {
+          "point": 0.001,
+          "lower_95": -0.007,
+          "upper_95": 0.009,
+          "iterations": 5000,
+          "seed": 20260834
+        },
+        "mcnemar_exact": {
+          "correct_to_incorrect": 18,
+          "incorrect_to_correct": 9,
+          "discordant_pair_count": 27,
+          "two_sided_p_value": 0.12207812070846558
+        },
+        "top1_prediction_agreement": 0.924,
+        "mean_js_divergence": 0.012689988606156711,
+        "median_js_divergence": 0.006116596836286488,
+        "p95_js_divergence": 0.0428105814352774,
+        "correct_mean_confidence": 0.6042797482214843,
+        "wrong_mean_confidence": 0.5995856856779223,
+        "correct_ece_15_bin": 0.036278956382930314,
+        "wrong_ece_15_bin": 0.027310620266389456,
+        "wrong_input_low_clip_count": 5349559,
+        "wrong_input_high_clip_count": 0,
+        "wrong_input_clip_fraction": 0.03553863068664966
+      },
+      "mcnemar_holm": {
+        "family_size": 6,
+        "rank": 3,
+        "adjusted_p_value": 0.4883124828338623,
+        "reject_at_0_05": false
+      }
+    },
+    {
+      "target_model_id": "mediapipe-public/efficientnet-lite2-int8",
+      "target_contract_id": "affine-7d3ac1a6b38a",
+      "source_contract_id": "affine-101a7f3c0172",
+      "source_model_aliases": [
+        "google-legacy-quantized/inception-v3-quant",
+        "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
+        "google-legacy-quantized/mobilenet-v2-1.0-224-quant"
+      ],
+      "metrics": {
+        "image_count": 1000,
+        "correct_top1_accuracy": 0.623,
+        "wrong_top1_accuracy": 0.564,
+        "paired_top1_accuracy_delta": {
+          "point": -0.059,
+          "lower_95": -0.08,
+          "upper_95": -0.039,
+          "iterations": 5000,
+          "seed": 20260931
+        },
+        "correct_top5_accuracy": 0.827,
+        "wrong_top5_accuracy": 0.786,
+        "paired_top5_accuracy_delta": {
+          "point": -0.041,
+          "lower_95": -0.056,
+          "upper_95": -0.026,
+          "iterations": 5000,
+          "seed": 20260932
+        },
+        "mcnemar_exact": {
+          "correct_to_incorrect": 89,
+          "incorrect_to_correct": 30,
+          "discordant_pair_count": 119,
+          "two_sided_p_value": 5.6882868507839105e-08
+        },
+        "top1_prediction_agreement": 0.749,
+        "mean_js_divergence": 0.081606958547267,
+        "median_js_divergence": 0.04884763367748958,
+        "p95_js_divergence": 0.25086978298393287,
+        "correct_mean_confidence": 0.574474857558207,
+        "wrong_mean_confidence": 0.5273884170140871,
+        "correct_ece_15_bin": 0.054324575455616385,
+        "wrong_ece_15_bin": 0.041068240977049086,
+        "wrong_input_low_clip_count": 40436633,
+        "wrong_input_high_clip_count": 24306790,
+        "wrong_input_clip_fraction": 0.31924764792899407
+      },
+      "mcnemar_holm": {
+        "family_size": 6,
+        "rank": 2,
+        "adjusted_p_value": 2.844143425391955e-07,
+        "reject_at_0_05": true
+      }
+    },
+    {
+      "target_model_id": "mediapipe-public/efficientnet-lite2-int8",
+      "target_contract_id": "affine-7d3ac1a6b38a",
+      "source_contract_id": "affine-f24e926440b1",
+      "source_model_aliases": [
+        "mediapipe-public/efficientnet-lite0-int8"
+      ],
+      "metrics": {
+        "image_count": 1000,
+        "correct_top1_accuracy": 0.623,
+        "wrong_top1_accuracy": 0.62,
+        "paired_top1_accuracy_delta": {
+          "point": -0.003,
+          "lower_95": -0.015,
+          "upper_95": 0.008,
+          "iterations": 5000,
+          "seed": 20260933
+        },
+        "correct_top5_accuracy": 0.827,
+        "wrong_top5_accuracy": 0.834,
+        "paired_top5_accuracy_delta": {
+          "point": 0.007,
+          "lower_95": -0.002,
+          "upper_95": 0.016,
+          "iterations": 5000,
+          "seed": 20260934
+        },
+        "mcnemar_exact": {
+          "correct_to_incorrect": 18,
+          "incorrect_to_correct": 15,
+          "discordant_pair_count": 33,
+          "two_sided_p_value": 0.7283324808813632
+        },
+        "top1_prediction_agreement": 0.92,
+        "mean_js_divergence": 0.014073307017703438,
+        "median_js_divergence": 0.007346948718370395,
+        "p95_js_divergence": 0.04769979135222316,
+        "correct_mean_confidence": 0.574474857558207,
+        "wrong_mean_confidence": 0.5790371440087176,
+        "correct_ece_15_bin": 0.054324575455616385,
+        "wrong_ece_15_bin": 0.05258425465158816,
+        "wrong_input_low_clip_count": 0,
+        "wrong_input_high_clip_count": 3496422,
+        "wrong_input_clip_fraction": 0.017240739644970415
+      },
+      "mcnemar_holm": {
+        "family_size": 6,
+        "rank": 5,
+        "adjusted_p_value": 1.0,
+        "reject_at_0_05": false
+      }
+    }
+  ],
+  "outputs": {
+    "predictions_csv": "predictions.csv",
+    "predictions_csv_sha256": "6246eebfc6c9a7cf1552ab28305ed274717bc8d44ef10cf612d125f54558da0f"
+  },
+  "interpretation_boundary": [
+    "Only hash-pinned UINT8 ImageNet classifiers with a bound raw-RGB application interface are included.",
+    "The experiment estimates effects for these artifacts and selected images; it does not estimate mismatch prevalence.",
+    "A closest candidate pixel transform is not treated as evidence of an application preprocessing contract.",
+    "Model aliases sharing an identical affine contract are collapsed before hypothesis testing."
+  ],
+  "ledger_sha256": "22f5fc708e0e512133058c409f114d3335616633c374ac3a748b7b1045d47a92"
+}

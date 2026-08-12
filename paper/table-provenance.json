@@ -1,0 +1,42 @@
+{
+  "schema": "tensor_quantization_metadata_study.paper_tables.v1",
+  "sources": {
+    "data/artifacts.json": "070088294218b4bd3dfc411ad87e95582e12870f03ffab264cc0b1ecd5af117b",
+    "data/interface-contracts.json": "acaf33bb9a512c5a197157ce6311c45bea041e112b38e8e464449b15b6a39010",
+    "data/interface-summary.json": "010c90d7ff64d15ab8d12895643ae4b94501b83988cf1b66965786b7189eebef",
+    "data/litert-interface-crosscheck.json": "25e76878015dd085c5e16daf6cabafb17c38add4f7586db1041a05765ce3c530",
+    "data/tflite-metadata-audit.json": "ccdd9a2a88e485cde85ba65ecb5365605092be544d2eee367ee80dfedf9f2cd1",
+    "data/tflite-metadata-flatc-crosscheck.json": "5d54cec59ea6d7fd544d3c1e14005db4344931ebb30eea2d0bec0444bf92cc53",
+    "data/onnx-pilot-results.json": "cec8fde8540a380f248188764e60d21b07a137b906d4ad2e8390c9f87d86613e",
+    "data/onnx-revision-comparison.json": "164c9b228c1781ea13ec5184c72cc8bc75a9f068188c44223bcef9555d58a667",
+    "data/kaggle-tflite-snapshot-a.json": "17400fff5bb5092bd9e510a9ce56152e2e63b13f683b31d6a169ba323e9e89f0",
+    "data/kaggle-tflite-snapshot-b.json": "b0b37ccc93c53caf2629e74010b5f052e97041a08228ae17826d41a2468059e7",
+    "data/kaggle-tflite-frame-stability.json": "5bfad0f42e88b16c9f1fe045137a4abf796e61a02e86bdb42504fa4411502bc8",
+    "data/kaggle-tflite-materialization.json": "7e38bfa284bda0de92faeceffee4b1163a35fd4bbe5fe4085850b828a8013c1c",
+    "data/kaggle-tflite-audit.json": "0186f2bdfaef66429e9b56e3bc55302ffc6358e662b4db6632e7cb27d960b7d5",
+    "data/kaggle-litert-interface-crosscheck.json": "33724535044576badbfb9e9e070b16c7267b8c76c1d84f5f2bfbf091d6cb54d3",
+    "data/kaggle-tflite-metadata-marker-crosscheck.json": "c4fef3948a73541bdb85d5af503fb7984ca5ce70d47219d2ceeebb0d3be24cbb",
+    "data/kaggle-tflite-history-a.json": "5d9c1e340e5014e926b3cee9641825a4fb7a44027b8a4062fd478c2b8b8653d5",
+    "data/kaggle-tflite-history-b.json": "0957994dd1ca0a3190a1b795be8e5b96b209a8c69afdd28fdb13d256c35e9c74",
+    "data/kaggle-tflite-history-stability.json": "13b5d0ab943f144731e03dfb5847f5d37be249e31f741ea9153b7b4c9eb5c1be",
+    "data/kaggle-tflite-revision-pairs.json": "ce69bbe9b23de4dfefefdcc3b4b116661dff587f31d087c10df2e6ee2b363394",
+    "data/kaggle-tflite-materialization-all.json": "1925215a06f4e07975417c740db0a99e3a44ba6866235b0d2deb0e60e1a68d18",
+    "data/kaggle-tflite-audit-all-versions.json": "0fd99756c003647a178302854b2cdc1b9ef895f229c6beb597428192db375bb0",
+    "data/kaggle-tflite-revision-comparison.json": "badb974f05a013001ff4cba06ccff7072d4c460bf4243122a3c2480e1984cea8",
+    "data/kaggle-litert-interface-crosscheck-all-versions.json": "565beb39a02464478a2da478bf7b3cdf0719801c9e5b2bc1960c4e6a14c42a03",
+    "data/kaggle-tflite-metadata-marker-crosscheck-all-versions.json": "e36c7bf174a12fbf1589f688eca8c78ee343d071ef56ee41bab8887170b02c56",
+    "docs/paper-claim-boundary.md": "aa23781d09ac77b18dbc22fa92ccf33c4cf7b1a277b823f2a0400d7db1fc7816",
+    "docs/research-population-protocol.md": "482317d249a5b547e770738a2b47b5013f4ef839b8c428b5f8948d8d214d1768",
+    "experiments/imagenetv2-all-pairs/measurement.json": "e7f138bb151673d52c547de5d37941161664238bf9d7a678fea5c8504786e7da",
+    "scripts/build-paper-tables.py": "1d6aa3f86f73afb51299aa811788c05c8d67ce012abbd1383896e35e47014ed7"
+  },
+  "outputs": {
+    "tables/curated-cohorts.csv": "f1504e87ce0cfb03f6d85bc35979073cb00ad251aa98c8d9862555b7e52a26a9",
+    "tables/external-interface-summary.csv": "4fca86d5cd3860bd61d410a6ca931aaea4d3b432f77feda95405249b29e472af",
+    "tables/affine-contract-substitutions.csv": "40e7e171c463b0cb90e23f8f936e10e6c9e3062b1fe6353cd43c02efe990762d",
+    "tables/format-pilot-summary.csv": "5bd0bffaaa90846aa6042355cbe07cc744f583672a3d51e0710cdc8c2ad3fbf9",
+    "tables/kaggle-identifier-cohort.csv": "7dd520f49d5bfba1e4022ef47a0169ece1f7ca6ea99d8e41f58dbfa1bc8ebe7f",
+    "tables/kaggle-revision-comparisons.csv": "2be6c46600bfc41d60eecf17a4c29b888ae844f45a367c885bee5b7131c0ea44",
+    "claim-register.csv": "4587eb8bfccf58ca9322cc904a2c0474092fbc43566c55b0db24f56667e55dfe"
+  }
+}

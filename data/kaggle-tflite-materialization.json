@@ -1,0 +1,103 @@
+{
+  "schema": "tensor_quantization_metadata_study.kaggle_tflite_materialization.v1",
+  "source_snapshot_sha256": "b0b37ccc93c53caf2629e74010b5f052e97041a08228ae17826d41a2468059e7",
+  "source_frame_stability_sha256": "5bfad0f42e88b16c9f1fe045137a4abf796e61a02e86bdb42504fa4411502bc8",
+  "scope": "latest",
+  "version_count": 2,
+  "published_tflite_file_count": 9,
+  "status_counts": {
+    "ASSESSED_DOWNLOAD": 9
+  },
+  "versions": [
+    {
+      "variation_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8",
+      "version_number": 4,
+      "version_ref": "siddhm11/samsung-prism-doc-classifier/MODEL_FRAMEWORK_TF_LITE/mobilenetv2-int8/4",
+      "archive_sha256": "d8be5833b77be922c56de94844eabfc48fc1dc30bc3f19cecd248933e29390a7",
+      "error": null,
+      "files": [
+        {
+          "logical_path": "model_realworld_int8.tflite",
+          "listed_size_bytes": 2722336,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 2722336,
+          "artifact_sha256": "5c0e3d6c9044f61270cd6e84dd5b7ac26f1422418e23ad31a070a913614b1cd9",
+          "cache_path": "cache/kaggle-snapshot/models/5c0e3d6c9044f61270cd6e84dd5b7ac26f1422418e23ad31a070a913614b1cd9.tflite"
+        }
+      ]
+    },
+    {
+      "variation_ref": "asaahmanasseh/crop-care/MODEL_FRAMEWORK_TF_LITE/float16",
+      "version_number": 1,
+      "version_ref": "asaahmanasseh/crop-care/MODEL_FRAMEWORK_TF_LITE/float16/1",
+      "archive_sha256": "80edc3836e418692500f7947ec64aa49b6b9af06ac61c07a6bb70fb132a1a4c2",
+      "error": null,
+      "files": [
+        {
+          "logical_path": "cashew_float16.tflite",
+          "listed_size_bytes": 8752808,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 8752808,
+          "artifact_sha256": "b7470bf2b4845ad6fb689f1cbccf2b410dc6ce0b23e526e20143085c4e88b02e",
+          "cache_path": "cache/kaggle-snapshot/models/b7470bf2b4845ad6fb689f1cbccf2b410dc6ce0b23e526e20143085c4e88b02e.tflite"
+        },
+        {
+          "logical_path": "cassava_float16.tflite",
+          "listed_size_bytes": 8754084,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 8754084,
+          "artifact_sha256": "ca0dc242095e3acee80ef27a6e859af429ccb6b4ba2bd82340d616db0cb24799",
+          "cache_path": "cache/kaggle-snapshot/models/ca0dc242095e3acee80ef27a6e859af429ccb6b4ba2bd82340d616db0cb24799.tflite"
+        },
+        {
+          "logical_path": "cocoa_seed1337_float16.tflite",
+          "listed_size_bytes": 8759796,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 8759796,
+          "artifact_sha256": "043c921673d93312ecc186ac980b77037e62fe9e295574fdb6445296135ad699",
+          "cache_path": "cache/kaggle-snapshot/models/043c921673d93312ecc186ac980b77037e62fe9e295574fdb6445296135ad699.tflite"
+        },
+        {
+          "logical_path": "cocoa_seed42_float16.tflite",
+          "listed_size_bytes": 8757756,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 8757756,
+          "artifact_sha256": "fa332f4c4034439e916201c9db33283ceb8cb0e5e30dcb498d16298b376df5bd",
+          "cache_path": "cache/kaggle-snapshot/models/fa332f4c4034439e916201c9db33283ceb8cb0e5e30dcb498d16298b376df5bd.tflite"
+        },
+        {
+          "logical_path": "maize_seed1337_float16.tflite",
+          "listed_size_bytes": 8750724,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 8750724,
+          "artifact_sha256": "38fac2fa991c6b21435ff566c1927d83cfb3c6ff05b4de308160a37e541a7c43",
+          "cache_path": "cache/kaggle-snapshot/models/38fac2fa991c6b21435ff566c1927d83cfb3c6ff05b4de308160a37e541a7c43.tflite"
+        },
+        {
+          "logical_path": "maize_seed42_float16.tflite",
+          "listed_size_bytes": 8749072,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 8749072,
+          "artifact_sha256": "7de9c6971a7763fadebcd36afe75b2dfcca08ea4590172e3dc66cf62ce1a945f",
+          "cache_path": "cache/kaggle-snapshot/models/7de9c6971a7763fadebcd36afe75b2dfcca08ea4590172e3dc66cf62ce1a945f.tflite"
+        },
+        {
+          "logical_path": "router_float16.tflite",
+          "listed_size_bytes": 8745144,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 8745144,
+          "artifact_sha256": "fa2be34552c903b6ca21cd5eb7cbf315630965570fd15c217d8cb9255a4bb3d5",
+          "cache_path": "cache/kaggle-snapshot/models/fa2be34552c903b6ca21cd5eb7cbf315630965570fd15c217d8cb9255a4bb3d5.tflite"
+        },
+        {
+          "logical_path": "tomato_float16.tflite",
+          "listed_size_bytes": 8745144,
+          "status": "ASSESSED_DOWNLOAD",
+          "artifact_size_bytes": 8745144,
+          "artifact_sha256": "10df440eb575c85fb3d605aa690e0e9d0dda10ca2f00df8e0571ab5d6c34391b",
+          "cache_path": "cache/kaggle-snapshot/models/10df440eb575c85fb3d605aa690e0e9d0dda10ca2f00df8e0571ab5d6c34391b.tflite"
+        }
+      ]
+    }
+  ]
+}

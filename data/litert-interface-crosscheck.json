@@ -1,10 +1,8 @@
 {
-  "schema": "deepbom.litert_interface_crosscheck.v1",
+  "schema": "tensor_quantization_metadata_study.litert_interface_verification.v1",
   "parser": "ai-edge-litert 2.1.4",
   "method": "Interpreter.get_input_details/get_output_details only; no allocation or inference.",
-  "dtype_normalization": "NumPy object/bytes/unicode -> TFLite STRING",
-  "source_sweep_sha256": "59251dda24e9b296f54f360b912d376f93ee9cb74017cd9e6bad1ff5e689e276",
-  "source_interface_corpus_ledger_sha256": "c1bc50876b9e8929c3a0d40af39f50b9217c387fb89cbf7e83cd71617a93d6b0",
+  "source_interface_contract_ledger_sha256": "acaf33bb9a512c5a197157ce6311c45bea041e112b38e8e464449b15b6a39010",
   "expected_artifact_count": 50,
   "located_artifact_count": 50,
   "verified_artifact_count": 50,
@@ -16,304 +14,253 @@
     {
       "qualified_id": "mcunet-curated-ptq/mbv2-w0-35",
       "artifact_sha256": "00c87d2a5f2d96deb7a7e8afe000b786e5198384ab66f21c714dd3ed43d00f8c",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "055b3262a4f3a84cb54e033bb5b4d04662e88d49a5ef68a5abbbbfc509b9d122"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/efficientdet-lite0-int8",
       "artifact_sha256": "0720bf247bd76e6594ea28fa9c6f7c5242be774818997dbbeffc4da460c723bb",
-      "parameter_count": 3,
-      "interface_ledger_sha256": "88411839a1cc33b17af5f440b7cbb709f5912e0577424d8e08883731c2480931"
+      "parameter_count": 3
     },
     {
       "qualified_id": "mediapipe-public/mobilenet-v3-large-embedder-f32",
       "artifact_sha256": "11af3c560dfeed7737cb4c03c23bf52a8403020784192d4dea0b74862a12828d",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "6e5d4b07fb260c4b0df83aedf133f0371c35c34ccd37fd5adf3de135a7729fa3"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/average-word-classifier-f32",
       "artifact_sha256": "13bf6f7f35964f1e85d6cc762ee7b1952009b532b233baa5bdb4bf7441097f34",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "098b0b4892e2b3bc2c7c411b2d0d45e1756eaf274b828ca4072bd3e1d7efd526"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/selfie-segmenter-f16",
       "artifact_sha256": "191ac9529ae506ee0beefa6b2c945a172dab9d07d1e802a290a4e4038226658b",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "be7207a05c2da9e99503845885d96b8984642a6cfe90585b9b5af78dded93b6e"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-in4",
       "artifact_sha256": "1ad36261efdc5185d5236e7f8306a9481d9044c56cbb72f9230fbc67ba13545e",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "66e7d73f9c6d7841803ad2269ba43ccc0951ccbe189e92594b90f40be616a3d4"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/hair-segmenter-f32",
       "artifact_sha256": "2628cf3ce5f695f604cbea2841e00befcaa3624bf80caf3664bef2656d59bf84",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "d9931915caf30813f8272096124d9f8128c2eb5483c3341433abea9b10557842"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/face-detector-full-sparse-f16",
       "artifact_sha256": "2c3728e6da56f21e21a320433396fb06d40d9088f2247c05e5635a688d45dfe1",
-      "parameter_count": 3,
-      "interface_ledger_sha256": "6a1f9b7a7665acf878c86d9c34bac9b5e0090684919130734bb68b23e051cefe"
+      "parameter_count": 3
     },
     {
       "qualified_id": "mediapipe-public/face-detector-full-f16",
       "artifact_sha256": "3698b18f063835bc609069ef052228fbe86d9c9a6dc8dcb7c7c2d69aed2b181b",
-      "parameter_count": 3,
-      "interface_ledger_sha256": "953dfe2514c3d01a3e7ebd870eb7ba111b88d07899275ccc33c560c4bcbb5cba"
+      "parameter_count": 3
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-in2",
       "artifact_sha256": "38c5d0794fa40196cb5c8da4fc64b116a33f448f3db721458916b54b1e4a11fb",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "86b109816c481271c6e5f35138b5614caaa9aaa60b19b773841ac8d521f3bf59"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-vww0",
       "artifact_sha256": "4676b97e2fe775929b1538446a120173ab0e1a0f94a1d81e7322f09fee9b3d1d",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "68a0bccf79e5136449aef4bb8f0f03fc1cd9cc83882cf3920a2ee6a0e8b8863f"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-in0",
       "artifact_sha256": "4791f13ac1b90b0a1a0b96177d905197a1ebd34f7bc960d92c9d3250aa5b6ef8",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "3501ba77ba6d788a63dff902792693a9fbd8774bed81cc9f665e631ffc8bba0c"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-resnet50",
       "artifact_sha256": "4b47a9100b1ccd66c1dd5ad59c2ef6bc1ae43dbda240cd9354e1ea874a6f0ebc",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "e63c488496e9535fea09374fa8bdc78b9ac9de0b760b9220488418676ca74341"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/efficientdet-lite0-f16",
       "artifact_sha256": "4b59100025bea1235a84c1038879a6cccc9f6c49f5e41144e91e74d99e780993",
-      "parameter_count": 3,
-      "interface_ledger_sha256": "6d67a3a9f76d14d5234fba3db65bd41c52ee93f42c8649f872bb4c7c3485e111"
+      "parameter_count": 3
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-resnet18",
       "artifact_sha256": "4d0d6bd49d4f54e1e5aa1d58bf0bfaab09ec12fcc3f5d663c1ac1761774ba76f",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "5b7a13621726d4b39861301caa0173e2f361b9b8c5b048e07cd907d0949505c5"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/audio-classifier-yamnet-f32",
       "artifact_sha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "0cbcfa4ee200691d34b26483ec8d249a97126b2b415aecd8bbf306908a785d6b"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-vww2",
       "artifact_sha256": "5180674a058b7c7b627a4142b4c6b194382e6df05ad8c8eb40a86aab8c1c7986",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "0bfc4dd46f5d26d033b7857222b1cadaeee7db655fa40be785f60c1c06e93150"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-regnetx-160-tv2-in1k",
       "artifact_sha256": "58537895ce4fd18504af40d3b3456de9d52227e4f42b6e53d8ac4ebe8ab036ae",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "5496ed91d3c0f0e763a2b80e60df7029274bd2bc3c95bcf9c68d2b080adfafc8"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/audio-embedder-yamnet-f32",
       "artifact_sha256": "5e357e61672b6ef7ef27b1804ad01daaa759586f9d63f23125303ca415883bec",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "e0afe62fae7f16e9087af475a5990856d54fa2c176a4da61de44cb2e85ffec81"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-large",
       "artifact_sha256": "620a6b6431790233dee4d726f49a9a83b3303e65a50787475c3ebc5e74f55b7c",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "33dd1691bac38800c1975a982b6d26f30d533437fa65c712daa661c91a32055a"
+      "parameter_count": 2
     },
     {
       "qualified_id": "google-legacy-quantized/inception-v3-quant",
       "artifact_sha256": "6aecf177dc84a11dc5ea8f03df188039dded543fc7cd03f3b89a6541dbb37ee6",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "f900264038bcfdece500dfad292a3d88793f9a47162bf827162209930f60ec44"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v2",
       "artifact_sha256": "6b92681ad122c19f14d7556a028e6ece72891759e27b19ac3df97768ef4dd716",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "1c59d86af4f39e61a38cb5e246146c5426df6b2fd5f5f15f4764cde883cfe711"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/efficientnet-lite0-f32",
       "artifact_sha256": "6c7ab0a6e5dcbf38a8c33b960996a55a3b4300b36a018c4545801de3a3c8bde0",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "62911f1c83b43b45dcbc0dd290e138437d3958fd5c9f260d26d6d2e745856654"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-densenet161-tv-in1k",
       "artifact_sha256": "757c4898202f74162d63dad8cc38f65a913eba9f3c14a95be934ab528acd58a6",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "1768919cee85decb260b19c8a101731742cc85a2bcdd181afb1b8ba147da0542"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-in3",
       "artifact_sha256": "780563f544bccba413b1ee4e051159996ac8b5be39eba8bb38761a51b58a07d1",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "b1e1026e9ae0e50a1908a5739f27eccca673aa96fff64d965c8abf2b5359e4cd"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/language-detector-f32",
       "artifact_sha256": "7db4f23dfe1ad8966b050b419a865da451143fd43eb6b606a256aadeeb1e5417",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "15b672afee81b9163c368dbe07b466f662448295c3f4b841d86d6c0474a59fbf"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/efficientnet-lite2-int8",
       "artifact_sha256": "7fc3a7dbc1cd2833b162a54577afb47ab531d9c4b799ef11d90a4c56fe4ed5ad",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "aeab873846265cd284710112f62196f591721cb2f4c7bb4015f1dadd03403a81"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-regnetx-008-tv2-in1k",
       "artifact_sha256": "86c3436c7988e90a15f95e21a76553dadf4f93b5c83d367a5719f89ff9d2de66",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "9b4a1d0ba1ba69667fa1a1c9b778749869741ef43d13e0c25ba6826a798edbe8"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-regnetx-004-tv-tv2-in1k",
       "artifact_sha256": "87d4fb3fc27d02e19c25365d32676a6b62b113f2c347c190205d023f89b4c51d",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "2625a2f0e6e9cc6a03537764aa7edd61199c014da5d3ec9fcfa5e6f1dd07fb99"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/universal-sentence-encoder-f32",
       "artifact_sha256": "89ad3c74175dd8caa398cc22b657296d94302d20c525c12b58b29420f7249749",
-      "parameter_count": 5,
-      "interface_ledger_sha256": "ac891707f7999b18df42bec68ca135e6450fcd4344de31903e26965c82f037e8"
+      "parameter_count": 5
     },
     {
       "qualified_id": "mcunet-curated-ptq/proxyless-w0-3",
       "artifact_sha256": "8cfa09445a43c8eb51b94685b72a4aa1c0318865af03636f3f81bcf7042dacc7",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "497e86fb890036480cdb3c9df1c028e87a671324d2b283adeb08530fb9c16607"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-resnet34",
       "artifact_sha256": "996adbf1e1ab665ba27860b8f403e47a83052a4f120ad400e46975d49a8c9949",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "70724e347b54557ae4cc0a0b9b6907fac20feb91e3e383dd0d29e6db2d6c916f"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-regnetx-016-tv2-in1k",
       "artifact_sha256": "9b417b9cb8a8ff382ac9cc0428840a4f397e61142ee11020994cf818a64d2f5c",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "31d552c5ba3e580eb8e6e23b65685d59087fd052c37d602f0543f7636062f8ab"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-mobilenet-v3-small",
       "artifact_sha256": "b07b0db7ecce321db4c6b729f035c76d3ea5df9ccb1e5f0535af5a4ad2325efd",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "df668b30ff6facea029d446c8cc8d028c7d4846572d638832586bbe07518177b"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-densenet201-tv-in1k",
       "artifact_sha256": "b1bdbf97fa7f5b53c180c7538d650cf47678ca7e8bfc9f9809b63d9b9ed22799",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "322762b911749c32b6e80dffefba4a4b5da168ae901730a7137627e1b1b27d18"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/face-detector-short-f16",
       "artifact_sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
-      "parameter_count": 3,
-      "interface_ledger_sha256": "0a1ea206ff6ee9a451ef187fda9a4fd09270f87ee15901c131990004f5e3aa69"
+      "parameter_count": 3
     },
     {
       "qualified_id": "mediapipe-public/mobilenet-v3-small-embedder-f32",
       "artifact_sha256": "bbbb4c51a55a53905af1daec995ca1aae355046f8839bb8c9f5ce9271394bc40",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "971f08317c30baa39dc97eef72f9f5ac0aa1e5c157ed53de7598917c75cb2745"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
       "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "f0356ce56105ef0d7becf098dfb8b65f1bed50fd415d4319239bca778346ef16"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-in1",
       "artifact_sha256": "bf14b8de64caba8630086250b4c6ee660c222d8e48ce3e8c791d0a402e15ef73",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "5d55256ae8cc83ec9ddbf6b0e650da2d4b458664b2686793023244b99d0e2f00"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-densenet169-tv-in1k",
       "artifact_sha256": "c17dbe0e71d98e01951f029a6777822ad90af570afdcb92a831255340fa6fd04",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "269a127193323337d809720774eb0f72bec6aafa71bd9cc3fd14122673964ac4"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-person-det",
       "artifact_sha256": "ceb419a25d1f807e4a2480cb93f75e7d18fc6f147fc0addbf9288da8a957449a",
-      "parameter_count": 4,
-      "interface_ledger_sha256": "adee311871d4871dc32c1fb574220cc8aa168df8655dcfadc2b4c8544739cc4d"
+      "parameter_count": 4
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-regnetx-080-tv2-in1k",
       "artifact_sha256": "d76d68e2ebdf867a34924eb1a27685b1bbd7eb5c0d959559cc3b239c740e2026",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "c97bcc9ae505ab17ea5e320dcfcfdfd7986f0eaa013dd96cbc6f1c743bf5fcc1"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mcunet-curated-ptq/mcunet-vww1",
       "artifact_sha256": "d878916e93f59e63949ce9b8e1a585382d466d3b94d751b9f1628a7753e03c24",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "47e455dc4a1dc0ac58348e471fcf4fe37a066e1998f82ef56c10d6aa7d196fe6"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/magic-touch-segmenter-f32",
       "artifact_sha256": "e24338a717c1b7ad8d159666677ef400babb7f33b8ad60c4d96db4ecf694cd25",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "bf04042ff67f41c52e77de94cf56880be77a11f2c6ae9dd68e8f36f7868d3630"
+      "parameter_count": 2
     },
     {
       "qualified_id": "litert-modern-static-int8/expanded-regnetx-032-tv2-in1k",
       "artifact_sha256": "e40544aff44244ff6577021690d5fe5596c4375c1f386988f345d31deb9d2642",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "4e521f610f5ffc43ccc2facb63b49c84e338a5a85802a9e49c2389be989c3a84"
+      "parameter_count": 2
     },
     {
       "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
       "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
-      "parameter_count": 5,
-      "interface_ledger_sha256": "3066f03f9cdbb41472b2c539b8c2127a81661b760204d73b5919cf9372921f62"
+      "parameter_count": 5
     },
     {
       "qualified_id": "google-legacy-quantized/mobilenet-v1-1.0-224-quant",
       "artifact_sha256": "ecc3a67c47c5a609ec35f6a58a7d97532834e43df4cb7d3f1204a8164b7d20dd",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "a0b0955a567f158debe6ccb6b11adf7f7402b552f9a18deb7cf872a8e65c0b9a"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/ssd-mobilenet-v2-f16",
       "artifact_sha256": "ee21e12bfdc464100c6008c865ab8294f6a04162e6ed2e11986f1175b02cfab2",
-      "parameter_count": 3,
-      "interface_ledger_sha256": "bdcbea126099e469a617ab7eee60b0576938bd63c7fa3fd50f3b669c7d634ffe"
+      "parameter_count": 3
     },
     {
       "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
       "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "c819251ce8ba5435f66ed48f456ae69ecedfd838b7844b3165b47067f126e13a"
+      "parameter_count": 2
     },
     {
       "qualified_id": "mediapipe-public/deeplab-v3-f32",
       "artifact_sha256": "ff36e24d40547fe9e645e2f4e8745d1876d6e38b332d39a82f0bf0f5d1d561b3",
-      "parameter_count": 2,
-      "interface_ledger_sha256": "3f56ced3ea48f371c20d4f9e79704a366fcaf531f08cc90fc1fd1d7c61a93413"
+      "parameter_count": 2
     }
   ],
-  "mismatches": [],
-  "ledger_sha256": "15c52d14dd28b8fd6cbf339e1ea31eb5b0c267795c1b789537f52c306b78a7a4"
+  "mismatches": []
 }
