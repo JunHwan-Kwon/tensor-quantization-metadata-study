@@ -1,0 +1,101 @@
+{
+  "schema": "tensor_quantization_metadata_study.cyclonedx_2_0_quantization_contribution_cases.v1",
+  "source_ledgers": {
+    "interface_contracts": {
+      "path": "data/interface-contracts.json",
+      "sha256": "acaf33bb9a512c5a197157ce6311c45bea041e112b38e8e464449b15b6a39010"
+    },
+    "tflite_granularity": {
+      "path": "data/tflite-granularity-evidence.json",
+      "sha256": "a5a8da523c92405bb47e8d50c32c58781054a57429988f16bb34a0f72ccad1f0"
+    },
+    "onnx_blocked_quantization": {
+      "path": "data/onnx-blocked-quantization-evidence.json",
+      "sha256": "5caec427583c3d1eec93bc863ffe2074e62e6f2180b5d603e6df18a55d02be86"
+    }
+  },
+  "external_parameter_status": {
+    "parameter_count": 114,
+    "complete_affine": 62,
+    "not_quantized": 52,
+    "incomplete_affine": 0,
+    "interpretation": "The 52 parameters without affine values are explicitly non-quantized. They are not incomplete affine contracts."
+  },
+  "parameter_binding_case": {
+    "qualified_id": "google-legacy-quantized/mobilenet-v2-1.0-224-quant",
+    "artifact_sha256": "f08d447cde49b4e0446428aa921aff0a14ea589fa9c5817b31f83128e9a43c1d",
+    "shared_coarse_classification": {
+      "dtype": "UINT8",
+      "scheme": "affine",
+      "granularity": "per_tensor"
+    },
+    "parameters": [
+      {
+        "parameter_id": "input:0:T171",
+        "name": "input",
+        "shape": [1, 224, 224, 3],
+        "scale": 0.0078125,
+        "zero_point": 128,
+        "contract_sha256": "caf9dc3df8ee859e9f5f63065cf92ad520fd9225548b181f0aa0988261dacf52"
+      },
+      {
+        "parameter_id": "output:0:T172",
+        "name": "output",
+        "shape": [1, 1001],
+        "scale": 0.09889253973960876,
+        "zero_point": 58,
+        "contract_sha256": "fd9168008a929b3062e4402c0c65c64dd2f70dd7050463f9312f1cb91c732fe9"
+      }
+    ],
+    "aggregate_projection": {
+      "status": "NOT_LOSSLESS",
+      "reason": "One model-level affine mapping cannot bind the two distinct numerical contracts to their named external parameters."
+    },
+    "parameter_projection": {
+      "status": "LOSSLESS",
+      "reason": "Each named parameter preserves its own dtype, shape, scale, and zero point."
+    }
+  },
+  "non_quantized_boundary_case": {
+    "qualified_id": "google-legacy-quantized/ssd-mobilenet-v1-quant",
+    "artifact_sha256": "e4b118e5e4531945de2e659742c7c590f7536f8d0ed26d135abcfe83b4779d13",
+    "quantized_input_count": 1,
+    "non_quantized_output_count": 4,
+    "affine_mapping_assessment_for_outputs": "NOT_APPLICABLE",
+    "reason": "The four FLOAT32 outputs serialize no affine parameters; absence is an observed boundary state, not missing quantization metadata."
+  },
+  "mixed_weight_axis_case": {
+    "qualified_id": "mcunet-curated-ptq/mbv2-w0-35",
+    "artifact_sha256": "00c87d2a5f2d96deb7a7e8afe000b786e5198384ab66f21c714dd3ed43d00f8c",
+    "known_weight_tensor_count": 53,
+    "signatures": {
+      "per-channel:axis=0": 36,
+      "per-channel:axis=3": 17
+    },
+    "operator_semantics": {
+      "CONV_2D:per_axis:axis=0": 36,
+      "DEPTHWISE_CONV_2D:per_axis:axis=3": 17
+    },
+    "single_model_object_projection": {
+      "status": "NOT_LOSSLESS",
+      "axis_0_choice_omits_or_misrepresents": 17,
+      "axis_3_choice_omits_or_misrepresents": 36,
+      "axis_omission_loses_semantics_for": 53
+    }
+  },
+  "per_group_case": {
+    "framework": "ONNX",
+    "fixture_count": 2,
+    "shape_and_numerical_checks_passed": 2,
+    "effective_axis": 1,
+    "group_size": 2,
+    "source_axis_minus_one_equivalence_verified": true
+  },
+  "claim_boundary": [
+    "The TFLite corpus is curated and does not estimate ecosystem prevalence.",
+    "No incomplete affine external parameter was observed in the 50-file TFLite corpus.",
+    "TFLite supplies per-tensor external-parameter and per-channel internal-weight evidence; it does not supply empirical per-group evidence.",
+    "ONNX source fixtures supply the per-group case and the negative-axis compatibility case.",
+    "The mixed-axis result applies to exhaustive weight-tensor contracts; a coarse model-level summary remains possible."
+  ]
+}

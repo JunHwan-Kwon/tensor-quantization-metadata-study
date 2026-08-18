@@ -1,0 +1,43 @@
+{
+  "schema": "tensor_quantization_metadata_study.cyclonedx_2_0_conformance_manifest.v1",
+  "cyclonedx_source": {
+    "repository": "CycloneDX/specification",
+    "commit": "49a945618811213e55686a23fa63b287940071c6",
+    "path": "schema/2.0/model/cyclonedx-ai-ml-2.0.schema.json",
+    "sha256": "9b346b22f6115c08a6d63cbb04b0774b93aa769dec08015e303b3956363dfa53"
+  },
+  "bundled_integration_probe": {
+    "path": "schema/2.0/cyclonedx-2.0-bundled.schema.json",
+    "sha256": "b7e43bc3820052904a9d39617b5db211de261125b66e89446876125ddb90d253",
+    "expected_valid": false,
+    "reason": "The bundle at this commit still exposes modelCard and does not include component.modelProperties."
+  },
+  "fixtures": [
+    {
+      "path": "valid-ai-ml-quantization-2.0.json",
+      "expected_valid": true
+    },
+    {
+      "path": "invalid-ai-ml-quantization-zero-bits-2.0.json",
+      "expected_valid": false,
+      "expected_instance_pointer": "/quantization/bits",
+      "expected_validator": "exclusiveMinimum"
+    },
+    {
+      "path": "invalid-ai-ml-quantization-zero-group-size-2.0.json",
+      "expected_valid": false,
+      "expected_instance_pointer": "/quantization/groupSize",
+      "expected_validator": "minimum"
+    },
+    {
+      "path": "invalid-ai-ml-quantization-unknown-scheme-2.0.json",
+      "expected_valid": false,
+      "expected_instance_pointer": "/quantization/scheme",
+      "expected_validator": "oneOf"
+    }
+  ],
+  "policy_exclusions": [
+    "No cross-field invalid fixture is asserted until the complete-versus-partial metadata policy is explicit.",
+    "A negative source axis is not asserted invalid because ONNX permits negative axes and the draft does not define a normalization contract."
+  ]
+}

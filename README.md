@@ -206,10 +206,32 @@ is kept separate from the recorded study results:
 - [`docs/quantization-property-value-rules.md`](docs/quantization-property-value-rules.md)
 - [`docs/evidence-mapping.md`](docs/evidence-mapping.md)
 - [`docs/cyclonedx-open-questions.md`](docs/cyclonedx-open-questions.md)
+- [`docs/cyclonedx-2.0-quantization-fixture-evidence.md`](docs/cyclonedx-2.0-quantization-fixture-evidence.md)
+- [`docs/cyclonedx-2.0-quantization-proof-matrix.md`](docs/cyclonedx-2.0-quantization-proof-matrix.md)
 - [`examples/cyclonedx`](examples/cyclonedx)
 
 The example files are candidate fragments, not claims of conformance to the
 still-changing CycloneDX 2.0 draft.
+
+The fixture-evidence audit pins specification PR #990 commit
+`49a945618811213e55686a23fa63b287940071c6`, records a 12-case JSON Schema
+validation matrix, and separately re-reads all serialized tensor
+quantization records in the 50 hash-identified TFLite artifacts. Reproduce
+the model-backed portion with:
+
+```bash
+python scripts/audit-tflite-granularity-evidence.py \
+  --cache-root cache/tflite-metadata-audit --require-all
+python scripts/audit-onnx-blocked-quantization-evidence.py \
+  --output data/onnx-blocked-quantization-evidence.json
+python scripts/check-quantization-fixture-evidence.py
+```
+
+The TFLite audit resolves both inline and file-offset constant buffers, binds
+weights and biases to actual operator input slots, and records whether each
+artifact's tensor contracts can be projected losslessly into one model-level
+granularity/axis pair. The ONNX audit independently recomputes the two official
+blocked `QuantizeLinear` fixtures distributed with ONNX 1.22.0.
 
 ## Paper-ready outputs
 
@@ -230,8 +252,9 @@ quantization patterns separately from external parameter contracts:
 - [`experiments/onnx-pilot/summary.md`](experiments/onnx-pilot/summary.md)
 
 The model files are downloaded into the ignored `cache` directory and are not
-redistributed. Reproduction requires the optional dependency in
-`requirements-onnx.txt`.
+redistributed. ONNX 1.22.0 is pinned in the main requirements for complete
+bundle verification; `requirements-onnx.txt` remains a minimal dependency
+file for running only the ONNX acquisition and parser path.
 
 A pinned same-repository, same-path ONNX revision comparison is recorded in
 [`data/onnx-revision-comparison.json`](data/onnx-revision-comparison.json).

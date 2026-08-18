@@ -1,0 +1,17 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "components": [
+    {
+      "type": "machine-learning-model",
+      "name": "invalid-zero-group-size",
+      "modelProperties": {
+        "quantization": {
+          "granularity": "per-group",
+          "groupSize": 0
+        }
+      }
+    }
+  ]
+}

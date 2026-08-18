@@ -1,0 +1,383 @@
+{
+  "schema": "tensor_quantization_metadata_study.cyclonedx_quantization_schema_audit.v1",
+  "source": {
+    "repository": "CycloneDX/specification",
+    "commit": "49a945618811213e55686a23fa63b287940071c6",
+    "path": "schema/2.0/model/cyclonedx-ai-ml-2.0.schema.json",
+    "url": "https://raw.githubusercontent.com/CycloneDX/specification/49a945618811213e55686a23fa63b287940071c6/schema/2.0/model/cyclonedx-ai-ml-2.0.schema.json",
+    "sha256": "9b346b22f6115c08a6d63cbb04b0774b93aa769dec08015e303b3956363dfa53"
+  },
+  "validator": "jsonschema 4.26.0",
+  "quantization_definition_sha256": "7ead8196044549688fde082fba804210bb60ff61e7dd00d3f91fbca1bdb981cc",
+  "quantization_definition": {
+    "type": "object",
+    "title": "Quantization",
+    "description": "The quantization applied to a model parameter. The scheme parameters recorded here describe how quantized values relate to real values. The scale and zero point tensors themselves are model data and are distributed with the model artefact, not with the BOM. Additional scheme specific details may be recorded in the `properties` of the model parameter.",
+    "additionalProperties": false,
+    "properties": {
+      "method": {
+        "type": "string",
+        "title": "Method",
+        "description": "The quantization method or algorithm applied.",
+        "examples": [
+          "gptq",
+          "awq",
+          "rtn",
+          "k-quant"
+        ]
+      },
+      "bits": {
+        "type": "number",
+        "title": "Bits",
+        "description": "The nominal bit width per value. Fractional widths are permitted, for example 1.58 for ternary quantization.",
+        "exclusiveMinimum": 0,
+        "examples": [
+          8,
+          4,
+          1.58
+        ]
+      },
+      "scheme": {
+        "title": "Scheme",
+        "description": "The mapping between quantized values and real values.",
+        "oneOf": [
+          {
+            "title": "Predefined Quantization Scheme",
+            "type": "string",
+            "enum": [
+              "affine",
+              "symmetric"
+            ],
+            "meta:enum": {
+              "affine": "Asymmetric mapping using a scale and a zero point.",
+              "symmetric": "Symmetric mapping using a scale with the zero point fixed at zero."
+            }
+          },
+          {
+            "type": "object",
+            "title": "Custom Quantization Scheme",
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": "The name of the custom quantization scheme."
+              },
+              "description": {
+                "type": "string",
+                "title": "Description",
+                "description": "A description of the custom quantization scheme."
+              }
+            }
+          }
+        ]
+      },
+      "granularity": {
+        "title": "Granularity",
+        "description": "The level at which scales and zero points are assigned.",
+        "oneOf": [
+          {
+            "title": "Predefined Quantization Granularity",
+            "type": "string",
+            "enum": [
+              "per-tensor",
+              "per-channel",
+              "per-group"
+            ],
+            "meta:enum": {
+              "per-tensor": "One scale and zero point applies to the entire tensor.",
+              "per-channel": "Scales and zero points are assigned along one tensor axis.",
+              "per-group": "Scales and zero points are assigned to fixed size groups of elements along one tensor axis."
+            }
+          },
+          {
+            "type": "object",
+            "title": "Custom Quantization Granularity",
+            "required": [
+              "name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": "The name of the custom quantization granularity."
+              },
+              "description": {
+                "type": "string",
+                "title": "Description",
+                "description": "A description of the custom quantization granularity."
+              }
+            }
+          }
+        ]
+      },
+      "groupSize": {
+        "type": "integer",
+        "title": "Group Size",
+        "description": "The number of elements sharing one scale and zero point when the granularity is `per-group`.",
+        "minimum": 1,
+        "examples": [
+          32,
+          64,
+          128
+        ]
+      },
+      "axis": {
+        "type": "integer",
+        "title": "Axis",
+        "description": "The tensor axis along which scales and zero points are assigned when the granularity is `per-channel` or `per-group`.",
+        "minimum": 0
+      }
+    }
+  },
+  "case_count": 12,
+  "valid_case_count": 8,
+  "invalid_case_count": 4,
+  "class_result_counts": {
+    "closed-enum-check:invalid": 1,
+    "cross-field-policy-gap:valid": 6,
+    "extension-check:valid": 1,
+    "framework-compatibility-question:invalid": 1,
+    "numeric-domain-check:valid": 1,
+    "range-check:invalid": 2
+  },
+  "cases": [
+    {
+      "id": "empty-object",
+      "instance": {},
+      "current_expected_valid": true,
+      "class": "cross-field-policy-gap",
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "per-tensor-with-axis",
+      "instance": {
+        "granularity": "per-tensor",
+        "axis": 0
+      },
+      "current_expected_valid": true,
+      "class": "cross-field-policy-gap",
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "per-tensor-with-group-size",
+      "instance": {
+        "granularity": "per-tensor",
+        "groupSize": 32
+      },
+      "current_expected_valid": true,
+      "class": "cross-field-policy-gap",
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "per-channel-without-axis",
+      "instance": {
+        "granularity": "per-channel"
+      },
+      "current_expected_valid": true,
+      "class": "cross-field-policy-gap",
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "per-channel-with-group-size",
+      "instance": {
+        "granularity": "per-channel",
+        "axis": 0,
+        "groupSize": 32
+      },
+      "current_expected_valid": true,
+      "class": "cross-field-policy-gap",
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "per-group-without-axis-or-group-size",
+      "instance": {
+        "granularity": "per-group"
+      },
+      "current_expected_valid": true,
+      "class": "cross-field-policy-gap",
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "zero-bits",
+      "instance": {
+        "bits": 0
+      },
+      "current_expected_valid": false,
+      "class": "range-check",
+      "current_valid": false,
+      "first_error": "0 is less than or equal to the minimum of 0"
+    },
+    {
+      "id": "negative-axis",
+      "instance": {
+        "granularity": "per-channel",
+        "axis": -1
+      },
+      "current_expected_valid": false,
+      "class": "framework-compatibility-question",
+      "current_valid": false,
+      "first_error": "-1 is less than the minimum of 0"
+    },
+    {
+      "id": "zero-group-size",
+      "instance": {
+        "granularity": "per-group",
+        "groupSize": 0
+      },
+      "current_expected_valid": false,
+      "class": "range-check",
+      "current_valid": false,
+      "first_error": "0 is less than the minimum of 1"
+    },
+    {
+      "id": "unknown-predefined-scheme",
+      "instance": {
+        "scheme": "affine_asymmetric"
+      },
+      "current_expected_valid": false,
+      "class": "closed-enum-check",
+      "current_valid": false,
+      "first_error": "'affine_asymmetric' is not valid under any of the given schemas"
+    },
+    {
+      "id": "custom-scheme-object",
+      "instance": {
+        "scheme": {
+          "name": "affine_asymmetric"
+        }
+      },
+      "current_expected_valid": true,
+      "class": "extension-check",
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "fractional-bits",
+      "instance": {
+        "bits": 1.58
+      },
+      "current_expected_valid": true,
+      "class": "numeric-domain-check",
+      "current_valid": true,
+      "first_error": null
+    }
+  ],
+  "quantization_usage_sites": [
+    {
+      "json_pointer": "/$defs/modelProperties/properties/quantization",
+      "scope": "model weights as distributed",
+      "reference": "#/$defs/quantization",
+      "direct_shape_property_available": false
+    },
+    {
+      "json_pointer": "/$defs/modelParameter/properties/quantization",
+      "scope": "one named input or output parameter",
+      "reference": "#/$defs/quantization",
+      "direct_shape_property_available": true,
+      "shape_required": false
+    }
+  ],
+  "normalization_probe_count": 5,
+  "normalization_probes": [
+    {
+      "id": "parameter-negative-source-axis-with-static-rank",
+      "context": "model-parameter",
+      "instance": {
+        "name": "image",
+        "shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "quantization": {
+          "granularity": "per-channel",
+          "axis": -1
+        }
+      },
+      "current_expected_valid": false,
+      "current_valid": false,
+      "first_error": "-1 is less than the minimum of 0"
+    },
+    {
+      "id": "parameter-normalized-effective-axis-with-static-rank",
+      "context": "model-parameter",
+      "instance": {
+        "name": "image",
+        "shape": [
+          1,
+          3,
+          224,
+          224
+        ],
+        "quantization": {
+          "granularity": "per-channel",
+          "axis": 3
+        }
+      },
+      "current_expected_valid": true,
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "parameter-axis-without-shape",
+      "context": "model-parameter",
+      "instance": {
+        "name": "image",
+        "quantization": {
+          "granularity": "per-channel",
+          "axis": 0
+        }
+      },
+      "current_expected_valid": true,
+      "current_valid": true,
+      "first_error": null
+    },
+    {
+      "id": "model-properties-negative-source-axis",
+      "context": "model-properties",
+      "instance": {
+        "quantization": {
+          "granularity": "per-channel",
+          "axis": -1
+        }
+      },
+      "current_expected_valid": false,
+      "current_valid": false,
+      "first_error": "-1 is less than the minimum of 0"
+    },
+    {
+      "id": "model-properties-nonnegative-axis-without-weight-rank",
+      "context": "model-properties",
+      "instance": {
+        "quantization": {
+          "granularity": "per-channel",
+          "axis": 0
+        }
+      },
+      "current_expected_valid": true,
+      "current_valid": true,
+      "first_error": null
+    }
+  ],
+  "axis_normalization_assessment": {
+    "source_axis_formula_when_rank_known": "effective_axis = source_axis if source_axis >= 0 else source_axis + tensor_rank",
+    "shared_quantization_definition": true,
+    "model_parameter_can_supply_rank_when_shape_present": true,
+    "model_parameter_shape_is_required": false,
+    "model_properties_has_direct_weight_tensor_shape": false,
+    "finding": "The draft rejects a negative source axis in both scopes. A model parameter can be normalized when its optional shape supplies rank; the model-level weight summary has no direct tensor rank and may aggregate heterogeneous weight tensors. The draft does not state whether axis is source-faithful or a normalized effective value."
+  },
+  "interpretation_boundary": "The matrix records behavior of the pinned draft. It does not declare every accepted combination semantically valid. In particular, negative axis is rejected by this draft while ONNX defines negative axes for per-axis and blocked quantization."
+}

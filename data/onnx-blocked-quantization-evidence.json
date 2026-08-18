@@ -1,0 +1,109 @@
+{
+  "schema": "tensor_quantization_metadata_study.onnx_blocked_quantization_evidence.v1",
+  "parser": "onnx 1.22.0",
+  "source": {
+    "repository": "onnx/onnx",
+    "tag": "v1.22.0",
+    "generator_url": "https://github.com/onnx/onnx/blob/v1.22.0/onnx/backend/test/case/node/quantizelinear.py",
+    "operator_specification_url": "https://onnx.ai/onnx/operators/onnx__QuantizeLinear.html",
+    "fixture_distribution": "onnx PyPI wheel backend test data"
+  },
+  "fixture_count": 2,
+  "numerically_exact_fixture_count": 2,
+  "blocked_shape_conservation_pass_count": 2,
+  "fixtures": [
+    {
+      "id": "test_quantizelinear_blocked_asymmetric",
+      "model_sha256": "d2ab1e36f03087e91468adc97590757e07b183f4e46bfeefa53899a0d3c0ed87",
+      "model_size_bytes": 245,
+      "opset_imports": {
+        "ai.onnx": 25
+      },
+      "operator": "QuantizeLinear",
+      "source_axis": 1,
+      "equivalent_negative_source_axis": -1,
+      "effective_axis": 1,
+      "block_size": 2,
+      "input_shape": [
+        3,
+        4
+      ],
+      "scale_shape": [
+        3,
+        2
+      ],
+      "zero_point_shape": [
+        3,
+        2
+      ],
+      "output_shape": [
+        3,
+        4
+      ],
+      "block_size_accepted_range": [
+        2,
+        3
+      ],
+      "derived_scale_axis_length": 2,
+      "scale_replication_conservation": true,
+      "numerical_output_element_count": 12,
+      "numerical_output_exact": true,
+      "cyclonedx_normalized_projection": {
+        "method": "onnx-quantize-linear",
+        "scheme": "affine",
+        "granularity": "per-group",
+        "groupSize": 2,
+        "axis": 1
+      }
+    },
+    {
+      "id": "test_quantizelinear_blocked_symmetric",
+      "model_sha256": "a02c7614276ebe6029db1519a0c779a4c96f646f6f8bf8ad2103488a400a86fd",
+      "model_size_bytes": 219,
+      "opset_imports": {
+        "ai.onnx": 25
+      },
+      "operator": "QuantizeLinear",
+      "source_axis": 1,
+      "equivalent_negative_source_axis": -1,
+      "effective_axis": 1,
+      "block_size": 2,
+      "input_shape": [
+        3,
+        4
+      ],
+      "scale_shape": [
+        3,
+        2
+      ],
+      "zero_point_shape": null,
+      "output_shape": [
+        3,
+        4
+      ],
+      "block_size_accepted_range": [
+        2,
+        3
+      ],
+      "derived_scale_axis_length": 2,
+      "scale_replication_conservation": true,
+      "numerical_output_element_count": 12,
+      "numerical_output_exact": true,
+      "cyclonedx_normalized_projection": {
+        "method": "onnx-quantize-linear",
+        "scheme": "symmetric",
+        "granularity": "per-group",
+        "groupSize": 2,
+        "axis": 1
+      }
+    }
+  ],
+  "axis_normalization_assessment": {
+    "formula": "effective_axis = source_axis if source_axis >= 0 else source_axis + tensor_rank",
+    "rank": 2,
+    "source_axis": -1,
+    "effective_axis": 1,
+    "status": "exact_for_both_official_fixtures"
+  },
+  "interpretation_boundary": "These are official ONNX backend conformance fixtures and prove that blocked QuantizeLinear uses an axis and a positive block size with the recorded shape relation. The CycloneDX objects are normalized projections of that source contract. This does not establish that GGUF encoding block widths have identical semantics, or that every per-group method is affine."
+}

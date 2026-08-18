@@ -1,0 +1,95 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "serialNumber": "urn:uuid:7405c6d8-e9cb-4ed2-adff-8978f1ecf101",
+  "version": 1,
+  "components": [
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model-per-tensor-external-parameter",
+      "name": "per-tensor-external-parameter-fixture",
+      "version": "1",
+      "modelProperties": {
+        "inputs": [
+          {
+            "name": "image",
+            "modality": "image",
+            "dataType": "uint8",
+            "quantization": {
+              "bits": 8,
+              "scheme": "affine",
+              "granularity": "per-tensor"
+            },
+            "shape": [
+              1,
+              224,
+              224,
+              3
+            ],
+            "required": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model-per-channel-parameter",
+      "name": "per-channel-parameter-fixture",
+      "version": "1",
+      "modelProperties": {
+        "inputs": [
+          {
+            "name": "channel-indexed-parameter",
+            "dataType": "int8",
+            "quantization": {
+              "bits": 8,
+              "scheme": "symmetric",
+              "granularity": "per-channel",
+              "axis": 0
+            },
+            "shape": [
+              16,
+              3,
+              3,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model-onnx-blocked-quantization",
+      "name": "onnx-blocked-quantization-fixture",
+      "version": "1",
+      "modelProperties": {
+        "quantization": {
+          "method": "onnx-QuantizeLinear",
+          "bits": 8,
+          "scheme": "affine",
+          "granularity": "per-group",
+          "groupSize": 2,
+          "axis": 1
+        }
+      }
+    },
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "model-custom-quantization",
+      "name": "custom-quantization-fixture",
+      "version": "1",
+      "modelProperties": {
+        "quantization": {
+          "method": "ternary-weight-encoding",
+          "bits": 1.58,
+          "scheme": {
+            "name": "balanced-ternary",
+            "description": "A fixture for the draft custom-scheme extension point."
+          },
+          "granularity": "per-tensor"
+        }
+      }
+    }
+  ]
+}

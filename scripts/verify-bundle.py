@@ -378,6 +378,10 @@ def verify_supplementary_results(root):
         ],
         [
             sys.executable,
+            str(root / "scripts/check-quantization-fixture-evidence.py"),
+        ],
+        [
+            sys.executable,
             str(root / "scripts/check-affine-all-pairs.py"),
             str(root / "experiments/imagenetv2-all-pairs"),
         ],
