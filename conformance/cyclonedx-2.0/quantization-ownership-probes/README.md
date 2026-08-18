@@ -16,5 +16,14 @@ The suite distinguishes four layers:
 3. the normative property rules at PR #175 head `378f7b4`;
 4. semantic ownership between typed fields and taxonomy properties.
 
-Run `npm ci && npm run check` from the repository root. The committed result
-ledger is `data/cyclonedx-pr990-validation-result.json`.
+From the repository root, install the pinned Python checker and Node
+validator, then run both independent implementations:
+
+```shell
+python -m pip install -r requirements-cyclonedx-probes.txt
+npm ci
+npm run check
+```
+
+The committed result ledger is
+`data/cyclonedx-pr990-validation-result.json`.

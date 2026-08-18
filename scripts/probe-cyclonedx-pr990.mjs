@@ -63,7 +63,7 @@ function loadSchemaSet(manifest) {
   if (archive.commit !== manifest.schema_source.commit) {
     fail("Pinned schema commit mismatch");
   }
-  if (archive.files.length !== manifest.schema_source.file_count) {
+  if (archive.files.length !== manifest.schema_source.source_file_count) {
     fail("Pinned schema file count mismatch");
   }
 
@@ -77,16 +77,24 @@ function loadSchemaSet(manifest) {
   return { archive, files };
 }
 
-function buildValidator(files) {
+function buildValidator(files, manifest) {
   const ajv = new Ajv2020({
     allErrors: true,
     strict: false,
     validateFormats: false,
   });
   ajv.addMetaSchema(draft7MetaSchema);
-  for (const entry of files) {
+  const excluded = new Set(manifest.schema_source.validation_excluded_paths);
+  const validationFiles = files.filter((entry) => !excluded.has(entry.path));
+  if (validationFiles.length !== manifest.schema_source.validation_file_count) {
+    fail("Pinned modular validation file count mismatch");
+  }
+  for (const entry of validationFiles) {
     if (entry.path.includes("bundled")) {
-      continue;
+      fail(`Bundled schema entered modular validation graph: ${entry.path}`);
+    }
+    if (!entry.schema.$id) {
+      fail(`Pinned modular schema has no $id: ${entry.path}`);
     }
     ajv.addSchema(entry.schema);
     if (entry.path === "schema/spdx.schema.json") {
@@ -106,7 +114,7 @@ function buildValidator(files) {
   if (!validate) {
     fail("Pinned modular CycloneDX root schema was not registered");
   }
-  return validate;
+  return { validate, validationFiles };
 }
 
 function verifyTaxonomySource(manifest) {
@@ -148,42 +156,47 @@ function taxonomyProperties(parameter) {
   return { status: null, values };
 }
 
-function parseFiniteNumber(value) {
+function parseDecimalNumber(value) {
   if (
     typeof value !== "string"
     || !/^-?(?:0|[1-9][0-9]*)(?:\.[0-9]+)?(?:[eE][+-]?[0-9]+)?$/.test(value)
   ) {
     return null;
   }
-  const number = Number(value);
-  return Number.isFinite(number) ? number : null;
+  return value;
 }
 
 function parseInteger(value) {
   if (typeof value !== "string" || !/^-?(0|[1-9][0-9]*)$/.test(value)) {
     return null;
   }
-  const number = Number(value);
-  return Number.isSafeInteger(number) ? number : null;
+  try {
+    return BigInt(value);
+  } catch {
+    return null;
+  }
 }
 
 function parseNumericArray(value, integersOnly) {
   if (typeof value !== "string") {
     return null;
   }
-  let parsed;
-  try {
-    parsed = JSON.parse(value);
-  } catch {
+  const trimmed = value.trim();
+  if (!trimmed.startsWith("[") || !trimmed.endsWith("]")) {
     return null;
   }
-  if (!Array.isArray(parsed) || parsed.length === 0) {
+  const body = trimmed.slice(1, -1).trim();
+  if (!body) {
     return null;
   }
-  if (integersOnly) {
-    return parsed.every(Number.isSafeInteger) ? parsed : null;
+  const values = body.split(",").map((item) => item.trim());
+  const pattern = integersOnly
+    ? /^-?(?:0|[1-9][0-9]*)$/
+    : /^-?(?:0|[1-9][0-9]*)(?:\.[0-9]+)?(?:[eE][+-]?[0-9]+)?$/;
+  if (!values.every((item) => pattern.test(item))) {
+    return null;
   }
-  return parsed.every((item) => Number.isFinite(item) && item > 0) ? parsed : null;
+  return values;
 }
 
 function taxonomyStatus(document) {
@@ -203,10 +216,13 @@ function taxonomyStatus(document) {
     return "invalid_missing_scheme";
   }
   const scheme = properties.get("scheme");
+  const customScheme = typeof scheme === "string"
+    && scheme.startsWith("_undefined:")
+    && scheme.length > "_undefined:".length;
   if (
     scheme !== "affine_asymmetric"
     && scheme !== "affine_symmetric"
-    && !scheme.startsWith("_undefined:")
+    && !customScheme
   ) {
     return "invalid_unknown_scheme";
   }
@@ -225,13 +241,10 @@ function taxonomyStatus(document) {
     return "invalid_granularity";
   }
   if (granularity === "per-tensor") {
-    if (properties.has("axis")) {
-      return "invalid_per_tensor_axis";
-    }
     const scale = properties.has("scale")
-      ? parseFiniteNumber(properties.get("scale"))
+      ? parseDecimalNumber(properties.get("scale"))
       : null;
-    if (properties.has("scale") && (scale === null || scale <= 0)) {
+    if (properties.has("scale") && scale === null) {
       return "invalid_per_tensor_vector";
     }
     if (properties.has("zeroPoint") && parseInteger(properties.get("zeroPoint")) === null) {
@@ -241,7 +254,7 @@ function taxonomyStatus(document) {
   }
 
   const axis = parseInteger(properties.get("axis"));
-  if (axis === null || axis < 0) {
+  if (axis === null || axis < 0n) {
     return "invalid_per_axis_axis";
   }
   const scales = properties.has("scale")
@@ -257,6 +270,50 @@ function taxonomyStatus(document) {
     }
   }
   return "valid";
+}
+
+function verifyTaxonomyCheckerBoundary() {
+  const document = (scheme, properties = []) => ({
+    components: [{
+      modelProperties: {
+        inputs: [{
+          properties: [
+            { name: `${PREFIX}scheme`, value: scheme },
+            ...properties,
+          ],
+        }],
+      },
+    }],
+  });
+  const cases = [
+    {
+      id: "named-custom-scheme",
+      document: document("_undefined:vendor_scheme"),
+      expected: "valid",
+    },
+    {
+      id: "empty-custom-scheme-name",
+      document: document("_undefined:"),
+      expected: "invalid_unknown_scheme",
+    },
+    {
+      id: "ignored-per-tensor-axis",
+      document: document("affine_asymmetric", [
+        { name: `${PREFIX}granularity`, value: "per-tensor" },
+        { name: `${PREFIX}axis`, value: "0" },
+        { name: `${PREFIX}scale`, value: "0.5" },
+        { name: `${PREFIX}zeroPoint`, value: "0" },
+      ]),
+      expected: "valid",
+    },
+  ];
+  for (const row of cases) {
+    const observed = taxonomyStatus(row.document);
+    if (observed !== row.expected) {
+      fail(`Taxonomy checker boundary mismatch: ${row.id}`);
+    }
+  }
+  return cases.length;
 }
 
 function ownershipStatus(document) {
@@ -307,7 +364,14 @@ function schemaFailureSummary(errors) {
     .sort((left, right) => stableStringify(left).localeCompare(stableStringify(right)));
 }
 
-function buildResult(manifest, files, taxonomyBytes, validate) {
+function buildResult(
+  manifest,
+  files,
+  validationFiles,
+  taxonomyBytes,
+  validate,
+  taxonomyCheckerUnitCaseCount,
+) {
   const probes = manifest.probes.map((probe) => {
     const path = join(PROBE_ROOT, probe.path);
     const bytes = readFileSync(path);
@@ -338,10 +402,11 @@ function buildResult(manifest, files, taxonomyBytes, validate) {
   });
 
   const result = {
-    schema: "tensor_quantization_metadata_study.cyclonedx_pr990_validation.v1",
+    schema: "tensor_quantization_metadata_study.cyclonedx_pr990_validation.v1.1",
     claim_boundary: [
-      "Schema validity is measured against the 28-file modular JSON Schema graph at the pinned PR #990 commit.",
+      "Schema validity is measured against a 26-file modular graph drawn from the 28-file pinned PR #990 source set; the two bundled schemas are retained only for provenance.",
       "Taxonomy status is a deterministic check of the pinned PR #175 text; it is not JSON Schema validation.",
+      "Taxonomy status does not add scale-positivity or integer-storage-range requirements that are absent from the pinned text.",
       "The probes assess placement and ownership semantics, not runtime behavior or model quality.",
     ],
     validators: {
@@ -362,7 +427,9 @@ function buildResult(manifest, files, taxonomyBytes, validate) {
         pull_request: manifest.schema_source.pull_request,
         commit: manifest.schema_source.commit,
         archive_sha256: manifest.schema_source.archive_sha256,
-        member_count: files.length,
+        source_member_count: files.length,
+        validation_member_count: validationFiles.length,
+        validation_excluded_paths: manifest.schema_source.validation_excluded_paths,
       },
       taxonomy: {
         repository: manifest.taxonomy_source.repository,
@@ -376,6 +443,7 @@ function buildResult(manifest, files, taxonomyBytes, validate) {
       typed_numeric_extension_schema_valid: probes.find((probe) => probe.id === "taxonomy-extension").schema_valid,
       contradictory_duplicate_schema_valid: probes.find((probe) => probe.id === "contradiction").schema_valid,
       semantic_equivalence_enforced_by_schema: false,
+      taxonomy_checker_unit_case_count: taxonomyCheckerUnitCaseCount,
     },
     probes,
     hash_contract: {
@@ -396,8 +464,16 @@ function main() {
   const manifest = readJson(MANIFEST_PATH);
   const { files } = loadSchemaSet(manifest);
   const taxonomyBytes = verifyTaxonomySource(manifest);
-  const validate = buildValidator(files);
-  const result = buildResult(manifest, files, taxonomyBytes, validate);
+  const taxonomyCheckerUnitCaseCount = verifyTaxonomyCheckerBoundary();
+  const { validate, validationFiles } = buildValidator(files, manifest);
+  const result = buildResult(
+    manifest,
+    files,
+    validationFiles,
+    taxonomyBytes,
+    validate,
+    taxonomyCheckerUnitCaseCount,
+  );
   const serialized = `${JSON.stringify(result, null, 2)}\n`;
 
   if (mode === "--write") {

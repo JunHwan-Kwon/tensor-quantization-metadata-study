@@ -1,8 +1,9 @@
 {
-  "schema": "tensor_quantization_metadata_study.cyclonedx_pr990_validation.v1",
+  "schema": "tensor_quantization_metadata_study.cyclonedx_pr990_validation.v1.1",
   "claim_boundary": [
-    "Schema validity is measured against the 28-file modular JSON Schema graph at the pinned PR #990 commit.",
+    "Schema validity is measured against a 26-file modular graph drawn from the 28-file pinned PR #990 source set; the two bundled schemas are retained only for provenance.",
     "Taxonomy status is a deterministic check of the pinned PR #175 text; it is not JSON Schema validation.",
+    "Taxonomy status does not add scale-positivity or integer-storage-range requirements that are absent from the pinned text.",
     "The probes assess placement and ownership semantics, not runtime behavior or model quality."
   ],
   "validators": {
@@ -23,7 +24,12 @@
       "pull_request": 990,
       "commit": "49a945618811213e55686a23fa63b287940071c6",
       "archive_sha256": "920d8ba449b8fbbef30639db63fe32609ac6768f89f437f5b2015cc726aebc4a",
-      "member_count": 28
+      "source_member_count": 28,
+      "validation_member_count": 26,
+      "validation_excluded_paths": [
+        "schema/2.0/cyclonedx-2.0-bundled.min.schema.json",
+        "schema/2.0/cyclonedx-2.0-bundled.schema.json"
+      ]
     },
     "taxonomy": {
       "repository": "CycloneDX/cyclonedx-property-taxonomy",
@@ -36,7 +42,8 @@
     "typed_only_schema_valid": true,
     "typed_numeric_extension_schema_valid": true,
     "contradictory_duplicate_schema_valid": true,
-    "semantic_equivalence_enforced_by_schema": false
+    "semantic_equivalence_enforced_by_schema": false,
+    "taxonomy_checker_unit_case_count": 3
   },
   "probes": [
     {
@@ -128,5 +135,5 @@
     "canonicalization": "UTF-8 JSON with recursively lexicographic object keys and compact separators",
     "excluded_pointer": "/ledger_sha256"
   },
-  "ledger_sha256": "c3335a728e72b305d36f36188757a00ce0c59b534c2a85bb6f3a07026eb952a1"
+  "ledger_sha256": "4dc37ffd5075b732f6973ae654845687556b603272159d37782116127d717717"
 }

@@ -1,5 +1,5 @@
 {
-  "schema": "tensor_quantization_metadata_study.quantization_ownership_probe_manifest.v1",
+  "schema": "tensor_quantization_metadata_study.quantization_ownership_probe_manifest.v1.1",
   "scope": "CycloneDX 2.0 AI/ML quantization ownership and placement",
   "schema_source": {
     "repository": "CycloneDX/specification",
@@ -8,7 +8,12 @@
     "validation_root": "schema/2.0/cyclonedx-2.0.schema.json",
     "archive": "data/cyclonedx-2.0-schema-set.pr990.json.gz",
     "archive_sha256": "920d8ba449b8fbbef30639db63fe32609ac6768f89f437f5b2015cc726aebc4a",
-    "file_count": 28
+    "source_file_count": 28,
+    "validation_file_count": 26,
+    "validation_excluded_paths": [
+      "schema/2.0/cyclonedx-2.0-bundled.min.schema.json",
+      "schema/2.0/cyclonedx-2.0-bundled.schema.json"
+    ]
   },
   "taxonomy_source": {
     "repository": "CycloneDX/cyclonedx-property-taxonomy",

@@ -34,6 +34,7 @@ contradictory document that is schema-valid at the pinned PR head.
 Run the two independent validators with:
 
 ```bash
+python -m pip install -r requirements-cyclonedx-probes.txt
 npm ci
 npm run check
 ```

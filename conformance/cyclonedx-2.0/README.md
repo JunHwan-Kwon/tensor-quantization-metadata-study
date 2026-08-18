@@ -49,11 +49,14 @@ and the string-valued entries in property-taxonomy PR #175. It includes an
 intentionally contradictory document, so these files are diagnostic probes
 rather than recommended examples.
 
-The primary checker validates complete BOM documents with Ajv against the
-vendored 28-file modular schema graph. A second checker uses
+The primary checker validates complete BOM documents with Ajv against a
+26-file modular graph drawn from the vendored 28-file source set. The two
+bundled schemas are retained for provenance and excluded from that graph. A
+second checker uses
 `python-jsonschema` and independently recomputes file and ledger hashes:
 
 ```shell
+python -m pip install -r requirements-cyclonedx-probes.txt
 npm ci
 npm run check
 ```
