@@ -1,0 +1,132 @@
+{
+  "schema": "tensor_quantization_metadata_study.cyclonedx_pr990_validation.v1",
+  "claim_boundary": [
+    "Schema validity is measured against the 28-file modular JSON Schema graph at the pinned PR #990 commit.",
+    "Taxonomy status is a deterministic check of the pinned PR #175 text; it is not JSON Schema validation.",
+    "The probes assess placement and ownership semantics, not runtime behavior or model quality."
+  ],
+  "validators": {
+    "primary": {
+      "implementation": "Ajv",
+      "version": "8.20.0",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    },
+    "independent": {
+      "implementation": "python-jsonschema",
+      "required_version": "4.26.0",
+      "script": "scripts/verify-cyclonedx-pr990-files.py"
+    }
+  },
+  "sources": {
+    "schema": {
+      "repository": "CycloneDX/specification",
+      "pull_request": 990,
+      "commit": "49a945618811213e55686a23fa63b287940071c6",
+      "archive_sha256": "920d8ba449b8fbbef30639db63fe32609ac6768f89f437f5b2015cc726aebc4a",
+      "member_count": 28
+    },
+    "taxonomy": {
+      "repository": "CycloneDX/cyclonedx-property-taxonomy",
+      "pull_request": 175,
+      "commit": "378f7b4cdad76de16d3521da362cdfdd6a7f08ff",
+      "sha256": "b64af57d208ae2b92f744a784a5642a990dfa4e4e2250c9d13cc9ff885e37db9"
+    }
+  },
+  "observations": {
+    "typed_only_schema_valid": true,
+    "typed_numeric_extension_schema_valid": true,
+    "contradictory_duplicate_schema_valid": true,
+    "semantic_equivalence_enforced_by_schema": false
+  },
+  "probes": [
+    {
+      "id": "typed-only",
+      "path": "conformance/cyclonedx-2.0/quantization-ownership-probes/typed-only.json",
+      "sha256": "a9ef4f4c3e22cd97ea951b7d383a27507702af15db952b2521428acab3dd2d25",
+      "schema_valid": true,
+      "schema_failures": [],
+      "taxonomy_status": "not_used",
+      "ownership_status": "typed_core_only"
+    },
+    {
+      "id": "taxonomy-extension",
+      "path": "conformance/cyclonedx-2.0/quantization-ownership-probes/taxonomy-extension.json",
+      "sha256": "acce3572ca3a4c7f892c84ad7e417c1de569f145bdeee4457b50ffb0000b939b",
+      "schema_valid": true,
+      "schema_failures": [],
+      "taxonomy_status": "invalid_missing_scheme",
+      "ownership_status": "typed_core_with_numeric_extension"
+    },
+    {
+      "id": "duplicated-scheme",
+      "path": "conformance/cyclonedx-2.0/quantization-ownership-probes/duplicated-scheme.json",
+      "sha256": "3ccbdba890825d07ecc4a2ee3a0d6aad24593c5afbc918feedc6ab640103bfb5",
+      "schema_valid": true,
+      "schema_failures": [],
+      "taxonomy_status": "valid",
+      "ownership_status": "duplicated_equivalent"
+    },
+    {
+      "id": "contradiction",
+      "path": "conformance/cyclonedx-2.0/quantization-ownership-probes/contradiction.json",
+      "sha256": "00ca2b12cf7aaccd7fc86733a577d562fb2616fcb1ec9581c44f5dc26784eacc",
+      "schema_valid": true,
+      "schema_failures": [],
+      "taxonomy_status": "valid",
+      "ownership_status": "contradictory_duplicate"
+    },
+    {
+      "id": "per-tensor-vector-scale",
+      "path": "conformance/cyclonedx-2.0/quantization-ownership-probes/per-tensor-vector-scale.json",
+      "sha256": "d468686e1991d83c78f730dae559fff03c18dac5c51e48d62142caffb5c9328a",
+      "schema_valid": true,
+      "schema_failures": [],
+      "taxonomy_status": "invalid_per_tensor_vector",
+      "ownership_status": "duplicated_equivalent"
+    },
+    {
+      "id": "legacy-modelcard",
+      "path": "conformance/cyclonedx-2.0/quantization-ownership-probes/legacy-modelcard.json",
+      "sha256": "9395f0d0457213c17e61a0c5b7246d9f5047e2235e8a73bfa5fa23870190aed6",
+      "schema_valid": false,
+      "schema_failures": [
+        {
+          "instance_pointer": "/components/0",
+          "keyword": "additionalProperties"
+        },
+        {
+          "instance_pointer": "/components/0",
+          "keyword": "additionalProperties"
+        },
+        {
+          "instance_pointer": "/components/0",
+          "keyword": "additionalProperties"
+        },
+        {
+          "instance_pointer": "/components/0",
+          "keyword": "oneOf"
+        },
+        {
+          "instance_pointer": "/components/0",
+          "keyword": "required"
+        },
+        {
+          "instance_pointer": "/components/0",
+          "keyword": "required"
+        },
+        {
+          "instance_pointer": "/components/0/type",
+          "keyword": "const"
+        }
+      ],
+      "taxonomy_status": "legacy_aggregate_placement",
+      "ownership_status": "legacy_aggregate"
+    }
+  ],
+  "hash_contract": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON with recursively lexicographic object keys and compact separators",
+    "excluded_pointer": "/ledger_sha256"
+  },
+  "ledger_sha256": "c3335a728e72b305d36f36188757a00ce0c59b534c2a85bb6f3a07026eb952a1"
+}

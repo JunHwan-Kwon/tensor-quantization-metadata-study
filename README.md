@@ -23,6 +23,25 @@ presented as estimates of the TFLite ecosystem. The prospective population
 and estimands are specified in
 [`docs/research-population-protocol.md`](docs/research-population-protocol.md).
 
+## CycloneDX draft conformance evidence
+
+The repository also contains standard-facing fixtures and six complete BOM
+probes for CycloneDX specification PR #990 and property-taxonomy PR #175. The
+suite separates JSON Schema validity, taxonomy wording, and semantic ownership
+instead of treating them as one result. It includes an intentionally
+contradictory document that is schema-valid at the pinned PR head.
+
+Run the two independent validators with:
+
+```bash
+npm ci
+npm run check
+```
+
+See [`conformance/cyclonedx-2.0/`](conformance/cyclonedx-2.0/), the committed
+[`validation result`](data/cyclonedx-pr990-validation-result.json), and the
+[`vocabulary mapping note`](docs/quantization-vocabulary-mapping.md).
+
 ## Interface results
 
 The 50 files contain 114 external input and output parameters. Of those,

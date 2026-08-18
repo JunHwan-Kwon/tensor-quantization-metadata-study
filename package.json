@@ -1,0 +1,15 @@
+{
+  "name": "tensor-quantization-metadata-study",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "ISC",
+  "scripts": {
+    "generate:cyclonedx-pr990": "node scripts/probe-cyclonedx-pr990.mjs --write",
+    "check:cyclonedx-pr990": "node scripts/probe-cyclonedx-pr990.mjs --check && python scripts/verify-cyclonedx-pr990-files.py",
+    "check": "npm run check:cyclonedx-pr990"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0"
+  }
+}

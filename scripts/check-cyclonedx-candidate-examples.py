@@ -101,11 +101,17 @@ def main():
     root = Path(__file__).resolve().parents[1]
     examples = [
         (
-            root / "examples/cyclonedx/efficientnet-lite0-float32.candidate.json",
+            root / (
+                "examples/cyclonedx/legacy/"
+                "efficientnet-lite0-float32.58a7cc2.candidate.json"
+            ),
             "mediapipe-public/efficientnet-lite0-f32",
         ),
         (
-            root / "examples/cyclonedx/efficientnet-lite0-int8-affine.candidate.json",
+            root / (
+                "examples/cyclonedx/legacy/"
+                "efficientnet-lite0-int8-affine.58a7cc2.candidate.json"
+            ),
             "mediapipe-public/efficientnet-lite0-int8",
         ),
     ]

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://cyclonedx.org/schema/2.0/cyclonedx-2.0.schema.json",
+  "specFormat": "CycloneDX",
+  "specVersion": "2.0",
+  "serialNumber": "urn:uuid:f76a619f-88c6-5aa7-ba5b-7be0d735c645",
+  "version": 1,
+  "components": [
+    {
+      "type": "machine-learning-model",
+      "bom-ref": "quantization-ownership-probe-legacy-modelcard",
+      "name": "quantization-ownership-probe-legacy-modelcard",
+      "version": "1.0.0",
+      "modelCard": {
+        "modelParameters": {
+          "properties": [
+            {
+              "name": "cdx:ai-ml:model:parameter:quantization:scheme",
+              "value": "affine_asymmetric"
+            },
+            {
+              "name": "cdx:ai-ml:model:parameter:quantization:scale",
+              "value": "0.0078125"
+            },
+            {
+              "name": "cdx:ai-ml:model:parameter:quantization:zeroPoint",
+              "value": "128"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

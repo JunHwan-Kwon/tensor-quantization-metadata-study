@@ -1,5 +1,5 @@
 {
-  "schema": "tensor_quantization_metadata_study.cyclonedx_2_0_conformance_manifest.v1",
+  "schema": "tensor_quantization_metadata_study.cyclonedx_2_0_conformance_manifest.v1.1",
   "cyclonedx_source": {
     "repository": "CycloneDX/specification",
     "commit": "49a945618811213e55686a23fa63b287940071c6",
@@ -36,6 +36,11 @@
       "expected_validator": "oneOf"
     }
   ],
+  "semantic_probes": {
+    "manifest": "quantization-ownership-probes/manifest.json",
+    "result": "../../data/cyclonedx-pr990-validation-result.json",
+    "purpose": "Separate modular-schema validity from taxonomy semantics and typed/property ownership."
+  },
   "policy_exclusions": [
     "No cross-field invalid fixture is asserted until the complete-versus-partial metadata policy is explicit.",
     "A negative source axis is not asserted invalid because ONNX permits negative axes and the draft does not define a normalization contract."

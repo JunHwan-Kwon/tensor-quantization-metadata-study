@@ -37,6 +37,7 @@ def public_files(root):
             relative.name == "SHA256SUMS"
             or ".git" in relative.parts
             or ".venv" in relative.parts
+            or "node_modules" in relative.parts
             or "cache" in relative.parts
             or "__pycache__" in relative.parts
             or path.suffix == ".pyc"
@@ -379,6 +380,10 @@ def verify_supplementary_results(root):
         [
             sys.executable,
             str(root / "scripts/check-quantization-fixture-evidence.py"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/verify-cyclonedx-pr990-files.py"),
         ],
         [
             sys.executable,

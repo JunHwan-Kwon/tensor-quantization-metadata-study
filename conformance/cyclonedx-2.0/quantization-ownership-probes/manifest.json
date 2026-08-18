@@ -1,0 +1,65 @@
+{
+  "schema": "tensor_quantization_metadata_study.quantization_ownership_probe_manifest.v1",
+  "scope": "CycloneDX 2.0 AI/ML quantization ownership and placement",
+  "schema_source": {
+    "repository": "CycloneDX/specification",
+    "pull_request": 990,
+    "commit": "49a945618811213e55686a23fa63b287940071c6",
+    "validation_root": "schema/2.0/cyclonedx-2.0.schema.json",
+    "archive": "data/cyclonedx-2.0-schema-set.pr990.json.gz",
+    "archive_sha256": "920d8ba449b8fbbef30639db63fe32609ac6768f89f437f5b2015cc726aebc4a",
+    "file_count": 28
+  },
+  "taxonomy_source": {
+    "repository": "CycloneDX/cyclonedx-property-taxonomy",
+    "pull_request": 175,
+    "commit": "378f7b4cdad76de16d3521da362cdfdd6a7f08ff",
+    "path": "cdx/ai-ml.md",
+    "vendored_path": "reference/cyclonedx-property-taxonomy/cdx-ai-ml.378f7b4.md",
+    "sha256": "b64af57d208ae2b92f744a784a5642a990dfa4e4e2250c9d13cc9ff885e37db9"
+  },
+  "probes": [
+    {
+      "id": "typed-only",
+      "path": "typed-only.json",
+      "expected_schema_valid": true,
+      "expected_taxonomy_status": "not_used",
+      "expected_ownership_status": "typed_core_only"
+    },
+    {
+      "id": "taxonomy-extension",
+      "path": "taxonomy-extension.json",
+      "expected_schema_valid": true,
+      "expected_taxonomy_status": "invalid_missing_scheme",
+      "expected_ownership_status": "typed_core_with_numeric_extension"
+    },
+    {
+      "id": "duplicated-scheme",
+      "path": "duplicated-scheme.json",
+      "expected_schema_valid": true,
+      "expected_taxonomy_status": "valid",
+      "expected_ownership_status": "duplicated_equivalent"
+    },
+    {
+      "id": "contradiction",
+      "path": "contradiction.json",
+      "expected_schema_valid": true,
+      "expected_taxonomy_status": "valid",
+      "expected_ownership_status": "contradictory_duplicate"
+    },
+    {
+      "id": "per-tensor-vector-scale",
+      "path": "per-tensor-vector-scale.json",
+      "expected_schema_valid": true,
+      "expected_taxonomy_status": "invalid_per_tensor_vector",
+      "expected_ownership_status": "duplicated_equivalent"
+    },
+    {
+      "id": "legacy-modelcard",
+      "path": "legacy-modelcard.json",
+      "expected_schema_valid": false,
+      "expected_taxonomy_status": "legacy_aggregate_placement",
+      "expected_ownership_status": "legacy_aggregate"
+    }
+  ]
+}
