@@ -1,0 +1,546 @@
+# This workflow:
+# - Downloads the f16 (quantized) GGUF model from the target (model) 'repo_id' defined in the build matrix.
+#   - Note: The f16 model was generated and uploaded by the `XX-hf-convert-to-f16-gguf` workflow
+#     whose completion triggers this workflow.
+# - Quantizes the f16 GGUF to the designated 'quantization' (e.g., Q4_0, Q4_K_M, etc.) defined in the build matrix.
+# - Uploads the quantized GGUF to target 'repo_id'.
+
+name: language-quantize-gguf-upload-reusable
+
+on:
+  workflow_call:
+    secrets:
+      hf_token:
+        required: true
+    inputs:
+      enable_language_jobs:
+        type: boolean
+        required: false
+        default: false
+      enable_guardian_jobs:
+        type: boolean
+        required: false
+        default: false
+      enable_embedding_jobs:
+        type: boolean
+        required: false
+        default: false
+      enable_docling_jobs:
+        type: boolean
+        required: false
+        default: false
+      repo_id:
+        type: string
+        required: true
+      quantization:
+        type: string
+        required: true
+      hf_collection_config:
+        type: string
+        required: true
+      target_repo_owner:
+        type: string
+        required: true
+      target_repo_name_ext:
+        type: string
+        required: true
+      llamacpp_build_tag:
+        type: string
+        required: true
+        description: "llama.cpp build tag to use (e.g., 'b6569', 'b6808', 'b8100'). Determines which binary tools to use from ./bin subdirectory."
+      converted_quantization:
+        type: string
+        required: true
+        description: "Base quantization format of the converted model (e.g., 'f16', 'bf16'). Used to construct the filename of the base model to download."
+      debug:
+        type: boolean
+        required: true
+        default: false
+      trace:
+        type: boolean
+        required: false
+        default: false
+
+env:
+  DEF_SEP: "-"
+  EXT_GGUF: .gguf
+  CONVERTED_FILE_EXISTS: "0"
+  UPLOAD_CONVERTED_ENABLED: true
+  # DELETE_PREVIOUS_SHARD_UPLOAD controls whether the delete-previous-upload step runs.
+  # It must be set to 'true' when a re-run could produce a different shard layout than the
+  # previous run — for example when the quantized GGUF crosses the 45 GiB split threshold
+  # due to a model update or a change in llama.cpp quantization output.  Without this
+  # cleanup, the HF repo is left in an inconsistent state: stale single-file and shard
+  # artifacts coexist, confusing consumers.  Examples of mismatches that require cleanup:
+  #   • Previous run: single file  →  Current run: 2+ shards  (old .gguf file orphaned)
+  #   • Previous run: 2 shards     →  Current run: single file (old shard files orphaned)
+  #   • Previous run: 2 shards     →  Current run: 3 shards    (shard -00002-of-00002 orphaned)
+  # Set to 'false' to skip deletion (faster, safe for first-time uploads or guaranteed
+  # single-file outputs that will never be split).
+  DELETE_PREVIOUS_SHARD_UPLOAD: "true"
+  FIND_ARGS: "-not -path '*/.*' -print | sed -e 's;[^/]*/;|___;g;s;___|; |;g'"
+  LLAMACPP_DIR: llama.cpp
+  MODEL_DOWNLOAD_DIR: models
+
+  # Dynamically set variables (pre-declared to avoid linter warnings)
+  REPO_ORG: ""  # Set in set-github-env step
+  REPO_NAME: ""  # Set in set-github-env step
+  EXT_PRECISION_GGUF: ""  # Set in set-github-env step
+  BASE_FNAME_CONVERTED_GGUF: ""  # Set in set-derivative-env-vars-1 step
+  TARGET_REPO_ID: ""  # Set in set-derivative-env-vars-2 step
+  BASE_FNAME_QUANTIZED_GGUF: ""  # Set in set-derivative-env-vars-1 step
+  LOCAL_MODEL_PATH: ""  # Set in set-derivative-env-vars-1 step
+  LOCAL_FNAME_CONVERTED_GGUF: ""  # Set in set-derivative-env-vars-2 step
+  LOCAL_FNAME_QUANTIZED_GGUF: ""  # Set in set-derivative-env-vars-2 step
+  IS_SPLIT_GGUF: "0"  # Set in test-gguf-converted-file-exists-in-hf: 1 = bf16 was uploaded as shards
+  SHARD1_FNAME: ""  # Set in test-gguf-converted-file-exists-in-hf: first shard filename when IS_SPLIT_GGUF=1
+  GGUF_QUANTIZED_UPLOAD_FILES: ""  # Set in split-quantized-gguf-if-oversized (shard list, or single file)
+
+jobs:
+  quantize:
+    runs-on: gguf-linux-arm64-32-128GB-1200GB
+    if: ${{ inputs.enable_language_jobs == true || inputs.enable_guardian_jobs == true || inputs.enable_embedding_jobs == true || inputs.enable_docling_jobs == true }}
+    env:
+      HF_HUB_DISABLE_XET: 1
+      HF_HUB_ENABLE_HF_TRANSFER: 0
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        sparse-checkout: |
+          requirements.txt
+          scripts/hf_model_file_exists.py
+          scripts/hf_file_download.py
+          scripts/hf_model_file_upload.py
+          scripts/hf_model_download_snapshot.py
+          scripts/hf_file_delete.py
+          bin/${{ inputs.llamacpp_build_tag }}/**
+        sparse-checkout-cone-mode: false
+        fetch-depth: 1
+
+    - name: print-bin-directory
+      run: |
+        echo "=========================================="
+        echo "bin/ directory contents after checkout:"
+        echo "=========================================="
+        find bin -not -path '*/.*' | sort
+        echo "=========================================="
+        ls -alR bin/${{ inputs.llamacpp_build_tag }}
+
+    - name: detect-platform
+      run: |
+        OS=$(echo "${{ runner.os }}" | tr '[:upper:]' '[:lower:]' | sed 's/macos/darwin/')
+        ARCH=$(echo "${{ runner.arch }}" | tr '[:upper:]' '[:lower:]' | sed 's/x64/x86_64/')
+        echo "LLAMA_BIN_DIR=bin/${{ inputs.llamacpp_build_tag }}/${OS}-${ARCH}" >> $GITHUB_ENV
+        echo "Detected platform: ${OS}-${ARCH} → LLAMA_BIN_DIR=bin/${{ inputs.llamacpp_build_tag }}/${OS}-${ARCH}"
+
+    - run: |
+        echo "[INFO] github.env:"
+        echo "[INFO] >> run_id: '${{ github.run_id }}'"
+        echo "[INFO] >> ref: '${{ github.ref }}', ref_name: '${{ github.ref_name }}', ref_type: '${{ github.ref_type }}'"
+        echo "[INFO] >> workflow_ref: '${{ github.workflow_ref }}'"
+        echo "[INFO] >> run_id: '${{ github.run_id }}'"
+        echo "[INFO] >> event_name: '${{ github.event_name }}'"
+        echo "[INFO] >> event.: action: '${{ github.event.action }}'"
+        echo "[INFO] >> event.: base_ref: '${{ github.event.base_ref }}'"
+        echo "[INFO] >> event.: workflow_run.conclusion: '${{ github.event.workflow_run.conclusion }}'"
+        echo "[INFO] >> event.release.: name: '${{ github.event.release.name }}', tag_name: '${{ github.event.release.tag_name }}'"
+
+    - name: confirm-environment
+      run: |
+        uname -a
+        echo "runner.os: ${{ runner.os }}"
+        echo "runner.arch: ${{ runner.arch }}"
+        echo "github.workspace: ${{ github.workspace }}"
+        echo "llamacpp_build_tag: ${{ inputs.llamacpp_build_tag }}"
+        echo "env.UPLOAD_CONVERTED_ENABLED: ${{ env.UPLOAD_CONVERTED_ENABLED }}"
+        echo "env.FIND_ARGS: ${{ env.FIND_ARGS }}"
+        echo "env.LLAMACPP_DIR: ${{ env.LLAMACPP_DIR }}"
+        echo "env.MODEL_DOWNLOAD_DIR: ${{ env.MODEL_DOWNLOAD_DIR }}"
+        echo "env.DEF_SEP: ${{ env.DEF_SEP }}"
+        echo "env.EXT_GGUF: ${{ env.EXT_GGUF }}"
+
+    # - name: Dump runner context
+    #   env:
+    #     RUNNER_CONTEXT: ${{ toJson(runner) }}
+    #   run: echo "$RUNNER_CONTEXT"
+
+    # - name: Dump GitHub context
+    #   env:
+    #     GH_CONTEXT: ${{ toJson(github) }}
+    #   run: echo "$GH_CONTEXT"
+
+    # - name: Dump GitHub quiet
+    #   env:
+    #     GH_QUIET: ${{ toJson(secrets) }}
+    #   run: echo "$GH_QUIET"
+
+    - name: Dump GitHub inputs
+      env:
+        GITHUB_INPUTS: ${{ toJson(inputs) }}
+      run: echo "$GITHUB_INPUTS"
+
+    # Note: at the current time, we cannot use Python versions > 3.11 due to HF and langchain deps.
+    # Note: you can verify in a step using: run: python -c "import sys; print(sys.version)"
+    - uses: actions/setup-python@v6
+      with:
+        python-version: '3.11'
+
+    - name: install-dependencies
+      run: |
+        python -m pip install -r ./requirements.txt
+        pip install -U huggingface_hub
+        pip list
+
+    # Use this step to set values to the github context (shared across jobs/steps)
+    # Note: using $GITHUB_OUTPUT sets values under the current step's namespace
+    # whereas using $GITHUB_ENV sets values in the job's underlying environment.
+    # Note: for each 'repo_id' we parse out e.g., REPO_ORG=ibm-granite REPO_NAME=granite-3.0-2b-instruct
+    - name: set-github-env
+      id: set_github_env
+      run: |
+        echo "REPO_ORG=$(dirname '${{ inputs.repo_id }}')" >> $GITHUB_ENV
+        echo "REPO_NAME=$(basename '${{ inputs.repo_id }}')" >> $GITHUB_ENV
+        echo "EXT_PRECISION_GGUF=${{ env.DEF_SEP }}${{ inputs.converted_quantization }}${{env.EXT_GGUF}}" >> $GITHUB_ENV
+
+    - name: set-derivative-env-vars-1
+      run: |
+        echo "BASE_FNAME_CONVERTED_GGUF=${{ env.REPO_NAME }}${{ env.EXT_PRECISION_GGUF }}" >> $GITHUB_ENV
+        echo "BASE_FNAME_QUANTIZED_GGUF=${{ env.REPO_NAME }}-${{ inputs.quantization }}${{ env.EXT_GGUF }}" >> $GITHUB_ENV
+        echo "LOCAL_MODEL_PATH=${{ env.MODEL_DOWNLOAD_DIR }}/${{ inputs.repo_id }}" >> $GITHUB_ENV
+
+    # NOTE: we MUST have the target quant. model (output) in a sep. directory as the source f16 model (input)
+    # or streaming will cause a SIGSEV error
+    - name: set-derivative-env-vars-2
+      run: |
+        echo "LOCAL_FNAME_CONVERTED_GGUF=${{ env.MODEL_DOWNLOAD_DIR }}/${{ inputs.repo_id }}/$BASE_FNAME_CONVERTED_GGUF" >> $GITHUB_ENV
+        echo "LOCAL_FNAME_QUANTIZED_GGUF=${{ env.BASE_FNAME_QUANTIZED_GGUF }}" >> $GITHUB_ENV
+        echo "TARGET_REPO_ID=${{ inputs.target_repo_owner }}/${{ env.REPO_NAME }}${{ inputs.target_repo_name_ext }}" >> $GITHUB_ENV
+
+    - name: verify-github-env
+      run: |
+        echo "================== GITHUB_ENV ====================="
+        echo "REPO_ORG=$REPO_ORG"
+        echo "REPO_NAME=$REPO_NAME"
+        echo "EXT_PRECISION_GGUF=$EXT_PRECISION_GGUF"
+        echo "================== Derivative Environment Variables 1 =================="
+        echo "BASE_FNAME_CONVERTED_GGUF='$BASE_FNAME_CONVERTED_GGUF' (${{ env.BASE_FNAME_CONVERTED_GGUF }})"
+        echo "BASE_FNAME_QUANTIZED_GGUF='$BASE_FNAME_QUANTIZED_GGUF' (${{ env.BASE_FNAME_QUANTIZED_GGUF }})"
+        echo "LOCAL_MODEL_PATH='$LOCAL_MODEL_PATH' (${{ env.LOCAL_MODEL_PATH }})"
+        echo "================== Derivative Environment Variables 2 =================="
+        echo "LOCAL_FNAME_CONVERTED_GGUF='$LOCAL_FNAME_CONVERTED_GGUF' (${{ env.LOCAL_FNAME_CONVERTED_GGUF }})"
+        echo "LOCAL_FNAME_QUANTIZED_GGUF='$LOCAL_FNAME_QUANTIZED_GGUF' (${{ env.LOCAL_FNAME_QUANTIZED_GGUF }})"
+        echo "TARGET_REPO_ID='$TARGET_REPO_ID' (${{ env.TARGET_REPO_ID }})"
+
+    - name: test-gguf-converted-file-exists-in-hf
+      if: env.UPLOAD_CONVERTED_ENABLED == 'true'
+      run: |
+        # First check for the unsplit (single-file) bf16 GGUF.
+        # If not found, check for the first shard (-00001-of-NNNNN.gguf) which indicates
+        # the bf16 was uploaded as split files by the convert workflow.
+        UNSPLIT_OUTPUT=$(python ./scripts/hf_model_file_exists.py ${{ env.TARGET_REPO_ID }} ${{ env.BASE_FNAME_CONVERTED_GGUF }} ${{secrets.hf_token}})
+        echo "Unsplit file check → output: '$UNSPLIT_OUTPUT'"
+
+        if [[ "$UNSPLIT_OUTPUT" == "True" ]]; then
+          echo "✅ Unsplit bf16 GGUF found."
+          echo "CONVERTED_FILE_EXISTS=1" >> $GITHUB_ENV
+          echo "IS_SPLIT_GGUF=0" >> $GITHUB_ENV
+        else
+          # Probe for the first shard: <basename>-00001-of-<N>.gguf
+          BASENAME="${{ env.BASE_FNAME_CONVERTED_GGUF }}"
+          BASENAME="${BASENAME%.gguf}"
+          SHARD1_PATTERN="${BASENAME}-00001-of-"
+          # Ask HF for the first plausible shard name (try up to 9 total shards)
+          SHARD1_FOUND=""
+          for N in $(seq -w 2 9); do
+            CANDIDATE="${BASENAME}-00001-of-0000${N}.gguf"
+            SHARD_OUTPUT=$(python ./scripts/hf_model_file_exists.py ${{ env.TARGET_REPO_ID }} "$CANDIDATE" ${{secrets.hf_token}})
+            if [[ "$SHARD_OUTPUT" == "True" ]]; then
+              SHARD1_FOUND="$CANDIDATE"
+              echo "✅ Split bf16 GGUF detected — first shard: '$SHARD1_FOUND'"
+              echo "CONVERTED_FILE_EXISTS=1" >> $GITHUB_ENV
+              echo "IS_SPLIT_GGUF=1" >> $GITHUB_ENV
+              echo "SHARD1_FNAME=$SHARD1_FOUND" >> $GITHUB_ENV
+              break
+            fi
+          done
+          if [[ -z "$SHARD1_FOUND" ]]; then
+            echo "ℹ️  No unsplit or split bf16 GGUF found in HF — will re-convert from source."
+            echo "CONVERTED_FILE_EXISTS=0" >> $GITHUB_ENV
+            echo "IS_SPLIT_GGUF=0" >> $GITHUB_ENV
+          fi
+        fi
+
+    - name: download-converted-gguf-using-hf-download
+      if: env.CONVERTED_FILE_EXISTS == '1' && env.IS_SPLIT_GGUF == '0'
+      run: |
+        echo "Downloading unsplit ${{ inputs.converted_quantization }} GGUF using hf_file_download..."
+        echo "Repo ID: ${{ env.TARGET_REPO_ID }}, Model Name: ${{ env.BASE_FNAME_CONVERTED_GGUF }}"
+        echo "--------------------"
+        python ./scripts/hf_file_download.py ${{ env.MODEL_DOWNLOAD_DIR}} ${{ env.TARGET_REPO_ID }} ${{ env.BASE_FNAME_CONVERTED_GGUF }} ${{secrets.hf_token}}
+        ls -al ${{env.MODEL_DOWNLOAD_DIR}}/${{ env.TARGET_REPO_ID }}/*.gguf
+        echo "LOCAL_FNAME_CONVERTED_GGUF=${{ env.MODEL_DOWNLOAD_DIR}}/${{ env.TARGET_REPO_ID }}/${{ env.BASE_FNAME_CONVERTED_GGUF }}" >> $GITHUB_ENV
+
+    - name: download-and-merge-split-gguf-from-hf
+      if: env.CONVERTED_FILE_EXISTS == '1' && env.IS_SPLIT_GGUF == '1'
+      run: |
+        # The bf16 GGUF was uploaded as shards. Download every shard then merge them
+        # back into a single file using llama-gguf-split --merge.
+        MERGE_TOOL="./$LLAMA_BIN_DIR/llama-gguf-split"
+        if [ ! -f "$MERGE_TOOL" ]; then
+          echo "::error::llama-gguf-split not found at $MERGE_TOOL (build tag: ${{ inputs.llamacpp_build_tag }})"
+          exit 1
+        fi
+        chmod +x "$MERGE_TOOL"
+
+        DEST_DIR="${{ env.MODEL_DOWNLOAD_DIR }}/${{ env.TARGET_REPO_ID }}"
+        mkdir -p "$DEST_DIR"
+
+        # Download shards sequentially until one is not found
+        echo "Downloading split shards for ${{ env.BASE_FNAME_CONVERTED_GGUF }}..."
+        BASENAME="${{ env.BASE_FNAME_CONVERTED_GGUF }}"
+        BASENAME="${BASENAME%.gguf}"
+        SHARD_INDEX=1
+        while true; do
+          # Build the shard filename: probe total counts 2–9 for shard 1, then reuse detected total
+          if [ $SHARD_INDEX -eq 1 ]; then
+            SHARD_FILE="${{ env.SHARD1_FNAME }}"
+          else
+            # Reconstruct filename from known pattern of first shard
+            FIRST="${{ env.SHARD1_FNAME }}"
+            TOTAL=$(echo "$FIRST" | grep -oP '(?<=of-)\d+(?=\.gguf)')
+            PADDED=$(printf "%05d" $SHARD_INDEX)
+            SHARD_FILE="${BASENAME}-${PADDED}-of-${TOTAL}.gguf"
+          fi
+
+          echo "Downloading shard: '$SHARD_FILE'"
+          python ./scripts/hf_file_download.py "${{ env.MODEL_DOWNLOAD_DIR }}" "${{ env.TARGET_REPO_ID }}" "$SHARD_FILE" ${{secrets.hf_token}}
+
+          SHARD_PATH="$DEST_DIR/$SHARD_FILE"
+          if [ ! -f "$SHARD_PATH" ]; then
+            echo "::error::Expected shard not found after download: $SHARD_PATH"
+            exit 1
+          fi
+          ls -lh "$SHARD_PATH"
+
+          # Check whether the next shard exists; if not, we have them all
+          FIRST="${{ env.SHARD1_FNAME }}"
+          TOTAL=$(echo "$FIRST" | grep -oP '(?<=of-)\d+(?=\.gguf)')
+          NEXT_INDEX=$((SHARD_INDEX + 1))
+          if [ "$NEXT_INDEX" -gt "$((10#$TOTAL))" ]; then
+            echo "All $TOTAL shard(s) downloaded."
+            break
+          fi
+          SHARD_INDEX=$NEXT_INDEX
+        done
+
+        ls -lh "$DEST_DIR"/*.gguf
+
+        # Merge all shards into a single bf16 GGUF for quantization
+        FIRST_SHARD="$DEST_DIR/${{ env.SHARD1_FNAME }}"
+        MERGED_FILE="$DEST_DIR/${{ env.BASE_FNAME_CONVERTED_GGUF }}"
+        echo "Merging shards → '$MERGED_FILE'"
+        "$MERGE_TOOL" --merge "$FIRST_SHARD" "$MERGED_FILE"
+        ls -lh "$MERGED_FILE"
+
+        # Remove the individual shards to free disk space
+        echo "Removing shard files to free disk space..."
+        rm -f "$DEST_DIR/${BASENAME}"-*-of-*.gguf
+        ls -lh "$DEST_DIR"
+
+        echo "LOCAL_FNAME_CONVERTED_GGUF=$MERGED_FILE" >> $GITHUB_ENV
+
+    # - name: download-converted-gguf-curl
+    #   if: env.CONVERTED_FILE_EXISTS == '1'
+    #   run: |
+    #     echo "Downloading using curl..."
+    #     echo "--------------------"
+    #     curl -C - -f --create-dirs -H "Authorization: Bearer ${{secrets.hf_token}}" -o ${{env.MODEL_DOWNLOAD_DIR}}/${{ env.TARGET_REPO_ID }}/${{ env.BASE_FNAME_CONVERTED_GGUF }} -L https://huggingface.co/${{ env.TARGET_REPO_ID }}/resolve/main/${{ env.BASE_FNAME_CONVERTED_GGUF }}
+    #     chmod -R +rwx ${{env.MODEL_DOWNLOAD_DIR}}
+    #     echo "--------------------"
+    #     echo "LOCAL_FNAME_CONVERTED_GGUF=${{env.MODEL_DOWNLOAD_DIR}}/${{ env.TARGET_REPO_ID }}/${{ env.BASE_FNAME_CONVERTED_GGUF }}" >> $GITHUB_ENV
+
+    # - name: download-converted-gguf-curl
+    #   if: env.CONVERTED_FILE_EXISTS == '1'
+    #   run: |
+    #     echo "CONVERTED_FILE_EXISTS='$CONVERTED_FILE_EXISTS' (${{ env.CONVERTED_FILE_EXISTS }})"
+    #     echo "--------------------"
+    #     mkdir -p ${{env.MODEL_DOWNLOAD_DIR}}/${{ env.TARGET_REPO_ID }}
+    #     chmod -R +rw ${{env.MODEL_DOWNLOAD_DIR}}
+    #     find ${{env.MODEL_DOWNLOAD_DIR}} ${{env.FIND_ARGS}}
+    #     echo "--------------------"
+    #     ./llama.cpp/scripts/hf.sh --repo ${{ env.TARGET_REPO_ID }} --file ${{ env.BASE_FNAME_CONVERTED_GGUF }} --outdir ${{ env.MODEL_DOWNLOAD_DIR}}/${{ env.TARGET_REPO_ID }}
+    #     echo "--------------------"
+    #     echo "LOCAL_FNAME_CONVERTED_GGUF=${{ env.MODEL_DOWNLOAD_DIR}}/${{ env.TARGET_REPO_ID }}/${{ env.BASE_FNAME_CONVERTED_GGUF }}" >> $GITHUB_ENV
+
+    # for GGUF conversion, we only need a shallow copy (depth=1) and
+    # specify only the scripts and requirements files we need (sparse).
+    # Note: we include LICENSE for future BOM generation
+    - name: shallow-clone-llamacpp
+      uses: actions/checkout@v6
+      with:
+        path: ${{ env.LLAMACPP_DIR }} # checkout under this directory
+        repository: 'ggerganov/llama.cpp'
+        ref: ${{ inputs.llamacpp_build_tag }}
+        fetch-depth: 1
+        sparse-checkout-cone-mode: false
+        sparse-checkout: |
+          ./LICENSE
+          convert_hf_to_gguf.py
+          conversion
+          convert_lora_to_gguf.py
+          requirements/requirements-convert_legacy_llama.txt
+          requirements/requirements-convert_hf_to_gguf.txt
+          requirements/requirements-convert_lora_to_gguf.txt
+          gguf-py
+          scripts
+
+    - name: print-llamacpp
+      if: inputs.debug == true
+      run: |
+        echo "=========================================="
+        echo "llama.cpp cloned from build tag: ${{ inputs.llamacpp_build_tag }}"
+        echo "=========================================="
+        echo "PATH: '$PATH'"
+        ls -al llama.cpp
+        find llama.cpp ${{env.FIND_ARGS}}
+
+    - name: install-llama-cpp-dependencies
+      run: |
+        python -m pip install -r ./llama.cpp/requirements/requirements-convert_hf_to_gguf.txt
+        python -m pip install -r ./llama.cpp/requirements/requirements-convert_lora_to_gguf.txt
+        pip uninstall --yes transformers
+        pip install transformers==4.49.0
+        pip list
+
+    - name: Print Storage & Memory Info (macOS)
+      if: inputs.debug == true && runner.os == 'macOS'
+      run: |
+        df
+        echo "--------------------"
+        xcodebuild -version
+        clang --version
+        echo "--------------------"
+        top -l 1 | grep -E "^CPU|^PhysMem"
+        echo "--------------------"
+
+    - name: Print Storage & Memory Info (Linux)
+      if: inputs.debug == true  && runner.os == 'Linux'
+      run: |
+        df -h
+        echo "--------------------"
+        gcc --version || lsb_release -a
+        echo "--------------------"
+        free -h
+        echo "--------------------"
+        top -b -n 1 | head -n 5
+        echo "--------------------"
+
+    - name: download-model-snapshot
+      if: env.CONVERTED_FILE_EXISTS == '0'
+      run: |
+        python ./scripts/hf_model_download_snapshot.py ${{env.MODEL_DOWNLOAD_DIR}} $REPO_ORG $REPO_NAME
+        find models ${{env.FIND_ARGS}}
+
+    - name: convert-hf-to-gguf
+      if: env.CONVERTED_FILE_EXISTS == '0'
+      run: |
+        python ./llama.cpp/convert_hf_to_gguf.py ${{ env.LOCAL_MODEL_PATH }} --outfile ${{ env.LOCAL_FNAME_CONVERTED_GGUF }} --verbose
+        ls -al ${{ env.LOCAL_MODEL_PATH }}/*.gguf
+
+    - name: verify-downloaded-files
+      if: inputs.debug == true
+      run: |
+        echo downloaded files...
+        echo "--------------------"
+        ls -al -d */
+        echo "--------------------"
+        find . -name \*.gguf -type f
+        echo "--------------------"
+
+    - name: quantize-gguf
+      run: |
+        echo "--------------------"
+        echo "Using llama-quantize from build tag: ${{ inputs.llamacpp_build_tag }}"
+        echo "LLAMA_BIN_DIR='$LLAMA_BIN_DIR' (${{ env.LLAMA_BIN_DIR }})"
+        echo "LOCAL_FNAME_CONVERTED_GGUF='$LOCAL_FNAME_CONVERTED_GGUF' (${{ env.LOCAL_FNAME_CONVERTED_GGUF }})"
+        echo "LOCAL_FNAME_QUANTIZED_GGUF='$LOCAL_FNAME_QUANTIZED_GGUF' (${{ env.LOCAL_FNAME_QUANTIZED_GGUF }})"
+        echo "--------------------"
+        ./${{ env.LLAMA_BIN_DIR }}/llama-quantize ${{ env.LOCAL_FNAME_CONVERTED_GGUF }} ${{ env.LOCAL_FNAME_QUANTIZED_GGUF }} ${{inputs.quantization}}
+
+    - name: find-gguf-files
+      if: inputs.debug == true
+      run: |
+        find . -name \*.gguf -type f
+        ls -al .
+        echo "--------------------"
+
+    - name: split-quantized-gguf-if-oversized
+      run: |
+        # HuggingFace LFS enforces a 50 GB per-file limit.
+        # Split the quantized GGUF into shards when it exceeds 45 GiB.
+        HF_MAX_BYTES=$((45 * 1024 * 1024 * 1024))   # 45 GiB safety threshold
+        SPLIT_SIZE_MiB=45000                           # shard size passed to llama-gguf-split
+
+        FILE_BYTES=$(stat -f%z "$LOCAL_FNAME_QUANTIZED_GGUF" 2>/dev/null || stat -c%s "$LOCAL_FNAME_QUANTIZED_GGUF")
+        echo "Quantized GGUF: '$LOCAL_FNAME_QUANTIZED_GGUF' — ${FILE_BYTES} bytes (threshold: ${HF_MAX_BYTES})"
+
+        if [ "$FILE_BYTES" -gt "$HF_MAX_BYTES" ]; then
+          echo "⚠️  File exceeds HF 50 GB limit — splitting with llama-gguf-split..."
+          SPLIT_TOOL="./$LLAMA_BIN_DIR/llama-gguf-split"
+          if [ ! -f "$SPLIT_TOOL" ]; then
+            echo "::error::llama-gguf-split not found at $SPLIT_TOOL (build tag: ${{ inputs.llamacpp_build_tag }})"
+            exit 1
+          fi
+          chmod +x "$SPLIT_TOOL"
+          BASENAME="${LOCAL_FNAME_QUANTIZED_GGUF%.gguf}"
+          "$SPLIT_TOOL" --split-max-size "${SPLIT_SIZE_MiB}M" \
+                        "$LOCAL_FNAME_QUANTIZED_GGUF" \
+                        "$BASENAME"
+          rm -f "$LOCAL_FNAME_QUANTIZED_GGUF"
+          ls -lh ${BASENAME}-*.gguf
+          GGUF_QUANTIZED_UPLOAD_FILES=$(ls ${BASENAME}-*.gguf | tr '\n' ' ')
+          echo "✅ Split produced: $GGUF_QUANTIZED_UPLOAD_FILES"
+        else
+          echo "✅ File is within the 50 GB limit — no split needed."
+          GGUF_QUANTIZED_UPLOAD_FILES="$LOCAL_FNAME_QUANTIZED_GGUF"
+        fi
+        echo "GGUF_QUANTIZED_UPLOAD_FILES=$GGUF_QUANTIZED_UPLOAD_FILES" >> $GITHUB_ENV
+
+    - name: delete-previous-upload
+      if: env.DELETE_PREVIOUS_SHARD_UPLOAD == 'true'
+      run: |
+        # Delete any previously uploaded file(s) matching the quantized GGUF base name.
+        # Handles both single-file and split-shard cases.
+        BASENAME="${{ env.BASE_FNAME_QUANTIZED_GGUF }}"
+        BASENAME="${BASENAME%.gguf}"
+
+        # Check & delete unsplit file
+        exists=$(python ./scripts/hf_model_file_exists.py ${{ env.TARGET_REPO_ID }} ${{ env.BASE_FNAME_QUANTIZED_GGUF }} ${{secrets.hf_token}})
+        if [[ "$exists" == "True" ]]; then
+          echo "Deleting previous unsplit upload: ${{ env.BASE_FNAME_QUANTIZED_GGUF }}"
+          python ./scripts/hf_file_delete.py ${{ env.TARGET_REPO_ID }} ${{ env.BASE_FNAME_QUANTIZED_GGUF }} ${{secrets.hf_token}}
+        fi
+
+        # Check & delete any previous shards (probe up to 9 total shards)
+        for N in $(seq -w 2 9); do
+          for I in $(seq -w 1 $N); do
+            SHARD="${BASENAME}-0000${I}-of-0000${N}.gguf"
+            shard_exists=$(python ./scripts/hf_model_file_exists.py ${{ env.TARGET_REPO_ID }} "$SHARD" ${{secrets.hf_token}})
+            if [[ "$shard_exists" == "True" ]]; then
+              echo "Deleting previous shard: $SHARD"
+              python ./scripts/hf_file_delete.py ${{ env.TARGET_REPO_ID }} "$SHARD" ${{secrets.hf_token}}
+            fi
+          done
+        done
+
+    - name: upload-model-gguf
+      run: |
+        echo "GGUF_QUANTIZED_UPLOAD_FILES='$GGUF_QUANTIZED_UPLOAD_FILES' (${{ env.GGUF_QUANTIZED_UPLOAD_FILES }})"
+        echo "TARGET_REPO_ID=${{env.TARGET_REPO_ID}}"
+        for FILE in $GGUF_QUANTIZED_UPLOAD_FILES; do
+          echo ">> Uploading: '$FILE'"
+          ls -lh "$FILE"
+          python ./scripts/hf_model_file_upload.py ${{ env.TARGET_REPO_ID }} "$FILE" ${{secrets.hf_token}} ${{github.workflow_ref}} ${{github.run_id}}
+        done
+
+

@@ -1,0 +1,43 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-artifact-index.v1",
+  "artifactBytesIncluded": false,
+  "redistributionNote": "Model and importance-matrix bytes are not included. Each subject is identified by an immutable repository revision, byte length, and SHA-256 digest.",
+  "artifacts": [
+    {
+      "id": "ibm-granite-4.2-3b-q4-k-m",
+      "publisher": "IBM Granite",
+      "repository": "ibm-granite/granite-4.2-3b-GGUF",
+      "revision": "c40945d71cd90f249a56985e8155551a9188dc30",
+      "filename": "granite-4.2-3b-Q4_K_M.gguf",
+      "releaseLabel": "Q4_K_M",
+      "sourceUri": "hf://ibm-granite/granite-4.2-3b-GGUF@c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_K_M.gguf",
+      "downloadUrl": "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/resolve/c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_K_M.gguf",
+      "bytes": 2244011552,
+      "sha256": "e0406663965846ae22a403456eb826ccce5f450840491f71952f18a7cb78e7d5"
+    },
+    {
+      "id": "bartowski-granite-4.2-3b-q4-k-m",
+      "publisher": "bartowski",
+      "repository": "bartowski/granite-4.2-3b-GGUF",
+      "revision": "4093456941a783ab5d8268e00a7725532c1e9af3",
+      "filename": "granite-4.2-3b-Q4_K_M.gguf",
+      "releaseLabel": "Q4_K_M",
+      "sourceUri": "hf://bartowski/granite-4.2-3b-GGUF@4093456941a783ab5d8268e00a7725532c1e9af3/granite-4.2-3b-Q4_K_M.gguf",
+      "downloadUrl": "https://huggingface.co/bartowski/granite-4.2-3b-GGUF/resolve/4093456941a783ab5d8268e00a7725532c1e9af3/granite-4.2-3b-Q4_K_M.gguf",
+      "bytes": 2317126048,
+      "sha256": "d8c0c39e0b775ff4e7ed1ed7f0593d27158acb063b07b132fa4f134b2075567f"
+    },
+    {
+      "id": "bartowski-granite-4.2-3b-imatrix",
+      "publisher": "bartowski",
+      "repository": "bartowski/granite-4.2-3b-GGUF",
+      "revision": "4093456941a783ab5d8268e00a7725532c1e9af3",
+      "filename": "granite-4.2-3b-imatrix.gguf",
+      "releaseLabel": "importance matrix",
+      "sourceUri": "hf://bartowski/granite-4.2-3b-GGUF@4093456941a783ab5d8268e00a7725532c1e9af3/granite-4.2-3b-imatrix.gguf",
+      "downloadUrl": "https://huggingface.co/bartowski/granite-4.2-3b-GGUF/resolve/4093456941a783ab5d8268e00a7725532c1e9af3/granite-4.2-3b-imatrix.gguf",
+      "bytes": 3811456,
+      "sha256": "d4c39ccf163db6adbd620619460428c1c447631ac3dfc32e7ce388fe339f37d2"
+    }
+  ]
+}

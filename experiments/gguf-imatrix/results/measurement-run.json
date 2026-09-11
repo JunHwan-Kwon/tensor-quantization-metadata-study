@@ -1,0 +1,15 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-measurement-run.v1",
+  "artifactIndexSha256": "a88bd9ce64c5d454509f17375d85283260f4408b1054fd1275856ca8e57163e9",
+  "artifactIds": [
+    "ibm-granite-4.2-3b-q4-k-m",
+    "bartowski-granite-4.2-3b-q4-k-m",
+    "bartowski-granite-4.2-3b-imatrix"
+  ],
+  "resultFiles": [
+    "ibm-q4km-tensor-inventory.json",
+    "bartowski-q4km-tensor-inventory.json",
+    "tensor-assignment-comparison.json",
+    "imatrix-measurement.json"
+  ]
+}

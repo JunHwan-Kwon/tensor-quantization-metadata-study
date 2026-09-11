@@ -1,0 +1,141 @@
+{
+  "recordType": "tensor-quantization-metadata-study.cyclonedx-pr1067-artifact-field-observations.v1",
+  "normativeStatus": "field observations only; not a completeness or conformance verdict",
+  "source": {
+    "pullRequest": 1067,
+    "head": "7a7d2dd599968e528349ca3cf262120da2831ca8",
+    "path": "perspectives/model-card-perspective.json",
+    "sha256": "a638e7753ec79d303cfecde3ecc2c06f984247ce4b6f49e7b55bdc253af70f51",
+    "requiredMappingCount": 8
+  },
+  "subjects": [
+    "ibm-granite-4.2-3b-q4-k-m",
+    "bartowski-granite-4.2-3b-q4-k-m"
+  ],
+  "rows": [
+    {
+      "mapping": "Model Details",
+      "catalogExpression": "$..[?(@.type=='machine-learning-model')]['name','version','description']",
+      "catalogVia": [],
+      "ggufStandardizedRelevantKeys": [
+        "general.name",
+        "general.version",
+        "general.description"
+      ],
+      "semanticRelationship": "partial semantic overlap",
+      "ibmSerializedValues": {
+        "general.name": "Granite 4.2 3b"
+      },
+      "bartowskiSerializedValues": {
+        "general.name": "Granite 4.2 3b"
+      },
+      "primaryReader": "gguf-py"
+    },
+    {
+      "mapping": "Developed By",
+      "catalogExpression": "$..[?(@.type=='machine-learning-model')].parties[?(@.roles[?(@.role=='supplier')])]",
+      "catalogVia": [],
+      "ggufStandardizedRelevantKeys": [
+        "general.author",
+        "general.organization"
+      ],
+      "semanticRelationship": "potential semantic overlap; not a CycloneDX party-role assertion",
+      "ibmSerializedValues": {},
+      "bartowskiSerializedValues": {},
+      "primaryReader": "gguf-py"
+    },
+    {
+      "mapping": "License",
+      "catalogExpression": "$..[?(@.type=='machine-learning-model')].licenses",
+      "catalogVia": [],
+      "ggufStandardizedRelevantKeys": [
+        "general.license",
+        "general.license.name",
+        "general.license.link"
+      ],
+      "semanticRelationship": "direct artifact license metadata",
+      "ibmSerializedValues": {
+        "general.license": "apache-2.0"
+      },
+      "bartowskiSerializedValues": {
+        "general.license": "apache-2.0"
+      },
+      "primaryReader": "gguf-py"
+    },
+    {
+      "mapping": "Supported Tasks",
+      "catalogExpression": "$..[?(@.type=='machine-learning-model')].modelProperties.tasks",
+      "catalogVia": [],
+      "ggufStandardizedRelevantKeys": [
+        "general.tags"
+      ],
+      "semanticRelationship": "tags may be relevant but are not a standardized task mapping",
+      "ibmSerializedValues": {},
+      "bartowskiSerializedValues": {
+        "general.tags": [
+          "granite",
+          "granite-4.2",
+          "reasoning",
+          "thinking",
+          "tool-calling",
+          "ibm",
+          "text-generation"
+        ]
+      },
+      "primaryReader": "gguf-py"
+    },
+    {
+      "mapping": "Dataset Identity and Licensing",
+      "catalogExpression": "$..[?(@.type=='data')]['name','version','identifiers','licenses']",
+      "catalogVia": [
+        {
+          "refs": "$..[?(@.type=='machine-learning-model')].modelProperties.training.datasets[*]"
+        }
+      ],
+      "ggufStandardizedRelevantKeys": [
+        "general.datasets"
+      ],
+      "semanticRelationship": "dataset-name metadata, if present, does not alone establish all selected identity and license fields",
+      "ibmSerializedValues": {},
+      "bartowskiSerializedValues": {},
+      "primaryReader": "gguf-py"
+    },
+    {
+      "mapping": "Intended Use",
+      "catalogExpression": "$..[?(@.type=='machine-learning-model')].modelProperties.useCases",
+      "catalogVia": [],
+      "ggufStandardizedRelevantKeys": [],
+      "semanticRelationship": "no directly corresponding standardized GGUF key identified in the pinned GGUF specification",
+      "ibmSerializedValues": {},
+      "bartowskiSerializedValues": {},
+      "primaryReader": "gguf-py"
+    },
+    {
+      "mapping": "Technical Limitations",
+      "catalogExpression": "$..[?(@.type=='machine-learning-model')].modelProperties.limitations",
+      "catalogVia": [],
+      "ggufStandardizedRelevantKeys": [
+        "general.description"
+      ],
+      "semanticRelationship": "free-form description is not a structured limitation field",
+      "ibmSerializedValues": {},
+      "bartowskiSerializedValues": {},
+      "primaryReader": "gguf-py"
+    },
+    {
+      "mapping": "Ethical Considerations",
+      "catalogExpression": "$.risks.risks[?(@.domains[?(@.type=='ethical')])]",
+      "catalogVia": [
+        {
+          "referrers": "$.risks.risks[*].affects[*]"
+        }
+      ],
+      "ggufStandardizedRelevantKeys": [],
+      "semanticRelationship": "no directly corresponding standardized GGUF risk object identified in the pinned GGUF specification",
+      "ibmSerializedValues": {},
+      "bartowskiSerializedValues": {},
+      "primaryReader": "gguf-py"
+    }
+  ],
+  "interpretationBoundary": "GGUF permits custom metadata, but this record distinguishes standardized GGUF keys from arbitrary extension capacity. Path selection, per-subject aggregation, empty-value handling, and publisher-evidence binding are not decided here."
+}

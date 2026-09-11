@@ -1,0 +1,44 @@
+{
+  "recordType": "tensor-quantization-metadata-study.cyclonedx-pr990-schema-observation.v1",
+  "normativeStatus": "observation of a draft schema; no schema change is proposed by this record",
+  "source": {
+    "pullRequest": 990,
+    "head": "38dfe9ca4b9b161510dd98b477dd78e4eefe7ec8",
+    "path": "schema/2.0/model/cyclonedx-ai-ml-2.0.schema.json",
+    "sha256": "9b346b22f6115c08a6d63cbb04b0774b93aa769dec08015e303b3956363dfa53"
+  },
+  "observations": [
+    {
+      "jsonPointer": "/$defs/modelProperties/properties/quantization",
+      "description": "The quantization applied to the model weights as distributed. Quantization of individual input and output tensors is expressed on the model parameters.",
+      "reference": "#/$defs/quantization"
+    },
+    {
+      "jsonPointer": "/$defs/modelProperties/properties/inputs",
+      "description": "The input parameters accepted by the model.",
+      "itemReference": "#/$defs/modelParameter"
+    },
+    {
+      "jsonPointer": "/$defs/modelProperties/properties/outputs",
+      "description": "The output parameters produced by the model.",
+      "itemReference": "#/$defs/modelParameter"
+    },
+    {
+      "jsonPointer": "/$defs/quantization",
+      "description": "The quantization applied to a model parameter. The scheme parameters recorded here describe how quantized values relate to real values. The scale and zero point tensors themselves are model data and are distributed with the model artefact, not with the BOM. Additional scheme specific details may be recorded in the `properties` of the model parameter.",
+      "propertyNames": [
+        "axis",
+        "bits",
+        "granularity",
+        "groupSize",
+        "method",
+        "scheme"
+      ]
+    },
+    {
+      "jsonPointer": "/$defs/modelParameter/properties/quantization",
+      "description": "The quantization applied to the parameter values.",
+      "reference": "#/$defs/quantization"
+    }
+  ]
+}

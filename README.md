@@ -1,10 +1,38 @@
-# Evidence for TFLite affine interface contracts
+# Tensor-level quantization metadata: multi-format evidence
 
-This repository contains the supporting data for my comment on tensor-level
-quantization metadata in the CycloneDX AI/ML schema discussion.
+This repository contains reproducible, format-bounded measurements of
+tensor-level quantization metadata in TFLite, ONNX, and GGUF, together with
+source-bound observations of related CycloneDX AI/ML draft schema surfaces.
 
 Canonical repository:
 <https://github.com/JunHwan-Kwon/tensor-quantization-metadata-study>
+
+## GGUF mixed-encoding and importance-matrix evidence
+
+The [`experiments/gguf-imatrix`](experiments/gguf-imatrix) package measures two
+revision-pinned Granite 4.2 3B `Q4_K_M` artifacts and one published importance
+matrix. Both Q4 files have 363 tensor names and 3,659,737,600 serialized
+elements, while 100 tensor-to-encoding assignments differ. A complete scan of
+the matrix covers 560 F32 tensors and 942,360 values.
+
+The primary reader is upstream `gguf-py` 0.19.0. A second implementation
+maintained by the study author is retained only as an isolated normalized
+cross-check; no primary observation depends solely on it. Model and matrix
+bytes are not committed. Their immutable repository revisions, byte lengths,
+SHA-256 digests, measurement protocol, tensor rows, and hash definitions are
+included.
+
+Verify the committed records without downloading model files:
+
+```bash
+python scripts/check-gguf-imatrix-results.py
+```
+
+To reacquire and fully remeasure the three artifacts, see the
+[`protocol`](experiments/gguf-imatrix/protocol.md). The resulting
+standards-facing records are field observations only; they do not choose a
+CycloneDX completeness policy or propose a DeepBOM output structure as a
+standard.
 
 The recorded benchmark corpus contains 50 public TFLite files:
 

@@ -1,0 +1,41 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-metadata-cross-source-observations.v1",
+  "evidenceClass": "comparison of serialized GGUF metadata and revision-pinned repository metadata",
+  "subjects": [
+    "ibm-granite-4.2-3b-q4-k-m",
+    "bartowski-granite-4.2-3b-q4-k-m"
+  ],
+  "commonSerializedValues": {
+    "general.name": "Granite 4.2 3b",
+    "general.license": "apache-2.0",
+    "general.file_type": 15
+  },
+  "importanceMatrixMetadata": {
+    "keysConsidered": [
+      "quantize.imatrix.chunks_count",
+      "quantize.imatrix.dataset",
+      "quantize.imatrix.entries_count",
+      "quantize.imatrix.file"
+    ],
+    "ibmSerializedValues": {},
+    "bartowskiSerializedValues": {
+      "quantize.imatrix.chunks_count": 573,
+      "quantize.imatrix.dataset": "/models_out/granite-4.2-3b-GGUF/granite-4.2-3b-calibration-v6.txt",
+      "quantize.imatrix.entries_count": 280,
+      "quantize.imatrix.file": "/models_out/granite-4.2-3b-GGUF/granite-4.2-3b-imatrix.gguf"
+    },
+    "boundary": "Presence records serialized producer metadata. Absence does not establish that an importance matrix was not used."
+  },
+  "lineageMetadata": {
+    "bartowskiArtifactSerializedBaseModel": {
+      "general.base_model.0.name": "Granite 4.1 3b Base",
+      "general.base_model.0.organization": "Ibm Granite",
+      "general.base_model.0.repo_url": "https://huggingface.co/ibm-granite/granite-4.1-3b-base"
+    },
+    "bartowskiRepositoryCardBaseModel": "ibm-granite/granite-4.2-3b",
+    "ibmRepositoryCardBaseModel": [
+      "ibm-granite/granite-4.2-3b"
+    ],
+    "boundary": "These values may describe different lineage levels or relations. This record does not collapse them into one canonical source assertion."
+  }
+}

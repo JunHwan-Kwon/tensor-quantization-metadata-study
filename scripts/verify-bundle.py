@@ -387,6 +387,10 @@ def verify_supplementary_results(root):
         ],
         [
             sys.executable,
+            str(root / "scripts/check-gguf-imatrix-results.py"),
+        ],
+        [
+            sys.executable,
             str(root / "scripts/check-affine-all-pairs.py"),
             str(root / "experiments/imagenetv2-all-pairs"),
         ],
@@ -417,6 +421,9 @@ def main():
         "interface_parameter_count": 114,
         "all_pairs_comparison_count": 6,
         "all_pairs_image_count": 1000,
+        "gguf_q4_subject_count": 2,
+        "gguf_changed_encoding_count": 100,
+        "imatrix_assessed_tensor_count": 560,
     }, indent=2))
 
 

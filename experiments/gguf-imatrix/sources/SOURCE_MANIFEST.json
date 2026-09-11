@@ -1,0 +1,160 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-source-manifest.v1",
+  "revisions": {
+    "cycloneDxPr990": {
+      "repository": "https://github.com/CycloneDX/specification",
+      "pullRequest": 990,
+      "commit": "38dfe9ca4b9b161510dd98b477dd78e4eefe7ec8"
+    },
+    "cycloneDxPr1067": {
+      "repository": "https://github.com/CycloneDX/specification",
+      "pullRequest": 1067,
+      "commit": "7a7d2dd599968e528349ca3cf262120da2831ca8"
+    },
+    "ibmBaseModel": {
+      "repository": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+      "revision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1"
+    },
+    "ibmGguf": {
+      "repository": "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF",
+      "revision": "c40945d71cd90f249a56985e8155551a9188dc30"
+    },
+    "bartowskiGguf": {
+      "repository": "https://huggingface.co/bartowski/granite-4.2-3b-GGUF",
+      "revision": "4093456941a783ab5d8268e00a7725532c1e9af3"
+    },
+    "ibmGgufPipeline": {
+      "repository": "https://github.com/IBM/gguf",
+      "commit": "33fdd16c2dd4edbb1df71ac8feef3d98ce3faa77"
+    },
+    "ibmGranite42Docs": {
+      "repository": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "commit": "5173b090a381c87e689995bf63db4aeafd12285d"
+    },
+    "llamaCpp": {
+      "repository": "https://github.com/ggml-org/llama.cpp",
+      "commit": "c060ca974c773c7c3d17fd1b66dc9d312bc292c0"
+    },
+    "ggmlDocs": {
+      "repository": "https://github.com/ggml-org/ggml",
+      "commit": "7840aaba1989c6deeefede1d77d5aaf8f52b947e"
+    }
+  },
+  "files": [
+    {
+      "path": "sources/README.md",
+      "bytes": 1507,
+      "sha256": "c1ef39988e34421ec7dc252daead7005b14cd30906cc96614a8c11e32b59c966"
+    },
+    {
+      "path": "sources/ggml/gguf.md",
+      "bytes": 43175,
+      "sha256": "1dead27b6a522709f0127d194e58c21dbbbf00ba1c64fe37c54d1a9048b05020"
+    },
+    {
+      "path": "sources/hf-api/bartowski-gguf.json",
+      "bytes": 16903,
+      "sha256": "cc569784b73678859fe4300e154f841d25fc1f9350f9031809e945a9074fbec8"
+    },
+    {
+      "path": "sources/hf-api/ibm-base.json",
+      "bytes": 12911,
+      "sha256": "d132dfdba9758b28a386223463df6c223239da14bddf86f67952386b5bd16204"
+    },
+    {
+      "path": "sources/hf-api/ibm-gguf.json",
+      "bytes": 14227,
+      "sha256": "c3e353f7119075b6cd96e8381ca0e333cf1778244cc28e94305eb3ffc09ad7d6"
+    },
+    {
+      "path": "sources/hf/bartowski-gguf-README.md",
+      "bytes": 12918,
+      "sha256": "cf7c2ed1bb1113b83f5b90d72ec8837ddb49005bc1dc7fd14694b55ad219cd79"
+    },
+    {
+      "path": "sources/hf/ibm-base-README.md",
+      "bytes": 35640,
+      "sha256": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792"
+    },
+    {
+      "path": "sources/hf/ibm-base-chat_template.jinja",
+      "bytes": 9013,
+      "sha256": "f0ba43f79b3cabca5e5a7584c77aec92f49feae45cdf7779c87d9fc54cd90258"
+    },
+    {
+      "path": "sources/hf/ibm-base-config.json",
+      "bytes": 905,
+      "sha256": "e4f44b9c6924a283f1d1d36057a89f1a04404bf1561fc2c0b64cf98180e72915"
+    },
+    {
+      "path": "sources/hf/ibm-base-tokenizer_config.json",
+      "bytes": 17677,
+      "sha256": "2007f26df166ed10a2d6fa881c1c8f3cdd151e451469f59b274897f14449835f"
+    },
+    {
+      "path": "sources/hf/ibm-gguf-README.md",
+      "bytes": 368,
+      "sha256": "366a634da286ca154ef41214dc503ce1dcb8e6de126bec73f80ae3216fb01c99"
+    },
+    {
+      "path": "sources/ibm-gguf/README.md",
+      "bytes": 62962,
+      "sha256": "341228ea717a94972e32f8fac092c12c195b7641e1b9429b6471e476b3a3bcbf"
+    },
+    {
+      "path": "sources/ibm-gguf/reusable-bvt-language-quantized-models-gguf.yml",
+      "bytes": 30469,
+      "sha256": "909191d8e5753ddc4eb4ddcf2216eb9ab6ba680f013ec6c94ab45af89805dfc2"
+    },
+    {
+      "path": "sources/ibm-gguf/reusable-convert-hf-language-to-bf16-gguf.yml",
+      "bytes": 19351,
+      "sha256": "79ca9e6456d1d7bf08c055bf95b3bba9695081dfc2b24ff76c73ed83dc4072ba"
+    },
+    {
+      "path": "sources/ibm-gguf/reusable-quantize-language-gguf-upload.yml",
+      "bytes": 25848,
+      "sha256": "2cf195fefaf4c2e03b34daad69714616b2bfb39c21c0865c5e4c17a8a3019f83"
+    },
+    {
+      "path": "sources/ibm-granite-4.2/README.md",
+      "bytes": 10529,
+      "sha256": "5f9c23d7aac6635b7174c3f6fdd8335d3251ec5d8aad6e7b298f3b41935fe1a5"
+    },
+    {
+      "path": "sources/ibm-granite-4.2/disclosures-README.md",
+      "bytes": 1933,
+      "sha256": "eb507f1559c3ab231bae117844543a8c1b2cbf3a7b54db8befe0b97739252cc4"
+    },
+    {
+      "path": "sources/llama.cpp-b10603/imatrix-README.md",
+      "bytes": 5999,
+      "sha256": "35223ad9d781b078bf8b33295e35a3f331e8d8c5ad1e12ded3bffa08d5a17995"
+    },
+    {
+      "path": "sources/llama.cpp-b10603/quantize-README.md",
+      "bytes": 12406,
+      "sha256": "4dcc340a48ea558bb824aeb075d556eb4a1bc4c76f86953be80cb9dd16e976e1"
+    },
+    {
+      "path": "sources/pr-1067/model-card-perspective.json",
+      "bytes": 14504,
+      "sha256": "a638e7753ec79d303cfecde3ecc2c06f984247ce4b6f49e7b55bdc253af70f51"
+    },
+    {
+      "path": "sources/pr-990/commit-f6d07fe.json",
+      "bytes": 45043,
+      "sha256": "cf785d3150de0d291b892404e68978247a343f7258bb150b61e8c8721308ebf2"
+    },
+    {
+      "path": "sources/pr-990/cyclonedx-ai-ml-2.0.schema.json",
+      "bytes": 57598,
+      "sha256": "9b346b22f6115c08a6d63cbb04b0774b93aa769dec08015e303b3956363dfa53"
+    },
+    {
+      "path": "sources/pr-990/pr-990.json",
+      "bytes": 21323,
+      "sha256": "d1ea54e97684ed6b35673a102e721eb207afe7c97bc5cb0f59aa65cf86014d0f"
+    }
+  ]
+}

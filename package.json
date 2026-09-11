@@ -7,7 +7,10 @@
   "scripts": {
     "generate:cyclonedx-pr990": "node scripts/probe-cyclonedx-pr990.mjs --write",
     "check:cyclonedx-pr990": "node scripts/probe-cyclonedx-pr990.mjs --check && python scripts/verify-cyclonedx-pr990-files.py",
-    "check": "npm run check:cyclonedx-pr990"
+    "build:gguf:crosscheck": "python scripts/build-gguf-crosscheck.py",
+    "build:gguf:standards": "python scripts/build-gguf-standards-observations.py",
+    "check:gguf": "python scripts/check-gguf-imatrix-results.py",
+    "check": "npm run check:cyclonedx-pr990 && npm run check:gguf"
   },
   "devDependencies": {
     "ajv": "8.20.0"
