@@ -1,0 +1,20 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-paired-replication-run.v1",
+  "artifactIndexSha256": "e4eb6d36e819e88bff697f9432c8bff6bab69f437c2f3034f07bd35900a5a5c9",
+  "artifactIds": [
+    "qwen-official-qwen3-4b-q4-k-m",
+    "bartowski-qwen3-4b-q4-k-m"
+  ],
+  "primaryReader": {
+    "reader": "gguf-py",
+    "distribution": "gguf",
+    "ggufVersion": "0.19.0",
+    "numpyVersion": "2.5.3",
+    "pythonVersion": "3.12.2"
+  },
+  "resultFiles": [
+    "left-tensor-inventory.json",
+    "right-tensor-inventory.json",
+    "tensor-assignment-comparison.json"
+  ]
+}

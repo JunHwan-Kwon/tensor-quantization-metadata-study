@@ -34,6 +34,48 @@ standards-facing records are field observations only; they do not choose a
 CycloneDX completeness policy or propose a DeepBOM output structure as a
 standard.
 
+## Second GGUF paired replication
+
+The [`experiments/gguf-paired-replication/qwen3-4b`](experiments/gguf-paired-replication/qwen3-4b)
+package applies the same outcome-neutral tensor-assignment protocol to two
+revision-pinned Qwen3-4B `Q4_K_M` publications. Both contain 398 tensors and
+have the same tensor-name set, shapes, per-tensor encodings, and normalized
+name-to-encoding assignment hash.
+
+This concordant pair does not reverse the divergent Granite result. Together,
+the two pairs show that a shared release label may coincide with either the
+same or a different serialized assignment in the particular artifacts checked;
+they do not estimate ecosystem prevalence. The primary measurement again uses
+upstream `gguf-py` 0.19.0, with the author-maintained implementation isolated as
+a secondary cross-check.
+
+Verify the committed Qwen records without downloading model files:
+
+```bash
+python scripts/check-gguf-paired-replication.py \
+  --experiment experiments/gguf-paired-replication/qwen3-4b
+```
+
+## Cross-format model-card artifact coverage
+
+The [`experiments/model-card-artifact-coverage`](experiments/model-card-artifact-coverage)
+package compares eight required model-card mappings at the pinned CycloneDX
+#1067 head with standardized fields actually present in fixed public cohorts:
+2 GGUF artifacts, 50 TFLite artifacts, and 15 ONNX artifacts. Results remain
+separate by format and are not an ecosystem prevalence estimate.
+
+Under the stated candidate profile, strict completion was observed for 2 of 16
+GGUF artifact/mapping pairs, 24 of 400 TFLite pairs, and 0 of 120 ONNX pairs.
+These are artifact-contained field observations, not CycloneDX completeness or
+conformance verdicts. Publisher declarations and externally bound evidence are
+reported separately from serialized observations.
+
+Verify the committed records and their source bindings without model bytes:
+
+```bash
+python scripts/check-model-card-artifact-coverage.py
+```
+
 The recorded benchmark corpus contains 50 public TFLite files:
 
 - 20 Google MediaPipe models

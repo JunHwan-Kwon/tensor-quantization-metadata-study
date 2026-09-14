@@ -1,0 +1,48 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-assignment-comparison.v1",
+  "evidenceClass": "comparison of serialized tensor descriptors",
+  "subjects": [
+    {
+      "id": "qwen-official-qwen3-4b-q4-k-m",
+      "sourceUri": "hf://Qwen/Qwen3-4B-GGUF@bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+      "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+      "filename": "Qwen3-4B-Q4_K_M.gguf",
+      "releaseLabel": "Q4_K_M",
+      "bytes": 2497280256,
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+    },
+    {
+      "id": "bartowski-qwen3-4b-q4-k-m",
+      "sourceUri": "hf://bartowski/Qwen_Qwen3-4B-GGUF@cb76885dc66d50759b207c5a48c4e78dfa00c638/Qwen_Qwen3-4B-Q4_K_M.gguf",
+      "revision": "cb76885dc66d50759b207c5a48c4e78dfa00c638",
+      "filename": "Qwen_Qwen3-4B-Q4_K_M.gguf",
+      "releaseLabel": "Q4_K_M",
+      "bytes": 2497280960,
+      "sha256": "fbe1d5edd4ce802ae3ae7c7e4ab7d09789d697fdac1fc7929f8df4ca3c41bae3"
+    }
+  ],
+  "sameDeclaredReleaseLabel": true,
+  "declaredReleaseLabels": [
+    "Q4_K_M",
+    "Q4_K_M"
+  ],
+  "sameTensorNameSet": true,
+  "leftOnlyTensorNames": [],
+  "rightOnlyTensorNames": [],
+  "shapeMismatchCount": 0,
+  "shapeMismatches": [],
+  "transitionCounts": {
+    "F32->F32": 145,
+    "Q4_K->Q4_K": 216,
+    "Q6_K->Q6_K": 37
+  },
+  "changedEncodingCount": 0,
+  "changedTensors": [],
+  "assignmentHashesDiffer": false,
+  "observation": "The two pinned Q4_K_M artifacts have the same serialized tensor-to-encoding assignment under this hash basis.",
+  "nonClaims": [
+    "No conversion command or calibration input is inferred from the assignment difference.",
+    "No ecosystem prevalence or performance effect is estimated."
+  ],
+  "interpretationBoundary": "This pair-specific result neither proves nor disproves that the Q4_K_M label uniquely determines assignments in other releases."
+}

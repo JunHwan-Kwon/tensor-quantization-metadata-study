@@ -10,7 +10,9 @@
     "build:gguf:crosscheck": "python scripts/build-gguf-crosscheck.py",
     "build:gguf:standards": "python scripts/build-gguf-standards-observations.py",
     "check:gguf": "python scripts/check-gguf-imatrix-results.py",
-    "check": "npm run check:cyclonedx-pr990 && npm run check:gguf"
+    "check:gguf:paired": "python scripts/check-gguf-paired-replication.py --experiment experiments/gguf-paired-replication/qwen3-4b",
+    "check:model-card-artifact-coverage": "python scripts/check-model-card-artifact-coverage.py",
+    "check": "npm run check:cyclonedx-pr990 && npm run check:gguf && npm run check:gguf:paired && npm run check:model-card-artifact-coverage"
   },
   "devDependencies": {
     "ajv": "8.20.0"

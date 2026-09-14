@@ -1,0 +1,5036 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-tensor-inventory.v1",
+  "evidenceClass": "serialized-artifact observation",
+  "measurementTool": {
+    "reader": "gguf-py",
+    "distribution": "gguf",
+    "ggufVersion": "0.19.0",
+    "numpyVersion": "2.5.3",
+    "pythonVersion": "3.12.2"
+  },
+  "source": {
+    "id": "qwen-official-qwen3-4b-q4-k-m",
+    "sourceUri": "hf://Qwen/Qwen3-4B-GGUF@bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "filename": "Qwen3-4B-Q4_K_M.gguf",
+    "releaseLabel": "Q4_K_M",
+    "bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  },
+  "format": {
+    "ggufVersion": 3,
+    "metadataKeys": [
+      "general.architecture",
+      "general.basename",
+      "general.file_type",
+      "general.finetune",
+      "general.name",
+      "general.quantization_version",
+      "general.size_label",
+      "general.type",
+      "qwen3.attention.head_count",
+      "qwen3.attention.head_count_kv",
+      "qwen3.attention.key_length",
+      "qwen3.attention.layer_norm_rms_epsilon",
+      "qwen3.attention.value_length",
+      "qwen3.block_count",
+      "qwen3.context_length",
+      "qwen3.embedding_length",
+      "qwen3.feed_forward_length",
+      "qwen3.rope.freq_base",
+      "tokenizer.chat_template",
+      "tokenizer.ggml.add_bos_token",
+      "tokenizer.ggml.bos_token_id",
+      "tokenizer.ggml.eos_token_id",
+      "tokenizer.ggml.merges",
+      "tokenizer.ggml.model",
+      "tokenizer.ggml.padding_token_id",
+      "tokenizer.ggml.pre",
+      "tokenizer.ggml.token_type",
+      "tokenizer.ggml.tokens"
+    ],
+    "selectedMetadata": {
+      "general.file_type": 15,
+      "general.name": "Qwen3 4B Instruct Awq"
+    }
+  },
+  "hashDefinitions": {
+    "serializedDescriptorProjectionSha256": "SHA-256 over compact UTF-8 JSON with sorted object keys; rows remain in serialized tensor-index order and project index/name/dtype/shape/byte_length.",
+    "nameEncodingAssignmentSha256": "SHA-256 over UTF8(name) || NUL || UTF8(encoding) || LF records sorted by raw UTF-8 name bytes; no Unicode normalization."
+  },
+  "summary": {
+    "tensorCount": 398,
+    "uniqueTensorNameCount": 398,
+    "duplicateTensorNames": [],
+    "elementCount": 4022468096,
+    "serializedTensorBytes": 2491323904,
+    "effectiveStorageBitsPerElement": "4.954816",
+    "encodingInventory": [
+      {
+        "encoding": "F32",
+        "tensorCount": 145,
+        "elementCount": 196096,
+        "byteLength": 784384
+      },
+      {
+        "encoding": "Q4_K",
+        "tensorCount": 216,
+        "elementCount": 3137863680,
+        "byteLength": 1765048320
+      },
+      {
+        "encoding": "Q6_K",
+        "tensorCount": 37,
+        "elementCount": 884408320,
+        "byteLength": 725491200
+      }
+    ],
+    "serializedDescriptorProjectionSha256": "15766e5eaca786a029a60925669d9661445d0644054013ee5cc9e0e2edeb6d6c",
+    "nameEncodingAssignmentSha256": "5351ead5b14fed41548f4ef6855c2679f5cbac89451e53ef58cecfe1e3341aa7"
+  },
+  "layerNameObservation": {
+    "pattern": "^blk\\.([0-9]+)\\.",
+    "interpretation": "serialized name grouping only; not an architecture-semantic layer assertion",
+    "layers": [
+      {
+        "index": 0,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 1,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 2,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 3,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 4,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 5,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 6,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 7,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 8,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 9,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 10,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 11,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 12,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 13,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 14,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 15,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 16,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 17,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 18,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 19,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 20,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 21,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 22,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 23,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 24,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 25,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 26,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 27,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 28,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 29,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 7
+        }
+      },
+      {
+        "index": 30,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 31,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 32,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 33,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 34,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      },
+      {
+        "index": 35,
+        "tensorCount": 11,
+        "encodings": {
+          "F32": 4,
+          "Q4_K": 5,
+          "Q6_K": 2
+        }
+      }
+    ]
+  },
+  "tensors": [
+    {
+      "index": 0,
+      "name": "output_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 5956352
+    },
+    {
+      "index": 1,
+      "name": "token_embd.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        151936
+      ],
+      "elementCount": 388956160,
+      "byteLength": 319065600,
+      "dataOffset": 5966592
+    },
+    {
+      "index": 2,
+      "name": "blk.0.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 325032192
+    },
+    {
+      "index": 3,
+      "name": "blk.0.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 326506752
+    },
+    {
+      "index": 4,
+      "name": "blk.0.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 326507264
+    },
+    {
+      "index": 5,
+      "name": "blk.0.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 326517504
+    },
+    {
+      "index": 6,
+      "name": "blk.0.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 332415744
+    },
+    {
+      "index": 7,
+      "name": "blk.0.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 338313984
+    },
+    {
+      "index": 8,
+      "name": "blk.0.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 338314496
+    },
+    {
+      "index": 9,
+      "name": "blk.0.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 340464896
+    },
+    {
+      "index": 10,
+      "name": "blk.0.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 360893696
+    },
+    {
+      "index": 11,
+      "name": "blk.0.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 374902016
+    },
+    {
+      "index": 12,
+      "name": "blk.0.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 374912256
+    },
+    {
+      "index": 13,
+      "name": "blk.1.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 388920576
+    },
+    {
+      "index": 14,
+      "name": "blk.1.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 390395136
+    },
+    {
+      "index": 15,
+      "name": "blk.1.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 390395648
+    },
+    {
+      "index": 16,
+      "name": "blk.1.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 390405888
+    },
+    {
+      "index": 17,
+      "name": "blk.1.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 396304128
+    },
+    {
+      "index": 18,
+      "name": "blk.1.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 402202368
+    },
+    {
+      "index": 19,
+      "name": "blk.1.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 402202880
+    },
+    {
+      "index": 20,
+      "name": "blk.1.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 404353280
+    },
+    {
+      "index": 21,
+      "name": "blk.1.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 424782080
+    },
+    {
+      "index": 22,
+      "name": "blk.1.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 438790400
+    },
+    {
+      "index": 23,
+      "name": "blk.1.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 438800640
+    },
+    {
+      "index": 24,
+      "name": "blk.2.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 452808960
+    },
+    {
+      "index": 25,
+      "name": "blk.2.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 454283520
+    },
+    {
+      "index": 26,
+      "name": "blk.2.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 454284032
+    },
+    {
+      "index": 27,
+      "name": "blk.2.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 454294272
+    },
+    {
+      "index": 28,
+      "name": "blk.2.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 460192512
+    },
+    {
+      "index": 29,
+      "name": "blk.2.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 466090752
+    },
+    {
+      "index": 30,
+      "name": "blk.2.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 466091264
+    },
+    {
+      "index": 31,
+      "name": "blk.2.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 468241664
+    },
+    {
+      "index": 32,
+      "name": "blk.2.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 488670464
+    },
+    {
+      "index": 33,
+      "name": "blk.2.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 502678784
+    },
+    {
+      "index": 34,
+      "name": "blk.2.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 502689024
+    },
+    {
+      "index": 35,
+      "name": "blk.3.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 516697344
+    },
+    {
+      "index": 36,
+      "name": "blk.3.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 518171904
+    },
+    {
+      "index": 37,
+      "name": "blk.3.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 518172416
+    },
+    {
+      "index": 38,
+      "name": "blk.3.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 518182656
+    },
+    {
+      "index": 39,
+      "name": "blk.3.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 524080896
+    },
+    {
+      "index": 40,
+      "name": "blk.3.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 529979136
+    },
+    {
+      "index": 41,
+      "name": "blk.3.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 529979648
+    },
+    {
+      "index": 42,
+      "name": "blk.3.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 532130048
+    },
+    {
+      "index": 43,
+      "name": "blk.3.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 552558848
+    },
+    {
+      "index": 44,
+      "name": "blk.3.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 566567168
+    },
+    {
+      "index": 45,
+      "name": "blk.3.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 566577408
+    },
+    {
+      "index": 46,
+      "name": "blk.4.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 580585728
+    },
+    {
+      "index": 47,
+      "name": "blk.4.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 582060288
+    },
+    {
+      "index": 48,
+      "name": "blk.4.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 582060800
+    },
+    {
+      "index": 49,
+      "name": "blk.4.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 582071040
+    },
+    {
+      "index": 50,
+      "name": "blk.4.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 587969280
+    },
+    {
+      "index": 51,
+      "name": "blk.4.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 593867520
+    },
+    {
+      "index": 52,
+      "name": "blk.4.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 593868032
+    },
+    {
+      "index": 53,
+      "name": "blk.4.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 595342592
+    },
+    {
+      "index": 54,
+      "name": "blk.4.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 609350912
+    },
+    {
+      "index": 55,
+      "name": "blk.4.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 623359232
+    },
+    {
+      "index": 56,
+      "name": "blk.4.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 623369472
+    },
+    {
+      "index": 57,
+      "name": "blk.5.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 637377792
+    },
+    {
+      "index": 58,
+      "name": "blk.5.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 638852352
+    },
+    {
+      "index": 59,
+      "name": "blk.5.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 638852864
+    },
+    {
+      "index": 60,
+      "name": "blk.5.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 638863104
+    },
+    {
+      "index": 61,
+      "name": "blk.5.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 644761344
+    },
+    {
+      "index": 62,
+      "name": "blk.5.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 650659584
+    },
+    {
+      "index": 63,
+      "name": "blk.5.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 650660096
+    },
+    {
+      "index": 64,
+      "name": "blk.5.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 652134656
+    },
+    {
+      "index": 65,
+      "name": "blk.5.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 666142976
+    },
+    {
+      "index": 66,
+      "name": "blk.5.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 680151296
+    },
+    {
+      "index": 67,
+      "name": "blk.5.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 680161536
+    },
+    {
+      "index": 68,
+      "name": "blk.6.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 694169856
+    },
+    {
+      "index": 69,
+      "name": "blk.6.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 695644416
+    },
+    {
+      "index": 70,
+      "name": "blk.6.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 695644928
+    },
+    {
+      "index": 71,
+      "name": "blk.6.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 695655168
+    },
+    {
+      "index": 72,
+      "name": "blk.6.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 701553408
+    },
+    {
+      "index": 73,
+      "name": "blk.6.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 707451648
+    },
+    {
+      "index": 74,
+      "name": "blk.6.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 707452160
+    },
+    {
+      "index": 75,
+      "name": "blk.6.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 709602560
+    },
+    {
+      "index": 76,
+      "name": "blk.6.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 730031360
+    },
+    {
+      "index": 77,
+      "name": "blk.6.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 744039680
+    },
+    {
+      "index": 78,
+      "name": "blk.6.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 744049920
+    },
+    {
+      "index": 79,
+      "name": "blk.7.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 758058240
+    },
+    {
+      "index": 80,
+      "name": "blk.7.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 759532800
+    },
+    {
+      "index": 81,
+      "name": "blk.7.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 759533312
+    },
+    {
+      "index": 82,
+      "name": "blk.7.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 759543552
+    },
+    {
+      "index": 83,
+      "name": "blk.7.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 765441792
+    },
+    {
+      "index": 84,
+      "name": "blk.7.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 771340032
+    },
+    {
+      "index": 85,
+      "name": "blk.7.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 771340544
+    },
+    {
+      "index": 86,
+      "name": "blk.7.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 772815104
+    },
+    {
+      "index": 87,
+      "name": "blk.7.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 786823424
+    },
+    {
+      "index": 88,
+      "name": "blk.7.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 800831744
+    },
+    {
+      "index": 89,
+      "name": "blk.7.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 800841984
+    },
+    {
+      "index": 90,
+      "name": "blk.8.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 814850304
+    },
+    {
+      "index": 91,
+      "name": "blk.8.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 816324864
+    },
+    {
+      "index": 92,
+      "name": "blk.8.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 816325376
+    },
+    {
+      "index": 93,
+      "name": "blk.8.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 816335616
+    },
+    {
+      "index": 94,
+      "name": "blk.8.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 822233856
+    },
+    {
+      "index": 95,
+      "name": "blk.8.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 828132096
+    },
+    {
+      "index": 96,
+      "name": "blk.8.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 828132608
+    },
+    {
+      "index": 97,
+      "name": "blk.8.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 829607168
+    },
+    {
+      "index": 98,
+      "name": "blk.8.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 843615488
+    },
+    {
+      "index": 99,
+      "name": "blk.8.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 857623808
+    },
+    {
+      "index": 100,
+      "name": "blk.8.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 857634048
+    },
+    {
+      "index": 101,
+      "name": "blk.9.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 871642368
+    },
+    {
+      "index": 102,
+      "name": "blk.9.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 873116928
+    },
+    {
+      "index": 103,
+      "name": "blk.9.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 873117440
+    },
+    {
+      "index": 104,
+      "name": "blk.9.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 873127680
+    },
+    {
+      "index": 105,
+      "name": "blk.9.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 879025920
+    },
+    {
+      "index": 106,
+      "name": "blk.9.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 884924160
+    },
+    {
+      "index": 107,
+      "name": "blk.9.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 884924672
+    },
+    {
+      "index": 108,
+      "name": "blk.9.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 887075072
+    },
+    {
+      "index": 109,
+      "name": "blk.9.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 907503872
+    },
+    {
+      "index": 110,
+      "name": "blk.9.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 921512192
+    },
+    {
+      "index": 111,
+      "name": "blk.9.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 921522432
+    },
+    {
+      "index": 112,
+      "name": "blk.10.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 935530752
+    },
+    {
+      "index": 113,
+      "name": "blk.10.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 937005312
+    },
+    {
+      "index": 114,
+      "name": "blk.10.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 937005824
+    },
+    {
+      "index": 115,
+      "name": "blk.10.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 937016064
+    },
+    {
+      "index": 116,
+      "name": "blk.10.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 942914304
+    },
+    {
+      "index": 117,
+      "name": "blk.10.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 948812544
+    },
+    {
+      "index": 118,
+      "name": "blk.10.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 948813056
+    },
+    {
+      "index": 119,
+      "name": "blk.10.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 950287616
+    },
+    {
+      "index": 120,
+      "name": "blk.10.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 964295936
+    },
+    {
+      "index": 121,
+      "name": "blk.10.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 978304256
+    },
+    {
+      "index": 122,
+      "name": "blk.10.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 978314496
+    },
+    {
+      "index": 123,
+      "name": "blk.11.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 992322816
+    },
+    {
+      "index": 124,
+      "name": "blk.11.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 993797376
+    },
+    {
+      "index": 125,
+      "name": "blk.11.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 993797888
+    },
+    {
+      "index": 126,
+      "name": "blk.11.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 993808128
+    },
+    {
+      "index": 127,
+      "name": "blk.11.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 999706368
+    },
+    {
+      "index": 128,
+      "name": "blk.11.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1005604608
+    },
+    {
+      "index": 129,
+      "name": "blk.11.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1005605120
+    },
+    {
+      "index": 130,
+      "name": "blk.11.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1007079680
+    },
+    {
+      "index": 131,
+      "name": "blk.11.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1021088000
+    },
+    {
+      "index": 132,
+      "name": "blk.11.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1035096320
+    },
+    {
+      "index": 133,
+      "name": "blk.11.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1035106560
+    },
+    {
+      "index": 134,
+      "name": "blk.12.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1049114880
+    },
+    {
+      "index": 135,
+      "name": "blk.12.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1050589440
+    },
+    {
+      "index": 136,
+      "name": "blk.12.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1050589952
+    },
+    {
+      "index": 137,
+      "name": "blk.12.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1050600192
+    },
+    {
+      "index": 138,
+      "name": "blk.12.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1056498432
+    },
+    {
+      "index": 139,
+      "name": "blk.12.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1062396672
+    },
+    {
+      "index": 140,
+      "name": "blk.12.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 1062397184
+    },
+    {
+      "index": 141,
+      "name": "blk.12.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 1064547584
+    },
+    {
+      "index": 142,
+      "name": "blk.12.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1084976384
+    },
+    {
+      "index": 143,
+      "name": "blk.12.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1098984704
+    },
+    {
+      "index": 144,
+      "name": "blk.12.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1098994944
+    },
+    {
+      "index": 145,
+      "name": "blk.13.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1113003264
+    },
+    {
+      "index": 146,
+      "name": "blk.13.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1114477824
+    },
+    {
+      "index": 147,
+      "name": "blk.13.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1114478336
+    },
+    {
+      "index": 148,
+      "name": "blk.13.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1114488576
+    },
+    {
+      "index": 149,
+      "name": "blk.13.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1120386816
+    },
+    {
+      "index": 150,
+      "name": "blk.13.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1126285056
+    },
+    {
+      "index": 151,
+      "name": "blk.13.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1126285568
+    },
+    {
+      "index": 152,
+      "name": "blk.13.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1127760128
+    },
+    {
+      "index": 153,
+      "name": "blk.13.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1141768448
+    },
+    {
+      "index": 154,
+      "name": "blk.13.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1155776768
+    },
+    {
+      "index": 155,
+      "name": "blk.13.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1155787008
+    },
+    {
+      "index": 156,
+      "name": "blk.14.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1169795328
+    },
+    {
+      "index": 157,
+      "name": "blk.14.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1171269888
+    },
+    {
+      "index": 158,
+      "name": "blk.14.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1171270400
+    },
+    {
+      "index": 159,
+      "name": "blk.14.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1171280640
+    },
+    {
+      "index": 160,
+      "name": "blk.14.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1177178880
+    },
+    {
+      "index": 161,
+      "name": "blk.14.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1183077120
+    },
+    {
+      "index": 162,
+      "name": "blk.14.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1183077632
+    },
+    {
+      "index": 163,
+      "name": "blk.14.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1184552192
+    },
+    {
+      "index": 164,
+      "name": "blk.14.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1198560512
+    },
+    {
+      "index": 165,
+      "name": "blk.14.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1212568832
+    },
+    {
+      "index": 166,
+      "name": "blk.14.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1212579072
+    },
+    {
+      "index": 167,
+      "name": "blk.15.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1226587392
+    },
+    {
+      "index": 168,
+      "name": "blk.15.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1228061952
+    },
+    {
+      "index": 169,
+      "name": "blk.15.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1228062464
+    },
+    {
+      "index": 170,
+      "name": "blk.15.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1228072704
+    },
+    {
+      "index": 171,
+      "name": "blk.15.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1233970944
+    },
+    {
+      "index": 172,
+      "name": "blk.15.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1239869184
+    },
+    {
+      "index": 173,
+      "name": "blk.15.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 1239869696
+    },
+    {
+      "index": 174,
+      "name": "blk.15.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 1242020096
+    },
+    {
+      "index": 175,
+      "name": "blk.15.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1262448896
+    },
+    {
+      "index": 176,
+      "name": "blk.15.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1276457216
+    },
+    {
+      "index": 177,
+      "name": "blk.15.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1276467456
+    },
+    {
+      "index": 178,
+      "name": "blk.16.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1290475776
+    },
+    {
+      "index": 179,
+      "name": "blk.16.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1291950336
+    },
+    {
+      "index": 180,
+      "name": "blk.16.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1291950848
+    },
+    {
+      "index": 181,
+      "name": "blk.16.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1291961088
+    },
+    {
+      "index": 182,
+      "name": "blk.16.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1297859328
+    },
+    {
+      "index": 183,
+      "name": "blk.16.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1303757568
+    },
+    {
+      "index": 184,
+      "name": "blk.16.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1303758080
+    },
+    {
+      "index": 185,
+      "name": "blk.16.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1305232640
+    },
+    {
+      "index": 186,
+      "name": "blk.16.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1319240960
+    },
+    {
+      "index": 187,
+      "name": "blk.16.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1333249280
+    },
+    {
+      "index": 188,
+      "name": "blk.16.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1333259520
+    },
+    {
+      "index": 189,
+      "name": "blk.17.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1347267840
+    },
+    {
+      "index": 190,
+      "name": "blk.17.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1348742400
+    },
+    {
+      "index": 191,
+      "name": "blk.17.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1348742912
+    },
+    {
+      "index": 192,
+      "name": "blk.17.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1348753152
+    },
+    {
+      "index": 193,
+      "name": "blk.17.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1354651392
+    },
+    {
+      "index": 194,
+      "name": "blk.17.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1360549632
+    },
+    {
+      "index": 195,
+      "name": "blk.17.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1360550144
+    },
+    {
+      "index": 196,
+      "name": "blk.17.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1362024704
+    },
+    {
+      "index": 197,
+      "name": "blk.17.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1376033024
+    },
+    {
+      "index": 198,
+      "name": "blk.17.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1390041344
+    },
+    {
+      "index": 199,
+      "name": "blk.17.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1390051584
+    },
+    {
+      "index": 200,
+      "name": "blk.18.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1404059904
+    },
+    {
+      "index": 201,
+      "name": "blk.18.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1405534464
+    },
+    {
+      "index": 202,
+      "name": "blk.18.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1405534976
+    },
+    {
+      "index": 203,
+      "name": "blk.18.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1405545216
+    },
+    {
+      "index": 204,
+      "name": "blk.18.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1411443456
+    },
+    {
+      "index": 205,
+      "name": "blk.18.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1417341696
+    },
+    {
+      "index": 206,
+      "name": "blk.18.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 1417342208
+    },
+    {
+      "index": 207,
+      "name": "blk.18.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 1419492608
+    },
+    {
+      "index": 208,
+      "name": "blk.18.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1439921408
+    },
+    {
+      "index": 209,
+      "name": "blk.18.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1453929728
+    },
+    {
+      "index": 210,
+      "name": "blk.18.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1453939968
+    },
+    {
+      "index": 211,
+      "name": "blk.19.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1467948288
+    },
+    {
+      "index": 212,
+      "name": "blk.19.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1469422848
+    },
+    {
+      "index": 213,
+      "name": "blk.19.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1469423360
+    },
+    {
+      "index": 214,
+      "name": "blk.19.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1469433600
+    },
+    {
+      "index": 215,
+      "name": "blk.19.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1475331840
+    },
+    {
+      "index": 216,
+      "name": "blk.19.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1481230080
+    },
+    {
+      "index": 217,
+      "name": "blk.19.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1481230592
+    },
+    {
+      "index": 218,
+      "name": "blk.19.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1482705152
+    },
+    {
+      "index": 219,
+      "name": "blk.19.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1496713472
+    },
+    {
+      "index": 220,
+      "name": "blk.19.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1510721792
+    },
+    {
+      "index": 221,
+      "name": "blk.19.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1510732032
+    },
+    {
+      "index": 222,
+      "name": "blk.20.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1524740352
+    },
+    {
+      "index": 223,
+      "name": "blk.20.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1526214912
+    },
+    {
+      "index": 224,
+      "name": "blk.20.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1526215424
+    },
+    {
+      "index": 225,
+      "name": "blk.20.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1526225664
+    },
+    {
+      "index": 226,
+      "name": "blk.20.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1532123904
+    },
+    {
+      "index": 227,
+      "name": "blk.20.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1538022144
+    },
+    {
+      "index": 228,
+      "name": "blk.20.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1538022656
+    },
+    {
+      "index": 229,
+      "name": "blk.20.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1539497216
+    },
+    {
+      "index": 230,
+      "name": "blk.20.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1553505536
+    },
+    {
+      "index": 231,
+      "name": "blk.20.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1567513856
+    },
+    {
+      "index": 232,
+      "name": "blk.20.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1567524096
+    },
+    {
+      "index": 233,
+      "name": "blk.21.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1581532416
+    },
+    {
+      "index": 234,
+      "name": "blk.21.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1583006976
+    },
+    {
+      "index": 235,
+      "name": "blk.21.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1583007488
+    },
+    {
+      "index": 236,
+      "name": "blk.21.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1583017728
+    },
+    {
+      "index": 237,
+      "name": "blk.21.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1588915968
+    },
+    {
+      "index": 238,
+      "name": "blk.21.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1594814208
+    },
+    {
+      "index": 239,
+      "name": "blk.21.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 1594814720
+    },
+    {
+      "index": 240,
+      "name": "blk.21.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 1596965120
+    },
+    {
+      "index": 241,
+      "name": "blk.21.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1617393920
+    },
+    {
+      "index": 242,
+      "name": "blk.21.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1631402240
+    },
+    {
+      "index": 243,
+      "name": "blk.21.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1631412480
+    },
+    {
+      "index": 244,
+      "name": "blk.22.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1645420800
+    },
+    {
+      "index": 245,
+      "name": "blk.22.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1646895360
+    },
+    {
+      "index": 246,
+      "name": "blk.22.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1646895872
+    },
+    {
+      "index": 247,
+      "name": "blk.22.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1646906112
+    },
+    {
+      "index": 248,
+      "name": "blk.22.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1652804352
+    },
+    {
+      "index": 249,
+      "name": "blk.22.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1658702592
+    },
+    {
+      "index": 250,
+      "name": "blk.22.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1658703104
+    },
+    {
+      "index": 251,
+      "name": "blk.22.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1660177664
+    },
+    {
+      "index": 252,
+      "name": "blk.22.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1674185984
+    },
+    {
+      "index": 253,
+      "name": "blk.22.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1688194304
+    },
+    {
+      "index": 254,
+      "name": "blk.22.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1688204544
+    },
+    {
+      "index": 255,
+      "name": "blk.23.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1702212864
+    },
+    {
+      "index": 256,
+      "name": "blk.23.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1703687424
+    },
+    {
+      "index": 257,
+      "name": "blk.23.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1703687936
+    },
+    {
+      "index": 258,
+      "name": "blk.23.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1703698176
+    },
+    {
+      "index": 259,
+      "name": "blk.23.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1709596416
+    },
+    {
+      "index": 260,
+      "name": "blk.23.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1715494656
+    },
+    {
+      "index": 261,
+      "name": "blk.23.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1715495168
+    },
+    {
+      "index": 262,
+      "name": "blk.23.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1716969728
+    },
+    {
+      "index": 263,
+      "name": "blk.23.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1730978048
+    },
+    {
+      "index": 264,
+      "name": "blk.23.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1744986368
+    },
+    {
+      "index": 265,
+      "name": "blk.23.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1744996608
+    },
+    {
+      "index": 266,
+      "name": "blk.24.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1759004928
+    },
+    {
+      "index": 267,
+      "name": "blk.24.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1760479488
+    },
+    {
+      "index": 268,
+      "name": "blk.24.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1760480000
+    },
+    {
+      "index": 269,
+      "name": "blk.24.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1760490240
+    },
+    {
+      "index": 270,
+      "name": "blk.24.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1766388480
+    },
+    {
+      "index": 271,
+      "name": "blk.24.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1772286720
+    },
+    {
+      "index": 272,
+      "name": "blk.24.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 1772287232
+    },
+    {
+      "index": 273,
+      "name": "blk.24.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 1774437632
+    },
+    {
+      "index": 274,
+      "name": "blk.24.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1794866432
+    },
+    {
+      "index": 275,
+      "name": "blk.24.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1808874752
+    },
+    {
+      "index": 276,
+      "name": "blk.24.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1808884992
+    },
+    {
+      "index": 277,
+      "name": "blk.25.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1822893312
+    },
+    {
+      "index": 278,
+      "name": "blk.25.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1824367872
+    },
+    {
+      "index": 279,
+      "name": "blk.25.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1824368384
+    },
+    {
+      "index": 280,
+      "name": "blk.25.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1824378624
+    },
+    {
+      "index": 281,
+      "name": "blk.25.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1830276864
+    },
+    {
+      "index": 282,
+      "name": "blk.25.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1836175104
+    },
+    {
+      "index": 283,
+      "name": "blk.25.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1836175616
+    },
+    {
+      "index": 284,
+      "name": "blk.25.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1837650176
+    },
+    {
+      "index": 285,
+      "name": "blk.25.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1851658496
+    },
+    {
+      "index": 286,
+      "name": "blk.25.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1865666816
+    },
+    {
+      "index": 287,
+      "name": "blk.25.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1865677056
+    },
+    {
+      "index": 288,
+      "name": "blk.26.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1879685376
+    },
+    {
+      "index": 289,
+      "name": "blk.26.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1881159936
+    },
+    {
+      "index": 290,
+      "name": "blk.26.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1881160448
+    },
+    {
+      "index": 291,
+      "name": "blk.26.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1881170688
+    },
+    {
+      "index": 292,
+      "name": "blk.26.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1887068928
+    },
+    {
+      "index": 293,
+      "name": "blk.26.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1892967168
+    },
+    {
+      "index": 294,
+      "name": "blk.26.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1892967680
+    },
+    {
+      "index": 295,
+      "name": "blk.26.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1894442240
+    },
+    {
+      "index": 296,
+      "name": "blk.26.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1908450560
+    },
+    {
+      "index": 297,
+      "name": "blk.26.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1922458880
+    },
+    {
+      "index": 298,
+      "name": "blk.26.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1922469120
+    },
+    {
+      "index": 299,
+      "name": "blk.27.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 1936477440
+    },
+    {
+      "index": 300,
+      "name": "blk.27.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1937952000
+    },
+    {
+      "index": 301,
+      "name": "blk.27.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1937952512
+    },
+    {
+      "index": 302,
+      "name": "blk.27.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1937962752
+    },
+    {
+      "index": 303,
+      "name": "blk.27.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 1943860992
+    },
+    {
+      "index": 304,
+      "name": "blk.27.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 1949759232
+    },
+    {
+      "index": 305,
+      "name": "blk.27.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 1949759744
+    },
+    {
+      "index": 306,
+      "name": "blk.27.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 1951910144
+    },
+    {
+      "index": 307,
+      "name": "blk.27.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1972338944
+    },
+    {
+      "index": 308,
+      "name": "blk.27.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 1986347264
+    },
+    {
+      "index": 309,
+      "name": "blk.27.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 1986357504
+    },
+    {
+      "index": 310,
+      "name": "blk.28.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2000365824
+    },
+    {
+      "index": 311,
+      "name": "blk.28.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2001840384
+    },
+    {
+      "index": 312,
+      "name": "blk.28.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2001840896
+    },
+    {
+      "index": 313,
+      "name": "blk.28.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2001851136
+    },
+    {
+      "index": 314,
+      "name": "blk.28.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2007749376
+    },
+    {
+      "index": 315,
+      "name": "blk.28.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2013647616
+    },
+    {
+      "index": 316,
+      "name": "blk.28.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2013648128
+    },
+    {
+      "index": 317,
+      "name": "blk.28.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2015122688
+    },
+    {
+      "index": 318,
+      "name": "blk.28.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2029131008
+    },
+    {
+      "index": 319,
+      "name": "blk.28.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2043139328
+    },
+    {
+      "index": 320,
+      "name": "blk.28.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2043149568
+    },
+    {
+      "index": 321,
+      "name": "blk.29.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2057157888
+    },
+    {
+      "index": 322,
+      "name": "blk.29.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2058632448
+    },
+    {
+      "index": 323,
+      "name": "blk.29.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2058632960
+    },
+    {
+      "index": 324,
+      "name": "blk.29.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2058643200
+    },
+    {
+      "index": 325,
+      "name": "blk.29.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2064541440
+    },
+    {
+      "index": 326,
+      "name": "blk.29.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2070439680
+    },
+    {
+      "index": 327,
+      "name": "blk.29.attn_v.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2070440192
+    },
+    {
+      "index": 328,
+      "name": "blk.29.ffn_down.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2071914752
+    },
+    {
+      "index": 329,
+      "name": "blk.29.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2085923072
+    },
+    {
+      "index": 330,
+      "name": "blk.29.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2099931392
+    },
+    {
+      "index": 331,
+      "name": "blk.29.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2099941632
+    },
+    {
+      "index": 332,
+      "name": "blk.30.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2113949952
+    },
+    {
+      "index": 333,
+      "name": "blk.30.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2115424512
+    },
+    {
+      "index": 334,
+      "name": "blk.30.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2115425024
+    },
+    {
+      "index": 335,
+      "name": "blk.30.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2115435264
+    },
+    {
+      "index": 336,
+      "name": "blk.30.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2121333504
+    },
+    {
+      "index": 337,
+      "name": "blk.30.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2127231744
+    },
+    {
+      "index": 338,
+      "name": "blk.30.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 2127232256
+    },
+    {
+      "index": 339,
+      "name": "blk.30.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 2129382656
+    },
+    {
+      "index": 340,
+      "name": "blk.30.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2149811456
+    },
+    {
+      "index": 341,
+      "name": "blk.30.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2163819776
+    },
+    {
+      "index": 342,
+      "name": "blk.30.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2163830016
+    },
+    {
+      "index": 343,
+      "name": "blk.31.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2177838336
+    },
+    {
+      "index": 344,
+      "name": "blk.31.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2179312896
+    },
+    {
+      "index": 345,
+      "name": "blk.31.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2179313408
+    },
+    {
+      "index": 346,
+      "name": "blk.31.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2179323648
+    },
+    {
+      "index": 347,
+      "name": "blk.31.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2185221888
+    },
+    {
+      "index": 348,
+      "name": "blk.31.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2191120128
+    },
+    {
+      "index": 349,
+      "name": "blk.31.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 2191120640
+    },
+    {
+      "index": 350,
+      "name": "blk.31.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 2193271040
+    },
+    {
+      "index": 351,
+      "name": "blk.31.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2213699840
+    },
+    {
+      "index": 352,
+      "name": "blk.31.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2227708160
+    },
+    {
+      "index": 353,
+      "name": "blk.31.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2227718400
+    },
+    {
+      "index": 354,
+      "name": "blk.32.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2241726720
+    },
+    {
+      "index": 355,
+      "name": "blk.32.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2243201280
+    },
+    {
+      "index": 356,
+      "name": "blk.32.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2243201792
+    },
+    {
+      "index": 357,
+      "name": "blk.32.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2243212032
+    },
+    {
+      "index": 358,
+      "name": "blk.32.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2249110272
+    },
+    {
+      "index": 359,
+      "name": "blk.32.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2255008512
+    },
+    {
+      "index": 360,
+      "name": "blk.32.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 2255009024
+    },
+    {
+      "index": 361,
+      "name": "blk.32.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 2257159424
+    },
+    {
+      "index": 362,
+      "name": "blk.32.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2277588224
+    },
+    {
+      "index": 363,
+      "name": "blk.32.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2291596544
+    },
+    {
+      "index": 364,
+      "name": "blk.32.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2291606784
+    },
+    {
+      "index": 365,
+      "name": "blk.33.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2305615104
+    },
+    {
+      "index": 366,
+      "name": "blk.33.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2307089664
+    },
+    {
+      "index": 367,
+      "name": "blk.33.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2307090176
+    },
+    {
+      "index": 368,
+      "name": "blk.33.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2307100416
+    },
+    {
+      "index": 369,
+      "name": "blk.33.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2312998656
+    },
+    {
+      "index": 370,
+      "name": "blk.33.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2318896896
+    },
+    {
+      "index": 371,
+      "name": "blk.33.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 2318897408
+    },
+    {
+      "index": 372,
+      "name": "blk.33.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 2321047808
+    },
+    {
+      "index": 373,
+      "name": "blk.33.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2341476608
+    },
+    {
+      "index": 374,
+      "name": "blk.33.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2355484928
+    },
+    {
+      "index": 375,
+      "name": "blk.33.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2355495168
+    },
+    {
+      "index": 376,
+      "name": "blk.34.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2369503488
+    },
+    {
+      "index": 377,
+      "name": "blk.34.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2370978048
+    },
+    {
+      "index": 378,
+      "name": "blk.34.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2370978560
+    },
+    {
+      "index": 379,
+      "name": "blk.34.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2370988800
+    },
+    {
+      "index": 380,
+      "name": "blk.34.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2376887040
+    },
+    {
+      "index": 381,
+      "name": "blk.34.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2382785280
+    },
+    {
+      "index": 382,
+      "name": "blk.34.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 2382785792
+    },
+    {
+      "index": 383,
+      "name": "blk.34.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 2384936192
+    },
+    {
+      "index": 384,
+      "name": "blk.34.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2405364992
+    },
+    {
+      "index": 385,
+      "name": "blk.34.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2419373312
+    },
+    {
+      "index": 386,
+      "name": "blk.34.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2419383552
+    },
+    {
+      "index": 387,
+      "name": "blk.35.attn_k.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 1474560,
+      "dataOffset": 2433391872
+    },
+    {
+      "index": 388,
+      "name": "blk.35.attn_k_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2434866432
+    },
+    {
+      "index": 389,
+      "name": "blk.35.attn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2434866944
+    },
+    {
+      "index": 390,
+      "name": "blk.35.attn_output.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        4096,
+        2560
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2434877184
+    },
+    {
+      "index": 391,
+      "name": "blk.35.attn_q.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        4096
+      ],
+      "elementCount": 10485760,
+      "byteLength": 5898240,
+      "dataOffset": 2440775424
+    },
+    {
+      "index": 392,
+      "name": "blk.35.attn_q_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        128
+      ],
+      "elementCount": 128,
+      "byteLength": 512,
+      "dataOffset": 2446673664
+    },
+    {
+      "index": 393,
+      "name": "blk.35.attn_v.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        2560,
+        1024
+      ],
+      "elementCount": 2621440,
+      "byteLength": 2150400,
+      "dataOffset": 2446674176
+    },
+    {
+      "index": 394,
+      "name": "blk.35.ffn_down.weight",
+      "encoding": "Q6_K",
+      "shape": [
+        9728,
+        2560
+      ],
+      "elementCount": 24903680,
+      "byteLength": 20428800,
+      "dataOffset": 2448824576
+    },
+    {
+      "index": 395,
+      "name": "blk.35.ffn_gate.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2469253376
+    },
+    {
+      "index": 396,
+      "name": "blk.35.ffn_norm.weight",
+      "encoding": "F32",
+      "shape": [
+        2560
+      ],
+      "elementCount": 2560,
+      "byteLength": 10240,
+      "dataOffset": 2483261696
+    },
+    {
+      "index": 397,
+      "name": "blk.35.ffn_up.weight",
+      "encoding": "Q4_K",
+      "shape": [
+        2560,
+        9728
+      ],
+      "elementCount": 24903680,
+      "byteLength": 14008320,
+      "dataOffset": 2483271936
+    }
+  ]
+}

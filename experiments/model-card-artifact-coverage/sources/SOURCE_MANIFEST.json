@@ -1,0 +1,36 @@
+{
+  "artifact_bytes_included": false,
+  "inputs": [
+    {
+      "path": "data/tflite-metadata-audit.json",
+      "sha256": "ccdd9a2a88e485cde85ba65ecb5365605092be544d2eee367ee80dfedf9f2cd1"
+    },
+    {
+      "path": "data/onnx-pilot-manifest.json",
+      "sha256": "92a141f2197f7d4c952da549c1af6e1a7f4112e6664beda49384c8a21ab6974b"
+    },
+    {
+      "path": "experiments/gguf-imatrix/standards-mapping/pr-1067/model-card-artifact-field-observations.json",
+      "sha256": "9835937019879e6e744aa3bdb1db1a5eed5c9bc0c5ee7d2ef9c7561b03537f0c"
+    },
+    {
+      "path": "experiments/gguf-imatrix/sources/pr-1067/model-card-perspective.json",
+      "sha256": "a638e7753ec79d303cfecde3ecc2c06f984247ce4b6f49e7b55bdc253af70f51"
+    },
+    {
+      "path": "scripts/build-model-card-artifact-coverage.py",
+      "sha256": "77968068ccf0f9402626c80cdf4b75c28be033ef7800da4d03881793cbb2d4b9"
+    }
+  ],
+  "onnx_cache": {
+    "committed": false,
+    "required": true,
+    "verified_artifact_count": 15
+  },
+  "record_type": "tensor_quantization_metadata_study.model_card_artifact_coverage_source_manifest.v1",
+  "result_canonical_sha256": "f2b7c714bd62645ac1d961248f46ebb65d5c0e30c7b75c33f00e80a023339338",
+  "runtime": {
+    "onnx": "1.22.0",
+    "python": "3.12.2"
+  }
+}

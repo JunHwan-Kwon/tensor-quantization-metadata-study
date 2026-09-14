@@ -1,0 +1,25 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-secondary-implementation-comparison.v1",
+  "primaryImplementation": "upstream gguf-py 0.19.0",
+  "secondaryImplementation": "1.96.14",
+  "secondaryMaintainerRelationship": "maintained by the study author",
+  "checks": {
+    "left": {
+      "artifact_sha256": true,
+      "artifact_byte_length": true,
+      "tensor_count": true,
+      "normalized_tensor_rows": true,
+      "descriptor_projection_sha256": true
+    },
+    "right": {
+      "artifact_sha256": true,
+      "artifact_byte_length": true,
+      "tensor_count": true,
+      "normalized_tensor_rows": true,
+      "descriptor_projection_sha256": true
+    },
+    "pair_assignment_relation": true
+  },
+  "allChecksPass": true,
+  "interpretationBoundary": "The secondary implementation tests reproducibility only; no study conclusion depends solely on it."
+}

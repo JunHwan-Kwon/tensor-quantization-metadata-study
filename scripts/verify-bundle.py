@@ -391,6 +391,16 @@ def verify_supplementary_results(root):
         ],
         [
             sys.executable,
+            str(root / "scripts/check-gguf-paired-replication.py"),
+            "--experiment",
+            str(root / "experiments/gguf-paired-replication/qwen3-4b"),
+        ],
+        [
+            sys.executable,
+            str(root / "scripts/check-model-card-artifact-coverage.py"),
+        ],
+        [
+            sys.executable,
             str(root / "scripts/check-affine-all-pairs.py"),
             str(root / "experiments/imagenetv2-all-pairs"),
         ],
@@ -423,6 +433,10 @@ def main():
         "all_pairs_image_count": 1000,
         "gguf_q4_subject_count": 2,
         "gguf_changed_encoding_count": 100,
+        "qwen_paired_replication_tensor_count": 398,
+        "qwen_paired_replication_changed_encoding_count": 0,
+        "model_card_coverage_artifact_count": 67,
+        "model_card_coverage_observation_count": 536,
         "imatrix_assessed_tensor_count": 560,
     }, indent=2))
 
