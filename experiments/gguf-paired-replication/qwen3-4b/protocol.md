@@ -2,10 +2,11 @@
 
 ## Purpose
 
-This is a second, outcome-neutral replication of the tensor-assignment
-comparison used in the Granite study. The subjects are revision-pinned public
-`Q4_K_M` GGUF files associated with the same Qwen3-4B base-model family. A
-matching result and a divergent result are both valid observations.
+This outcome-neutral second pair was selected before inspecting its tensor
+assignments to test whether a shared release label is sufficient to identify
+the serialized assignment. The subjects are revision-pinned public `Q4_K_M`
+GGUF files associated with the same Qwen3-4B base-model family. Concordant and
+divergent results were both valid outcomes.
 
 The primary measurement uses upstream `gguf-py` 0.19.0. A second implementation
 maintained by the study author is isolated under `crosschecks/deepbom`; no

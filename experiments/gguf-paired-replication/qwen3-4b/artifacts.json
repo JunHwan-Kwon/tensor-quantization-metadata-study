@@ -1,7 +1,7 @@
 {
   "recordType": "tensor-quantization-metadata-study.gguf-paired-replication-artifacts.v1",
   "artifactBytesIncluded": false,
-  "selection": "Two public Q4_K_M files declaring the same Qwen/Qwen3-4B base-model family, selected as a replication pair without a predicted outcome.",
+  "selection": "Two revision-pinned public Q4_K_M files for the same Qwen/Qwen3-4B base-model family, selected before inspecting tensor assignments as an outcome-neutral second pair to test whether a shared release label is sufficient to identify the serialized assignment.",
   "artifacts": [
     {
       "id": "qwen-official-qwen3-4b-q4-k-m",
