@@ -7,6 +7,12 @@ source-bound observations of related CycloneDX AI/ML draft schema surfaces.
 Canonical repository:
 <https://github.com/JunHwan-Kwon/tensor-quantization-metadata-study>
 
+For a focused reading path, see [Observed quantization assignments and
+interface contracts](docs/quantization-evidence-brief.md). It brings together
+the divergent Granite pair, concordant Qwen pair, and named TFLite I/O cases,
+with complete tensor tables, source bindings and explicit limits. Check its
+committed records with `python scripts/build-quantization-evidence-brief.py --check`.
+
 ## GGUF mixed-encoding and importance-matrix evidence
 
 The [`experiments/gguf-imatrix`](experiments/gguf-imatrix) package measures two

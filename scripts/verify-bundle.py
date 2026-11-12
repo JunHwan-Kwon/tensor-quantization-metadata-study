@@ -333,6 +333,8 @@ def verify_experiments(root):
 
 def verify_supplementary_results(root):
     commands = [
+        [sys.executable, str(root / "scripts/build-quantization-evidence-brief.py"), "--check"],
+        [sys.executable, str(root / "scripts/test-quantization-evidence-brief.py")],
         [
             sys.executable,
             str(root / "scripts/test-kaggle-snapshot.py"),

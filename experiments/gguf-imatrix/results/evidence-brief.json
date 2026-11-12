@@ -1,0 +1,247 @@
+{
+  "recordType": "tensor-quantization-metadata-study.evidence-brief.v1",
+  "sources": [
+    {
+      "path": "experiments/gguf-imatrix/results/ibm-q4km-tensor-inventory.json",
+      "sha256": "a3784d4637441b49b193c2ada3877fbe20abcfdc10c5afb69bdea13c1bd31cdf"
+    },
+    {
+      "path": "experiments/gguf-imatrix/results/bartowski-q4km-tensor-inventory.json",
+      "sha256": "bc10d8eca54108b38b8c76cf309f8ff638060777e4648a3ee2691a7a76fa9ee2"
+    },
+    {
+      "path": "experiments/gguf-imatrix/results/tensor-assignment-comparison.json",
+      "sha256": "36c6bd9a542cc61c7f747c8eb93130f321d247027c4ecdefbedd55b23424ba7d"
+    },
+    {
+      "path": "experiments/gguf-imatrix/results/file-layout.json",
+      "sha256": "ddfd97e1e97a38a0d8770194ae37eb97e649202a24e2066ace6d5a2697e9f0d6"
+    },
+    {
+      "path": "experiments/gguf-paired-replication/qwen3-4b/results/left-tensor-inventory.json",
+      "sha256": "e353ef60b6035ccf407bd35e271aff1c0906161e3639985fb5e46c839cb2e974"
+    },
+    {
+      "path": "experiments/gguf-paired-replication/qwen3-4b/results/right-tensor-inventory.json",
+      "sha256": "bad00b90056e3062ffb706838ddf7c0ce9e19c9a75e7facaf15fa3b5b47446eb"
+    },
+    {
+      "path": "experiments/gguf-paired-replication/qwen3-4b/results/tensor-assignment-comparison.json",
+      "sha256": "dbc6bb5deba617bae1ef9d3bd62ab4828a9eaa4e67d57de84dbf202ef820502b"
+    },
+    {
+      "path": "experiments/gguf-imatrix/results/imatrix-measurement.json",
+      "sha256": "956a31862f71274223f2ef37cc15de14be2e9e869f852397daa053fd7beeaa6f"
+    },
+    {
+      "path": "data/interface-contracts.json",
+      "sha256": "acaf33bb9a512c5a197157ce6311c45bea041e112b38e8e464449b15b6a39010"
+    },
+    {
+      "path": "data/tflite-granularity-evidence.json",
+      "sha256": "a5a8da523c92405bb47e8d50c32c58781054a57429988f16bb34a0f72ccad1f0"
+    }
+  ],
+  "granite": {
+    "subjects": [
+      {
+        "id": "ibm-granite-4.2-3b-q4-k-m",
+        "sourceUri": "hf://ibm-granite/granite-4.2-3b-GGUF@c40945d71cd90f249a56985e8155551a9188dc30/granite-4.2-3b-Q4_K_M.gguf",
+        "revision": "c40945d71cd90f249a56985e8155551a9188dc30",
+        "filename": "granite-4.2-3b-Q4_K_M.gguf",
+        "releaseLabel": "Q4_K_M",
+        "bytes": 2244011552,
+        "sha256": "e0406663965846ae22a403456eb826ccce5f450840491f71952f18a7cb78e7d5"
+      },
+      {
+        "id": "bartowski-granite-4.2-3b-q4-k-m",
+        "sourceUri": "hf://bartowski/granite-4.2-3b-GGUF@4093456941a783ab5d8268e00a7725532c1e9af3/granite-4.2-3b-Q4_K_M.gguf",
+        "revision": "4093456941a783ab5d8268e00a7725532c1e9af3",
+        "filename": "granite-4.2-3b-Q4_K_M.gguf",
+        "releaseLabel": "Q4_K_M",
+        "bytes": 2317126048,
+        "sha256": "d8c0c39e0b775ff4e7ed1ed7f0593d27158acb063b07b132fa4f134b2075567f"
+      }
+    ],
+    "tensorCountPerSubject": 363,
+    "changedEncodingCount": 100,
+    "changedTensorKinds": {
+      "attn_k.weight": 40,
+      "attn_output.weight": 40,
+      "attn_q.weight": 20
+    },
+    "changedQueryBlockIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7,
+      10,
+      13,
+      16,
+      19,
+      22,
+      25,
+      28,
+      31,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "payloadDifferenceBytes": 73113600,
+    "payloadIncreasePercent": 3.2633585169543817,
+    "regionDifferenceBytes": {
+      "headerBytes": 0,
+      "kvBytes": 889,
+      "tensorDescriptorBytes": 0,
+      "alignmentPaddingBytes": 7,
+      "tensorPayloadBytes": 73113600,
+      "interTensorPaddingBytes": 0,
+      "trailingBytes": 0
+    },
+    "metadataComparison": {
+      "leftCount": 35,
+      "rightCount": 45,
+      "commonEqualCount": 35,
+      "commonDifferentKeys": [],
+      "leftOnlyKeys": [],
+      "rightOnlyKeys": [
+        "general.base_model.0.name",
+        "general.base_model.0.organization",
+        "general.base_model.0.repo_url",
+        "general.base_model.count",
+        "general.languages",
+        "general.tags",
+        "quantize.imatrix.chunks_count",
+        "quantize.imatrix.dataset",
+        "quantize.imatrix.entries_count",
+        "quantize.imatrix.file"
+      ]
+    }
+  },
+  "qwen": {
+    "subjects": [
+      {
+        "id": "qwen-official-qwen3-4b-q4-k-m",
+        "sourceUri": "hf://Qwen/Qwen3-4B-GGUF@bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+        "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+        "filename": "Qwen3-4B-Q4_K_M.gguf",
+        "releaseLabel": "Q4_K_M",
+        "bytes": 2497280256,
+        "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+      },
+      {
+        "id": "bartowski-qwen3-4b-q4-k-m",
+        "sourceUri": "hf://bartowski/Qwen_Qwen3-4B-GGUF@cb76885dc66d50759b207c5a48c4e78dfa00c638/Qwen_Qwen3-4B-Q4_K_M.gguf",
+        "revision": "cb76885dc66d50759b207c5a48c4e78dfa00c638",
+        "filename": "Qwen_Qwen3-4B-Q4_K_M.gguf",
+        "releaseLabel": "Q4_K_M",
+        "bytes": 2497280960,
+        "sha256": "fbe1d5edd4ce802ae3ae7c7e4ab7d09789d697fdac1fc7929f8df4ca3c41bae3"
+      }
+    ],
+    "tensorCountPerSubject": 398,
+    "changedEncodingCount": 0
+  },
+  "namedInterfaces": [
+    {
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+      "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "direction": "input",
+      "tensor_index": 164,
+      "tensor_name": "images",
+      "dtype": "UINT8",
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "quantizationStatus": "complete",
+      "scales": [
+        0.012566016986966133
+      ],
+      "zeroPoints": [
+        131
+      ]
+    },
+    {
+      "qualified_id": "mediapipe-public/efficientnet-lite0-int8",
+      "artifact_sha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "direction": "output",
+      "tensor_index": 165,
+      "tensor_name": "Softmax",
+      "dtype": "UINT8",
+      "shape": [
+        1,
+        1000
+      ],
+      "quantizationStatus": "complete",
+      "scales": [
+        0.00390625
+      ],
+      "zeroPoints": [
+        0
+      ]
+    },
+    {
+      "qualified_id": "mediapipe-public/audio-classifier-yamnet-f32",
+      "artifact_sha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
+      "direction": "input",
+      "tensor_index": 0,
+      "tensor_name": "waveform_binary",
+      "dtype": "FLOAT32",
+      "shape": [
+        15600
+      ],
+      "quantizationStatus": "not_quantized",
+      "scales": [],
+      "zeroPoints": []
+    },
+    {
+      "qualified_id": "mediapipe-public/audio-classifier-yamnet-f32",
+      "artifact_sha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
+      "direction": "output",
+      "tensor_index": 120,
+      "tensor_name": "tower0/network/layer32/final_output",
+      "dtype": "FLOAT32",
+      "shape": [
+        1,
+        521
+      ],
+      "quantizationStatus": "not_quantized",
+      "scales": [],
+      "zeroPoints": []
+    }
+  ],
+  "internalRoles": [
+    {
+      "artifactSha256": "bc2ffe19c1118de0c0c2a9088992da5589722656e0fba81421385300a4a34b16",
+      "qualifiedId": "mediapipe-public/efficientnet-lite0-int8",
+      "int8WeightTensors": 50,
+      "int8IntermediateTensors": 63,
+      "perAxisWeightTensors": 49,
+      "perAxisBiasTensors": 49
+    },
+    {
+      "artifactSha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
+      "qualifiedId": "mediapipe-public/audio-classifier-yamnet-f32",
+      "int8WeightTensors": 28,
+      "int8IntermediateTensors": 33,
+      "perAxisWeightTensors": 27,
+      "perAxisBiasTensors": 27
+    }
+  ],
+  "readiness": {
+    "artifactExamples": "available",
+    "tensorAssignments": "available",
+    "serializedWeightConsumerBindings": "available_for_selected_tflite_operators",
+    "originalModuleMapping": "not_verified",
+    "standardizedInternalTaggingRoundTrip": "not_performed",
+    "hardwareExecutionObservations": "not_performed"
+  }
+}

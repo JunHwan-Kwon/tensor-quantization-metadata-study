@@ -12,7 +12,8 @@
     "check:gguf": "python scripts/check-gguf-imatrix-results.py",
     "check:gguf:paired": "python scripts/check-gguf-paired-replication.py --experiment experiments/gguf-paired-replication/qwen3-4b",
     "check:model-card-artifact-coverage": "python scripts/check-model-card-artifact-coverage.py",
-    "check": "npm run check:cyclonedx-pr990 && npm run check:gguf && npm run check:gguf:paired && npm run check:model-card-artifact-coverage"
+    "check": "npm run check:cyclonedx-pr990 && npm run check:gguf && npm run check:gguf:paired && npm run check:model-card-artifact-coverage && npm run check:brief",
+    "check:brief": "python scripts/build-quantization-evidence-brief.py --check && python scripts/test-quantization-evidence-brief.py"
   },
   "devDependencies": {
     "ajv": "8.20.0"

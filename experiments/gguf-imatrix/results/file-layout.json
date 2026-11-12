@@ -1,0 +1,965 @@
+{
+  "recordType": "tensor-quantization-metadata-study.gguf-file-layout.v1",
+  "method": "Hash-checked GGUF v3 LE files; bounded binary cursor and upstream gguf field values",
+  "reader": {
+    "package": "gguf",
+    "version": "0.19.0"
+  },
+  "valueDigestDefinition": "SHA-256 of compact key-sorted UTF-8 JSON; ensure_ascii=False; allow_nan=False",
+  "sources": [
+    {
+      "path": "experiments/gguf-imatrix/results/ibm-q4km-tensor-inventory.json",
+      "sha256": "a3784d4637441b49b193c2ada3877fbe20abcfdc10c5afb69bdea13c1bd31cdf"
+    },
+    {
+      "path": "experiments/gguf-imatrix/results/bartowski-q4km-tensor-inventory.json",
+      "sha256": "bc10d8eca54108b38b8c76cf309f8ff638060777e4648a3ee2691a7a76fa9ee2"
+    },
+    {
+      "path": "experiments/gguf-imatrix/artifacts.json",
+      "sha256": "a88bd9ce64c5d454509f17375d85283260f4408b1054fd1275856ca8e57163e9"
+    }
+  ],
+  "subjects": [
+    {
+      "artifactId": "ibm-granite-4.2-3b-q4-k-m",
+      "artifactSha256": "e0406663965846ae22a403456eb826ccce5f450840491f71952f18a7cb78e7d5",
+      "fileBytes": 2244011552,
+      "ggufVersion": 3,
+      "tensorCount": 363,
+      "metadataCount": 35,
+      "regions": {
+        "headerBytes": 24,
+        "kvBytes": 3549611,
+        "tensorDescriptorBytes": 21590,
+        "alignmentPaddingBytes": 7,
+        "tensorPayloadBytes": 2240440320,
+        "interTensorPaddingBytes": 0,
+        "trailingBytes": 0
+      },
+      "metadata": [
+        {
+          "key": "general.architecture",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 24,
+          "entryBytes": 47,
+          "canonicalValueSha256": "fd81fb421a02d19c841b74002c03470ffa0e572da6327834fe6ed45145d3f972",
+          "canonicalValueBytes": 9,
+          "value": "granite"
+        },
+        {
+          "key": "general.type",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 71,
+          "entryBytes": 37,
+          "canonicalValueSha256": "18fb9fa0b971b807a1312d3702d18747a3b1b39a129df8c5d1a8f68d512bd1fd",
+          "canonicalValueBytes": 7,
+          "value": "model"
+        },
+        {
+          "key": "general.sampling.top_p",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 108,
+          "entryBytes": 38,
+          "canonicalValueSha256": "7f2a1a38022e752123e5ba3983ea10cc359866aa117e00a02fea03665a318999",
+          "canonicalValueBytes": 17,
+          "value": 0.949999988079071
+        },
+        {
+          "key": "general.sampling.temp",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 146,
+          "entryBytes": 37,
+          "canonicalValueSha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "canonicalValueBytes": 3,
+          "value": 1.0
+        },
+        {
+          "key": "general.name",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 183,
+          "entryBytes": 46,
+          "canonicalValueSha256": "c31501831f1cd7b227c4d4cb9530a471cb73b9168afc2d641a20489760308f38",
+          "canonicalValueBytes": 16,
+          "value": "Granite 4.2 3b"
+        },
+        {
+          "key": "general.basename",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 229,
+          "entryBytes": 47,
+          "canonicalValueSha256": "801d8bde41e420ac654aeaf0cb5a9a76fbec50330bacf442e5cd8aa106aad0ec",
+          "canonicalValueBytes": 13,
+          "value": "granite-4.2"
+        },
+        {
+          "key": "general.size_label",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 276,
+          "entryBytes": 40,
+          "canonicalValueSha256": "f8bb5f31fab0238da8b86720bbd6a9a7f0df0e3ebb673ca4d522b3e3f463dfbc",
+          "canonicalValueBytes": 4,
+          "value": "3B"
+        },
+        {
+          "key": "general.license",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 316,
+          "entryBytes": 45,
+          "canonicalValueSha256": "ce0956e2a0986dae20f5c028b3b4d67f4b8eda4811a48c1a3673913409301023",
+          "canonicalValueBytes": 12,
+          "value": "apache-2.0"
+        },
+        {
+          "key": "granite.block_count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 361,
+          "entryBytes": 35,
+          "canonicalValueSha256": "d59eced1ded07f84c145592f65bdf854358e009c5cd705f5215bf18697fed103",
+          "canonicalValueBytes": 2,
+          "value": 40
+        },
+        {
+          "key": "granite.context_length",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 396,
+          "entryBytes": 38,
+          "canonicalValueSha256": "f1de634787fe5cc0fe96b0b7f617755847d22b30d06aee392ffb5787d7c9f1c9",
+          "canonicalValueBytes": 6,
+          "value": 131072
+        },
+        {
+          "key": "granite.embedding_length",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 434,
+          "entryBytes": 40,
+          "canonicalValueSha256": "d15eff82084cddbc1b35df821f1a75d41977d9a7a0a0499f4accf528a8fb88f7",
+          "canonicalValueBytes": 4,
+          "value": 2560
+        },
+        {
+          "key": "granite.feed_forward_length",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 474,
+          "entryBytes": 43,
+          "canonicalValueSha256": "864a936a35324151e1c79c44a2e903ff2497f52fa892282d340585f493c637f0",
+          "canonicalValueBytes": 4,
+          "value": 8192
+        },
+        {
+          "key": "granite.attention.head_count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 517,
+          "entryBytes": 44,
+          "canonicalValueSha256": "d59eced1ded07f84c145592f65bdf854358e009c5cd705f5215bf18697fed103",
+          "canonicalValueBytes": 2,
+          "value": 40
+        },
+        {
+          "key": "granite.attention.head_count_kv",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 561,
+          "entryBytes": 47,
+          "canonicalValueSha256": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+          "canonicalValueBytes": 1,
+          "value": 8
+        },
+        {
+          "key": "granite.rope.freq_base",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 608,
+          "entryBytes": 38,
+          "canonicalValueSha256": "5737eea195ae4de0a10be91a809adfd39136958cf1a7dda7beb1bf6c69d80433",
+          "canonicalValueBytes": 10,
+          "value": 10000000.0
+        },
+        {
+          "key": "granite.attention.layer_norm_rms_epsilon",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 646,
+          "entryBytes": 56,
+          "canonicalValueSha256": "7294d5a146a4693e8dca4e1bd2dcc375f7b583d405ea5c5ffaaf42f3f13a9fab",
+          "canonicalValueBytes": 21,
+          "value": 9.999999747378752e-06
+        },
+        {
+          "key": "granite.vocab_size",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 702,
+          "entryBytes": 34,
+          "canonicalValueSha256": "b2f0077c08c5bf3fa51070495fce8e7d06eac8a3b71ad38013b1091280254281",
+          "canonicalValueBytes": 6,
+          "value": 100352
+        },
+        {
+          "key": "granite.rope.dimension_count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 736,
+          "entryBytes": 44,
+          "canonicalValueSha256": "a68b412c4282555f15546cf6e1fc42893b7e07f271557ceb021821098dd66c1b",
+          "canonicalValueBytes": 2,
+          "value": 64
+        },
+        {
+          "key": "granite.attention.scale",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 780,
+          "entryBytes": 39,
+          "canonicalValueSha256": "f09bf4b8419865350710e0c5a1a083d37037ec565f95b4b826270645ecc953ba",
+          "canonicalValueBytes": 8,
+          "value": 0.015625
+        },
+        {
+          "key": "granite.embedding_scale",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 819,
+          "entryBytes": 39,
+          "canonicalValueSha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "canonicalValueBytes": 3,
+          "value": 1.0
+        },
+        {
+          "key": "granite.residual_scale",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 858,
+          "entryBytes": 38,
+          "canonicalValueSha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "canonicalValueBytes": 3,
+          "value": 1.0
+        },
+        {
+          "key": "granite.logit_scale",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 896,
+          "entryBytes": 35,
+          "canonicalValueSha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "canonicalValueBytes": 3,
+          "value": 1.0
+        },
+        {
+          "key": "tokenizer.ggml.add_space_prefix",
+          "types": [
+            "BOOL"
+          ],
+          "entryStart": 931,
+          "entryBytes": 44,
+          "canonicalValueSha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+          "canonicalValueBytes": 5,
+          "value": false
+        },
+        {
+          "key": "tokenizer.ggml.model",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 975,
+          "entryBytes": 44,
+          "canonicalValueSha256": "7c2bf9af9cf78e18f0a9d8524d62d12ce43c085082aeb386eba76851a982fc72",
+          "canonicalValueBytes": 6,
+          "value": "gpt2"
+        },
+        {
+          "key": "tokenizer.ggml.pre",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 1019,
+          "entryBytes": 53,
+          "canonicalValueSha256": "6178f33d751f6859a57c87f956f5e441c0b34081a57e85f12392947541d14d2b",
+          "canonicalValueBytes": 17,
+          "value": "granite-docling"
+        },
+        {
+          "key": "tokenizer.ggml.tokens",
+          "types": [
+            "ARRAY",
+            "STRING"
+          ],
+          "entryStart": 1072,
+          "entryBytes": 1521116,
+          "canonicalValueSha256": "d97cb6896bf0faa42d8a4d43e1e24e9b2293db05ffcbdffabdb6a517f4740f18",
+          "canonicalValueBytes": 1021340
+        },
+        {
+          "key": "tokenizer.ggml.token_type",
+          "types": [
+            "ARRAY",
+            "INT32"
+          ],
+          "entryStart": 1522188,
+          "entryBytes": 401457,
+          "canonicalValueSha256": "320a41c9132e73b8f6d0273347e5afd4efedee9c659685ff27f18f256606b6c3",
+          "canonicalValueBytes": 200705
+        },
+        {
+          "key": "tokenizer.ggml.merges",
+          "types": [
+            "ARRAY",
+            "STRING"
+          ],
+          "entryStart": 1923645,
+          "entryBytes": 1616677,
+          "canonicalValueSha256": "06879d1ea4b9863a1a5a8cb75b9d8d9446fd1ad60a2a202eb19e2ecb11b29df4",
+          "canonicalValueBytes": 1118659
+        },
+        {
+          "key": "tokenizer.ggml.bos_token_id",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3540322,
+          "entryBytes": 43,
+          "canonicalValueSha256": "42ee38be9e8632f654dee66999eb553efc39779f6605e8f735fb2f3ed3eeba75",
+          "canonicalValueBytes": 6,
+          "value": 100283
+        },
+        {
+          "key": "tokenizer.ggml.eos_token_id",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3540365,
+          "entryBytes": 43,
+          "canonicalValueSha256": "4c20eda6f3fd80aae0ae90b7b896ac637ba5489605490aaf6a44778fae444c09",
+          "canonicalValueBytes": 6,
+          "value": 100257
+        },
+        {
+          "key": "tokenizer.ggml.unknown_token_id",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3540408,
+          "entryBytes": 47,
+          "canonicalValueSha256": "6c270c2e0fbdc4c2b1d335884619482978ff703660bc2b60cb7e5f230e235448",
+          "canonicalValueBytes": 6,
+          "value": 100269
+        },
+        {
+          "key": "tokenizer.ggml.padding_token_id",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3540455,
+          "entryBytes": 47,
+          "canonicalValueSha256": "4c20eda6f3fd80aae0ae90b7b896ac637ba5489605490aaf6a44778fae444c09",
+          "canonicalValueBytes": 6,
+          "value": 100257
+        },
+        {
+          "key": "tokenizer.chat_template",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 3540502,
+          "entryBytes": 9056,
+          "canonicalValueSha256": "ea31e9c11edfcd877d6d28b16ecfe023e9e547db21f062159c1b0c9823afd741",
+          "canonicalValueBytes": 9327
+        },
+        {
+          "key": "general.quantization_version",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3549558,
+          "entryBytes": 44,
+          "canonicalValueSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+          "canonicalValueBytes": 1,
+          "value": 2
+        },
+        {
+          "key": "general.file_type",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3549602,
+          "entryBytes": 33,
+          "canonicalValueSha256": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+          "canonicalValueBytes": 2,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "artifactId": "bartowski-granite-4.2-3b-q4-k-m",
+      "artifactSha256": "d8c0c39e0b775ff4e7ed1ed7f0593d27158acb063b07b132fa4f134b2075567f",
+      "fileBytes": 2317126048,
+      "ggufVersion": 3,
+      "tensorCount": 363,
+      "metadataCount": 45,
+      "regions": {
+        "headerBytes": 24,
+        "kvBytes": 3550500,
+        "tensorDescriptorBytes": 21590,
+        "alignmentPaddingBytes": 14,
+        "tensorPayloadBytes": 2313553920,
+        "interTensorPaddingBytes": 0,
+        "trailingBytes": 0
+      },
+      "metadata": [
+        {
+          "key": "general.architecture",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 24,
+          "entryBytes": 47,
+          "canonicalValueSha256": "fd81fb421a02d19c841b74002c03470ffa0e572da6327834fe6ed45145d3f972",
+          "canonicalValueBytes": 9,
+          "value": "granite"
+        },
+        {
+          "key": "general.type",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 71,
+          "entryBytes": 37,
+          "canonicalValueSha256": "18fb9fa0b971b807a1312d3702d18747a3b1b39a129df8c5d1a8f68d512bd1fd",
+          "canonicalValueBytes": 7,
+          "value": "model"
+        },
+        {
+          "key": "general.sampling.top_p",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 108,
+          "entryBytes": 38,
+          "canonicalValueSha256": "7f2a1a38022e752123e5ba3983ea10cc359866aa117e00a02fea03665a318999",
+          "canonicalValueBytes": 17,
+          "value": 0.949999988079071
+        },
+        {
+          "key": "general.sampling.temp",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 146,
+          "entryBytes": 37,
+          "canonicalValueSha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "canonicalValueBytes": 3,
+          "value": 1.0
+        },
+        {
+          "key": "general.name",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 183,
+          "entryBytes": 46,
+          "canonicalValueSha256": "c31501831f1cd7b227c4d4cb9530a471cb73b9168afc2d641a20489760308f38",
+          "canonicalValueBytes": 16,
+          "value": "Granite 4.2 3b"
+        },
+        {
+          "key": "general.basename",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 229,
+          "entryBytes": 47,
+          "canonicalValueSha256": "801d8bde41e420ac654aeaf0cb5a9a76fbec50330bacf442e5cd8aa106aad0ec",
+          "canonicalValueBytes": 13,
+          "value": "granite-4.2"
+        },
+        {
+          "key": "general.size_label",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 276,
+          "entryBytes": 40,
+          "canonicalValueSha256": "f8bb5f31fab0238da8b86720bbd6a9a7f0df0e3ebb673ca4d522b3e3f463dfbc",
+          "canonicalValueBytes": 4,
+          "value": "3B"
+        },
+        {
+          "key": "general.license",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 316,
+          "entryBytes": 45,
+          "canonicalValueSha256": "ce0956e2a0986dae20f5c028b3b4d67f4b8eda4811a48c1a3673913409301023",
+          "canonicalValueBytes": 12,
+          "value": "apache-2.0"
+        },
+        {
+          "key": "general.base_model.count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 361,
+          "entryBytes": 40,
+          "canonicalValueSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "canonicalValueBytes": 1,
+          "value": 1
+        },
+        {
+          "key": "general.base_model.0.name",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 401,
+          "entryBytes": 64,
+          "canonicalValueSha256": "dbf349805c18c405d077f7216154db831a2242aa45b619b058ad49406122bff8",
+          "canonicalValueBytes": 21,
+          "value": "Granite 4.1 3b Base"
+        },
+        {
+          "key": "general.base_model.0.organization",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 465,
+          "entryBytes": 64,
+          "canonicalValueSha256": "7c2d66049ce477655e9b61d21b51ec27f1e5387e4b2d65d6403bf6d408b13be6",
+          "canonicalValueBytes": 13,
+          "value": "Ibm Granite"
+        },
+        {
+          "key": "general.base_model.0.repo_url",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 529,
+          "entryBytes": 103,
+          "canonicalValueSha256": "b55932c8c21e2a0ac93e67be7b715f83113899c09d7f09ee70c3d75359d8bc6f",
+          "canonicalValueBytes": 56,
+          "value": "https://huggingface.co/ibm-granite/granite-4.1-3b-base"
+        },
+        {
+          "key": "general.tags",
+          "types": [
+            "ARRAY",
+            "STRING"
+          ],
+          "entryStart": 632,
+          "entryBytes": 157,
+          "canonicalValueSha256": "7cbb98b4e94c661768789e283088b552e7f9c1c716330cfb1a0063d5419581b2",
+          "canonicalValueBytes": 87,
+          "value": [
+            "granite",
+            "granite-4.2",
+            "reasoning",
+            "thinking",
+            "tool-calling",
+            "ibm",
+            "text-generation"
+          ]
+        },
+        {
+          "key": "general.languages",
+          "types": [
+            "ARRAY",
+            "STRING"
+          ],
+          "entryStart": 789,
+          "entryBytes": 161,
+          "canonicalValueSha256": "af6bcb787d61bdda16fde9fc911960e2530b1991cfc36433a6915ad78bb033b1",
+          "canonicalValueBytes": 61,
+          "value": [
+            "en",
+            "de",
+            "es",
+            "fr",
+            "ja",
+            "pt",
+            "ar",
+            "cs",
+            "it",
+            "ko",
+            "nl",
+            "zh"
+          ]
+        },
+        {
+          "key": "granite.block_count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 950,
+          "entryBytes": 35,
+          "canonicalValueSha256": "d59eced1ded07f84c145592f65bdf854358e009c5cd705f5215bf18697fed103",
+          "canonicalValueBytes": 2,
+          "value": 40
+        },
+        {
+          "key": "granite.context_length",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 985,
+          "entryBytes": 38,
+          "canonicalValueSha256": "f1de634787fe5cc0fe96b0b7f617755847d22b30d06aee392ffb5787d7c9f1c9",
+          "canonicalValueBytes": 6,
+          "value": 131072
+        },
+        {
+          "key": "granite.embedding_length",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 1023,
+          "entryBytes": 40,
+          "canonicalValueSha256": "d15eff82084cddbc1b35df821f1a75d41977d9a7a0a0499f4accf528a8fb88f7",
+          "canonicalValueBytes": 4,
+          "value": 2560
+        },
+        {
+          "key": "granite.feed_forward_length",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 1063,
+          "entryBytes": 43,
+          "canonicalValueSha256": "864a936a35324151e1c79c44a2e903ff2497f52fa892282d340585f493c637f0",
+          "canonicalValueBytes": 4,
+          "value": 8192
+        },
+        {
+          "key": "granite.attention.head_count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 1106,
+          "entryBytes": 44,
+          "canonicalValueSha256": "d59eced1ded07f84c145592f65bdf854358e009c5cd705f5215bf18697fed103",
+          "canonicalValueBytes": 2,
+          "value": 40
+        },
+        {
+          "key": "granite.attention.head_count_kv",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 1150,
+          "entryBytes": 47,
+          "canonicalValueSha256": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+          "canonicalValueBytes": 1,
+          "value": 8
+        },
+        {
+          "key": "granite.rope.freq_base",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 1197,
+          "entryBytes": 38,
+          "canonicalValueSha256": "5737eea195ae4de0a10be91a809adfd39136958cf1a7dda7beb1bf6c69d80433",
+          "canonicalValueBytes": 10,
+          "value": 10000000.0
+        },
+        {
+          "key": "granite.attention.layer_norm_rms_epsilon",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 1235,
+          "entryBytes": 56,
+          "canonicalValueSha256": "7294d5a146a4693e8dca4e1bd2dcc375f7b583d405ea5c5ffaaf42f3f13a9fab",
+          "canonicalValueBytes": 21,
+          "value": 9.999999747378752e-06
+        },
+        {
+          "key": "granite.vocab_size",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 1291,
+          "entryBytes": 34,
+          "canonicalValueSha256": "b2f0077c08c5bf3fa51070495fce8e7d06eac8a3b71ad38013b1091280254281",
+          "canonicalValueBytes": 6,
+          "value": 100352
+        },
+        {
+          "key": "granite.rope.dimension_count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 1325,
+          "entryBytes": 44,
+          "canonicalValueSha256": "a68b412c4282555f15546cf6e1fc42893b7e07f271557ceb021821098dd66c1b",
+          "canonicalValueBytes": 2,
+          "value": 64
+        },
+        {
+          "key": "granite.attention.scale",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 1369,
+          "entryBytes": 39,
+          "canonicalValueSha256": "f09bf4b8419865350710e0c5a1a083d37037ec565f95b4b826270645ecc953ba",
+          "canonicalValueBytes": 8,
+          "value": 0.015625
+        },
+        {
+          "key": "granite.embedding_scale",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 1408,
+          "entryBytes": 39,
+          "canonicalValueSha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "canonicalValueBytes": 3,
+          "value": 1.0
+        },
+        {
+          "key": "granite.residual_scale",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 1447,
+          "entryBytes": 38,
+          "canonicalValueSha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "canonicalValueBytes": 3,
+          "value": 1.0
+        },
+        {
+          "key": "granite.logit_scale",
+          "types": [
+            "FLOAT32"
+          ],
+          "entryStart": 1485,
+          "entryBytes": 35,
+          "canonicalValueSha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6",
+          "canonicalValueBytes": 3,
+          "value": 1.0
+        },
+        {
+          "key": "tokenizer.ggml.add_space_prefix",
+          "types": [
+            "BOOL"
+          ],
+          "entryStart": 1520,
+          "entryBytes": 44,
+          "canonicalValueSha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+          "canonicalValueBytes": 5,
+          "value": false
+        },
+        {
+          "key": "tokenizer.ggml.model",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 1564,
+          "entryBytes": 44,
+          "canonicalValueSha256": "7c2bf9af9cf78e18f0a9d8524d62d12ce43c085082aeb386eba76851a982fc72",
+          "canonicalValueBytes": 6,
+          "value": "gpt2"
+        },
+        {
+          "key": "tokenizer.ggml.pre",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 1608,
+          "entryBytes": 53,
+          "canonicalValueSha256": "6178f33d751f6859a57c87f956f5e441c0b34081a57e85f12392947541d14d2b",
+          "canonicalValueBytes": 17,
+          "value": "granite-docling"
+        },
+        {
+          "key": "tokenizer.ggml.tokens",
+          "types": [
+            "ARRAY",
+            "STRING"
+          ],
+          "entryStart": 1661,
+          "entryBytes": 1521116,
+          "canonicalValueSha256": "d97cb6896bf0faa42d8a4d43e1e24e9b2293db05ffcbdffabdb6a517f4740f18",
+          "canonicalValueBytes": 1021340
+        },
+        {
+          "key": "tokenizer.ggml.token_type",
+          "types": [
+            "ARRAY",
+            "INT32"
+          ],
+          "entryStart": 1522777,
+          "entryBytes": 401457,
+          "canonicalValueSha256": "320a41c9132e73b8f6d0273347e5afd4efedee9c659685ff27f18f256606b6c3",
+          "canonicalValueBytes": 200705
+        },
+        {
+          "key": "tokenizer.ggml.merges",
+          "types": [
+            "ARRAY",
+            "STRING"
+          ],
+          "entryStart": 1924234,
+          "entryBytes": 1616677,
+          "canonicalValueSha256": "06879d1ea4b9863a1a5a8cb75b9d8d9446fd1ad60a2a202eb19e2ecb11b29df4",
+          "canonicalValueBytes": 1118659
+        },
+        {
+          "key": "tokenizer.ggml.bos_token_id",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3540911,
+          "entryBytes": 43,
+          "canonicalValueSha256": "42ee38be9e8632f654dee66999eb553efc39779f6605e8f735fb2f3ed3eeba75",
+          "canonicalValueBytes": 6,
+          "value": 100283
+        },
+        {
+          "key": "tokenizer.ggml.eos_token_id",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3540954,
+          "entryBytes": 43,
+          "canonicalValueSha256": "4c20eda6f3fd80aae0ae90b7b896ac637ba5489605490aaf6a44778fae444c09",
+          "canonicalValueBytes": 6,
+          "value": 100257
+        },
+        {
+          "key": "tokenizer.ggml.unknown_token_id",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3540997,
+          "entryBytes": 47,
+          "canonicalValueSha256": "6c270c2e0fbdc4c2b1d335884619482978ff703660bc2b60cb7e5f230e235448",
+          "canonicalValueBytes": 6,
+          "value": 100269
+        },
+        {
+          "key": "tokenizer.ggml.padding_token_id",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3541044,
+          "entryBytes": 47,
+          "canonicalValueSha256": "4c20eda6f3fd80aae0ae90b7b896ac637ba5489605490aaf6a44778fae444c09",
+          "canonicalValueBytes": 6,
+          "value": 100257
+        },
+        {
+          "key": "tokenizer.chat_template",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 3541091,
+          "entryBytes": 9056,
+          "canonicalValueSha256": "ea31e9c11edfcd877d6d28b16ecfe023e9e547db21f062159c1b0c9823afd741",
+          "canonicalValueBytes": 9327
+        },
+        {
+          "key": "general.quantization_version",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3550147,
+          "entryBytes": 44,
+          "canonicalValueSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+          "canonicalValueBytes": 1,
+          "value": 2
+        },
+        {
+          "key": "general.file_type",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3550191,
+          "entryBytes": 33,
+          "canonicalValueSha256": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+          "canonicalValueBytes": 2,
+          "value": 15
+        },
+        {
+          "key": "quantize.imatrix.file",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 3550224,
+          "entryBytes": 100,
+          "canonicalValueSha256": "a160d9f82c8cc5235b766099a32f19a61928f71ef15d123817fa4601096ad8e8",
+          "canonicalValueBytes": 61,
+          "value": "/models_out/granite-4.2-3b-GGUF/granite-4.2-3b-imatrix.gguf"
+        },
+        {
+          "key": "quantize.imatrix.dataset",
+          "types": [
+            "STRING"
+          ],
+          "entryStart": 3550324,
+          "entryBytes": 109,
+          "canonicalValueSha256": "c63d1aeb56ee0afadc8962a01c37dd0e566149961092f020938d435852dd79e0",
+          "canonicalValueBytes": 67,
+          "value": "/models_out/granite-4.2-3b-GGUF/granite-4.2-3b-calibration-v6.txt"
+        },
+        {
+          "key": "quantize.imatrix.entries_count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3550433,
+          "entryBytes": 46,
+          "canonicalValueSha256": "7f0a22117f8fe0172cf9209ff622b64a51aaeda21d58b5b62685a93dbe2dad25",
+          "canonicalValueBytes": 3,
+          "value": 280
+        },
+        {
+          "key": "quantize.imatrix.chunks_count",
+          "types": [
+            "UINT32"
+          ],
+          "entryStart": 3550479,
+          "entryBytes": 45,
+          "canonicalValueSha256": "5b4afb8d2ed60a5777760a1cd17fb91b7c940c125cc7f74ae40b75df92036e5b",
+          "canonicalValueBytes": 3,
+          "value": 573
+        }
+      ]
+    }
+  ],
+  "boundary": "Metadata and storage layout only; no decoded quantized weights, production-command provenance, or runtime observations"
+}
