@@ -11,6 +11,7 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
+import re
 import struct
 from pathlib import Path
 
@@ -32,6 +33,36 @@ def sha256(path):
 def canonical(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True,
                       separators=(",", ":"), allow_nan=False).encode("utf-8")
+
+
+def metadata_identity(key, types, start, length, value):
+    """Keep source-value identity without republishing producer file paths."""
+    encoded = canonical(value)
+    row = {
+        "key": key, "types": types,
+        "entryStart": start, "entryBytes": length,
+        "canonicalValueSha256": hashlib.sha256(encoded).hexdigest(),
+        "canonicalValueBytes": len(encoded),
+    }
+    def contains_path(item):
+        if isinstance(item, str):
+            return item.startswith(("/", "\\", "~/", "~\\", "file:")) or bool(
+                re.match(r"^[A-Za-z]:[\\\\/]", item))
+        if isinstance(item, (list, tuple)):
+            return any(contains_path(part) for part in item)
+        if isinstance(item, dict):
+            return any(contains_path(part) for part in item.values())
+        return False
+
+    if key in {"quantize.imatrix.file", "quantize.imatrix.dataset"}:
+        row["valueOmission"] = "producer_file_path"
+    elif len(encoded) > 256:
+        row["valueOmission"] = "encoded_value_exceeds_256_bytes"
+    elif contains_path(value):
+        row["valueOmission"] = "path_like_value"
+    else:
+        row["value"] = value
+    return row
 
 
 class Cursor:
@@ -115,18 +146,9 @@ def measure(path, artifact, inventory_path):
             field = reader.get_field(key)
             if field is None:
                 raise ValueError("Upstream reader did not expose a serialized key")
-            value = field.contents()
-            encoded = canonical(value)
-            row = {
-                "key": key, "types": [kind.name for kind in field.types],
-                "entryStart": start, "entryBytes": stream.tell() - start,
-                "canonicalValueSha256": hashlib.sha256(encoded).hexdigest(),
-                "canonicalValueBytes": len(encoded),
-            }
-            # Tokenizer arrays are identified in full, but are not redistributed.
-            if len(encoded) <= 256:
-                row["value"] = value
-            metadata.append(row)
+            metadata.append(metadata_identity(
+                key, [kind.name for kind in field.types], start,
+                stream.tell() - start, field.contents()))
         kv_end = stream.tell()
         for _ in range(tensor_count):
             cursor.string()

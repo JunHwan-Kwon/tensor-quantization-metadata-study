@@ -92,8 +92,12 @@ python scripts/test-quantization-evidence-brief.py
 `results/file-layout.json` records all metadata keys, types, serialized spans,
 and SHA-256 digests of compact key-sorted UTF-8 JSON values. Large values are
 identified by their digests; the tokenizer vocabulary and merges are not copied
-into this result. Values of at most 256 encoded bytes are also shown inline.
-These value digests have a different scope from the whole-artifact digest.
+into this result. Values of at most 256 encoded bytes are also shown inline,
+except producer file paths. Omitted values carry a `valueOmission` reason;
+their digests and lengths still describe the original, unmodified values.
+This display policy does not change the measured KV byte spans or the source
+artifact. These value digests have a different scope from the whole-artifact digest.
+Historical source snapshots and inventories retain their original contents.
 
 The payload formulae used by the brief check are F32: 4 bytes per element,
 Q4_K: 144 bytes per 256 elements, Q5_K: 176 per 256, and Q6_K: 210 per 256.

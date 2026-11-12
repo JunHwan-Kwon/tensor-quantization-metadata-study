@@ -3,6 +3,7 @@
 import copy
 import importlib.util
 import io
+import hashlib
 import json
 import struct
 import unittest
@@ -105,6 +106,52 @@ class EvidenceDriftTests(unittest.TestCase):
         changed['subjects'][0]['regions']['alignmentPaddingBytes'] += 1
         with self.assertRaisesRegex(ValueError, 'regions do not sum'):
             brief.validate_layout(changed, [self.left, self.right], ROOT)
+
+
+class MetadataPresentationTests(unittest.TestCase):
+    def test_paths_are_identified_without_republishing_values(self):
+        examples = [
+            ("quantize.imatrix.file", "relative/matrix.gguf"),
+            ("quantize.imatrix.dataset", "calibration.txt"),
+            ("example.path", "/producer/work/matrix.gguf"),
+            ("example.path", "C:\\build\\matrix.gguf"),
+            ("example.path", "file:///producer/matrix.gguf"),
+            ("example.paths", ["public-label", "/producer/work/matrix.gguf"]),
+        ]
+        for key, value in examples:
+            with self.subTest(key=key, value=value):
+                row = layout_module.metadata_identity(key, ["STRING"], 24, 100, value)
+                self.assertNotIn("value", row)
+                self.assertEqual(row["valueOmission"], "producer_file_path" if key.startswith("quantize.imatrix.") else "path_like_value")
+                encoded = layout_module.canonical(value)
+                self.assertEqual(row["canonicalValueSha256"], hashlib.sha256(encoded).hexdigest())
+                self.assertEqual(row["canonicalValueBytes"], len(encoded))
+                self.assertEqual((row["entryStart"], row["entryBytes"]), (24, 100))
+
+    def test_public_identifiers_and_numeric_values_are_preserved(self):
+        for value in ("Granite 4.2 3b", "https://huggingface.co/ibm-granite", 573, [1, 2]):
+            with self.subTest(value=value):
+                row = layout_module.metadata_identity("example", ["STRING"], 24, 100, value)
+                self.assertEqual(row["value"], value)
+                self.assertNotIn("valueOmission", row)
+
+    def test_large_values_have_an_explicit_omission_reason(self):
+        row = layout_module.metadata_identity("tokenizer.example", ["ARRAY", "STRING"], 24, 400, ["/", "x" * 300])
+        self.assertNotIn("value", row)
+        self.assertEqual(row["valueOmission"], "encoded_value_exceeds_256_bytes")
+
+    def test_published_layout_has_no_inline_producer_paths(self):
+        layout = load(brief.GGUF + '/results/file-layout.json')
+        for subject in layout["subjects"]:
+            for row in subject["metadata"]:
+                with self.subTest(key=row["key"]):
+                    if "value" in row:
+                        projected = layout_module.metadata_identity(
+                            row["key"], row["types"], row["entryStart"], row["entryBytes"], row["value"])
+                        self.assertIn("value", projected)
+                    else:
+                        self.assertIn(row.get("valueOmission"), (
+                            "producer_file_path", "path_like_value", "encoded_value_exceeds_256_bytes"))
 
 
 class CursorTests(unittest.TestCase):

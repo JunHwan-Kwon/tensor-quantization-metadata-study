@@ -322,7 +322,8 @@
           "entryStart": 1072,
           "entryBytes": 1521116,
           "canonicalValueSha256": "d97cb6896bf0faa42d8a4d43e1e24e9b2293db05ffcbdffabdb6a517f4740f18",
-          "canonicalValueBytes": 1021340
+          "canonicalValueBytes": 1021340,
+          "valueOmission": "encoded_value_exceeds_256_bytes"
         },
         {
           "key": "tokenizer.ggml.token_type",
@@ -333,7 +334,8 @@
           "entryStart": 1522188,
           "entryBytes": 401457,
           "canonicalValueSha256": "320a41c9132e73b8f6d0273347e5afd4efedee9c659685ff27f18f256606b6c3",
-          "canonicalValueBytes": 200705
+          "canonicalValueBytes": 200705,
+          "valueOmission": "encoded_value_exceeds_256_bytes"
         },
         {
           "key": "tokenizer.ggml.merges",
@@ -344,7 +346,8 @@
           "entryStart": 1923645,
           "entryBytes": 1616677,
           "canonicalValueSha256": "06879d1ea4b9863a1a5a8cb75b9d8d9446fd1ad60a2a202eb19e2ecb11b29df4",
-          "canonicalValueBytes": 1118659
+          "canonicalValueBytes": 1118659,
+          "valueOmission": "encoded_value_exceeds_256_bytes"
         },
         {
           "key": "tokenizer.ggml.bos_token_id",
@@ -398,7 +401,8 @@
           "entryStart": 3540502,
           "entryBytes": 9056,
           "canonicalValueSha256": "ea31e9c11edfcd877d6d28b16ecfe023e9e547db21f062159c1b0c9823afd741",
-          "canonicalValueBytes": 9327
+          "canonicalValueBytes": 9327,
+          "valueOmission": "encoded_value_exceeds_256_bytes"
         },
         {
           "key": "general.quantization_version",
@@ -814,7 +818,8 @@
           "entryStart": 1661,
           "entryBytes": 1521116,
           "canonicalValueSha256": "d97cb6896bf0faa42d8a4d43e1e24e9b2293db05ffcbdffabdb6a517f4740f18",
-          "canonicalValueBytes": 1021340
+          "canonicalValueBytes": 1021340,
+          "valueOmission": "encoded_value_exceeds_256_bytes"
         },
         {
           "key": "tokenizer.ggml.token_type",
@@ -825,7 +830,8 @@
           "entryStart": 1522777,
           "entryBytes": 401457,
           "canonicalValueSha256": "320a41c9132e73b8f6d0273347e5afd4efedee9c659685ff27f18f256606b6c3",
-          "canonicalValueBytes": 200705
+          "canonicalValueBytes": 200705,
+          "valueOmission": "encoded_value_exceeds_256_bytes"
         },
         {
           "key": "tokenizer.ggml.merges",
@@ -836,7 +842,8 @@
           "entryStart": 1924234,
           "entryBytes": 1616677,
           "canonicalValueSha256": "06879d1ea4b9863a1a5a8cb75b9d8d9446fd1ad60a2a202eb19e2ecb11b29df4",
-          "canonicalValueBytes": 1118659
+          "canonicalValueBytes": 1118659,
+          "valueOmission": "encoded_value_exceeds_256_bytes"
         },
         {
           "key": "tokenizer.ggml.bos_token_id",
@@ -890,7 +897,8 @@
           "entryStart": 3541091,
           "entryBytes": 9056,
           "canonicalValueSha256": "ea31e9c11edfcd877d6d28b16ecfe023e9e547db21f062159c1b0c9823afd741",
-          "canonicalValueBytes": 9327
+          "canonicalValueBytes": 9327,
+          "valueOmission": "encoded_value_exceeds_256_bytes"
         },
         {
           "key": "general.quantization_version",
@@ -923,7 +931,7 @@
           "entryBytes": 100,
           "canonicalValueSha256": "a160d9f82c8cc5235b766099a32f19a61928f71ef15d123817fa4601096ad8e8",
           "canonicalValueBytes": 61,
-          "value": "/models_out/granite-4.2-3b-GGUF/granite-4.2-3b-imatrix.gguf"
+          "valueOmission": "producer_file_path"
         },
         {
           "key": "quantize.imatrix.dataset",
@@ -934,7 +942,7 @@
           "entryBytes": 109,
           "canonicalValueSha256": "c63d1aeb56ee0afadc8962a01c37dd0e566149961092f020938d435852dd79e0",
           "canonicalValueBytes": 67,
-          "value": "/models_out/granite-4.2-3b-GGUF/granite-4.2-3b-calibration-v6.txt"
+          "valueOmission": "producer_file_path"
         },
         {
           "key": "quantize.imatrix.entries_count",

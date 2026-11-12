@@ -192,10 +192,9 @@ def build(root):
 
 def render(result, left, right, matrix, layout):
     lines = ["# Observed quantization assignments and interface contracts", "",
-             "This brief connects existing, hash-identified GGUF and TFLite results to the",
-             "question of which model subject a quantization description applies to.",
-             "It provides concrete examples and reusable observations; it does not propose",
-             "a new component type, vocabulary precedence rule, or conformance policy.", "",
+             "This study compares serialized tensor encodings and input/output contracts in",
+             "hash-identified GGUF and TFLite artifacts. It records which tensor each observation",
+             "describes, with complete inventories and reproducible checks.", "",
              "The two GGUF pairs have different outcomes: Granite has different assignments;",
              "Qwen has matching assignments. Neither pair estimates ecosystem prevalence.", "",
              "## Evidence at a glance", "",
@@ -241,7 +240,8 @@ def render(result, left, right, matrix, layout):
               "which production command ran or which input caused the assignment differences. Their absence",
               "in IBM's file is not evidence that an importance matrix was not used.", "",
               "[Layout and metadata identities](../experiments/gguf-imatrix/results/file-layout.json) record every key,",
-              "its serialized span, type and canonical-value digest. Large tokenizer values are not redistributed.",
+              "its serialized span, type and canonical-value digest. Large tokenizer values and producer file",
+              "paths are omitted from this record; their original-value digests and lengths are retained.",
               "The [source comparison](../experiments/gguf-imatrix/results/metadata-cross-source-observations.json)",
               "also keeps embedded lineage metadata separate from repository-card declarations.", "",
               "## 2. Qwen: a concordant paired result", "",
@@ -288,9 +288,7 @@ def render(result, left, right, matrix, layout):
               "| Deployment observations | Serialized storage and graph contracts | No device latency, kernel placement or CUDA-level observation in these cases |", "",
               "These cases are ready as test inputs for a model-part representation. They do not establish that",
               "a layer/module representation, an agreed taxonomy, or consumer interoperability is complete.",
-              "A next bounded test would choose one subject representation, serialize selected artifact-bound",
-              "assignments, and verify their recovery by a separate consumer. Mapping to original modules would",
-              "need explicit source correspondence in addition to tensor names.", "",
+              "Mapping to original modules requires explicit source correspondence in addition to tensor names.", "",
               "Existing [CycloneDX probes](../conformance/cyclonedx-2.0/) and",
               "[vocabulary notes](quantization-vocabulary-mapping.md) are pinned to their stated draft commits.",
               "They are historical tests, not claims about an unpinned current or future release. JSON Schema",
@@ -309,11 +307,8 @@ def render(result, left, right, matrix, layout):
               "and run `python scripts/verify-bundle.py`; this has a larger dependency set than the brief check.", "",
               "The GGUF primary reader is upstream `gguf-py`. The author-maintained implementation is disclosed",
               "as a secondary cross-check in its separate directory. Neither the brief nor its offline verifier",
-              "requires that implementation. No recommendation to adopt a specific analysis product follows",
-              "from these results.", "",
-              "This brief adds the layout audit and a generated reading path through the existing studies.",
-              "It does not pool their cohorts, overwrite historical measurements, or claim a new independent",
-              "replication merely because the same records are presented together.", ""]
+              "requires that implementation. The cases retain their separate acquisition and measurement",
+              "protocols; presenting them together is not an independent replication.", ""]
     return "\n".join(lines)
 
 

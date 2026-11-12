@@ -15,7 +15,7 @@
     },
     {
       "path": "experiments/gguf-imatrix/results/file-layout.json",
-      "sha256": "ddfd97e1e97a38a0d8770194ae37eb97e649202a24e2066ace6d5a2697e9f0d6"
+      "sha256": "91072555d422f00f2fddcb4c6bec7a14be0ba3313ff97576f6def961488aa57f"
     },
     {
       "path": "experiments/gguf-paired-replication/qwen3-4b/results/left-tensor-inventory.json",
