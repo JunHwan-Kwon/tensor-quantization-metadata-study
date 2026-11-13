@@ -7,11 +7,12 @@ source-bound observations of related CycloneDX AI/ML draft schema surfaces.
 Canonical repository:
 <https://github.com/JunHwan-Kwon/tensor-quantization-metadata-study>
 
-For a focused reading path, see [Observed quantization assignments and
-interface contracts](docs/quantization-evidence-brief.md). It brings together
-the divergent Granite pair, concordant Qwen pair, and named TFLite I/O cases,
-with complete tensor tables, source bindings and explicit limits. Check its
-committed records with `python scripts/build-quantization-evidence-brief.py --check`.
+For a focused reading path, see [Quantization on identified tensors:
+artifact evidence](docs/quantization-evidence-brief.md). It starts with Q4_K,
+Q6_K and F32 tensor assignments within one Granite artifact, then provides
+paired Granite and Qwen comparisons and named TFLite I/O contracts. Exact
+artifact identities, full inventories and reproduction methods are linked.
+Check its committed records with `python scripts/build-quantization-evidence-brief.py --check`.
 
 ## GGUF mixed-encoding and importance-matrix evidence
 

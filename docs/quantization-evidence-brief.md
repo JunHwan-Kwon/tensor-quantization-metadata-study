@@ -1,26 +1,47 @@
-# Observed quantization assignments and interface contracts
+# Quantization on identified tensors: artifact evidence
 
-This study compares serialized tensor encodings and input/output contracts in
-hash-identified GGUF and TFLite artifacts. It records which tensor each observation
-describes, with complete inventories and reproducible checks.
+A single Granite GGUF artifact contains named tensors with Q4_K, Q6_K and F32
+storage encodings. This note records those assignments, identifies the file and
+tensors, and links the complete inventory and reproduction method.
 
-The two GGUF pairs have different outcomes: Granite has different assignments;
-Qwen has matching assignments. Neither pair estimates ecosystem prevalence.
+Additional observations cover a second Granite publication, a Qwen pair, and
+named TFLite inputs and outputs. These are selected artifact observations;
+they do not estimate ecosystem prevalence.
 
-## Evidence at a glance
+## 1. Different encodings within one artifact
 
-| Case | Observed result | Boundary |
+Subject: IBM Granite 4.2 3B, `granite-4.2-3b-Q4_K_M.gguf`.
+
+Pinned repository revision: `c40945d71cd90f249a56985e8155551a9188dc30`.
+
+Whole-file SHA-256: `e0406663965846ae22a403456eb826ccce5f450840491f71952f18a7cb78e7d5`.
+
+The following three tensors occur in that same file:
+
+| Exact serialized tensor name | Stored shape | Encoding |
 | --- | --- | --- |
-| Granite 4.2 3B, two Q4_K_M publications | 100 of 363 tensor assignments differ | Stored encodings, not decoded weight equality or quality |
-| Qwen3-4B, two Q4_K_M publications | 0 of 398 assignments differ | Agreement for this pair, not a universal label guarantee |
-| EfficientNet-Lite0 INT8 publication | Named input and output are UINT8 with different affine contracts | External I/O does not describe all internal weights |
-| YAMNet audio-classifier publication | FLOAT32 I/O with internal INT8 weights and intermediate tensors | Serialized contracts, not observed integer kernel execution |
+| `blk.0.attn_k.weight` | `[2560, 512]` | Q4_K |
+| `blk.0.attn_v.weight` | `[2560, 512]` | Q6_K |
+| `blk.0.attn_norm.weight` | `[2560]` | F32 |
 
-## 1. Granite: the same label with different assignments
+The complete inventory contains 363 tensors: 241 Q4_K,
+41 Q6_K and 81 F32. F32 denotes unquantized floating-point storage.
+The three rows above illustrate the three encodings; the full inventory is linked below.
 
-Both files have the same tensor-name set and name-matched stored shapes.
-A tensor is identified here by its artifact SHA-256 and exact serialized name.
-The `blk.<index>` grouping is a naming observation, not a recovered training-module hierarchy.
+Each observation identifies its subject by **whole-file SHA-256 + exact tensor name**.
+Shapes use GGUF stored dimension order. The `blk.0` prefix is a serialized naming
+observation; an original layer or module hierarchy has not been reconstructed.
+
+Sources: [all IBM tensor records](../experiments/gguf-imatrix/results/ibm-q4km-tensor-inventory.json),
+[download identity](../experiments/gguf-imatrix/artifacts.json),
+[measurement protocol](../experiments/gguf-imatrix/protocol.md).
+The [derived JSON](../experiments/gguf-imatrix/results/evidence-brief.json) also records
+the exact inventory row for each of the three examples.
+
+## 2. Across two Granite publications
+
+Both publications carry the `Q4_K_M` release label. The files have the same
+tensor-name set and name-matched stored shapes; their encoding assignments differ.
 
 | Encoding | IBM publication | Bartowski publication |
 | --- | ---: | ---: |
@@ -76,7 +97,7 @@ paths are omitted from this record; their original-value digests and lengths are
 The [source comparison](../experiments/gguf-imatrix/results/metadata-cross-source-observations.json)
 also keeps embedded lineage metadata separate from repository-card declarations.
 
-## 2. Qwen: a concordant paired result
+## 3. Across two Qwen publications
 
 The Qwen3-4B pair has matching tensor names, stored shapes, per-tensor encodings and normalized
 name-to-encoding assignment hashes. This supports agreement for those identified artifacts.
@@ -85,7 +106,7 @@ the Qwen result prevents interpreting that observation as a claim that equal lab
 
 See the [Qwen protocol, identities and results](../experiments/gguf-paired-replication/qwen3-4b).
 
-## 3. Named I/O and internal tensors
+## 4. Named I/O and internal tensors
 
 | Artifact | Direction | Tensor name | Dtype | Shape | Scale | Zero point |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -111,7 +132,7 @@ The [interface ledger](../data/interface-contracts.json) and
 and bindings. Dtype and shape alone do not identify an affine contract; scale and zero point
 do not establish RGB order, resizing, or the complete application preprocessing pipeline.
 
-## 4. Related importance-matrix evidence
+## 5. Related importance-matrix evidence
 
 The separately identified importance-matrix artifact contains 560 F32 tensors
 and 942,360 decoded values. The recorded complete scan found
@@ -120,19 +141,18 @@ and 942,360 decoded values. The recorded complete scan found
 demonstrate that a specific conversion consumed it or that it improved quality.
 See the [matrix measurement](../experiments/gguf-imatrix/results/imatrix-measurement.json).
 
-## 5. Relevance to model-part descriptions
+## 6. Evidence scope
 
-| Evidence task | Available here | Remaining boundary |
+| Observation | Evidence | Boundary |
 | --- | --- | --- |
-| Real model examples | Multiple GGUF publications and named TFLite interfaces | Curated examples, not architecture-wide coverage |
-| Quantization attached to an identifiable part | Artifact-bound tensor names; selected serialized weight-consumer bindings | Stored tensors are not automatically original layers or modules |
-| Reusable tagging test inputs | Complete inventories, source identities and contrary paired outcomes | A standardized internal-subject tagging round trip has not been performed |
-| Relating I/O and weight descriptions | Separate external contracts and internal weight inventories | No vocabulary precedence or new component type is selected |
-| Deployment observations | Serialized storage and graph contracts | No device latency, kernel placement or CUDA-level observation in these cases |
+| Several encodings within one artifact | Exact names, shapes and encodings in the IBM inventory | Names do not establish original layer/module identity |
+| Assignments across publications | Complete Granite and Qwen paired inventories | Encoding equality does not establish numerical weight equality |
+| External and internal tensor contracts | Named TFLite I/O; selected serialized weight-consumer bindings | No observed runtime kernel placement or device performance |
+| Artifact and result identity | Pinned revisions, whole-file hashes and source-record hashes | These do not establish the complete production history |
 
-These cases are ready as test inputs for a model-part representation. They do not establish that
-a layer/module representation, an agreed taxonomy, or consumer interoperability is complete.
-Mapping to original modules requires explicit source correspondence in addition to tensor names.
+The recorded assignments can serve as test data for model-part descriptions.
+Original layer/module mapping and a standardized CycloneDX internal-subject tagging
+round trip have not been verified. Model accuracy and device performance were not measured.
 
 Existing [CycloneDX probes](../conformance/cyclonedx-2.0/) and
 [vocabulary notes](quantization-vocabulary-mapping.md) are pinned to their stated draft commits.
@@ -140,7 +160,7 @@ They are historical tests, not claims about an unpinned current or future releas
 validity, the vocabulary's meaning, and fidelity to an artifact are separate checks. Custom
 descriptions and external evidence references should not be mistaken for a standardized tensor map.
 
-## 6. Verification and reproduction
+## 7. Verification and reproduction
 
 Check this brief and the complete paired table using the committed records, without model downloads
 or third-party Python packages:
