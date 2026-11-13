@@ -86,10 +86,11 @@ The payload difference is 73,113,600 bytes (3.2634% of IBM's payload).
 The remaining 896 bytes comprise 889 bytes of KV entries and 7 bytes of alignment padding.
 These storage differences do not measure inference RAM, latency, energy, or operating cost.
 
-The 35 common equal KV entries have matching types and value digests. Bartowski has 10 additional entries,
-including 4 `quantize.imatrix.*` entries. Their presence records a declaration; it does not prove
-which production command ran or which input caused the assignment differences. Their absence
-in IBM's file is not evidence that an importance matrix was not used.
+The files share 35 metadata keys with matching types and value digests.
+Bartowski has 10 additional entries, including 4 `quantize.imatrix.*` entries.
+These record producer-supplied metadata. They do not establish the conversion command
+or the cause of the encoding differences. Their absence from the IBM file does not
+establish whether an importance matrix was used.
 
 [Layout and metadata identities](../experiments/gguf-imatrix/results/file-layout.json) record every key,
 its serialized span, type and canonical-value digest. Large tokenizer values and producer file
@@ -99,10 +100,10 @@ also keeps embedded lineage metadata separate from repository-card declarations.
 
 ## 3. Across two Qwen publications
 
-The Qwen3-4B pair has matching tensor names, stored shapes, per-tensor encodings and normalized
-name-to-encoding assignment hashes. This supports agreement for those identified artifacts.
-The Granite result establishes that a shared label is insufficient to guarantee agreement in general;
-the Qwen result prevents interpreting that observation as a claim that equal labels always conceal differences.
+Both Qwen3-4B files have the same 398 tensor names, stored shapes and encoding assignments.
+Their name-to-encoding assignment hashes also match. Numerical weight values were not compared.
+The shared release label accompanies different assignments in the Granite pair and matching
+assignments in the Qwen pair. These two comparisons do not show how common either outcome is.
 
 See the [Qwen protocol, identities and results](../experiments/gguf-paired-replication/qwen3-4b).
 
@@ -154,11 +155,10 @@ The recorded assignments can serve as test data for model-part descriptions.
 Original layer/module mapping and a standardized CycloneDX internal-subject tagging
 round trip have not been verified. Model accuracy and device performance were not measured.
 
-Existing [CycloneDX probes](../conformance/cyclonedx-2.0/) and
-[vocabulary notes](quantization-vocabulary-mapping.md) are pinned to their stated draft commits.
-They are historical tests, not claims about an unpinned current or future release. JSON Schema
-validity, the vocabulary's meaning, and fidelity to an artifact are separate checks. Custom
-descriptions and external evidence references should not be mistaken for a standardized tensor map.
+The existing [CycloneDX probes](../conformance/cyclonedx-2.0/) and
+[vocabulary notes](quantization-vocabulary-mapping.md) apply to the draft commits they name.
+Passing JSON Schema validation does not establish that a description preserves the observed
+tensor assignments. Those probes do not provide a standardized tensor map.
 
 ## 7. Verification and reproduction
 

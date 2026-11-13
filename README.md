@@ -37,9 +37,8 @@ python scripts/check-gguf-imatrix-results.py
 
 To reacquire and fully remeasure the three artifacts, see the
 [`protocol`](experiments/gguf-imatrix/protocol.md). The resulting
-standards-facing records are field observations only; they do not choose a
-CycloneDX completeness policy or propose a DeepBOM output structure as a
-standard.
+standards-facing records describe fields found in these artifacts. They do not
+define a CycloneDX completeness policy or a standard representation.
 
 ## Second GGUF paired replication
 
